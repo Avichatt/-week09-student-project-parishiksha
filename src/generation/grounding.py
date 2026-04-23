@@ -1,6 +1,6 @@
-# =============================================================================
+
 # PariShiksha — Grounding Verification Module
-# =============================================================================
+
 # Checks whether generated answers are actually grounded in the provided
 # textbook context. This is the most critical quality gate for PariShiksha:
 # an ungrounded answer is worse than no answer at all.
@@ -9,7 +9,7 @@
 # 1. Lexical overlap — what fraction of answer words appear in context?
 # 2. Sentence-level entailment — does each answer sentence follow from context?
 # 3. Claim extraction — extract individual claims and verify each one
-# =============================================================================
+
 
 import re
 from typing import Dict, List, Optional, Set, Tuple
@@ -76,9 +76,9 @@ class GroundingChecker:
     def __init__(self):
         self.entailment_model = None
 
-    # -------------------------------------------------------------------------
+
     # Public API
-    # -------------------------------------------------------------------------
+
 
     def check_grounding(
         self,
@@ -155,9 +155,9 @@ class GroundingChecker:
             "details": details,
         }
 
-    # -------------------------------------------------------------------------
+
     # Level 1: Lexical Overlap
-    # -------------------------------------------------------------------------
+   
 
     def _compute_lexical_overlap(self, answer: str, context: str) -> float:
         """
@@ -181,9 +181,9 @@ class GroundingChecker:
         words = re.findall(r"\b[a-zA-Z]{2,}\b", text.lower())
         return {w for w in words if w not in self.STOP_WORDS}
 
-    # -------------------------------------------------------------------------
+   
     # Level 2: Sentence-Level Grounding
-    # -------------------------------------------------------------------------
+
 
     def _check_sentence_grounding(
         self, answer: str, context: str
@@ -231,18 +231,18 @@ class GroundingChecker:
 
         return scores, ungrounded
 
-    # -------------------------------------------------------------------------
+
     # Refusal Detection
-    # -------------------------------------------------------------------------
+
 
     def _check_refusal(self, answer: str) -> bool:
         """Check if the answer is an appropriate refusal."""
         answer_lower = answer.lower()
         return any(phrase in answer_lower for phrase in self.REFUSAL_PHRASES)
 
-    # -------------------------------------------------------------------------
+
     # Details Generation
-    # -------------------------------------------------------------------------
+
 
     def _generate_details(
         self,
@@ -270,9 +270,8 @@ class GroundingChecker:
         return details
 
 
-# =============================================================================
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     checker = GroundingChecker()
 

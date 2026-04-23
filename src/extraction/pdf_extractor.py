@@ -1,11 +1,11 @@
-# =============================================================================
+
 # PariShiksha — PDF Extraction Module
-# =============================================================================
+
 # Extracts raw text from NCERT Science PDFs using multiple backends (PyMuPDF,
 # pdfplumber) and logs extraction quality metrics. The dual-backend approach
 # lets us cross-validate extraction since NCERT PDFs have inconsistent
 # rendering (equations as images, mixed encodings, etc.).
-# =============================================================================
+
 
 import json
 import re
@@ -48,9 +48,8 @@ class PDFExtractor:
         self.output_dir = output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    # -------------------------------------------------------------------------
     # Public API
-    # -------------------------------------------------------------------------
+
 
     def extract_chapter(self, chapter_key: str) -> Dict:
         """
@@ -139,9 +138,9 @@ class PDFExtractor:
                 logger.error(f"Skipping {chapter_key}: {e}")
         return results
 
-    # -------------------------------------------------------------------------
+
     # Backend: PyMuPDF (fitz)
-    # -------------------------------------------------------------------------
+ 
 
     def _extract_with_fitz(
         self, pdf_path: Path, page_range: Optional[Tuple[int, int]] = None
@@ -193,9 +192,9 @@ class PDFExtractor:
 
         return pages
 
-    # -------------------------------------------------------------------------
+
     # Backend: pdfplumber
-    # -------------------------------------------------------------------------
+  
 
     def _extract_with_pdfplumber(
         self, pdf_path: Path, page_range: Optional[Tuple[int, int]] = None
@@ -233,9 +232,9 @@ class PDFExtractor:
 
         return pages
 
-    # -------------------------------------------------------------------------
+ 
     # Quality Assessment
-    # -------------------------------------------------------------------------
+  
 
     def _compute_extraction_quality(
         self, pages_fitz: List[Dict], pages_pdfplumber: List[Dict]
@@ -301,9 +300,9 @@ class PDFExtractor:
 
         return quality
 
-    # -------------------------------------------------------------------------
+   
     # PDF Download Helper
-    # -------------------------------------------------------------------------
+
 
     def _download_pdf(self, filename: str) -> None:
         """Attempt to download a PDF from the NCERT website."""
@@ -319,9 +318,9 @@ class PDFExtractor:
             logger.info(f"Please download manually from: {url}")
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     extractor = PDFExtractor()
     results = extractor.extract_all_chapters()

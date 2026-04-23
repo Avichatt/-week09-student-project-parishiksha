@@ -1,6 +1,6 @@
-# =============================================================================
+
 # PariShiksha — Chunk Embedding Module
-# =============================================================================
+
 # Converts text chunks into dense vector embeddings using Sentence-BERT.
 # Also provides TF-IDF sparse representations as a baseline comparison.
 #
@@ -8,7 +8,7 @@
 # The embedding model's tokenizer is different from the chunking tokenizer,
 # so chunks that were "256 BERT tokens" might be a different count under
 # SBERT's tokenizer. This is a real-world gotcha that many tutorials skip.
-# =============================================================================
+
 
 import json
 import pickle
@@ -69,9 +69,9 @@ class ChunkEmbedder:
         self.sparse_embeddings = None
         self.chunks = None
 
-    # -------------------------------------------------------------------------
+
     # Dense Embeddings (SBERT)
-    # -------------------------------------------------------------------------
+
 
     def embed_dense(self, chunks: List[Dict]) -> np.ndarray:
         """
@@ -119,9 +119,9 @@ class ChunkEmbedder:
             [query], normalize_embeddings=True
         )[0]
 
-    # -------------------------------------------------------------------------
+
     # Sparse Embeddings (TF-IDF)
-    # -------------------------------------------------------------------------
+
 
     def embed_sparse(self, chunks: List[Dict]) -> object:
         """
@@ -165,9 +165,9 @@ class ChunkEmbedder:
             raise RuntimeError("Call embed_sparse() first to fit the vectorizer")
         return self.tfidf_vectorizer.transform([query])
 
-    # -------------------------------------------------------------------------
+
     # I/O
-    # -------------------------------------------------------------------------
+
 
     def save_embeddings(self, chapter_key: str, config_label: str) -> Dict[str, Path]:
         """
@@ -243,9 +243,9 @@ class ChunkEmbedder:
             logger.info(f"Loaded {len(self.chunks)} chunk metadata entries")
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     embedder = ChunkEmbedder()
 

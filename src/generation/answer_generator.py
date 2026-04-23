@@ -321,16 +321,16 @@ if __name__ == "__main__":
 
     # Example usage
     test_context = """
-    The cell is the fundamental structural and functional unit of all living organisms.
-    Robert Hooke first observed cells in 1665 using a primitive microscope.
-    He observed thin slices of cork and noticed small compartments which he called 'cells'.
-    The cell theory states that:
-    1. All living organisms are composed of cells
-    2. The cell is the basic unit of life
-    3. All cells arise from pre-existing cells
+    Motion is defined as a change in the position of an object over time.
+    Velocity is the rate of change of displacement, whereas speed is the rate of change of distance.
+    Acceleration is the rate of change of velocity.
+    Isaac Newton formulated three laws of motion:
+    1. An object remains at rest or in uniform motion unless acted upon by a net external force.
+    2. The rate of change of momentum of a body is directly proportional to the applied force.
+    3. For every action, there is an equal and opposite reaction.
     """
 
-    test_question = "Who discovered cells and how?"
+    test_question = "What are Newton's three laws of motion?"
 
     print("=" * 60)
     print("ANSWER GENERATION TEST")

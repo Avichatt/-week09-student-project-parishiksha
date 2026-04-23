@@ -236,11 +236,11 @@ def stage_3_embed_and_retrieve():
 
         # Test with sample queries
         test_queries = [
-            "What are the three states of matter?",
-            "What is sublimation?",
-            "How does evaporation cause cooling?",
-            "What is latent heat of fusion?",
-            "Why do we wear cotton clothes in summer?",
+            "What is uniform motion?",
+            "What is the difference between distance and displacement?",
+            "How do you calculate average velocity?",
+            "When is the total distance travelled equal to the magnitude of displacement?",
+            "What is string theory and M-theory?", # Unknown question
         ]
 
         logger.info(f"\nSample retrievals for {chapter_key}:")

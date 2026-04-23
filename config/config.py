@@ -74,22 +74,22 @@ TOKENIZER_MODELS = {
 
 # Scientific terms to test tokenizer behavior on
 SCIENCE_TERMS = [
-    "photosynthesis",
-    "mitochondria",
-    "endoplasmic reticulum",
-    "specific heat capacity",
-    "electromagnetic spectrum",
-    "nucleotide",
-    "chlorophyll",
-    "ribonucleic acid",
-    "deoxyribonucleic acid",
-    "prokaryotic",
-    "eukaryotic",
-    "Golgi apparatus",
-    "osmosis",
-    "plasmolysis",
-    "chromatin",
-    "cytoplasm",
+    "velocity",
+    "acceleration",
+    "displacement",
+    "kinematics",
+    "instantaneous speed",
+    "momentum",
+    "gravitation",
+    "thermodynamics",
+    "electromagnetic induction",
+    "centripetal force",
+    "inertia",
+    "projectiles",
+    "refraction",
+    "diffraction",
+    "vector quantities",
+    "scalar quantities",
 ]
 
 

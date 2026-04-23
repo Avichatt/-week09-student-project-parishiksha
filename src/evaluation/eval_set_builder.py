@@ -1,17 +1,17 @@
-# =============================================================================
+
 # PariShiksha — Evaluation Set Builder
-# =============================================================================
+
 # Builds the question-answer evaluation set for the study assistant.
 # This is Stage 4 of the project, and arguably the most important:
 # "If you can't measure it, you can't improve it."
-#
+
 # The eval set includes 5 question types:
 # 1. Factual — Direct fact recall ("Who discovered cells?")
 # 2. Conceptual — Understanding ("Why do cells need energy?")
 # 3. Application — Apply concept ("If a cell loses its nucleus...")
 # 4. Unanswerable — Not in textbook (tests hallucination resistance)
 # 5. Hindi code-switched — Hindi-English mixed queries
-# =============================================================================
+
 
 import json
 from pathlib import Path
@@ -59,9 +59,8 @@ class EvalSetBuilder:
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.eval_set: List[Dict] = []
 
-    # -------------------------------------------------------------------------
     # Building the Eval Set
-    # -------------------------------------------------------------------------
+
 
     def add_question(
         self,
@@ -122,9 +121,9 @@ class EvalSetBuilder:
         """
         self.eval_set = []
 
-        # =====================================================================
+    
         # CHAPTER 5: THE FUNDAMENTAL UNIT OF LIFE
-        # =====================================================================
+
 
         # --- FACTUAL QUESTIONS ---
         self.add_question(
@@ -344,9 +343,9 @@ class EvalSetBuilder:
         logger.info(f"Built default eval set with {len(self.eval_set)} questions")
         return self.eval_set
 
-    # -------------------------------------------------------------------------
+
     # I/O
-    # -------------------------------------------------------------------------
+ 
 
     def save_eval_set(self, filename: str = "eval_set.json") -> Path:
         """Save evaluation set to JSON."""
@@ -395,9 +394,9 @@ class EvalSetBuilder:
         }
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     builder = EvalSetBuilder()
     builder.build_default_eval_set()

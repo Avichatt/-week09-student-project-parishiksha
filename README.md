@@ -82,7 +82,11 @@ python -c "import nltk; nltk.download('punkt_tab')"
 
 1.  Copy `.env.example` to `.env`
 2.  Add your `GEMINI_API_KEY` (Get one at [Google AI Studio](https://aistudio.google.com/app/apikey))
-3.  Download NCERT Science PDFs (Ch.5 & Ch.6) and place them in `data/raw/`
+3.  Download NCERT Class 9 Science PDFs from the official source:
+    - **Source**: [https://ncert.nic.in/textbook.php?iesc1=0-11](https://ncert.nic.in/textbook.php?iesc1=0-11)
+    - Chapter 5 — The Fundamental Unit of Life (`iesc105.pdf`)
+    - Chapter 6 — Tissues (`iesc106.pdf`)
+    - Place both PDFs in `data/raw/`
 
 ### 3. Execution
 

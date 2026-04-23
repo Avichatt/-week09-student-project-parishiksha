@@ -130,7 +130,7 @@ EMBEDDING_CONFIG = {
 
 GENERATION_CONFIG = {
     # Gemini (decoder-only)
-    "gemini_model": "gemini-1.5-flash",
+    "gemini_model": "models/gemini-2.0-flash",
     "gemini_temperature": 0.3,         # Low temperature for factual grounding
     "gemini_max_tokens": 512,
     # T5 (encoder-decoder, for Stretch)

@@ -114,7 +114,11 @@ class ChunkEmbedder:
     def embed_query_dense(self, query: str) -> np.ndarray:
         """Embed a single query for dense retrieval."""
         if self.dense_model is None:
-            raise RuntimeError("Call embed_dense() first to load the model")
+            from sentence_transformers import SentenceTransformer
+            model_name = self.config.get("dense_model", "all-MiniLM-L6-v2")
+            logger.info(f"Loading SBERT model for query embedding: {model_name}")
+            self.dense_model = SentenceTransformer(model_name)
+            
         return self.dense_model.encode(
             [query], normalize_embeddings=True
         )[0]

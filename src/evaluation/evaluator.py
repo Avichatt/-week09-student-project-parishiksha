@@ -408,9 +408,9 @@ class PariShikshaEvaluator:
         print(f"Time: {meta.get('total_time_seconds', 0):.1f}s")
 
         agg = report.get("aggregate", {})
-        print(f"\n{'─'*50}")
+        print(f"\n{'-'*50}")
         print(f"OVERALL SCORE: {agg.get('overall_score', 0):.1%}")
-        print(f"{'─'*50}")
+        print(f"{'-'*50}")
 
         print(f"\nBreakdown by question type:")
         for qtype, metrics in agg.get("by_question_type", {}).items():
@@ -421,9 +421,9 @@ class PariShikshaEvaluator:
             print(f"    Retrieval recall:      {metrics['avg_retrieval_keyword_recall']:.1%}")
 
         # Per-question details
-        print(f"\n{'─'*50}")
+        print(f"\n{'-'*50}")
         print("PER-QUESTION RESULTS")
-        print(f"{'─'*50}")
+        print(f"{'-'*50}")
         for r in report.get("per_question", []):
             qtype = r.get("question_type", "?")
             quality = r.get("quality", {}).get("overall", r.get("quality", {}).get("score", "?"))

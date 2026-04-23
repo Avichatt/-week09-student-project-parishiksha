@@ -1,0 +1,42 @@
+# PariShiksha — .gitignore
+# =========================
+
+# Environment
+.env
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (keep structure, ignore large files)
+data/raw/*.pdf
+data/extracted/*.txt
+data/processed/*.json
+data/processed/*.pkl
+
+# Outputs (generated during runs)
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

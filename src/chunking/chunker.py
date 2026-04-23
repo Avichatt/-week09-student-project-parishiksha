@@ -1,17 +1,17 @@
-# =============================================================================
+
 # PariShiksha — Text Chunking Module
-# =============================================================================
+
 # Implements multiple chunking strategies for NCERT Science content.
 # This is where tokenizer analysis meets retrieval design.
-#
+
 # Three strategies:
 # 1. Fixed-token chunking: Split at fixed token intervals with overlap
 # 2. Sentence-based chunking: Group N sentences per chunk
 # 3. Semantic-paragraph chunking: Use section boundaries + paragraph breaks
-#
+
 # The chunk-size experiment (Stretch goal) runs all three at multiple sizes
 # and measures how well retrieval performs across configurations.
-# =============================================================================
+
 
 import json
 import re
@@ -75,9 +75,9 @@ class TextChunker:
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
         self.tokenizer_name = tokenizer_name
 
-    # -------------------------------------------------------------------------
+ 
     # Public API
-    # -------------------------------------------------------------------------
+
 
     def chunk_text(
         self,
@@ -211,9 +211,9 @@ class TextChunker:
 
         return experiment
 
-    # -------------------------------------------------------------------------
-    # Strategy 1: Fixed-Token Chunking
-    # -------------------------------------------------------------------------
+   
+    # Strategy : Fixed-Token Chunking
+  
 
     def _chunk_fixed_token(
         self, text: str, chunk_size: int, overlap_ratio: float
@@ -250,9 +250,9 @@ class TextChunker:
 
         return chunks
 
-    # -------------------------------------------------------------------------
-    # Strategy 2: Sentence-Based Chunking
-    # -------------------------------------------------------------------------
+  
+    # Strategy : Sentence-Based Chunking
+
 
     def _chunk_sentence_based(
         self, text: str, target_chunk_size: int, overlap_ratio: float
@@ -310,9 +310,9 @@ class TextChunker:
 
         return chunks
 
-    # -------------------------------------------------------------------------
-    # Strategy 3: Semantic Paragraph Chunking
-    # -------------------------------------------------------------------------
+ 
+    # Strategy : Semantic Paragraph Chunking
+ 
 
     def _chunk_semantic_paragraph(
         self, sections: List[Dict], target_chunk_size: int
@@ -432,9 +432,9 @@ class TextChunker:
 
         return chunks
 
-    # -------------------------------------------------------------------------
+
     # Utility
-    # -------------------------------------------------------------------------
+
 
     def save_chunks(self, chunks: List[Dict], chapter_key: str, label: str) -> Path:
         """Save chunks to JSON for downstream retrieval."""
@@ -458,9 +458,9 @@ class TextChunker:
         print(f"    Total tokens: {sum(token_counts)}")
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     chunker = TextChunker(tokenizer_name="bert-base-uncased")
 

@@ -1,6 +1,6 @@
-# =============================================================================
+
 # PariShiksha — Answer Generation Module
-# =============================================================================
+
 # Generates grounded answers using retrieved context chunks.
 # Supports two architectural families:
 #   1. Decoder-only (Gemini) — for high-quality generation
@@ -10,7 +10,7 @@
 # Any answer that goes beyond the textbook is a hallucination,
 # and in PariShiksha's context, a hallucination could mean a parent
 # pulls their child from the program.
-# =============================================================================
+
 
 import json
 from pathlib import Path
@@ -66,9 +66,9 @@ class AnswerGenerator:
         """Configure structured logging for generation tracking."""
         self.generation_log = []
 
-    # -------------------------------------------------------------------------
+
     # Gemini (Decoder-Only)
-    # -------------------------------------------------------------------------
+ 
 
     def _init_gemini(self) -> None:
         """Initialize Gemini API client."""
@@ -147,9 +147,9 @@ ANSWER:"""
 
         return result
 
-    # -------------------------------------------------------------------------
+
     # Flan-T5 (Encoder-Decoder)
-    # -------------------------------------------------------------------------
+ 
 
     def _init_t5(self) -> None:
         """Initialize Flan-T5 model and tokenizer."""
@@ -237,9 +237,9 @@ ANSWER:"""
 
         return result
 
-    # -------------------------------------------------------------------------
+
     # Unified Interface
-    # -------------------------------------------------------------------------
+
 
     def generate_answer(
         self,
@@ -313,9 +313,9 @@ ANSWER:"""
         logger.info(f"Saved {len(self.generation_log)} generation results to {output_path}")
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     generator = AnswerGenerator()
 

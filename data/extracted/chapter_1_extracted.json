@@ -1,0 +1,3932 @@
+{
+  "chapter_key": "chapter_1",
+  "metadata": {
+    "title": "Exploration: World of Secondary Science",
+    "class": 9,
+    "subject": "Science",
+    "source_file": "iesc101.pdf",
+    "total_pages_fitz": 7,
+    "total_pages_pdfplumber": 7
+  },
+  "pages_fitz": [
+    {
+      "page_num": 1,
+      "text": "Exploration: Entering the World of Secondary Science\n1\nIn the middle stage, science invited you to be curious and observe the \nworld closely, to ask questions, and to find out how things work. In our \njourney, we discovered that science began with wonder and grew through \ncareful experiments. We connected ideas across the world of the living and \nnon-living. As you now enter the secondary stage, this journey continues, \nbut with an emphasis on deep exploration. Science is not only about what \nwe know, but also about how we know it — how observations lead to \nmeasurements, how patterns are expressed using symbols and equations, \nhow models are built to represent complex systems, and how ideas are \ntested, often revised, and sometimes even discarded. In our secondary \nstage, textbook of science, Exploration, we will look more closely, think \nmore carefully, and find out how scientific ideas help us make sense of \nnature, technology and our place within them.\nTo reflect the approach of this textbook, the page numbers have \nbeen thoughtfully designed, and are framed by a magnifying glass and a \ncompass. The magnifying glass symbolises careful observation — noticing \npatterns and paying attention to what might otherwise be missed. The \ncompass reminds us that exploration also needs direction — choosing \nappropriate models, asking the right questions, and knowing the limits of \nwhere our ideas apply. Together, they tell us that exploration in science is \nnot wandering aimlessly, but trying to make sense of our world with care \nand purpose.\nChapter \n1\nExploration: Entering \nthe World of \nSecondary Science\n",
+      "blocks": [
+        {
+          "text": "Exploration: Entering the World of Secondary Science",
+          "bbox": [
+            246.5605926513672,
+            32.49729537963867,
+            502.3707580566406,
+            45.477294921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "1",
+          "bbox": [
+            534.260986328125,
+            35.20241928100586,
+            540.4099731445312,
+            49.986419677734375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "In the middle stage, science invited you to be curious and observe the",
+          "bbox": [
+            67.97599792480469,
+            420.206787109375,
+            460.846435546875,
+            434.48480224609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "world closely, to ask questions, and to find out how things work. In our",
+          "bbox": [
+            67.97599792480469,
+            433.40679931640625,
+            460.8650207519531,
+            447.684814453125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "journey, we discovered that science began with wonder and grew through",
+          "bbox": [
+            67.97599792480469,
+            446.6068115234375,
+            460.8343505859375,
+            460.88482666015625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "careful experiments. We connected ideas across the world of the living and",
+          "bbox": [
+            67.97599792480469,
+            459.80682373046875,
+            460.84405517578125,
+            474.0848388671875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "non-living. As you now enter the secondary stage, this journey continues,",
+          "bbox": [
+            67.97599792480469,
+            473.0068359375,
+            460.84088134765625,
+            487.28485107421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "but with an emphasis on deep exploration. Science is not only about what",
+          "bbox": [
+            67.97599792480469,
+            486.20684814453125,
+            460.86077880859375,
+            500.48486328125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "we know, but also about how we know it — how observations lead to",
+          "bbox": [
+            67.97599792480469,
+            499.4068603515625,
+            460.8408203125,
+            513.6848754882812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "measurements, how patterns are expressed using symbols and equations,",
+          "bbox": [
+            67.97599792480469,
+            512.6068725585938,
+            460.8266296386719,
+            526.8848876953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "how models are built to represent complex systems, and how ideas are",
+          "bbox": [
+            67.97599792480469,
+            525.806884765625,
+            460.8199157714844,
+            540.0848999023438
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "tested, often revised, and sometimes even discarded. In our secondary",
+          "bbox": [
+            67.97599792480469,
+            539.0068969726562,
+            460.8287353515625,
+            553.284912109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "stage, textbook of science,  Exploration , we will look more closely, think",
+          "bbox": [
+            67.97599792480469,
+            552.0968627929688,
+            460.8453369140625,
+            566.8038330078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "more carefully, and find out how scientific ideas help us make sense of",
+          "bbox": [
+            67.97599792480469,
+            565.4068603515625,
+            460.8407897949219,
+            579.6848754882812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "nature, technology and our place within them.",
+          "bbox": [
+            67.97599792480469,
+            578.6068725585938,
+            311.1529235839844,
+            592.8848876953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "To reflect the approach of this textbook, the page numbers have",
+          "bbox": [
+            85.97200012207031,
+            594.8098754882812,
+            460.8486022949219,
+            609.087890625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "been thoughtfully designed, and are framed by a magnifying glass and a",
+          "bbox": [
+            67.97599792480469,
+            608.0098876953125,
+            460.8398132324219,
+            622.2879028320312
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "compass. The magnifying glass symbolises careful observation — noticing",
+          "bbox": [
+            67.97599792480469,
+            621.2098999023438,
+            460.82659912109375,
+            635.4879150390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "patterns and paying attention to what might otherwise be missed. The",
+          "bbox": [
+            67.97599792480469,
+            634.4098510742188,
+            460.850830078125,
+            648.6878662109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "compass reminds us that exploration also needs direction — choosing",
+          "bbox": [
+            67.97599792480469,
+            647.60986328125,
+            460.8254699707031,
+            661.8878784179688
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "appropriate models, asking the right questions, and knowing the limits of",
+          "bbox": [
+            67.97599792480469,
+            660.8098754882812,
+            460.8518371582031,
+            675.087890625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "where our ideas apply. Together, they tell us that exploration in science is",
+          "bbox": [
+            67.97599792480469,
+            674.0098266601562,
+            460.8243103027344,
+            688.287841796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "not wandering aimlessly, but trying to make sense of our world with care",
+          "bbox": [
+            67.97599792480469,
+            687.2098388671875,
+            460.8551025390625,
+            701.4878540039062
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "and purpose.",
+          "bbox": [
+            67.97599792480469,
+            700.4098510742188,
+            136.4949951171875,
+            714.6878662109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Chapter",
+          "bbox": [
+            372.9242248535156,
+            12.988214492797852,
+            462.6036071777344,
+            39.97663497924805
+          ],
+          "font_size": 21.150800704956055
+        },
+        {
+          "text": "1",
+          "bbox": [
+            392.0541076660156,
+            33.8560791015625,
+            428.38909912109375,
+            118.22607421875
+          ],
+          "font_size": 65.0
+        },
+        {
+          "text": "Exploration: Entering",
+          "bbox": [
+            50.97599792480469,
+            12.54571533203125,
+            341.11004638671875,
+            55.13371276855469
+          ],
+          "font_size": 26.0
+        },
+        {
+          "text": "the World of",
+          "bbox": [
+            50.97599792480469,
+            43.7457275390625,
+            224.36997985839844,
+            86.33372497558594
+          ],
+          "font_size": 26.0
+        },
+        {
+          "text": "Secondary Science",
+          "bbox": [
+            50.97599792480469,
+            74.94573974609375,
+            298.8080139160156,
+            117.53373718261719
+          ],
+          "font_size": 26.0
+        }
+      ],
+      "char_count": 1626,
+      "has_images": true
+    },
+    {
+      "page_num": 2,
+      "text": "Exploration|Grade 9\n2\nThe natural world is complex, and studying it in full detail is often \nimpossible. To make sense of this complexity, science uses models. These \nare simplified ways of looking at real systems that focus only on what \nis most important for a given question. In physics, a moving car may be \nrepresented as a single point, while in chemistry, atoms and molecules \nare drawn as spheres and bonds. In biology, cells are shown as diagrams \nhighlighting key parts, and in earth science, the Earth may be treated \nas a smooth sphere layered into distinct regions. Building such models \ninvolves making assumptions and deliberately ignoring certain details. For \nexample, when studying the motion of a falling object, air resistance may \nbe neglected to understand the basic effect of gravity. In biology, when \nstudying how the heart pumps blood, many individual cells are ignored \nso that the organ can be understood as a functioning system. Remember \nthat these choices are not mistakes, they are done on purpose to keep \nthings simple enough, but still allow us to find answers to what we are \nlooking for.\nExample 1.1: A cricket shot. Think of a cricket ball being hit for \na six. You want to make a simple model. What details would you \ninclude? What would you ignore?\nAnswer: We must ask, “Will the ball cross the boundary without \nhitting the ground first?”. For this, things like the brand of the \nbat, the colour of the ball, the amount of grass on the field will \nmake no difference. On the other hand, the mass of the ball, \nand the speed and direction in which it has been hit will be \nvery important. Air resistance, the spin of the ball, and the \nstitching of the threads at the seam have smaller effects that \ncan be ignored in a simple model. As we build more and more \ncomplex models, we add extra details for greater accuracy. \nActivity 1.1: Let us model\nSuppose you ride a bicycle from your school to your home. You \nwant to model the time it takes to go home from school. What \ndetails would you keep? What details could you ignore? Suggest \nwhy ignoring some details may actually be useful.\nAs you explore science more deeply, you will notice that it \nuses language in a very careful and precise way. Many words \nthat we use in everyday life, such as force, work, cell, or reaction \nhave specific meanings in science. These meanings are often \nvery specific because scientific ideas must be communicated \nclearly and unambiguously. To allow scientists across the world \nto describe observations, compare results, and build ideas \ntogether, science uses a shared language of these specific terms, \nsymbols, and units. Quantities, such as mass, velocity, force, and \nelectric current are represented by symbols like m, v, F, and I \neach associated with a defined unit. \nTo make this even more precise, science often turns to \nmathematics to allow relationships between quantities to be \nexpressed clearly and tested carefully. This can sometimes feel \nMeet a Scientist\nSimplifying the stars: \nScience often begins by \nignoring details. When \nphysicist Meghnad Saha \nstudied the light from stars, \nhe did not try to model \nevery atom, every reaction, \nor every movement inside a \nstar. Instead, he treated the \nmatter in the star as a hot \ngas, ignored many complex \nprocesses, and focused only \non temperature, pressure, \nand how atoms formed \nions. This simplification \nallowed him to explain \nhow the colour of stars is \ndeeply connected to their \ntemperature.\nMeghnad Saha on an \nIndian postage stamp\n",
+      "blocks": [
+        {
+          "text": "Exploration|Grade 9",
+          "bbox": [
+            80.97599792480469,
+            741.9774169921875,
+            179.6310272216797,
+            754.9573974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "2",
+          "bbox": [
+            52.54199981689453,
+            737.666015625,
+            59.808998107910156,
+            755.1380004882812
+          ],
+          "font_size": 13.0
+        },
+        {
+          "text": "The natural world is complex, and studying it in full detail is often",
+          "bbox": [
+            153.9759979248047,
+            68.20692443847656,
+            528.8812255859375,
+            82.48492431640625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "impossible. To make sense of this complexity, science uses models. These",
+          "bbox": [
+            135.97999572753906,
+            81.40693664550781,
+            528.8538208007812,
+            95.6849365234375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "are simplified ways of looking at real systems that focus only on what",
+          "bbox": [
+            135.97999572753906,
+            94.60694885253906,
+            528.8230590820312,
+            108.88494873046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "is most important for a given question. In physics, a moving car may be",
+          "bbox": [
+            135.97999572753906,
+            107.80696105957031,
+            528.8319702148438,
+            122.0849609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "represented as a single point, while in chemistry, atoms and molecules",
+          "bbox": [
+            135.97999572753906,
+            121.00697326660156,
+            528.8483276367188,
+            135.28497314453125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "are drawn as spheres and bonds. In biology, cells are shown as diagrams",
+          "bbox": [
+            135.97999572753906,
+            134.2069854736328,
+            528.8309326171875,
+            148.4849853515625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "highlighting key parts, and in earth science, the Earth may be treated",
+          "bbox": [
+            135.97999572753906,
+            147.40699768066406,
+            528.8757934570312,
+            161.68499755859375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "as a smooth sphere layered into distinct regions. Building such models",
+          "bbox": [
+            135.97999572753906,
+            160.6070098876953,
+            528.8582763671875,
+            174.885009765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "involves  making assumptions and deliberately ignoring certain details . For",
+          "bbox": [
+            135.97999572753906,
+            173.80702209472656,
+            528.8339233398438,
+            189.61402893066406
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "example, when studying the motion of a falling object, air resistance may",
+          "bbox": [
+            135.97999572753906,
+            187.0070343017578,
+            528.8108520507812,
+            201.2850341796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "be neglected to understand the basic effect of gravity. In biology, when",
+          "bbox": [
+            135.97999572753906,
+            200.20704650878906,
+            528.8383178710938,
+            214.48504638671875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "studying how the heart pumps blood, many individual cells are ignored",
+          "bbox": [
+            135.97999572753906,
+            213.4070587158203,
+            528.8758544921875,
+            227.68505859375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "so that the organ can be understood as a functioning system. Remember",
+          "bbox": [
+            135.97999572753906,
+            226.60707092285156,
+            528.8692016601562,
+            240.88507080078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "that these choices are not mistakes, they are done on purpose to keep",
+          "bbox": [
+            135.97999572753906,
+            239.8070831298828,
+            528.8119506835938,
+            254.0850830078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "things simple enough, but still allow us to find answers to what we are",
+          "bbox": [
+            135.97999572753906,
+            253.00709533691406,
+            528.9012451171875,
+            267.28509521484375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "looking for.",
+          "bbox": [
+            135.97999572753906,
+            266.20709228515625,
+            197.45901489257812,
+            280.485107421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Example 1.1: A cricket shot . Think of a cricket ball being hit for",
+          "bbox": [
+            194.88499450683594,
+            284.22509765625,
+            528.8536987304688,
+            299.00909423828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "a six. You want to make a simple model. What details would you",
+          "bbox": [
+            194.88497924804688,
+            297.61212158203125,
+            528.82275390625,
+            311.8901062011719
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "include? What would you ignore?",
+          "bbox": [
+            194.88497924804688,
+            310.8121337890625,
+            371.4239196777344,
+            325.0901184082031
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Answer:  We must ask, “Will the ball cross the boundary without",
+          "bbox": [
+            194.88497924804688,
+            326.828125,
+            528.8779907226562,
+            341.61212158203125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "hitting the ground first?”. For this, things like the brand of the",
+          "bbox": [
+            194.88497924804688,
+            340.21514892578125,
+            528.855712890625,
+            354.4931335449219
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "bat, the colour of the ball, the amount of grass on the field will",
+          "bbox": [
+            194.88497924804688,
+            353.4151611328125,
+            528.8240966796875,
+            367.6931457519531
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "make no difference. On the other hand, the mass of the ball,",
+          "bbox": [
+            194.88497924804688,
+            366.61517333984375,
+            528.8340454101562,
+            380.8931579589844
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "and the speed and direction in which it has been hit will be",
+          "bbox": [
+            194.88497924804688,
+            379.815185546875,
+            528.8462524414062,
+            394.0931701660156
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "very important. Air resistance, the spin of the ball, and the",
+          "bbox": [
+            194.88497924804688,
+            393.01519775390625,
+            528.858154296875,
+            407.2931823730469
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "stitching of the threads at the seam have smaller effects that",
+          "bbox": [
+            194.88497924804688,
+            406.2152099609375,
+            528.8131103515625,
+            420.4931945800781
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "can be ignored in a simple model. As we build more and more",
+          "bbox": [
+            194.88497924804688,
+            419.41522216796875,
+            528.8450317382812,
+            433.6932067871094
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "complex models, we add extra details for greater accuracy.",
+          "bbox": [
+            194.881103515625,
+            432.6068115234375,
+            511.13250732421875,
+            446.8847961425781
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Activity 1.1: Let us model",
+          "bbox": [
+            194.881103515625,
+            452.7547912597656,
+            346.9319152832031,
+            468.8827819824219
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Suppose you ride a bicycle from your school to your home. You",
+          "bbox": [
+            194.881103515625,
+            470.206787109375,
+            528.8165283203125,
+            484.48480224609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "want to model the time it takes to go home from school. What",
+          "bbox": [
+            194.881103515625,
+            483.40679931640625,
+            528.8519897460938,
+            497.684814453125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "details would you keep? What details could you ignore? Suggest",
+          "bbox": [
+            194.881103515625,
+            496.6068115234375,
+            528.8387451171875,
+            510.88482666015625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "why ignoring some details may actually be useful.",
+          "bbox": [
+            194.881103515625,
+            509.80682373046875,
+            456.0749206542969,
+            524.0848388671875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "As you explore science more deeply, you will notice that it",
+          "bbox": [
+            212.87710571289062,
+            526.0098266601562,
+            528.8432006835938,
+            540.287841796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "uses language in a very careful and precise way. Many words",
+          "bbox": [
+            194.881103515625,
+            539.2098388671875,
+            528.8178100585938,
+            553.4878540039062
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "that we use in everyday life, such as force, work, cell, or reaction",
+          "bbox": [
+            194.881103515625,
+            552.4098510742188,
+            528.8472900390625,
+            566.6878662109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "have specific meanings in science. These meanings are often",
+          "bbox": [
+            194.881103515625,
+            565.6098022460938,
+            528.8265380859375,
+            579.8878173828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "very specific because scientific ideas must be communicated",
+          "bbox": [
+            194.881103515625,
+            578.809814453125,
+            528.838623046875,
+            593.0878295898438
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "clearly and unambiguously. To allow scientists across the world",
+          "bbox": [
+            194.881103515625,
+            592.0098266601562,
+            528.837646484375,
+            606.287841796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "to describe observations, compare results, and build ideas",
+          "bbox": [
+            194.881103515625,
+            605.2097778320312,
+            528.83447265625,
+            619.48779296875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "together, science uses a shared language of these specific terms,",
+          "bbox": [
+            194.881103515625,
+            618.4097900390625,
+            528.8409423828125,
+            632.6878051757812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "symbols, and units. Quantities, such as mass, velocity, force, and",
+          "bbox": [
+            194.881103515625,
+            631.6098022460938,
+            528.8507080078125,
+            645.8878173828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "electric current are represented by  symbols  like m, v, F, and I",
+          "bbox": [
+            194.881103515625,
+            644.622802734375,
+            528.8431396484375,
+            659.4068603515625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "each associated with a defined unit.",
+          "bbox": [
+            194.88108825683594,
+            658.0098266601562,
+            384.84002685546875,
+            672.287841796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "To make this even more precise, science often turns to",
+          "bbox": [
+            212.87709045410156,
+            674.2128295898438,
+            528.7871704101562,
+            688.4908447265625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "mathematics to allow relationships between quantities to be",
+          "bbox": [
+            194.88108825683594,
+            687.4127807617188,
+            528.8377685546875,
+            701.6907958984375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "expressed clearly and tested carefully. This can sometimes feel",
+          "bbox": [
+            194.88108825683594,
+            700.61279296875,
+            528.8432006835938,
+            714.8908081054688
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Meet a Scientist",
+          "bbox": [
+            41.881103515625,
+            289.522216796875,
+            137.53309631347656,
+            305.65020751953125
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Simplifying the stars:",
+          "bbox": [
+            41.47599792480469,
+            472.0277099609375,
+            152.14601135253906,
+            485.46771240234375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Science often begins by",
+          "bbox": [
+            41.47600555419922,
+            484.19769287109375,
+            154.90699768066406,
+            497.1777038574219
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "ignoring details. When",
+          "bbox": [
+            41.47600555419922,
+            496.19769287109375,
+            152.38600158691406,
+            509.1777038574219
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "physicist  Meghnad Saha",
+          "bbox": [
+            41.47600555419922,
+            508.0277404785156,
+            162.23101806640625,
+            521.4677124023438
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "studied the light from stars,",
+          "bbox": [
+            41.47600555419922,
+            520.19775390625,
+            175.45602416992188,
+            533.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "he did not try to model",
+          "bbox": [
+            41.47600555419922,
+            532.19775390625,
+            152.97601318359375,
+            545.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "every atom, every reaction,",
+          "bbox": [
+            41.47600555419922,
+            544.19775390625,
+            174.4960174560547,
+            557.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "or every movement inside a",
+          "bbox": [
+            41.47600555419922,
+            556.19775390625,
+            177.0860137939453,
+            569.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "star. Instead, he treated the",
+          "bbox": [
+            41.47600555419922,
+            568.19775390625,
+            174.2560577392578,
+            581.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "matter in the star as a hot",
+          "bbox": [
+            41.47600555419922,
+            580.19775390625,
+            166.50604248046875,
+            593.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "gas, ignored many complex",
+          "bbox": [
+            41.47600555419922,
+            592.19775390625,
+            174.38401794433594,
+            605.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "processes, and focused only",
+          "bbox": [
+            41.47600555419922,
+            604.19775390625,
+            176.0660400390625,
+            617.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "on temperature, pressure,",
+          "bbox": [
+            41.47600555419922,
+            616.19775390625,
+            168.0070343017578,
+            629.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "and how atoms formed",
+          "bbox": [
+            41.47600555419922,
+            628.19775390625,
+            154.82601928710938,
+            641.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "ions. This simplification",
+          "bbox": [
+            41.47600555419922,
+            640.19775390625,
+            157.87600708007812,
+            653.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "allowed him to explain",
+          "bbox": [
+            41.47600555419922,
+            652.19775390625,
+            153.52601623535156,
+            665.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "how the colour of stars is",
+          "bbox": [
+            41.47600555419922,
+            664.19775390625,
+            163.70603942871094,
+            677.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "deeply connected to their",
+          "bbox": [
+            41.47600555419922,
+            676.19775390625,
+            164.89605712890625,
+            689.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "temperature.",
+          "bbox": [
+            41.47600555419922,
+            688.19775390625,
+            103.85699462890625,
+            701.177734375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Meghnad Saha on an",
+          "bbox": [
+            61.083396911621094,
+            442.2439880371094,
+            151.3983917236328,
+            455.177001953125
+          ],
+          "font_size": 9.0
+        },
+        {
+          "text": "Indian postage stamp",
+          "bbox": [
+            59.88189697265625,
+            453.04400634765625,
+            150.25985717773438,
+            465.9770202636719
+          ],
+          "font_size": 9.0
+        }
+      ],
+      "char_count": 3538,
+      "has_images": true
+    },
+    {
+      "page_num": 3,
+      "text": "Exploration: Entering the World of Secondary Science\n3\nchallenging, but it is important to remember that mathematics \nin science is not meant to be a hurdle. Instead, it is a language \nthat helps us think more clearly about the world. An equation \nis not just a calculation tool, it is a compact statement about \nhow certain things are related. For example, describing \nmotion using quantities, such as distance, time, and velocity \nallows us to answer questions about where an object will \nbe at a later moment. In the same way, mathematical \nexpressions are used to describe rates of chemical reactions, \npatterns of population growth, or changes in energy within \na system. Learning to use mathematics in science does not \nmean memorising equations. It means understanding the \nsituation first, identifying relevant quantities, and then using \nmathematical relationships to reason carefully. In this way, \nmathematics becomes a powerful language for thinking, \nnot just for finding numerical answers. If you focus first on \nunderstanding the situation and the quantities involved, \nequations will begin to feel less like obstacles and more like \nhelpful guides in your exploration of science.\nReady to Go Beyond \nAirplane fuel miscalculation\nIn a well-known incident, a passenger aircraft ran out of fuel mid-flight due to a mix-up in units. \nThe flight needed 22,300 kg fuel in total, but the ground crew miscalculated the fuel required, \nsince they used the density of fuel in pounds (lb) per litre rather than kilograms (kg) per litre. \nThe aircraft was about 15,000 litres short of fuel and luckily could glide to an emergency landing, \nwhich damaged the aircraft though there were no casualties. Pounds and kilograms are very \ndifferent. Using standard units (SI) everywhere avoids conversions and errors. \nWhy is a kilogram used everywhere? \nWhen we buy rice or vegetables we expect a kilogram \nto mean the same amount everywhere (Fig. 1.1). Imagine \nthe confusion if we used different weights everywhere! \nThankfully, \nmeasurements \nare \nbased \non \nagreed \ninternational standards, not local objects or opinions. \nStandard units allow scientific results to be compared, \nand ensure fairness in daily life and trade.\nThreads of Curiosity\nFig. 1.1: A vegetable seller using a pan balance\nAs observations are repeated, measurements refined, and ideas tested \nthrough experiments we can organise our understanding of the world \nin a systematic way. In the secondary stage, you will come across terms, \nsuch as laws, theories, and principles — terms that have specific meaning \nin science. A law usually describes a regular pattern observed in nature, \noften expressed using words or mathematical relationships. For example, \nNewton’s laws of motion explain the jerk felt when a bus stops suddenly. \nThreads of \nCuriosity\nWhy is the speed of light \ndenoted by ‘c’? \nScientific symbols often \ncome from history, and \nare based on international \nagreements, not necessarily \nabbreviations of \nconvenience. For example, \nthe speed of light, is usually \ndenoted with the symbol c, \nsince it comes from the Latin \nword celeritas, meaning \nspeed. Today, the speed of \nlight is one of the physical \nconstants, defined to be \nexactly 299792458 m/s.\n",
+      "blocks": [
+        {
+          "text": "Exploration: Entering the World of Secondary Science",
+          "bbox": [
+            246.5605926513672,
+            32.49741744995117,
+            502.3707580566406,
+            45.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "3",
+          "bbox": [
+            534.260986328125,
+            35.20241928100586,
+            540.4099731445312,
+            49.986419677734375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "challenging, but it is important to remember that mathematics",
+          "bbox": [
+            67.97099304199219,
+            68.20240783691406,
+            391.8351745605469,
+            82.48040771484375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "in science is not meant to be a hurdle. Instead, it is a language",
+          "bbox": [
+            67.97099304199219,
+            81.40242004394531,
+            391.8461608886719,
+            95.680419921875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "that helps us think more clearly about the world. An equation",
+          "bbox": [
+            67.97099304199219,
+            94.60243225097656,
+            391.83404541015625,
+            108.88043212890625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "is not just a calculation tool, it is a compact statement about",
+          "bbox": [
+            67.97099304199219,
+            107.80244445800781,
+            391.8440856933594,
+            122.0804443359375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "how certain things are related. For example, describing",
+          "bbox": [
+            67.97099304199219,
+            121.00245666503906,
+            391.8428955078125,
+            135.28045654296875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "motion using quantities, such as distance, time, and velocity",
+          "bbox": [
+            67.97099304199219,
+            134.2024688720703,
+            391.82086181640625,
+            148.48046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "allows us to answer questions about where an object will",
+          "bbox": [
+            67.97099304199219,
+            147.40248107910156,
+            391.8561096191406,
+            161.68048095703125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "be at a later moment. In the same way, mathematical",
+          "bbox": [
+            67.97099304199219,
+            160.6024932861328,
+            391.82318115234375,
+            174.8804931640625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "expressions are used to describe rates of chemical reactions,",
+          "bbox": [
+            67.97099304199219,
+            173.80250549316406,
+            391.79559326171875,
+            188.08050537109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "patterns of population growth, or changes in energy within",
+          "bbox": [
+            67.97099304199219,
+            187.0025177001953,
+            391.8329772949219,
+            201.280517578125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "a system. Learning to use mathematics in science does not",
+          "bbox": [
+            67.97099304199219,
+            200.20252990722656,
+            391.81103515625,
+            214.48052978515625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "mean memorising equations. It means understanding the",
+          "bbox": [
+            67.97099304199219,
+            213.4025421142578,
+            391.83087158203125,
+            227.6805419921875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "situation first, identifying relevant quantities, and then using",
+          "bbox": [
+            67.97099304199219,
+            226.60255432128906,
+            391.8219909667969,
+            240.88055419921875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "mathematical relationships to reason carefully. In this way,",
+          "bbox": [
+            67.97099304199219,
+            239.8025665283203,
+            391.8197937011719,
+            254.08056640625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "mathematics becomes a powerful language for thinking,",
+          "bbox": [
+            67.97099304199219,
+            253.00257873535156,
+            391.8341064453125,
+            267.28057861328125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "not just for finding numerical answers. If you focus first on",
+          "bbox": [
+            67.97099304199219,
+            266.20257568359375,
+            391.8111572265625,
+            280.4805908203125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "understanding the situation and the quantities involved,",
+          "bbox": [
+            67.97099304199219,
+            279.402587890625,
+            391.865966796875,
+            293.68060302734375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "equations will begin to feel less like obstacles and more like",
+          "bbox": [
+            67.97099304199219,
+            292.60260009765625,
+            391.813232421875,
+            306.880615234375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "helpful guides in your exploration of science.",
+          "bbox": [
+            67.97099304199219,
+            305.8026123046875,
+            309.00518798828125,
+            320.08062744140625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Ready to Go Beyond",
+          "bbox": [
+            100.19929504394531,
+            331.6120910644531,
+            223.7512664794922,
+            347.7400817871094
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Airplane fuel miscalculation",
+          "bbox": [
+            98.47599792480469,
+            353.2145080566406,
+            243.12606811523438,
+            366.6545104980469
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "In a well-known incident, a passenger aircraft ran out of fuel mid-flight due to a mix-up in units.",
+          "bbox": [
+            98.47599792480469,
+            368.3844909667969,
+            551.8162841796875,
+            381.364501953125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "The flight needed 22,300 kg fuel in total, but the ground crew miscalculated the fuel required,",
+          "bbox": [
+            98.47599792480469,
+            380.3844909667969,
+            551.8012084960938,
+            393.364501953125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "since they used the density of fuel in pounds (lb) per litre rather than kilograms (kg) per litre.",
+          "bbox": [
+            98.47599792480469,
+            392.3844909667969,
+            551.7783813476562,
+            405.364501953125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "The aircraft was about 15,000 litres short of fuel and luckily could glide to an emergency landing,",
+          "bbox": [
+            98.47599792480469,
+            404.3844909667969,
+            551.7982788085938,
+            417.364501953125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "which damaged the aircraft though there were no casualties. Pounds and kilograms are very",
+          "bbox": [
+            98.47599792480469,
+            416.3844909667969,
+            551.8322143554688,
+            429.364501953125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "different. Using standard units (SI) everywhere avoids conversions and errors.",
+          "bbox": [
+            98.47599792480469,
+            428.3844909667969,
+            474.7562255859375,
+            441.364501953125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Why is a kilogram used everywhere?",
+          "bbox": [
+            90.19129943847656,
+            493.6952209472656,
+            278.7444152832031,
+            507.1352233886719
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "When we buy rice or vegetables we expect a kilogram",
+          "bbox": [
+            90.19129943847656,
+            508.8652038574219,
+            362.5765380859375,
+            521.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "to mean the same amount everywhere (Fig. 1.1). Imagine",
+          "bbox": [
+            90.19129943847656,
+            520.865234375,
+            362.57147216796875,
+            533.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "the confusion if we used different weights everywhere!",
+          "bbox": [
+            90.19129943847656,
+            532.865234375,
+            362.5614013671875,
+            545.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Thankfully,",
+          "bbox": [
+            90.19129943847656,
+            544.865234375,
+            146.68731689453125,
+            557.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "measurements",
+          "bbox": [
+            155.48731994628906,
+            544.865234375,
+            228.71734619140625,
+            557.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "are",
+          "bbox": [
+            237.5233612060547,
+            544.865234375,
+            255.81336975097656,
+            557.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "based",
+          "bbox": [
+            264.6133728027344,
+            544.865234375,
+            294.9834289550781,
+            557.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "on",
+          "bbox": [
+            303.7834167480469,
+            544.865234375,
+            318.6034240722656,
+            557.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "agreed",
+          "bbox": [
+            327.4034118652344,
+            544.865234375,
+            362.5634460449219,
+            557.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "international standards, not local objects or opinions.",
+          "bbox": [
+            90.19129943847656,
+            556.865234375,
+            362.5914306640625,
+            569.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Standard units allow scientific results to be compared,",
+          "bbox": [
+            90.19129943847656,
+            568.865234375,
+            362.5713806152344,
+            581.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "and ensure fairness in daily life and trade.",
+          "bbox": [
+            90.19129943847656,
+            580.865234375,
+            291.9504089355469,
+            593.84521484375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Threads of Curiosity",
+          "bbox": [
+            117.00259399414062,
+            463.5220947265625,
+            241.04660034179688,
+            479.65008544921875
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Fig. 1.1: A vegetable seller using a pan balance",
+          "bbox": [
+            361.1809997558594,
+            590.2529296875,
+            554.7711181640625,
+            603.1859130859375
+          ],
+          "font_size": 9.0
+        },
+        {
+          "text": "As observations are repeated, measurements refined, and ideas tested",
+          "bbox": [
+            85.97599792480469,
+            619.7730102539062,
+            460.8327941894531,
+            634.051025390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "through experiments we can organise our understanding of the world",
+          "bbox": [
+            67.97999572753906,
+            632.9729614257812,
+            460.8305358886719,
+            647.2509765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "in a systematic way. In the secondary stage, you will come across terms,",
+          "bbox": [
+            67.97999572753906,
+            646.1729736328125,
+            460.84381103515625,
+            660.4509887695312
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "such as laws, theories, and principles — terms that have specific meaning",
+          "bbox": [
+            67.97999572753906,
+            659.3729858398438,
+            460.84271240234375,
+            673.6510009765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "in science. A  law  usually describes a regular pattern observed in nature,",
+          "bbox": [
+            67.97999572753906,
+            672.3859252929688,
+            460.8229064941406,
+            687.169921875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "often expressed using words or mathematical relationships. For example,",
+          "bbox": [
+            67.97999572753906,
+            685.77294921875,
+            460.8382263183594,
+            700.0509643554688
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Newton’s laws of motion explain the jerk felt when a bus stops suddenly.",
+          "bbox": [
+            67.97999572753906,
+            698.9729614257812,
+            460.8613586425781,
+            713.2509765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Threads of",
+          "bbox": [
+            435.12451171875,
+            70.02218627929688,
+            503.4044189453125,
+            86.15018463134766
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Curiosity",
+          "bbox": [
+            435.12451171875,
+            84.42221069335938,
+            490.88848876953125,
+            100.55020904541016
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Why is the speed of light",
+          "bbox": [
+            413.3760070800781,
+            109.01448822021484,
+            539.5349731445312,
+            122.4544906616211
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "denoted by ‘c’?",
+          "bbox": [
+            413.3760070800781,
+            121.01448822021484,
+            490.8629455566406,
+            134.45448303222656
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Scientific symbols often",
+          "bbox": [
+            413.3760070800781,
+            136.1844940185547,
+            528.97607421875,
+            149.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "come from history, and",
+          "bbox": [
+            413.3760070800781,
+            148.1844940185547,
+            526.4201049804688,
+            161.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "are based on international",
+          "bbox": [
+            413.3760070800781,
+            160.1844940185547,
+            542.4361572265625,
+            173.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "agreements, not necessarily",
+          "bbox": [
+            413.3760070800781,
+            172.1844940185547,
+            548.4960327148438,
+            185.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "abbreviations of",
+          "bbox": [
+            413.3760070800781,
+            184.1844940185547,
+            494.0760803222656,
+            197.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "convenience. For example,",
+          "bbox": [
+            413.3760070800781,
+            196.1844940185547,
+            542.9620361328125,
+            209.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "the speed of light, is usually",
+          "bbox": [
+            413.3760070800781,
+            208.1844940185547,
+            547.5960083007812,
+            221.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "denoted with the symbol c,",
+          "bbox": [
+            413.3760070800781,
+            220.1844940185547,
+            544.0460205078125,
+            233.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "since it comes from the Latin",
+          "bbox": [
+            413.3760070800781,
+            232.1844940185547,
+            553.9960327148438,
+            245.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "word  celeritas , meaning",
+          "bbox": [
+            413.3760070800781,
+            244.1844940185547,
+            530.426025390625,
+            258.55450439453125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "speed. Today, the speed of",
+          "bbox": [
+            413.3760070800781,
+            256.1844787597656,
+            538.9540405273438,
+            269.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "light is one of the physical",
+          "bbox": [
+            413.3760070800781,
+            268.1844787597656,
+            539.7730102539062,
+            281.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "constants, defined to be",
+          "bbox": [
+            413.3760070800781,
+            280.1844787597656,
+            528.6560668945312,
+            293.16448974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "exactly 299792458 m/s.",
+          "bbox": [
+            413.3760070800781,
+            292.1844787597656,
+            522.176025390625,
+            305.16448974609375
+          ],
+          "font_size": 10.0
+        }
+      ],
+      "char_count": 3246,
+      "has_images": true
+    },
+    {
+      "page_num": 4,
+      "text": "Exploration|Grade 9\n4\nA theory goes a step further and provides an explanation of why those \npatterns occur, usually based on evidence gathered over time and available \nat that time. For example, the atomic theory explains how molecules are \nformed. Principles are broad ideas that help us make sense in a given \nsituation. For example, the principle of conservation of energy being \napplied when climbing up the stairs. \nDo remember that in science, a theory does not mean a guess or an \nuntested idea, it is an explanation based on careful testing and critical \nexamination. These ideas are always open to improvement and often \nchange as new evidence becomes available. This is a key feature of science \nthat makes it reliable.\nOne of the most remarkable strengths of science is its ability to make \npredictions. When laws, theories, and models are well established they \nallow us to anticipate what will happen under new or different conditions, \nbefore we can perform an experiment, and in many cases even if we cannot \nperform an experiment. Using ideas about motion, we can predict how far \na kicked football will travel; using knowledge of chemical reactions, we can \nestimate how much carbon dioxide will be produced, or how soft a baked \nbread would be; using biological principles, we can predict how one’s \nbreathing would change while running. Remember that these predictions \nare not guesses, they are reasoned expectations based on evidence and \ncareful thinking. When predictions match observations, confidence in the \nunderlying science grows. But even more important, when they do not, \nscientists re-examine their assumptions, models, or measurements. In this \nway, prediction is a powerful tool that drives further exploration and a \ndeeper understanding of the world.\nExample 1.2: How do we check predictions? Varsha told her friend \nMeghna, “It will rain this afternoon because the clouds look dark”. Think \nof some questions Meghna could ask Varsha to make this prediction \nscientifically testable.\nAnswer: Good scientific questions will look for measurable evidence and \npast patterns. Questions with simple yes/no answers are usually not so \nuseful. Meghna could ask Varsha questions like (these are just examples) \n“What was the condition of sky when it rained the last time? What is the \nhumidity today? Was it above 80 per cent the last time it rained? What is \ntoday’s wind speed and direction? Is the temperature dropping like it did \nbefore the recent rains?”. Questions like these ask about measurable data \nand past patterns, which go beyond mere ‘clouds look dark’.\nWhy do weather forecasts sometimes go wrong? \nWeather depends on many changing factors, such as temperature, pressure, humidity, and \nwind. Weather forecasts use measurements and models, but very tiny differences in conditions \ncan grow over time and lead to something completely different. This is why forecasts are \nusually reliable for a few hours or even a few days, but less certain further into the future.\nReady to Go Beyond \nEven the most successful scientific theories have limits and may fail \nwhen new conditions are explored or when measurements become more \n1.\t Think of a \nprediction you \nor your family \nmade recently \n(for example, \nthe outcome \nof a cricket \nmatch). Was \nit based on \nevidence and \nreasoning, \nor mainly on \nguesswork? \nHow can \nscientific \nthinking \nimprove such \npredictions?\nPause and \nPonder\n",
+      "blocks": [
+        {
+          "text": "Exploration|Grade 9",
+          "bbox": [
+            80.97599792480469,
+            741.9774169921875,
+            179.6310272216797,
+            754.9573974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "4",
+          "bbox": [
+            52.54199981689453,
+            737.666015625,
+            59.808998107910156,
+            755.1380004882812
+          ],
+          "font_size": 13.0
+        },
+        {
+          "text": "A  theory  goes a step further and provides an explanation of why those",
+          "bbox": [
+            135.9759979248047,
+            68.01828002929688,
+            528.8322143554688,
+            82.80227661132812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "patterns occur, usually based on evidence gathered over time and available",
+          "bbox": [
+            135.96499633789062,
+            81.40528869628906,
+            528.8343505859375,
+            95.68328857421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "at that time. For example, the atomic theory explains how molecules are",
+          "bbox": [
+            135.96499633789062,
+            94.60530090332031,
+            528.8321533203125,
+            108.88330078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "formed.  Principles  are broad ideas that help us make sense in a given",
+          "bbox": [
+            135.96499633789062,
+            107.61831665039062,
+            528.8355102539062,
+            122.40231323242188
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "situation. For example, the principle of conservation of energy being",
+          "bbox": [
+            135.96498107910156,
+            121.00532531738281,
+            528.8056640625,
+            135.2833251953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "applied when climbing up the stairs.",
+          "bbox": [
+            135.96498107910156,
+            134.20533752441406,
+            329.78497314453125,
+            148.48333740234375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Do remember that in science, a theory does not mean a guess or an",
+          "bbox": [
+            153.9609832763672,
+            150.40834045410156,
+            528.829833984375,
+            164.68634033203125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "untested idea, it is an explanation based on careful testing and critical",
+          "bbox": [
+            135.96498107910156,
+            163.6083526611328,
+            528.828857421875,
+            177.8863525390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "examination. These ideas are always open to improvement and often",
+          "bbox": [
+            135.96498107910156,
+            176.80836486816406,
+            528.8474731445312,
+            191.08636474609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "change as new evidence becomes available. This is a key feature of science",
+          "bbox": [
+            135.96498107910156,
+            190.0083770751953,
+            528.8067626953125,
+            204.286376953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "that makes it reliable.",
+          "bbox": [
+            135.96498107910156,
+            203.20838928222656,
+            249.48936462402344,
+            217.48638916015625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "One of the most remarkable strengths of science is its ability to make",
+          "bbox": [
+            153.9609832763672,
+            219.41139221191406,
+            528.8034057617188,
+            233.68939208984375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "predictions . When laws, theories, and models are well established they",
+          "bbox": [
+            135.96498107910156,
+            232.42440795898438,
+            528.8145751953125,
+            247.20840454101562
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "allow us to anticipate what will happen under new or different conditions,",
+          "bbox": [
+            135.96498107910156,
+            245.81141662597656,
+            528.841064453125,
+            260.08941650390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "before we can perform an experiment, and in many cases even if we cannot",
+          "bbox": [
+            135.96498107910156,
+            259.01141357421875,
+            528.800048828125,
+            273.2894287109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "perform an experiment. Using ideas about motion, we can predict how far",
+          "bbox": [
+            135.96498107910156,
+            272.21142578125,
+            528.8233032226562,
+            286.48944091796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "a kicked football will travel; using knowledge of chemical reactions, we can",
+          "bbox": [
+            135.96498107910156,
+            285.41143798828125,
+            528.8208618164062,
+            299.689453125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "estimate how much carbon dioxide will be produced, or how soft a baked",
+          "bbox": [
+            135.96498107910156,
+            298.6114501953125,
+            528.8308715820312,
+            312.88946533203125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "bread would be; using biological principles, we can predict how one’s",
+          "bbox": [
+            135.96498107910156,
+            311.81146240234375,
+            528.841796875,
+            326.0894775390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "breathing would change while running. Remember that these predictions",
+          "bbox": [
+            135.96498107910156,
+            325.011474609375,
+            528.8298950195312,
+            339.28948974609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "are not guesses, they are reasoned expectations based on evidence and",
+          "bbox": [
+            135.96498107910156,
+            338.21148681640625,
+            528.8287963867188,
+            352.489501953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "careful thinking. When predictions match observations, confidence in the",
+          "bbox": [
+            135.96498107910156,
+            351.4114990234375,
+            528.8222045898438,
+            365.68951416015625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "underlying science grows. But even more important, when they do not,",
+          "bbox": [
+            135.96498107910156,
+            364.61151123046875,
+            528.8222045898438,
+            378.8895263671875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "scientists re-examine their assumptions, models, or measurements. In this",
+          "bbox": [
+            135.96498107910156,
+            377.8115234375,
+            528.8343505859375,
+            392.08953857421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "way, prediction is a powerful tool that drives further exploration and a",
+          "bbox": [
+            135.96498107910156,
+            391.01153564453125,
+            528.8464965820312,
+            405.28955078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "deeper understanding of the world.",
+          "bbox": [
+            135.96498107910156,
+            404.2115478515625,
+            322.1289367675781,
+            418.48956298828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Example 1.2: How do we check predictions?  Varsha told her friend",
+          "bbox": [
+            135.96498107910156,
+            422.22955322265625,
+            528.8377685546875,
+            437.0135498046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Meghna, “It will rain this afternoon because the clouds look dark”. Think",
+          "bbox": [
+            135.96498107910156,
+            435.6165771484375,
+            528.8494262695312,
+            449.8945617675781
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "of some questions Meghna could ask Varsha to make this prediction",
+          "bbox": [
+            135.96498107910156,
+            448.81658935546875,
+            528.849609375,
+            463.0945739746094
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "scientifically testable.",
+          "bbox": [
+            135.96498107910156,
+            462.0166015625,
+            248.89097595214844,
+            476.2945861816406
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Answer:  Good scientific questions will look for measurable evidence and",
+          "bbox": [
+            135.96498107910156,
+            478.0325927734375,
+            528.8198852539062,
+            492.81658935546875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "past patterns. Questions with simple yes/no answers are usually not so",
+          "bbox": [
+            135.96498107910156,
+            491.41961669921875,
+            528.8111572265625,
+            505.6976013183594
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "useful. Meghna could ask Varsha questions like (these are just examples)",
+          "bbox": [
+            135.96498107910156,
+            504.61956787109375,
+            528.799072265625,
+            518.8975830078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "“What was the condition of sky when it rained the last time? What is the",
+          "bbox": [
+            135.96498107910156,
+            517.8196411132812,
+            528.8319702148438,
+            532.09765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "humidity today? Was it above 80 per cent the last time it rained? What is",
+          "bbox": [
+            135.96498107910156,
+            531.0195922851562,
+            528.8450317382812,
+            545.297607421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "today’s wind speed and direction? Is the temperature dropping like it did",
+          "bbox": [
+            135.96498107910156,
+            544.2196044921875,
+            528.8343505859375,
+            558.4976196289062
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "before the recent rains?”. Questions like these ask about measurable data",
+          "bbox": [
+            135.96498107910156,
+            557.4196166992188,
+            528.8176879882812,
+            571.6976318359375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "and past patterns, which go beyond mere ‘clouds look dark’.",
+          "bbox": [
+            135.96498107910156,
+            570.61962890625,
+            450.3558349609375,
+            584.8976440429688
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Why do weather forecasts sometimes go wrong?",
+          "bbox": [
+            70.37590026855469,
+            614.056640625,
+            316.2750244140625,
+            627.4966430664062
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Weather depends on many changing factors, such as temperature, pressure, humidity, and",
+          "bbox": [
+            70.37590026855469,
+            629.2266845703125,
+            512.5680541992188,
+            642.2066650390625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "wind. Weather forecasts use measurements and models, but very tiny differences in conditions",
+          "bbox": [
+            70.37590026855469,
+            641.2266845703125,
+            512.5792236328125,
+            654.2066650390625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "can grow over time and lead to something completely different. This is why forecasts are",
+          "bbox": [
+            70.37590026855469,
+            653.2266845703125,
+            512.5750732421875,
+            666.2066650390625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "usually reliable for a few hours or even a few days, but less certain further into the future.",
+          "bbox": [
+            70.37590026855469,
+            665.2266845703125,
+            500.49517822265625,
+            678.2066650390625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Ready to Go Beyond",
+          "bbox": [
+            78.30459594726562,
+            592.0643920898438,
+            201.8565673828125,
+            608.1924438476562
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Even the most successful scientific theories have limits and may fail",
+          "bbox": [
+            153.9759979248047,
+            694.752197265625,
+            528.8447265625,
+            709.0302124023438
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "when new conditions are explored or when measurements become more",
+          "bbox": [
+            135.9759979248047,
+            707.9522094726562,
+            528.8299560546875,
+            722.230224609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "1.\t   Think of a",
+          "bbox": [
+            33.57599639892578,
+            341.49737548828125,
+            98.44597625732422,
+            354.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "prediction you",
+          "bbox": [
+            47.57599639892578,
+            353.49737548828125,
+            119.94599151611328,
+            366.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "or your family",
+          "bbox": [
+            47.57599639892578,
+            365.49737548828125,
+            119.05597686767578,
+            378.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "made recently",
+          "bbox": [
+            47.57599639892578,
+            377.49737548828125,
+            118.39598846435547,
+            390.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "(for example,",
+          "bbox": [
+            47.57599639892578,
+            389.49737548828125,
+            113.70598602294922,
+            402.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "the outcome",
+          "bbox": [
+            47.57599639892578,
+            401.49737548828125,
+            109.1259765625,
+            414.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "of a cricket",
+          "bbox": [
+            47.57599639892578,
+            413.49737548828125,
+            102.73697662353516,
+            426.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "match). Was",
+          "bbox": [
+            47.57599639892578,
+            425.49737548828125,
+            108.7139892578125,
+            438.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "it based on",
+          "bbox": [
+            47.57599639892578,
+            437.49737548828125,
+            102.08597564697266,
+            450.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "evidence and",
+          "bbox": [
+            47.57599639892578,
+            449.49737548828125,
+            113.54598236083984,
+            462.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "reasoning,",
+          "bbox": [
+            47.57599639892578,
+            461.49737548828125,
+            100.1259765625,
+            474.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "or mainly on",
+          "bbox": [
+            47.57599639892578,
+            473.49737548828125,
+            111.55597686767578,
+            486.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "guesswork?",
+          "bbox": [
+            47.57599639892578,
+            485.49737548828125,
+            106.22599029541016,
+            498.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "How can",
+          "bbox": [
+            47.57599639892578,
+            497.49737548828125,
+            92.09599304199219,
+            510.4773864746094
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "scientific",
+          "bbox": [
+            47.57599639892578,
+            509.4974060058594,
+            93.13597869873047,
+            522.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "thinking",
+          "bbox": [
+            47.57599639892578,
+            521.4974365234375,
+            90.57597351074219,
+            534.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "improve such",
+          "bbox": [
+            47.57599639892578,
+            533.4974365234375,
+            115.31598663330078,
+            546.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "predictions?",
+          "bbox": [
+            47.57599639892578,
+            545.4974365234375,
+            106.4859848022461,
+            558.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Pause and",
+          "bbox": [
+            61.495994567871094,
+            301.56500244140625,
+            126.2719955444336,
+            317.6929931640625
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Ponder",
+          "bbox": [
+            61.495994567871094,
+            315.9649963378906,
+            105.42799377441406,
+            332.0929870605469
+          ],
+          "font_size": 12.0
+        }
+      ],
+      "char_count": 3430,
+      "has_images": true
+    },
+    {
+      "page_num": 5,
+      "text": "Exploration: Entering the World of Secondary Science\n5\nprecise. Such failures are not a weakness of science; in fact, they are its \ngreatest strength. When predictions do not match observations, scientists \ndo not reject ideas based on opinion or belief, but only on evidence. \nNo scientific theory is ever final and none is beyond question. This \nopenness to being corrected by nature itself is what has allowed science \nto help us in understanding the world we live in.\nThreads of Curiosity\nChecking ‘viral’ claims on social media: Is \neating food harmful during an eclipse? \nA commonly circulated claim is that, “Food \nshould not be eaten during an eclipse because it \nbecomes harmful”. Disproof comes from asking \nsimple scientific questions. An eclipse is just a \nplay of shadows (Fig. 1.2). What physical change \noccurs during an eclipse? Does temperature \nchange significantly? Does food go bad if it is left \nin a shadow? You will conclude that no physical, \nchemical, or biological mechanism supports \nsuch a claim. \nFig. 1.2: A total solar eclipse\nAs you continue your journey through science in Grades 9 and 10, you \nwill gradually develop habits of thinking that are useful far beyond the \nclassroom. A helpful strategy is to first understand the situation being \nstudied, then identify the quantities that matter, and finally make a rough \nestimate to check whether an answer makes sense. Exact values are not \nalways necessary, especially in the early stages of reasoning. Often, an \napproximate estimate is enough to tell us whether a result is reasonable \nor impossible. Learning to estimate helps you build intuition, detect errors, \nand develop confidence in your thinking. Science values careful reasoning \nperhaps much more than accurate calculations!\nHow much rice would feed a family of four for a month?\nTo make a rough estimate, assume that all their \ncalorie needs come from rice alone (Fig. 1.3). An \naverage adult needs about 2000 – 2500 kilocalories \n(kcal) per day. Find out how many calories 100 g \nof uncooked rice provides when cooked and use \nthis to estimate the daily requirement for the \nfamily. The aim is not to get an exact number, \nbut to check whether the answer makes sense \nas 100 g for a month is clearly too little, while a \nfew tonnes is far too much. Such estimation helps \nconnect science to everyday questions about \nfood and resources, and shows why approximate \nreasoning is an important scientific skill.\nReady to Go Beyond \nFig. 1.3: Rice being \ncooked on a gas stove\n",
+      "blocks": [
+        {
+          "text": "Exploration: Entering the World of Secondary Science",
+          "bbox": [
+            246.5605926513672,
+            32.49741744995117,
+            502.3707580566406,
+            45.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "5",
+          "bbox": [
+            534.260986328125,
+            35.20241928100586,
+            540.4099731445312,
+            49.986419677734375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "precise. Such failures are not a weakness of science; in fact, they are its",
+          "bbox": [
+            67.97099304199219,
+            68.20240783691406,
+            460.7917175292969,
+            82.48040771484375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "greatest strength. When predictions do not match observations, scientists",
+          "bbox": [
+            67.97099304199219,
+            81.40242004394531,
+            460.8258972167969,
+            95.680419921875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "do not reject ideas based on opinion or belief, but only on evidence.",
+          "bbox": [
+            67.97099304199219,
+            94.60243225097656,
+            460.83465576171875,
+            108.88043212890625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "No scientific theory is ever final and none is beyond question. This",
+          "bbox": [
+            67.97599792480469,
+            107.80531311035156,
+            460.8079833984375,
+            122.08331298828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "openness to being corrected by nature itself is what has allowed science",
+          "bbox": [
+            67.97599792480469,
+            121.00532531738281,
+            460.8080749511719,
+            135.2833251953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "to help us in understanding the world we live in.",
+          "bbox": [
+            67.97599792480469,
+            134.20533752441406,
+            327.95001220703125,
+            148.48333740234375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Threads of Curiosity",
+          "bbox": [
+            105.90149688720703,
+            155.97952270507812,
+            229.9455108642578,
+            172.10752868652344
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Checking ‘viral’ claims on social media: Is",
+          "bbox": [
+            85.47599792480469,
+            183.30899047851562,
+            317.5899963378906,
+            196.7489776611328
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "eating food harmful during an eclipse?",
+          "bbox": [
+            85.47599792480469,
+            195.30899047851562,
+            284.8460693359375,
+            208.7489776611328
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "A commonly circulated claim is that, “Food",
+          "bbox": [
+            85.47599792480469,
+            210.47898864746094,
+            317.5860595703125,
+            223.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "should not be eaten during an eclipse because it",
+          "bbox": [
+            85.47599792480469,
+            222.47898864746094,
+            317.58428955078125,
+            235.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "becomes harmful”. Disproof comes from asking",
+          "bbox": [
+            85.47599792480469,
+            234.47898864746094,
+            317.588134765625,
+            247.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "simple scientific questions. An eclipse is just a",
+          "bbox": [
+            85.47599792480469,
+            246.47898864746094,
+            317.5682373046875,
+            259.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "play of shadows (Fig. 1.2). What physical change",
+          "bbox": [
+            85.47599792480469,
+            258.4789733886719,
+            317.5691833496094,
+            271.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "occurs during an eclipse? Does temperature",
+          "bbox": [
+            85.47599792480469,
+            270.4789733886719,
+            317.568115234375,
+            283.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "change significantly? Does food go bad if it is left",
+          "bbox": [
+            85.47599792480469,
+            282.4789733886719,
+            317.5821838378906,
+            295.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "in a shadow? You will conclude that no physical,",
+          "bbox": [
+            85.47599792480469,
+            294.4789733886719,
+            317.578125,
+            307.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "chemical, or biological mechanism supports",
+          "bbox": [
+            85.47599792480469,
+            306.4789733886719,
+            317.58013916015625,
+            319.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "such a claim.",
+          "bbox": [
+            85.47599792480469,
+            318.4789733886719,
+            149.83602905273438,
+            331.458984375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Fig. 1.2: A total solar eclipse",
+          "bbox": [
+            326.6496276855469,
+            294.8385009765625,
+            444.2165832519531,
+            307.7715148925781
+          ],
+          "font_size": 9.0
+        },
+        {
+          "text": "As you continue your journey through science in Grades 9 and 10, you",
+          "bbox": [
+            85.97599792480469,
+            348.6566162109375,
+            460.84149169921875,
+            362.9346008300781
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "will gradually develop habits of thinking that are useful far beyond the",
+          "bbox": [
+            67.97599792480469,
+            361.85662841796875,
+            460.8487548828125,
+            376.1346130371094
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "classroom. A helpful strategy is to first understand the situation being",
+          "bbox": [
+            67.97599792480469,
+            375.056640625,
+            460.8432312011719,
+            389.3346252441406
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "studied, then identify the quantities that matter, and finally make a rough",
+          "bbox": [
+            67.97599792480469,
+            388.25665283203125,
+            460.85614013671875,
+            402.5346374511719
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "estimate to check whether an answer makes sense. Exact values are not",
+          "bbox": [
+            67.97599792480469,
+            401.4566650390625,
+            460.8387451171875,
+            415.7346496582031
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "always necessary, especially in the early stages of reasoning. Often, an",
+          "bbox": [
+            67.97599792480469,
+            414.65667724609375,
+            460.8199157714844,
+            428.9346618652344
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "approximate estimate is enough to tell us whether a result is reasonable",
+          "bbox": [
+            67.97599792480469,
+            427.856689453125,
+            460.8518981933594,
+            442.1346740722656
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "or impossible. Learning to estimate helps you build intuition, detect errors,",
+          "bbox": [
+            67.97599792480469,
+            441.05670166015625,
+            460.8099670410156,
+            455.3346862792969
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "and develop confidence in your thinking. Science values careful reasoning",
+          "bbox": [
+            67.97599792480469,
+            454.2567138671875,
+            460.8232421875,
+            468.5346984863281
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "perhaps much more than accurate calculations!",
+          "bbox": [
+            67.97599792480469,
+            467.45672607421875,
+            318.09283447265625,
+            481.7347106933594
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "How much rice would feed a family of four for a month?",
+          "bbox": [
+            91.97599792480469,
+            528.6243896484375,
+            376.34619140625,
+            542.0643920898438
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "To make a rough estimate, assume that all their",
+          "bbox": [
+            91.97599792480469,
+            543.79443359375,
+            328.12615966796875,
+            556.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "calorie needs come from rice alone (Fig. 1.3). An",
+          "bbox": [
+            91.97599792480469,
+            555.79443359375,
+            328.11602783203125,
+            568.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "average adult needs about 2000 – 2500 kilocalories",
+          "bbox": [
+            91.97599792480469,
+            567.79443359375,
+            328.108154296875,
+            580.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "(kcal) per day. Find out how many calories 100 g",
+          "bbox": [
+            91.97599792480469,
+            579.79443359375,
+            328.10614013671875,
+            592.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "of uncooked rice provides when cooked and use",
+          "bbox": [
+            91.97599792480469,
+            591.79443359375,
+            328.1221618652344,
+            604.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "this to estimate the daily requirement for the",
+          "bbox": [
+            91.97599792480469,
+            603.79443359375,
+            328.1201477050781,
+            616.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "family. The aim is not to get an exact number,",
+          "bbox": [
+            91.97599792480469,
+            615.79443359375,
+            328.1021423339844,
+            628.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "but to check whether the answer makes sense",
+          "bbox": [
+            91.97599792480469,
+            627.79443359375,
+            328.1162414550781,
+            640.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "as 100 g for a month is clearly too little, while a",
+          "bbox": [
+            91.97599792480469,
+            639.79443359375,
+            328.132080078125,
+            652.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "few tonnes is far too much. Such estimation helps",
+          "bbox": [
+            91.97599792480469,
+            651.79443359375,
+            328.12518310546875,
+            664.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "connect science to everyday questions about",
+          "bbox": [
+            91.97599792480469,
+            663.79443359375,
+            328.1231384277344,
+            676.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "food and resources, and shows why approximate",
+          "bbox": [
+            91.97599792480469,
+            675.79443359375,
+            328.1141357421875,
+            688.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "reasoning is an important scientific skill.",
+          "bbox": [
+            91.97599792480469,
+            687.79443359375,
+            285.82611083984375,
+            700.7744140625
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Ready to Go Beyond",
+          "bbox": [
+            100.56620025634766,
+            506.6579895019531,
+            224.11817932128906,
+            522.7860107421875
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "Fig. 1.3: Rice being",
+          "bbox": [
+            347.56451416015625,
+            660.6319580078125,
+            427.2685241699219,
+            673.56494140625
+          ],
+          "font_size": 9.0
+        },
+        {
+          "text": "cooked on a gas stove",
+          "bbox": [
+            340.77850341796875,
+            671.4320068359375,
+            431.7144470214844,
+            684.364990234375
+          ],
+          "font_size": 9.0
+        }
+      ],
+      "char_count": 2521,
+      "has_images": true
+    },
+    {
+      "page_num": 6,
+      "text": "Exploration|Grade 9\n6\nExample 1.3: Estimate how many litres of air you breathe in one day. Start \nby estimating how many breaths you take per minute, and the volume \nof one breath. Your aim is not to find an exact answer, but a reasonable \nestimate. \nAnswer: At rest, we take about 12 – 15 breaths a minute, and there are \n60 × 24 = 1440 minutes in a day, so we take roughly 18 – 22 thousand \nbreaths, about 20 thousand breaths a day. We also need to find the volume \nof air in one breath. One way to estimate this is to think that it takes about \n4 – 5 breaths to fill a typical rubber party balloon, which when inflated has \na volume of about 2 litres. So, one breath is perhaps about 0.5 litre. Hence, \nwe breathe in about 10,000 litres of air a day! \nNow, it is hard to see if this estimate is reasonable or not. But if \nwe go back to our balloon example, one could blow up a balloon in \nabout 20 s, so maybe we could fill 3 balloons a minute. Multiplying \nminute\n3 balloon × balloon\n2 litres ×\nday\n1440 minutes\n will give about 8640 litres, which \nfor estimation purposes is reasonably close to our earlier estimate of \n10,000 litres. Naturally, we would get extremely tired very quickly after \nblowing balloons nonstop, unlike normal restful breathing.\nPause and Ponder\n2.\t Describe one situation where an approximate answer is good enough, \nand one where you would need a very exact value.\nAfter Grade 10, if you decide to study science, it will be divided into \nbranches like physics, chemistry, biology and earth science, and even in \nGrades 9 and 10, the chapters you have will focus on some of these areas. \nWe’ve highlighted some of the exciting things you may learn about in the \nNext Level Up boxes. However, do remember that the natural world does \nnot have any such boundaries. These divisions are made by us to only \nhelp organise knowledge, they are not independent of each other. Most \nof the real-world problems today, such as understanding climate change, \ndeveloping medicines, or designing sustainable technologies require ideas \nfrom several disciplines together. Science also connects naturally with \nmathematics, technology, arts, and social sciences. To make sense of the \nworld fully, we need to connect multiple ways of knowing and expressing \nideas, each enriching the other.\nPause and Ponder\n3.\t Choose a real‑life object (maybe a pressure cooker or a mobile phone) or \na problem (maybe a traffic jam near your school). Make a sketch listing \nwhat kind of ideas from physics, chemistry, biology, earth science, or \nmathematics are involved. Show how at least two branches of science \nconnect with your example.\n",
+      "blocks": [
+        {
+          "text": "Exploration|Grade 9",
+          "bbox": [
+            80.97599792480469,
+            741.9774169921875,
+            179.6310272216797,
+            754.9573974609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "6",
+          "bbox": [
+            52.54199981689453,
+            737.666015625,
+            59.808998107910156,
+            755.1380004882812
+          ],
+          "font_size": 13.0
+        },
+        {
+          "text": "Example 1.3:  Estimate how many litres of air you breathe in one day. Start",
+          "bbox": [
+            135.9759979248047,
+            68.01992797851562,
+            528.8330688476562,
+            82.80392456054688
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "by estimating how many breaths you take per minute, and the volume",
+          "bbox": [
+            135.9759979248047,
+            81.40693664550781,
+            528.8255615234375,
+            95.6849365234375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "of one breath. Your aim is not to find an exact answer, but a reasonable",
+          "bbox": [
+            135.9759979248047,
+            94.60694885253906,
+            528.8264770507812,
+            108.88494873046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "estimate.",
+          "bbox": [
+            135.9759979248047,
+            107.80696105957031,
+            186.16897583007812,
+            122.0849609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Answer:  At rest, we take about 12 – 15 breaths a minute, and there are",
+          "bbox": [
+            135.9759979248047,
+            123.82296752929688,
+            528.8410034179688,
+            138.60696411132812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "60 × 24 = 1440 minutes in a day, so we take roughly 18 – 22 thousand",
+          "bbox": [
+            135.9759979248047,
+            137.20997619628906,
+            528.8363647460938,
+            151.48797607421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "breaths, about 20 thousand breaths a day. We also need to find the volume",
+          "bbox": [
+            135.9759979248047,
+            150.4099884033203,
+            528.8595581054688,
+            164.68798828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "of air in one breath. One way to estimate this is to think that it takes about",
+          "bbox": [
+            135.9759979248047,
+            163.61000061035156,
+            528.8662109375,
+            177.88800048828125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "4 – 5 breaths to fill a typical rubber party balloon, which when inflated has",
+          "bbox": [
+            135.9759979248047,
+            176.8100128173828,
+            528.8363647460938,
+            191.0880126953125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "a volume of about 2 litres. So, one breath is perhaps about 0.5 litre. Hence,",
+          "bbox": [
+            135.9759979248047,
+            190.01002502441406,
+            528.785888671875,
+            204.28802490234375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "we breathe in about 10,000 litres of air a day!",
+          "bbox": [
+            135.9759979248047,
+            203.2100372314453,
+            375.8681640625,
+            217.488037109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Now, it is hard to see if this estimate is reasonable or not. But if",
+          "bbox": [
+            153.9720001220703,
+            219.4130401611328,
+            528.8432006835938,
+            233.6910400390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "we go back to our balloon example, one could blow up a balloon in",
+          "bbox": [
+            135.9759979248047,
+            232.61305236816406,
+            528.85400390625,
+            246.89105224609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "about 20 s, so maybe we could fill 3 balloons a minute. Multiplying",
+          "bbox": [
+            135.9759979248047,
+            245.8130645751953,
+            528.8518676757812,
+            260.091064453125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "minute",
+          "bbox": [
+            144.3509979248047,
+            278.4920654296875,
+            182.10299682617188,
+            292.77008056640625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "3 balloon   ×   balloon",
+          "bbox": [
+            139.0709991455078,
+            263.70806884765625,
+            240.53500366210938,
+            292.77008056640625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "2 litres   ×",
+          "bbox": [
+            202.9810028076172,
+            263.70806884765625,
+            250.62200927734375,
+            285.0810546875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "day",
+          "bbox": [
+            279.18902587890625,
+            278.4920654296875,
+            298.34002685546875,
+            292.77008056640625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "1440 minutes",
+          "bbox": [
+            253.8780059814453,
+            263.70806884765625,
+            323.530029296875,
+            277.986083984375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "will give about 8640 litres, which",
+          "bbox": [
+            327.2580261230469,
+            272.947998046875,
+            528.8494262695312,
+            287.22601318359375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "for estimation purposes is reasonably close to our earlier estimate of",
+          "bbox": [
+            135.97901916503906,
+            294.14501953125,
+            528.8440551757812,
+            308.4230041503906
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "10,000 litres. Naturally, we would get extremely tired very quickly after",
+          "bbox": [
+            135.9790496826172,
+            307.34503173828125,
+            528.8307495117188,
+            321.6230163574219
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "blowing balloons nonstop, unlike normal restful breathing.",
+          "bbox": [
+            135.9790496826172,
+            320.5450439453125,
+            445.6324157714844,
+            334.8230285644531
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Pause and Ponder",
+          "bbox": [
+            183.2834014892578,
+            343.2421875,
+            291.99139404296875,
+            359.37017822265625
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "2.\t   Describe one situation where an approximate answer is good enough,",
+          "bbox": [
+            148.0989990234375,
+            368.9958801269531,
+            497.2392272949219,
+            381.97589111328125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "and one where you would need a very exact value.",
+          "bbox": [
+            162.0989990234375,
+            380.9958801269531,
+            403.7591857910156,
+            393.97589111328125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "After Grade 10, if you decide to study science, it will be divided into",
+          "bbox": [
+            153.9759979248047,
+            415.40228271484375,
+            528.84912109375,
+            429.6802978515625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "branches like physics, chemistry, biology and earth science, and even in",
+          "bbox": [
+            135.97999572753906,
+            428.602294921875,
+            528.8493041992188,
+            442.88031005859375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Grades 9 and 10, the chapters you have will focus on some of these areas.",
+          "bbox": [
+            135.97999572753906,
+            441.80230712890625,
+            528.8450317382812,
+            456.080322265625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "We’ve highlighted some of the exciting things you may learn about in the",
+          "bbox": [
+            135.97999572753906,
+            455.0023193359375,
+            528.8504638671875,
+            469.28033447265625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Next Level Up boxes. However, do remember that the natural world does",
+          "bbox": [
+            135.97999572753906,
+            468.20233154296875,
+            528.8228759765625,
+            482.4803466796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "not have any such boundaries. These divisions are made by us to only",
+          "bbox": [
+            135.97999572753906,
+            481.40234375,
+            528.8700561523438,
+            495.68035888671875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "help organise knowledge, they are not independent of each other. Most",
+          "bbox": [
+            135.97999572753906,
+            494.60235595703125,
+            528.8560791015625,
+            508.88037109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "of the real-world problems today, such as understanding climate change,",
+          "bbox": [
+            135.97999572753906,
+            507.8023681640625,
+            528.8228149414062,
+            522.0803833007812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "developing medicines, or designing sustainable technologies require ideas",
+          "bbox": [
+            135.97999572753906,
+            521.0023803710938,
+            528.8373413085938,
+            535.2803955078125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "from several disciplines together. Science also connects naturally with",
+          "bbox": [
+            135.97999572753906,
+            534.202392578125,
+            528.84716796875,
+            548.4804077148438
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "mathematics, technology, arts, and social sciences. To make sense of the",
+          "bbox": [
+            135.97999572753906,
+            547.4024047851562,
+            528.8394775390625,
+            561.680419921875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "world fully, we need to connect multiple ways of knowing and expressing",
+          "bbox": [
+            135.97999572753906,
+            560.6023559570312,
+            528.8306884765625,
+            574.88037109375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "ideas, each enriching the other.",
+          "bbox": [
+            135.97999572753906,
+            573.8023681640625,
+            300.3309631347656,
+            588.0803833007812
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Pause and Ponder",
+          "bbox": [
+            183.40640258789062,
+            599.496337890625,
+            292.1144104003906,
+            615.6243896484375
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "3.\t   Choose a real‑life object (maybe a pressure cooker or a mobile phone) or",
+          "bbox": [
+            148.2220916748047,
+            625.250244140625,
+            510.5823059082031,
+            638.230224609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "a problem (maybe a traffic jam near your school). Make a sketch listing",
+          "bbox": [
+            162.2220916748047,
+            637.250244140625,
+            510.5765075683594,
+            650.230224609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "what kind of ideas from physics, chemistry, biology, earth science, or",
+          "bbox": [
+            162.2220916748047,
+            649.250244140625,
+            510.5763854980469,
+            662.230224609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "mathematics are involved. Show how at least two branches of science",
+          "bbox": [
+            162.2220916748047,
+            661.250244140625,
+            510.5542297363281,
+            674.230224609375
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "connect with your example.",
+          "bbox": [
+            162.2220916748047,
+            673.250244140625,
+            294.8721618652344,
+            686.230224609375
+          ],
+          "font_size": 10.0
+        }
+      ],
+      "char_count": 2642,
+      "has_images": true
+    },
+    {
+      "page_num": 7,
+      "text": "Exploration: Entering the World of Secondary Science\n7\nReady to Go Beyond \nHow does a mask really work?\nSolving \nreal \nproblems \nrequires \nknowledge from several branches of \nscience. During the COVID-19 pandemic, \nwe all used masks for safety (Fig. 1.4). \nUnderstanding how a mask works \nrequires concepts from physics (particle \nmotion and electrostatic attraction), \nchemistry \n(properties \nof \npolymer \nfibres), biology (size and behaviour of \nviruses), and mathematics (modelling \nairflow and filtration efficiency). \nFig. 1.4: A collection of \nsurgical masks\nFinally, as we have mentioned in every textbook, science is not just a \ncollection of facts, equations, or experiments. It is a human activity shaped \nby curiosity, creativity, collaboration, and careful questioning. It grows as \npeople ask questions, test ideas, share results, and learn from mistakes. \nScience develops over time through the work of many individuals across \ndifferent cultures and generations. Even if you do not choose to study \nscience beyond Grade 10, scientific thinking will be very important in \nwhatever you do. It helps you understand the technology that surrounds \nyou, and helps you evaluate information critically and make sense of the \nworld you live in. As you begin this stage of exploration, science invites \nyou not only to learn about the world, but also to learn ‘how’ we are trying \nto understand it.\nEmbark on your journey of discovery — looking carefully through the \nmagnifying glass of evidence and guided by the compass of curiosity. \nHappy Exploring!\n",
+      "blocks": [
+        {
+          "text": "Exploration: Entering the World of Secondary Science",
+          "bbox": [
+            246.5605926513672,
+            32.49741744995117,
+            502.3707580566406,
+            45.4774169921875
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "7",
+          "bbox": [
+            534.260986328125,
+            35.20241928100586,
+            540.4099731445312,
+            49.986419677734375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Ready to Go Beyond",
+          "bbox": [
+            100.56620025634766,
+            84.44931030273438,
+            224.11817932128906,
+            100.57730865478516
+          ],
+          "font_size": 12.0
+        },
+        {
+          "text": "How does a mask really work?",
+          "bbox": [
+            91.3759994506836,
+            111.0406723022461,
+            245.08607482910156,
+            124.48067474365234
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Solving",
+          "bbox": [
+            91.3759994506836,
+            126.21067810058594,
+            129.1060028076172,
+            139.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "real",
+          "bbox": [
+            142.5659942626953,
+            126.21067810058594,
+            163.95602416992188,
+            139.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "problems",
+          "bbox": [
+            177.41603088378906,
+            126.21067810058594,
+            225.18605041503906,
+            139.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "requires",
+          "bbox": [
+            238.6460418701172,
+            126.21067810058594,
+            281.56610107421875,
+            139.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "knowledge from several branches of",
+          "bbox": [
+            91.3759994506836,
+            138.21067810058594,
+            281.5721435546875,
+            151.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "science. During the COVID-19 pandemic,",
+          "bbox": [
+            91.3759994506836,
+            150.21067810058594,
+            281.5851745605469,
+            163.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "we all used masks for safety (Fig. 1.4).",
+          "bbox": [
+            91.3759994506836,
+            162.21067810058594,
+            281.5621032714844,
+            175.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Understanding how a mask works",
+          "bbox": [
+            91.3759994506836,
+            174.21067810058594,
+            281.5810546875,
+            187.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "requires concepts from physics (particle",
+          "bbox": [
+            91.3759994506836,
+            186.21067810058594,
+            281.5671081542969,
+            199.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "motion and electrostatic attraction),",
+          "bbox": [
+            91.3759994506836,
+            198.21067810058594,
+            281.57208251953125,
+            211.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "chemistry",
+          "bbox": [
+            91.3759994506836,
+            210.21067810058594,
+            141.63600158691406,
+            223.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "(properties",
+          "bbox": [
+            151.51600646972656,
+            210.21067810058594,
+            206.97604370117188,
+            223.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "of",
+          "bbox": [
+            216.86305236816406,
+            210.21067810058594,
+            228.92306518554688,
+            223.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "polymer",
+          "bbox": [
+            238.8030548095703,
+            210.21067810058594,
+            281.5730895996094,
+            223.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "fibres), biology (size and behaviour of",
+          "bbox": [
+            91.3759994506836,
+            222.21067810058594,
+            281.5740966796875,
+            235.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "viruses), and mathematics (modelling",
+          "bbox": [
+            91.3759994506836,
+            234.21067810058594,
+            281.5801086425781,
+            247.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "airflow and filtration efficiency).",
+          "bbox": [
+            91.3759994506836,
+            246.21067810058594,
+            249.6830291748047,
+            259.190673828125
+          ],
+          "font_size": 10.0
+        },
+        {
+          "text": "Fig. 1.4: A collection of",
+          "bbox": [
+            320.5442199707031,
+            206.92901611328125,
+            417.2491455078125,
+            219.86203002929688
+          ],
+          "font_size": 9.0
+        },
+        {
+          "text": "surgical masks",
+          "bbox": [
+            336.2580261230469,
+            217.7288818359375,
+            399.1949768066406,
+            230.66189575195312
+          ],
+          "font_size": 9.0
+        },
+        {
+          "text": "Finally, as we have mentioned in every textbook, science is not just a",
+          "bbox": [
+            85.97599792480469,
+            278.64801025390625,
+            460.8349914550781,
+            292.926025390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "collection of facts, equations, or experiments. It is a human activity shaped",
+          "bbox": [
+            67.97999572753906,
+            291.8480224609375,
+            460.8473815917969,
+            306.12603759765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "by curiosity, creativity, collaboration, and careful questioning. It grows as",
+          "bbox": [
+            67.97999572753906,
+            305.04803466796875,
+            460.8152160644531,
+            319.3260498046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "people ask questions, test ideas, share results, and learn from mistakes.",
+          "bbox": [
+            67.97999572753906,
+            318.248046875,
+            460.8218994140625,
+            332.52606201171875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Science develops over time through the work of many individuals across",
+          "bbox": [
+            67.97999572753906,
+            331.44805908203125,
+            460.8155212402344,
+            345.72607421875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "different cultures and generations. Even if you do not choose to study",
+          "bbox": [
+            67.97999572753906,
+            344.6480712890625,
+            460.8581237792969,
+            358.92608642578125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "science beyond Grade 10, scientific thinking will be very important in",
+          "bbox": [
+            67.97999572753906,
+            357.84808349609375,
+            460.858154296875,
+            372.1260986328125
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "whatever you do. It helps you understand the technology that surrounds",
+          "bbox": [
+            67.97999572753906,
+            371.048095703125,
+            460.858154296875,
+            385.32611083984375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "you, and helps you evaluate information critically and make sense of the",
+          "bbox": [
+            67.97999572753906,
+            384.24810791015625,
+            460.8318176269531,
+            398.526123046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "world you live in. As you begin this stage of exploration, science invites",
+          "bbox": [
+            67.97999572753906,
+            397.4481201171875,
+            460.8604431152344,
+            411.72613525390625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "you not only to learn about the world, but also to learn ‘how’ we are trying",
+          "bbox": [
+            67.97999572753906,
+            410.64813232421875,
+            460.8460693359375,
+            424.9261474609375
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "to understand it.",
+          "bbox": [
+            67.97999572753906,
+            423.84814453125,
+            156.5959930419922,
+            438.12615966796875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Embark on your journey of discovery — looking carefully through the",
+          "bbox": [
+            85.97599792480469,
+            440.0511474609375,
+            460.82086181640625,
+            454.32916259765625
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "magnifying glass of evidence and guided by the compass of curiosity.",
+          "bbox": [
+            67.97999572753906,
+            453.25115966796875,
+            437.94097900390625,
+            467.5291748046875
+          ],
+          "font_size": 11.0
+        },
+        {
+          "text": "Happy Exploring!",
+          "bbox": [
+            67.97999572753906,
+            474.44818115234375,
+            160.3524932861328,
+            488.7261657714844
+          ],
+          "font_size": 11.0
+        }
+      ],
+      "char_count": 1560,
+      "has_images": true
+    }
+  ],
+  "pages_pdfplumber": [
+    {
+      "page_num": 1,
+      "text": "Chapter\nExploration: Entering\nExploration: Entering the World of Secondary Science\n1\n1\nthe World of\nSecondary Science\nIn the middle stage, science invited you to be curious and observe the\nworld closely, to ask questions, and to find out how things work. In our\njourney, we discovered that science began with wonder and grew through\ncareful experiments. We connected ideas across the world of the living and\nnon-living. As you now enter the secondary stage, this journey continues,\nbut with an emphasis on deep exploration. Science is not only about what\nwe know, but also about how we know it — how observations lead to\nmeasurements, how patterns are expressed using symbols and equations,\nhow models are built to represent complex systems, and how ideas are\ntested, often revised, and sometimes even discarded. In our secondary\nstage, textbook of science, Exploration, we will look more closely, think\nmore carefully, and find out how scientific ideas help us make sense of\nnature, technology and our place within them.\nTo reflect the approach of this textbook, the page numbers have\nbeen thoughtfully designed, and are framed by a magnifying glass and a\ncompass. The magnifying glass symbolises careful observation — noticing\npatterns and paying attention to what might otherwise be missed. The\ncompass reminds us that exploration also needs direction — choosing\nappropriate models, asking the right questions, and knowing the limits of\nwhere our ideas apply. Together, they tell us that exploration in science is\nnot wandering aimlessly, but trying to make sense of our world with care\nand purpose.\nCChhaapptteerr--0011..iinndddd 11 0033--AApprr--2266 77::4466::4477 PPMM",
+      "char_count": 1675,
+      "tables": [
+        [
+          [
+            "Exploration: Entering\nExploration: Entering th",
+            "Chapter\ne World of Secondary S",
+            "cience\n1"
+          ],
+          [
+            "the World of\nSecondary Science",
+            "1",
+            ""
+          ],
+          [
+            "",
+            "",
+            null
+          ],
+          [
+            null,
+            "",
+            null
+          ]
+        ]
+      ],
+      "has_tables": true
+    },
+    {
+      "page_num": 2,
+      "text": "The natural world is complex, and studying it in full detail is often\nimpossible. To make sense of this complexity, science uses models. These\nare simplified ways of looking at real systems that focus only on what\nis most important for a given question. In physics, a moving car may be\nrepresented as a single point, while in chemistry, atoms and molecules\nare drawn as spheres and bonds. In biology, cells are shown as diagrams\nhighlighting key parts, and in earth science, the Earth may be treated\nas a smooth sphere layered into distinct regions. Building such models\ninvolves making assumptions and deliberately ignoring certain details. For\nexample, when studying the motion of a falling object, air resistance may\nbe neglected to understand the basic effect of gravity. In biology, when\nstudying how the heart pumps blood, many individual cells are ignored\nso that the organ can be understood as a functioning system. Remember\nthat these choices are not mistakes, they are done on purpose to keep\nthings simple enough, but still allow us to find answers to what we are\nlooking for.\nExample 1.1: A cricket shot. Think of a cricket ball being hit for\nMeet a Scientist\na six. You want to make a simple model. What details would you\ninclude? What would you ignore?\nAnswer: We must ask, “Will the ball cross the boundary without\nhitting the ground first?”. For this, things like the brand of the\nbat, the colour of the ball, the amount of grass on the field will\nmake no difference. On the other hand, the mass of the ball,\nand the speed and direction in which it has been hit will be\nvery important. Air resistance, the spin of the ball, and the\nstitching of the threads at the seam have smaller effects that\ncan be ignored in a simple model. As we build more and more\ncomplex models, we add extra details for greater accuracy.\nMeghnad Saha on an\nIndian postage stamp Activity 1.1: Let us model\nSimplifying the stars: Suppose you ride a bicycle from your school to your home. You\nScience often begins by want to model the time it takes to go home from school. What\nignoring details. When details would you keep? What details could you ignore? Suggest\nphysicist Meghnad Saha why ignoring some details may actually be useful.\nstudied the light from stars,\nAs you explore science more deeply, you will notice that it\nhe did not try to model\nuses language in a very careful and precise way. Many words\nevery atom, every reaction,\nthat we use in everyday life, such as force, work, cell, or reaction\nor every movement inside a\nstar. Instead, he treated the have specific meanings in science. These meanings are often\nmatter in the star as a hot very specific because scientific ideas must be communicated\ngas, ignored many complex clearly and unambiguously. To allow scientists across the world\nprocesses, and focused only to describe observations, compare results, and build ideas\non temperature, pressure, together, science uses a shared language of these specific terms,\nand how atoms formed\nsymbols, and units. Quantities, such as mass, velocity, force, and\nions. This simplification\nelectric current are represented by symbols like m, v, F, and I\nallowed him to explain\neach associated with a defined unit.\nhow the colour of stars is\ndeeply connected to their To make this even more precise, science often turns to\ntemperature. mathematics to allow relationships between quantities to be\nexpressed clearly and tested carefully. This can sometimes feel\n2 Exploration|Grade 9\nCChhaapptteerr--0011..iinndddd 22 0033--AApprr--2266 77::4466::4477 PPMM",
+      "char_count": 3548,
+      "tables": [],
+      "has_tables": false
+    },
+    {
+      "page_num": 3,
+      "text": "Exploration: Entering the World of Secondary Science\n3\nchallenging, but it is important to remember that mathematics Threads of\nin science is not meant to be a hurdle. Instead, it is a language\nCuriosity\nthat helps us think more clearly about the world. An equation\nis not just a calculation tool, it is a compact statement about Why is the speed of light\nhow certain things are related. For example, describing denoted by ‘c’?\nmotion using quantities, such as distance, time, and velocity Scientific symbols often\nallows us to answer questions about where an object will come from history, and\nbe at a later moment. In the same way, mathematical are based on international\nexpressions are used to describe rates of chemical reactions, agreements, not necessarily\nabbreviations of\npatterns of population growth, or changes in energy within\nconvenience. For example,\na system. Learning to use mathematics in science does not\nthe speed of light, is usually\nmean memorising equations. It means understanding the\ndenoted with the symbol c,\nsituation first, identifying relevant quantities, and then using\nsince it comes from the Latin\nmathematical relationships to reason carefully. In this way,\nword celeritas, meaning\nmathematics becomes a powerful language for thinking, speed. Today, the speed of\nnot just for finding numerical answers. If you focus first on light is one of the physical\nunderstanding the situation and the quantities involved, constants, defined to be\nequations will begin to feel less like obstacles and more like exactly 299792458 m/s.\nhelpful guides in your exploration of science.\nReady to Go Beyond\nAirplane fuel miscalculation\nIn a well-known incident, a passenger aircraft ran out of fuel mid-flight due to a mix-up in units.\nThe flight needed 22,300 kg fuel in total, but the ground crew miscalculated the fuel required,\nsince they used the density of fuel in pounds (lb) per litre rather than kilograms (kg) per litre.\nThe aircraft was about 15,000 litres short of fuel and luckily could glide to an emergency landing,\nwhich damaged the aircraft though there were no casualties. Pounds and kilograms are very\ndifferent. Using standard units (SI) everywhere avoids conversions and errors.\nThreads of Curiosity\nWhy is a kilogram used everywhere?\nWhen we buy rice or vegetables we expect a kilogram\nto mean the same amount everywhere (Fig. 1.1). Imagine\nthe confusion if we used different weights everywhere!\nThankfully, measurements are based on agreed\ninternational standards, not local objects or opinions.\nStandard units allow scientific results to be compared,\nand ensure fairness in daily life and trade.\nFig. 1.1: A vegetable seller using a pan balance\nAs observations are repeated, measurements refined, and ideas tested\nthrough experiments we can organise our understanding of the world\nin a systematic way. In the secondary stage, you will come across terms,\nsuch as laws, theories, and principles — terms that have specific meaning\nin science. A law usually describes a regular pattern observed in nature,\noften expressed using words or mathematical relationships. For example,\nNewton’s laws of motion explain the jerk felt when a bus stops suddenly.\nCChhaapptteerr--0011..iinndddd 33 0033--AApprr--2266 77::4466::4477 PPMM",
+      "char_count": 3258,
+      "tables": [],
+      "has_tables": false
+    },
+    {
+      "page_num": 4,
+      "text": "A theory goes a step further and provides an explanation of why those\npatterns occur, usually based on evidence gathered over time and available\nat that time. For example, the atomic theory explains how molecules are\nformed. Principles are broad ideas that help us make sense in a given\nsituation. For example, the principle of conservation of energy being\napplied when climbing up the stairs.\nDo remember that in science, a theory does not mean a guess or an\nuntested idea, it is an explanation based on careful testing and critical\nexamination. These ideas are always open to improvement and often\nchange as new evidence becomes available. This is a key feature of science\nthat makes it reliable.\nOne of the most remarkable strengths of science is its ability to make\npredictions. When laws, theories, and models are well established they\nallow us to anticipate what will happen under new or different conditions,\nbefore we can perform an experiment, and in many cases even if we cannot\nperform an experiment. Using ideas about motion, we can predict how far\na kicked football will travel; using knowledge of chemical reactions, we can\nestimate how much carbon dioxide will be produced, or how soft a baked\nPause and\nbread would be; using biological principles, we can predict how one’s\nPonder\nbreathing would change while running. Remember that these predictions\n1. Think of a are not guesses, they are reasoned expectations based on evidence and\nprediction you careful thinking. When predictions match observations, confidence in the\nor your family underlying science grows. But even more important, when they do not,\nmade recently scientists re-examine their assumptions, models, or measurements. In this\n(for example, way, prediction is a powerful tool that drives further exploration and a\nthe outcome\ndeeper understanding of the world.\nof a cricket\nmatch). Was Example 1.2: How do we check predictions? Varsha told her friend\nit based on Meghna, “It will rain this afternoon because the clouds look dark”. Think\nevidence and of some questions Meghna could ask Varsha to make this prediction\nreasoning, scientifically testable.\nor mainly on\nAnswer: Good scientific questions will look for measurable evidence and\nguesswork?\npast patterns. Questions with simple yes/no answers are usually not so\nHow can\nuseful. Meghna could ask Varsha questions like (these are just examples)\nscientific\n“What was the condition of sky when it rained the last time? What is the\nthinking\nimprove such humidity today? Was it above 80 per cent the last time it rained? What is\npredictions? today’s wind speed and direction? Is the temperature dropping like it did\nbefore the recent rains?”. Questions like these ask about measurable data\nand past patterns, which go beyond mere ‘clouds look dark’.\nReady to Go Beyond\nWhy do weather forecasts sometimes go wrong?\nWeather depends on many changing factors, such as temperature, pressure, humidity, and\nwind. Weather forecasts use measurements and models, but very tiny differences in conditions\ncan grow over time and lead to something completely different. This is why forecasts are\nusually reliable for a few hours or even a few days, but less certain further into the future.\nEven the most successful scientific theories have limits and may fail\nwhen new conditions are explored or when measurements become more\n4 Exploration|Grade 9\nCChhaapptteerr--0011..iinndddd 44 0033--AApprr--2266 77::4466::4488 PPMM",
+      "char_count": 3442,
+      "tables": [],
+      "has_tables": false
+    },
+    {
+      "page_num": 5,
+      "text": "Exploration: Entering the World of Secondary Science\n5\nprecise. Such failures are not a weakness of science; in fact, they are its\ngreatest strength. When predictions do not match observations, scientists\ndo not reject ideas based on opinion or belief, but only on evidence.\nNo scientific theory is ever final and none is beyond question. This\nopenness to being corrected by nature itself is what has allowed science\nto help us in understanding the world we live in.\nThreads of Curiosity\nChecking ‘viral’ claims on social media: Is\neating food harmful during an eclipse?\nA commonly circulated claim is that, “Food\nshould not be eaten during an eclipse because it\nbecomes harmful”. Disproof comes from asking\nsimple scientific questions. An eclipse is just a\nplay of shadows (Fig. 1.2). What physical change\noccurs during an eclipse? Does temperature\nchange significantly? Does food go bad if it is left\nin a shadow? You will conclude that no physical, Fig. 1.2: A total solar eclipse\nchemical, or biological mechanism supports\nsuch a claim.\nAs you continue your journey through science in Grades 9 and 10, you\nwill gradually develop habits of thinking that are useful far beyond the\nclassroom. A helpful strategy is to first understand the situation being\nstudied, then identify the quantities that matter, and finally make a rough\nestimate to check whether an answer makes sense. Exact values are not\nalways necessary, especially in the early stages of reasoning. Often, an\napproximate estimate is enough to tell us whether a result is reasonable\nor impossible. Learning to estimate helps you build intuition, detect errors,\nand develop confidence in your thinking. Science values careful reasoning\nperhaps much more than accurate calculations!\nReady to Go Beyond\nHow much rice would feed a family of four for a month?\nTo make a rough estimate, assume that all their\ncalorie needs come from rice alone (Fig. 1.3). An\naverage adult needs about 2000 – 2500 kilocalories\n(kcal) per day. Find out how many calories 100 g\nof uncooked rice provides when cooked and use\nthis to estimate the daily requirement for the\nfamily. The aim is not to get an exact number,\nbut to check whether the answer makes sense\nas 100 g for a month is clearly too little, while a\nfew tonnes is far too much. Such estimation helps\nconnect science to everyday questions about Fig. 1.3: Rice being\ncooked on a gas stove\nfood and resources, and shows why approximate\nreasoning is an important scientific skill.\nCChhaapptteerr--0011..iinndddd 55 0033--AApprr--2266 77::4466::4488 PPMM",
+      "char_count": 2553,
+      "tables": [],
+      "has_tables": false
+    },
+    {
+      "page_num": 6,
+      "text": "Example 1.3: Estimate how many litres of air you breathe in one day. Start\nby estimating how many breaths you take per minute, and the volume\nof one breath. Your aim is not to find an exact answer, but a reasonable\nestimate.\nAnswer: At rest, we take about 12 – 15 breaths a minute, and there are\n60 × 24 = 1440 minutes in a day, so we take roughly 18 – 22 thousand\nbreaths, about 20 thousand breaths a day. We also need to find the volume\nof air in one breath. One way to estimate this is to think that it takes about\n4 – 5 breaths to fill a typical rubber party balloon, which when inflated has\na volume of about 2 litres. So, one breath is perhaps about 0.5 litre. Hence,\nwe breathe in about 10,000 litres of air a day!\nNow, it is hard to see if this estimate is reasonable or not. But if\nwe go back to our balloon example, one could blow up a balloon in\nabout 20 s, so maybe we could fill 3 balloons a minute. Multiplying\n3balloon 2litres 1440minutes\n× × will give about 8640 litres, which\nminute balloon day\nfor estimation purposes is reasonably close to our earlier estimate of\n10,000 litres. Naturally, we would get extremely tired very quickly after\nblowing balloons nonstop, unlike normal restful breathing.\nPause and Ponder\n2. Describe one situation where an approximate answer is good enough,\nand one where you would need a very exact value.\nAfter Grade 10, if you decide to study science, it will be divided into\nbranches like physics, chemistry, biology and earth science, and even in\nGrades 9 and 10, the chapters you have will focus on some of these areas.\nWe’ve highlighted some of the exciting things you may learn about in the\nNext Level Up boxes. However, do remember that the natural world does\nnot have any such boundaries. These divisions are made by us to only\nhelp organise knowledge, they are not independent of each other. Most\nof the real-world problems today, such as understanding climate change,\ndeveloping medicines, or designing sustainable technologies require ideas\nfrom several disciplines together. Science also connects naturally with\nmathematics, technology, arts, and social sciences. To make sense of the\nworld fully, we need to connect multiple ways of knowing and expressing\nideas, each enriching the other.\nPause and Ponder\n3. Choose a real-life object (maybe a pressure cooker or a mobile phone) or\na problem (maybe a traffic jam near your school). Make a sketch listing\nwhat kind of ideas from physics, chemistry, biology, earth science, or\nmathematics are involved. Show how at least two branches of science\nconnect with your example.\n6 Exploration|Grade 9\nCChhaapptteerr--0011..iinndddd 66 0033--AApprr--2266 77::4466::4488 PPMM",
+      "char_count": 2674,
+      "tables": [],
+      "has_tables": false
+    },
+    {
+      "page_num": 7,
+      "text": "Exploration: Entering the World of Secondary Science\n7\nReady to Go Beyond\nHow does a mask really work?\nSolving real problems requires\nknowledge from several branches of\nscience. During the COVID-19 pandemic,\nwe all used masks for safety (Fig. 1.4).\nUnderstanding how a mask works\nrequires concepts from physics (particle\nmotion and electrostatic attraction),\nchemistry (properties of polymer Fig. 1.4: A collection of\nsurgical masks\nfibres), biology (size and behaviour of\nviruses), and mathematics (modelling\nairflow and filtration efficiency).\nFinally, as we have mentioned in every textbook, science is not just a\ncollection of facts, equations, or experiments. It is a human activity shaped\nby curiosity, creativity, collaboration, and careful questioning. It grows as\npeople ask questions, test ideas, share results, and learn from mistakes.\nScience develops over time through the work of many individuals across\ndifferent cultures and generations. Even if you do not choose to study\nscience beyond Grade 10, scientific thinking will be very important in\nwhatever you do. It helps you understand the technology that surrounds\nyou, and helps you evaluate information critically and make sense of the\nworld you live in. As you begin this stage of exploration, science invites\nyou not only to learn about the world, but also to learn ‘how’ we are trying\nto understand it.\nEmbark on your journey of discovery — looking carefully through the\nmagnifying glass of evidence and guided by the compass of curiosity.\nHappy Exploring!\nCChhaapptteerr--0011..iinndddd 77 0033--AApprr--2266 77::4466::4488 PPMM",
+      "char_count": 1600,
+      "tables": [],
+      "has_tables": false
+    }
+  ],
+  "extraction_quality": {
+    "per_page": [
+      {
+        "page_num": 1,
+        "fitz_chars": 1626,
+        "pdfplumber_chars": 1675,
+        "agreement": 0.971
+      },
+      {
+        "page_num": 2,
+        "fitz_chars": 3538,
+        "pdfplumber_chars": 3548,
+        "agreement": 0.997
+      },
+      {
+        "page_num": 3,
+        "fitz_chars": 3246,
+        "pdfplumber_chars": 3258,
+        "agreement": 0.996
+      },
+      {
+        "page_num": 4,
+        "fitz_chars": 3430,
+        "pdfplumber_chars": 3442,
+        "agreement": 0.997
+      },
+      {
+        "page_num": 5,
+        "fitz_chars": 2521,
+        "pdfplumber_chars": 2553,
+        "agreement": 0.987
+      },
+      {
+        "page_num": 6,
+        "fitz_chars": 2642,
+        "pdfplumber_chars": 2674,
+        "agreement": 0.988
+      },
+      {
+        "page_num": 7,
+        "fitz_chars": 1560,
+        "pdfplumber_chars": 1600,
+        "agreement": 0.975
+      }
+    ],
+    "pages_with_issues": [
+      {
+        "page_num": 1,
+        "issue": "contains_images"
+      },
+      {
+        "page_num": 2,
+        "issue": "contains_images"
+      },
+      {
+        "page_num": 3,
+        "issue": "contains_images"
+      },
+      {
+        "page_num": 4,
+        "issue": "contains_images"
+      },
+      {
+        "page_num": 5,
+        "issue": "contains_images"
+      },
+      {
+        "page_num": 6,
+        "issue": "contains_images"
+      },
+      {
+        "page_num": 7,
+        "issue": "contains_images"
+      }
+    ],
+    "overall_agreement": 0.9873224041516491,
+    "fitz_total_chars": 18563,
+    "pdfplumber_total_chars": 18750
+  }
+}

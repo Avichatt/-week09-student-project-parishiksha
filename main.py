@@ -236,11 +236,11 @@ def stage_3_embed_and_retrieve():
 
         # Test with sample queries
         test_queries = [
-            "What is the function of mitochondria?",
-            "Who discovered cells?",
-            "What is osmosis?",
-            "Difference between prokaryotic and eukaryotic cells",
-            "What is the role of chloroplasts?",
+            "What are the three states of matter?",
+            "What is sublimation?",
+            "How does evaporation cause cooling?",
+            "What is latent heat of fusion?",
+            "Why do we wear cotton clothes in summer?",
         ]
 
         logger.info(f"\nSample retrievals for {chapter_key}:")

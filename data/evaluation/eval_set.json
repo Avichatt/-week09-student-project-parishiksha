@@ -1,303 +1,137 @@
 [
   {
     "id": 1,
-    "question": "Who discovered cells and when?",
+    "question": "What do the magnifying glass and compass symbolize in scientific exploration?",
     "question_type": "factual",
-    "expected_answer": "Robert Hooke discovered cells in 1665 by observing thin slices of cork under a primitive microscope.",
-    "source_section": "Introduction",
+    "expected_answer": "The magnifying glass symbolises careful observation—noticing patterns. The compass reminds us that exploration needs direction—choosing models and asking the right questions.",
+    "source_section": "Symbolism",
     "expected_keywords": [
-      "Robert Hooke",
-      "1665",
-      "cork",
-      "microscope"
+      "magnifying glass",
+      "observation",
+      "compass",
+      "direction"
     ],
-    "chapter": "chapter_5",
+    "chapter": "chapter_1",
     "difficulty": "easy",
     "notes": ""
   },
   {
     "id": 2,
-    "question": "What is the function of the cell membrane?",
+    "question": "Who is the scientist mentioned as simplifying stars as a hot gas?",
     "question_type": "factual",
-    "expected_answer": "The cell membrane is selectively permeable and controls the movement of substances in and out of the cell.",
-    "source_section": "Plasma Membrane or Cell Membrane",
+    "expected_answer": "The physicist Meghnad Saha treated the matter in stars as a hot gas to explain star colours.",
+    "source_section": "Meet a Scientist",
     "expected_keywords": [
-      "selectively permeable",
-      "movement",
-      "substances"
+      "Meghnad Saha",
+      "stars",
+      "hot gas"
     ],
-    "chapter": "chapter_5",
+    "chapter": "chapter_1",
     "difficulty": "easy",
     "notes": ""
   },
   {
     "id": 3,
-    "question": "What is the powerhouse of the cell?",
+    "question": "What happened in the airplane fuel miscalculation incident?",
     "question_type": "factual",
-    "expected_answer": "Mitochondria are known as the powerhouse of the cell because they release energy required for various life processes.",
-    "source_section": "Cell Organelles",
+    "expected_answer": "A passenger aircraft ran out of fuel because the ground crew used units of pounds (lb) per litre instead of kilograms (kg) per litre.",
+    "source_section": "Ready to Go Beyond",
     "expected_keywords": [
-      "mitochondria",
-      "energy",
-      "powerhouse"
+      "fuel",
+      "miscalculation",
+      "pounds",
+      "kilograms"
     ],
-    "chapter": "chapter_5",
-    "difficulty": "easy",
+    "chapter": "chapter_1",
+    "difficulty": "medium",
     "notes": ""
   },
   {
     "id": 4,
-    "question": "What are the differences between prokaryotic and eukaryotic cells?",
-    "question_type": "factual",
-    "expected_answer": "Prokaryotic cells lack a well-defined nuclear membrane and membrane-bound organelles, while eukaryotic cells have both. Examples of prokaryotes are bacteria and blue-green algae.",
-    "source_section": "Prokaryotic and Eukaryotic Cells",
+    "question": "Why does science use simplified models of real systems?",
+    "question_type": "conceptual",
+    "expected_answer": "Science uses models to make sense of complexity by focusing only on what is most important for a given question and deliberately ignoring certain details.",
+    "source_section": "Models in Science",
     "expected_keywords": [
-      "nuclear membrane",
-      "organelles",
-      "bacteria",
-      "prokaryotic",
-      "eukaryotic"
+      "models",
+      "complexity",
+      "focus",
+      "ignoring details"
     ],
-    "chapter": "chapter_5",
+    "chapter": "chapter_1",
     "difficulty": "medium",
     "notes": ""
   },
   {
     "id": 5,
-    "question": "What is the function of Golgi apparatus?",
-    "question_type": "factual",
-    "expected_answer": "The Golgi apparatus packages and dispatches materials synthesized in the cell. It is involved in the formation of lysosomes.",
-    "source_section": "Cell Organelles",
+    "question": "What is the difference between a scientific law and a theory?",
+    "question_type": "conceptual",
+    "expected_answer": "A law describes a regular pattern observed in nature. A theory goes further and provides an explanation of why those patterns occur based on evidence.",
+    "source_section": "Threads of Curiosity",
     "expected_keywords": [
-      "packaging",
-      "dispatching",
-      "lysosomes"
+      "law",
+      "pattern",
+      "theory",
+      "explanation"
     ],
-    "chapter": "chapter_5",
+    "chapter": "chapter_1",
     "difficulty": "medium",
     "notes": ""
   },
   {
     "id": 6,
-    "question": "Why is the cell called the fundamental unit of life?",
-    "question_type": "conceptual",
-    "expected_answer": "The cell is called the fundamental unit of life because all living organisms are made up of cells, cells are the basic structural and functional units, and all cells arise from pre-existing cells.",
-    "source_section": "Cell Theory",
+    "question": "Estimate how many breaths a person takes in a day according to the textbook.",
+    "question_type": "application",
+    "expected_answer": "An average person takes roughly 20 thousand breaths a day at rest (12-15 breaths per minute).",
+    "source_section": "Estimation",
     "expected_keywords": [
-      "structural",
-      "functional",
-      "unit",
-      "living organisms"
+      "20 thousand",
+      "breaths",
+      "day"
     ],
-    "chapter": "chapter_5",
-    "difficulty": "medium",
+    "chapter": "chapter_1",
+    "difficulty": "hard",
     "notes": ""
   },
   {
     "id": 7,
-    "question": "Why do plant cells have a cell wall but animal cells do not?",
-    "question_type": "conceptual",
-    "expected_answer": "Plant cells have a cell wall made of cellulose to provide structural strength and rigidity. Animal cells do not need this because they have other structural support mechanisms.",
-    "source_section": "Cell Wall",
+    "question": "If a viral claim says food is harmful during an eclipse, how can scientific thinking disprove it?",
+    "question_type": "application",
+    "expected_answer": "By asking scientific questions: Does temperature change significantly? Does food go bad in a shadow? One concludes no mechanism supports such a claim as an eclipse is just a play of shadows.",
+    "source_section": "Checking viral claims",
     "expected_keywords": [
-      "cellulose",
-      "structural",
-      "rigidity",
-      "plant"
+      "scientific questions",
+      "shadows",
+      "no mechanism"
     ],
-    "chapter": "chapter_5",
-    "difficulty": "medium",
+    "chapter": "chapter_1",
+    "difficulty": "hard",
     "notes": ""
   },
   {
     "id": 8,
-    "question": "Explain the concept of osmosis with an example.",
-    "question_type": "conceptual",
-    "expected_answer": "Osmosis is the movement of water molecules from a region of higher water concentration to a region of lower water concentration through a semi-permeable membrane. For example, when a raisin is placed in water, it swells because water enters through osmosis.",
-    "source_section": "Osmosis",
-    "expected_keywords": [
-      "water",
-      "concentration",
-      "semi-permeable",
-      "membrane"
-    ],
-    "chapter": "chapter_5",
-    "difficulty": "medium",
+    "question": "What is the chemical equation for photosynthesis?",
+    "question_type": "unanswerable",
+    "expected_answer": "N/A — Photosynthesis is not covered in the opening 'Exploration' chapter.",
+    "source_section": "",
+    "expected_keywords": [],
+    "chapter": "chapter_1",
+    "difficulty": "hard",
     "notes": ""
   },
   {
     "id": 9,
-    "question": "What would happen if the cell membrane of a cell stopped functioning?",
-    "question_type": "application",
-    "expected_answer": "If the cell membrane stopped functioning, the cell would not be able to control what enters and leaves. Harmful substances could enter, needed substances could leave, and the cell would likely die.",
-    "source_section": "Plasma Membrane",
-    "expected_keywords": [
-      "control",
-      "substances",
-      "enter",
-      "leave"
-    ],
-    "chapter": "chapter_5",
-    "difficulty": "hard",
-    "notes": ""
-  },
-  {
-    "id": 10,
-    "question": "If a plant cell is placed in a hypertonic solution, what will happen?",
-    "question_type": "application",
-    "expected_answer": "In a hypertonic solution, water will move out of the plant cell through osmosis. The cell membrane will shrink away from the cell wall, a process called plasmolysis.",
-    "source_section": "Osmosis",
-    "expected_keywords": [
-      "water",
-      "hypertonic",
-      "plasmolysis",
-      "shrink"
-    ],
-    "chapter": "chapter_5",
-    "difficulty": "hard",
-    "notes": ""
-  },
-  {
-    "id": 11,
-    "question": "What is a tissue?",
-    "question_type": "factual",
-    "expected_answer": "A tissue is a group of cells that are similar in structure and work together to perform a specific function.",
-    "source_section": "Introduction",
-    "expected_keywords": [
-      "group",
-      "cells",
-      "similar",
-      "function"
-    ],
-    "chapter": "chapter_6",
-    "difficulty": "easy",
-    "notes": ""
-  },
-  {
-    "id": 12,
-    "question": "What are the types of simple permanent tissues?",
-    "question_type": "factual",
-    "expected_answer": "Simple permanent tissues are of three types: parenchyma, collenchyma, and sclerenchyma.",
-    "source_section": "Simple Permanent Tissue",
-    "expected_keywords": [
-      "parenchyma",
-      "collenchyma",
-      "sclerenchyma"
-    ],
-    "chapter": "chapter_6",
-    "difficulty": "medium",
-    "notes": ""
-  },
-  {
-    "id": 13,
-    "question": "What is the function of xylem tissue?",
-    "question_type": "factual",
-    "expected_answer": "Xylem conducts water and minerals from roots to other parts of the plant. It is made up of tracheids, vessels, xylem parenchyma, and xylem fibres.",
-    "source_section": "Complex Permanent Tissue",
-    "expected_keywords": [
-      "water",
-      "minerals",
-      "roots",
-      "tracheids"
-    ],
-    "chapter": "chapter_6",
-    "difficulty": "medium",
-    "notes": ""
-  },
-  {
-    "id": 14,
-    "question": "Why do meristematic tissues have no vacuoles?",
-    "question_type": "conceptual",
-    "expected_answer": "Meristematic tissues are actively dividing cells. They need dense cytoplasm with high metabolic activity. Vacuoles, which store waste and water, are not needed in rapidly dividing cells.",
-    "source_section": "Meristematic Tissue",
-    "expected_keywords": [
-      "dividing",
-      "cytoplasm",
-      "vacuoles",
-      "actively"
-    ],
-    "chapter": "chapter_6",
-    "difficulty": "hard",
-    "notes": ""
-  },
-  {
-    "id": 15,
-    "question": "What is the role of CRISPR in cell biology?",
-    "question_type": "unanswerable",
-    "expected_answer": "N/A — CRISPR is not covered in NCERT Class 9 Science.",
-    "source_section": "",
-    "expected_keywords": [],
-    "chapter": "chapter_5",
-    "difficulty": "hard",
-    "notes": "Tests hallucination resistance. CRISPR is not in NCERT Class 9."
-  },
-  {
-    "id": 16,
-    "question": "How does mRNA vaccine work at the cellular level?",
-    "question_type": "unanswerable",
-    "expected_answer": "N/A — mRNA vaccines are not covered in NCERT Class 9 Science.",
-    "source_section": "",
-    "expected_keywords": [],
-    "chapter": "chapter_5",
-    "difficulty": "hard",
-    "notes": "Tests hallucination. Topical but not in textbook."
-  },
-  {
-    "id": 17,
-    "question": "What is the latest research on stem cells?",
-    "question_type": "unanswerable",
-    "expected_answer": "N/A — Stem cell research is not covered in NCERT Class 9.",
-    "source_section": "",
-    "expected_keywords": [],
-    "chapter": "chapter_6",
-    "difficulty": "hard",
-    "notes": "Tests whether model goes beyond textbook scope."
-  },
-  {
-    "id": 18,
-    "question": "Cell ka sabse chhota unit kya hai?",
+    "question": "Science mein approximate estimation ki kya importance hai?",
     "question_type": "hindi_codeswitched",
-    "expected_answer": "Cell life ki fundamental unit hai. Sabhi living organisms cells se bane hote hain.",
-    "source_section": "Introduction",
+    "expected_answer": "Estimation help karta hai intuition built karne mein, errors detect karne mein, and check karne mein ki answer sense bana raha hai ya nahi.",
+    "source_section": "Estimation",
     "expected_keywords": [
-      "cell",
-      "fundamental",
-      "unit",
-      "living"
+      "estimation",
+      "intuition",
+      "sense"
     ],
-    "chapter": "chapter_5",
+    "chapter": "chapter_1",
     "difficulty": "medium",
-    "notes": "Hindi-English code-switch. Tests multilingual robustness."
-  },
-  {
-    "id": 19,
-    "question": "Mitochondria ko powerhouse kyun kahte hain?",
-    "question_type": "hindi_codeswitched",
-    "expected_answer": "Mitochondria ko powerhouse isliye kahte hain kyunki ye cell ke liye energy produce karte hain.",
-    "source_section": "Cell Organelles",
-    "expected_keywords": [
-      "mitochondria",
-      "energy",
-      "powerhouse"
-    ],
-    "chapter": "chapter_5",
-    "difficulty": "medium",
-    "notes": "Hindi-English code-switch about cell organelles."
-  },
-  {
-    "id": 20,
-    "question": "Plant cell mein cell wall ka kya kaam hai?",
-    "question_type": "hindi_codeswitched",
-    "expected_answer": "Cell wall cellulose se bani hoti hai aur plant cell ko structural support aur protection deti hai.",
-    "source_section": "Cell Wall",
-    "expected_keywords": [
-      "cell wall",
-      "cellulose",
-      "structural",
-      "protection"
-    ],
-    "chapter": "chapter_5",
-    "difficulty": "medium",
-    "notes": "Hindi question about plant cell wall."
+    "notes": ""
   }
 ]

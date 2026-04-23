@@ -50,18 +50,11 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 # Chapters we are processing (Class 9 Science)
 TARGET_CHAPTERS = {
-    "chapter_5": {
-        "title": "The Fundamental Unit of Life",
+    "chapter_1": {
+        "title": "Exploration: World of Secondary Science",
         "class": 9,
         "subject": "Science",
-        "pdf_filename": "iesc105.pdf",
-        "page_range": None,  # None means all pages
-    },
-    "chapter_6": {
-        "title": "Tissues",
-        "class": 9,
-        "subject": "Science",
-        "pdf_filename": "iesc106.pdf",
+        "pdf_filename": "iesc101.pdf",
         "page_range": None,
     },
 }

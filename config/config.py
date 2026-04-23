@@ -1,9 +1,8 @@
-# =============================================================================
 # PariShiksha — Central Configuration
-# =============================================================================
-# All project-wide constants, paths, model names, and hyperparameters live here.
-# Import this module instead of scattering magic strings across files.
-# =============================================================================
+
+# All project-wide constants, paths, model names, and hyperparameters are present here.
+
+
 
 import os
 from pathlib import Path
@@ -12,9 +11,9 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# =============================================================================
-# 1. PROJECT PATHS
-# =============================================================================
+
+# PROJECT PATHS
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # Data directories
@@ -39,16 +38,16 @@ for dir_path in [
 ]:
     dir_path.mkdir(parents=True, exist_ok=True)
 
-# =============================================================================
-# 2. API KEYS
-# =============================================================================
+
+# API KEYS
+
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 HF_TOKEN = os.getenv("HF_TOKEN", "")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
-# =============================================================================
-# 3. NCERT CHAPTER CONFIGURATION
-# =============================================================================
+
+# NCERT CHAPTER CONFIGURATION
+
 # Chapters we are processing (Class 9 Science)
 TARGET_CHAPTERS = {
     "chapter_5": {
@@ -70,9 +69,9 @@ TARGET_CHAPTERS = {
 # NCERT PDF download URLs (official NCERT website)
 NCERT_BASE_URL = "https://ncert.nic.in/textbook/pdf"
 
-# =============================================================================
-# 4. TOKENIZER MODELS (for comparison in Stage 1)
-# =============================================================================
+
+# TOKENIZER MODELS (for comparison in Stage 1)
+
 TOKENIZER_MODELS = {
     "bert_base": "bert-base-uncased",
     "bert_bio": "dmis-lab/biobert-base-cased-v1.2",
@@ -100,9 +99,9 @@ SCIENCE_TERMS = [
     "cytoplasm",
 ]
 
-# =============================================================================
-# 5. CHUNKING PARAMETERS
-# =============================================================================
+
+# CHUNKING PARAMETERS
+
 CHUNKING_CONFIG = {
     "strategies": ["fixed_token", "sentence_based", "semantic_paragraph"],
     "fixed_token_sizes": [128, 256, 512],   # tokens per chunk
@@ -111,9 +110,9 @@ CHUNKING_CONFIG = {
     "sentence_group_size": 5,                # sentences per chunk in sentence strategy
 }
 
-# =============================================================================
-# 6. EMBEDDING & RETRIEVAL PARAMETERS
-# =============================================================================
+
+# EMBEDDING & RETRIEVAL PARAMETERS
+
 EMBEDDING_CONFIG = {
     # Dense embedding model (SBERT)
     "dense_model": "all-MiniLM-L6-v2",
@@ -126,9 +125,9 @@ EMBEDDING_CONFIG = {
     "tfidf_ngram_range": (1, 2),
 }
 
-# =============================================================================
-# 7. GENERATION PARAMETERS
-# =============================================================================
+
+# GENERATION PARAMETERS
+
 GENERATION_CONFIG = {
     # Gemini (decoder-only)
     "gemini_model": "gemini-1.5-flash",
@@ -149,9 +148,9 @@ GENERATION_CONFIG = {
     ),
 }
 
-# =============================================================================
-# 8. EVALUATION PARAMETERS
-# =============================================================================
+
+#  EVALUATION PARAMETERS
+
 EVALUATION_CONFIG = {
     # Minimum number of evaluation questions
     "min_eval_questions": 20,
@@ -169,8 +168,8 @@ EVALUATION_CONFIG = {
     "bertscore_model": "microsoft/deberta-xlarge-mnli",
 }
 
-# =============================================================================
-# 9. LOGGING
-# =============================================================================
+
+# LOGGING
+
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 LOG_FORMAT = "{time:YYYY-MM-DD HH:mm:ss} | {level:<8} | {name}:{function}:{line} - {message}"

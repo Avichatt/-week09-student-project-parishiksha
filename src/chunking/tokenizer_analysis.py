@@ -1,6 +1,6 @@
-# =============================================================================
+
 # PariShiksha — Tokenizer Analysis Module
-# =============================================================================
+
 # Compares how different tokenizers handle NCERT Science vocabulary.
 # This is Stage 1 of the project: understanding that tokenizer choice
 # directly impacts chunking quality and downstream retrieval.
@@ -9,7 +9,7 @@
 # are split very differently by BPE (GPT-2), WordPiece (BERT), and
 # SentencePiece (T5). This affects both token count per chunk and
 # semantic integrity of scientific vocabulary in embeddings.
-# =============================================================================
+
 
 import json
 from collections import defaultdict
@@ -79,9 +79,9 @@ class TokenizerAnalyzer:
 
         logger.info(f"Loaded {len(self.tokenizers)} tokenizers")
 
-    # -------------------------------------------------------------------------
+
     # Analysis: Scientific Terms
-    # -------------------------------------------------------------------------
+ 
 
     def compare_on_terms(
         self, terms: Optional[List[str]] = None
@@ -129,9 +129,9 @@ class TokenizerAnalyzer:
         self.results["term_comparison"] = report
         return report
 
-    # -------------------------------------------------------------------------
+
     # Analysis: Full Chapter Text
-    # -------------------------------------------------------------------------
+
 
     def compare_on_text(
         self, chapter_key: str, text: Optional[str] = None
@@ -173,9 +173,9 @@ class TokenizerAnalyzer:
         self.results["text_comparison"] = report
         return report
 
-    # -------------------------------------------------------------------------
+
     # Visualization
-    # -------------------------------------------------------------------------
+
 
     def plot_term_comparison(self, save: bool = True) -> None:
         """
@@ -272,9 +272,8 @@ class TokenizerAnalyzer:
 
         plt.show()
 
-    # -------------------------------------------------------------------------
     # Report Generation
-    # -------------------------------------------------------------------------
+
 
     def generate_comparison_report(self) -> Dict:
         """Generate a comprehensive comparison report as JSON."""
@@ -338,9 +337,9 @@ class TokenizerAnalyzer:
         return recommendations
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     analyzer = TokenizerAnalyzer()
     analyzer.load_tokenizers()

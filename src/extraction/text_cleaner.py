@@ -1,11 +1,11 @@
-# =============================================================================
+
 # PariShiksha — Text Cleaning & Structuring Module
-# =============================================================================
+
 # Takes raw extracted text from PDFs and cleans it into structured sections.
 # NCERT PDFs are messy: mojibake from formula rendering, dangling figure
 # references, inconsistent whitespace, headers/footers repeated on every page.
 # This module handles all of that.
-# =============================================================================
+
 
 import json
 import re
@@ -105,9 +105,9 @@ class TextCleaner:
         self._heading_re = [(re.compile(p), label) for p, label in self.HEADING_PATTERNS]
         self._content_re = [(re.compile(p, re.IGNORECASE), label) for p, label in self.CONTENT_TYPE_PATTERNS]
 
-    # -------------------------------------------------------------------------
+
     # Public API
-    # -------------------------------------------------------------------------
+ 
 
     def clean_chapter(self, extraction_result: Dict, prefer_backend: str = "fitz") -> Dict:
         """
@@ -223,9 +223,9 @@ class TextCleaner:
         logger.info(f"Saved: {json_path}, {text_path}, {sections_path}")
         return json_path, text_path
 
-    # -------------------------------------------------------------------------
+ 
     # Cleaning Pipeline Steps
-    # -------------------------------------------------------------------------
+ 
 
     def _clean_page_text(self, text: str, page_num: int) -> Tuple[str, Dict]:
         """Apply all cleaning steps to a single page's text."""
@@ -379,9 +379,9 @@ class TextCleaner:
         return "mixed"
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     import sys
 

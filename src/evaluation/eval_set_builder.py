@@ -114,107 +114,107 @@ class EvalSetBuilder:
 
     def build_default_eval_set(self) -> List[Dict]:
         """
-        Build the default evaluation set for NCERT Class 9 Science Chapter 1
-        (Exploration: Entering the World of Secondary Science).
+        Build the default evaluation set for NCERT Class 9 Science Chapter 4
+        (Describing Motion Around Us).
         """
         self.eval_set = []
 
         # --- FACTUAL QUESTIONS ---
         self.add_question(
-            question="What do the magnifying glass and compass symbolize in scientific exploration?",
+            question="What is the name of the ancient Indian treatise from the 5th century CE that mentions the concept of speed?",
             question_type="factual",
-            expected_answer="The magnifying glass symbolises careful observation—noticing patterns. The compass reminds us that exploration needs direction—choosing models and asking the right questions.",
-            source_section="Symbolism",
-            expected_keywords=["magnifying glass", "observation", "compass", "direction"],
-            chapter="chapter_1",
+            expected_answer="The treatise is Aryabhatiya.",
+            source_section="India's Scientific Contributions",
+            expected_keywords=["Aryabhatiya"],
+            chapter="chapter_4",
             difficulty="easy",
         )
 
         self.add_question(
-            question="Who is the scientist mentioned as simplifying stars as a hot gas?",
+            question="In the context of motion in a straight line, how are the two possible directions of motion represented?",
             question_type="factual",
-            expected_answer="The physicist Meghnad Saha treated the matter in stars as a hot gas to explain star colours.",
-            source_section="Meet a Scientist",
-            expected_keywords=["Meghnad Saha", "stars", "hot gas"],
-            chapter="chapter_1",
+            expected_answer="They are represented by plus (+) and minus (-) signs.",
+            source_section="Describing position",
+            expected_keywords=["plus", "minus", "+", "-"],
+            chapter="chapter_4",
             difficulty="easy",
         )
 
         self.add_question(
-            question="What happened in the airplane fuel miscalculation incident?",
+            question="In Example 4.1 from Ganitakaumudi regarding the two postmen, what is the initial distance between them?",
             question_type="factual",
-            expected_answer="A passenger aircraft ran out of fuel because the ground crew used units of pounds (lb) per litre instead of kilograms (kg) per litre.",
-            source_section="Ready to Go Beyond",
-            expected_keywords=["fuel", "miscalculation", "pounds", "kilograms"],
-            chapter="chapter_1",
+            expected_answer="The initial distance between them is 210 yojanas.",
+            source_section="India's Scientific Contributions",
+            expected_keywords=["210", "yojanas"],
+            chapter="chapter_4",
             difficulty="medium",
         )
 
         # --- CONCEPTUAL QUESTIONS ---
         self.add_question(
-            question="Why does science use simplified models of real systems?",
+            question="What is the condition for the distance travelled by an object to be equal to the magnitude of its displacement?",
             question_type="conceptual",
-            expected_answer="Science uses models to make sense of complexity by focusing only on what is most important for a given question and deliberately ignoring certain details.",
-            source_section="Models in Science",
-            expected_keywords=["models", "complexity", "focus", "ignoring details"],
-            chapter="chapter_1",
+            expected_answer="The distance travelled and the magnitude of displacement are equal if the object moves in a straight line without turning back, i.e., it moves in one direction only.",
+            source_section="Distance travelled and displacement",
+            expected_keywords=["straight line", "without turning back", "one direction"],
+            chapter="chapter_4",
             difficulty="medium",
         )
 
         self.add_question(
-            question="What is the difference between a scientific law and a theory?",
+            question="What happens to the average velocity as the time interval becomes infinitesimally small?",
             question_type="conceptual",
-            expected_answer="A law describes a regular pattern observed in nature. A theory goes further and provides an explanation of why those patterns occur based on evidence.",
-            source_section="Threads of Curiosity",
-            expected_keywords=["law", "pattern", "theory", "explanation"],
-            chapter="chapter_1",
+            expected_answer="When the time interval becomes infinitesimally small, the average value of velocity approaches a fixed value called the instantaneous velocity.",
+            source_section="Ready to Go Beyond",
+            expected_keywords=["instantaneous velocity", "infinitesimally small", "approaches"],
+            chapter="chapter_4",
             difficulty="medium",
         )
 
         # --- APPLICATION QUESTIONS ---
         self.add_question(
-            question="Estimate how many breaths a person takes in a day according to the textbook.",
+            question="If an athlete runs 100 meters forward on a straight track and then runs 100 meters back to the starting point, what are the total distance travelled and the displacement?",
             question_type="application",
-            expected_answer="An average person takes roughly 20 thousand breaths a day at rest (12-15 breaths per minute).",
-            source_section="Estimation",
-            expected_keywords=["20 thousand", "breaths", "day"],
-            chapter="chapter_1",
+            expected_answer="The total distance travelled is 200 meters, but the displacement is 0 meters since the starting and stopping positions are the same.",
+            source_section="Distance travelled and displacement",
+            expected_keywords=["200 meters", "0 meters"],
+            chapter="chapter_4",
             difficulty="hard",
         )
 
         self.add_question(
-            question="If a viral claim says food is harmful during an eclipse, how can scientific thinking disprove it?",
+            question="Sarang swims from one end of a 25 m pool to the other end and back to his starting point in 50 seconds. What is his average speed and average velocity?",
             question_type="application",
-            expected_answer="By asking scientific questions: Does temperature change significantly? Does food go bad in a shadow? One concludes no mechanism supports such a claim as an eclipse is just a play of shadows.",
-            source_section="Checking viral claims",
-            expected_keywords=["scientific questions", "shadows", "no mechanism"],
-            chapter="chapter_1",
+            expected_answer="His average speed is 1 m/s (50m/50s), and his average velocity is 0 m/s because his displacement is zero.",
+            source_section="Average speed and average velocity",
+            expected_keywords=["1 m s-1", "0 m s-1", "average speed", "average velocity"],
+            chapter="chapter_4",
             difficulty="hard",
         )
 
         # --- UNANSWERABLE QUESTIONS ---
         self.add_question(
-            question="What is the chemical equation for photosynthesis?",
+            question="How does Albert Einstein's theory of general relativity explain the curvature of spacetime caused by a black hole?",
             question_type="unanswerable",
-            expected_answer="N/A — Photosynthesis is not covered in the opening 'Exploration' chapter.",
+            expected_answer="N/A — General Theory of Relativity and black holes are not covered in the opening motion chapter.",
             source_section="",
             expected_keywords=[],
-            chapter="chapter_1",
+            chapter="chapter_4",
             difficulty="hard",
         )
 
         # --- HINDI CODE-SWITCHED QUESTIONS ---
         self.add_question(
-            question="Science mein approximate estimation ki kya importance hai?",
+            question="Motion in a straight line ko aur kis naam se jaana jaata hai, according to the textbook?",
             question_type="hindi_codeswitched",
-            expected_answer="Estimation help karta hai intuition built karne mein, errors detect karne mein, and check karne mein ki answer sense bana raha hai ya nahi.",
-            source_section="Estimation",
-            expected_keywords=["estimation", "intuition", "sense"],
-            chapter="chapter_1",
+            expected_answer="It is also called linear motion.",
+            source_section="Motion in a Straight Line",
+            expected_keywords=["linear motion"],
+            chapter="chapter_4",
             difficulty="medium",
         )
 
-        logger.info(f"Built Exploration (Ch 1) eval set with {len(self.eval_set)} questions")
+        logger.info(f"Built Motion (Ch 4) eval set with {len(self.eval_set)} questions")
         return self.eval_set
 
 

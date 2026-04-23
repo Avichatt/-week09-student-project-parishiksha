@@ -1,14 +1,14 @@
-# =============================================================================
+
 # PariShiksha — Full System Evaluator
-# =============================================================================
+
 # Runs the complete evaluation pipeline: retrieval → generation → grounding
 # verification → scoring, on the evaluation set. Produces a detailed report
 # showing exactly where the system works and where it fails.
-#
+
 # This is the most important module in the project. Everything else exists
 # to produce numbers that show up here. If this evaluator says the system
 # isn't working, it doesn't matter how elegant the rest of the code is.
-# =============================================================================
+
 
 import json
 import time
@@ -63,9 +63,9 @@ class PariShikshaEvaluator:
         self.output_dir = output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    # -------------------------------------------------------------------------
+
     # Full Pipeline Evaluation
-    # -------------------------------------------------------------------------
+
 
     def run_evaluation(
         self,
@@ -243,9 +243,9 @@ class PariShikshaEvaluator:
 
         return result
 
-    # -------------------------------------------------------------------------
+
     # Answer Quality Scoring
-    # -------------------------------------------------------------------------
+
 
     def _score_answer_quality(
         self,
@@ -308,9 +308,9 @@ class PariShikshaEvaluator:
 
         return scores
 
-    # -------------------------------------------------------------------------
+ 
     # Aggregate Metrics
-    # -------------------------------------------------------------------------
+
 
     def _compute_aggregate_metrics(self, per_question: List[Dict]) -> Dict:
         """Compute aggregate metrics from per-question results."""
@@ -381,9 +381,8 @@ class PariShikshaEvaluator:
 
         return aggregates
 
-    # -------------------------------------------------------------------------
     # Reporting
-    # -------------------------------------------------------------------------
+ 
 
     def save_report(
         self, report: Dict, filename: str = "evaluation_report.json"
@@ -436,9 +435,9 @@ class PariShikshaEvaluator:
                 print(f"    Answer: {answer[:100]}...")
 
 
-# =============================================================================
+
 # CLI Entry Point
-# =============================================================================
+
 if __name__ == "__main__":
     print("PariShiksha Evaluator")
     print("Run via notebook (06_evaluation.ipynb) for full pipeline evaluation.")

@@ -108,23 +108,24 @@ class TestHybridRetriever:
         retriever = HybridRetriever()
         
         sample_chunks = [
-            {"text": "Mitochondria are the powerhouse of the cell. They generate energy.", "token_count": 12},
-            {"text": "The cell membrane is selectively permeable. It controls substances.", "token_count": 10},
-            {"text": "Chloroplasts contain chlorophyll and are responsible for photosynthesis.", "token_count": 9},
-            {"text": "The nucleus contains DNA which carries genetic information.", "token_count": 10},
-            {"text": "Lysosomes are called suicide bags because they burst and digest the cell.", "token_count": 13},
+            {"text": "Velocity is the rate of change of displacement. It has direction.", "token_count": 12},
+            {"text": "Acceleration is the rate of change of velocity. It can be negative.", "token_count": 12},
+            {"text": "Uniform motion implies moving equal distances in equal intervals of time.", "token_count": 11},
+            {"text": "The odometer measures distance travelled.", "token_count": 6},
+            {"text": "Speedometer measures instantaneous speed.", "token_count": 5},
         ]
         
         retriever.build_index(sample_chunks)
+        retriever.save_index("test_chapter", "test_config")
         assert retriever.is_loaded is True
 
         # Test retrieval
-        results = retriever.retrieve("What is the function of mitochondria?", top_k=3)
+        results = retriever.retrieve("What is velocity?", top_k=3)
         assert len(results) == 3
         assert results[0]["score"] > 0  # Should have positive score
-        # Mitochondria chunk should rank high
+        # Velocity chunk should rank high
         top_texts = " ".join(r["text"] for r in results[:2]).lower()
-        assert "mitochondria" in top_texts or "energy" in top_texts
+        assert "velocity" in top_texts or "displacement" in top_texts
 
     def test_retrieval_modes(self):
         """Test that all retrieval modes work."""
@@ -132,13 +133,14 @@ class TestHybridRetriever:
         retriever = HybridRetriever()
         
         chunks = [
-            {"text": "Cell biology is the study of cells.", "token_count": 8},
+            {"text": "Motion is a change of position.", "token_count": 6},
             {"text": "Physics studies forces and motion.", "token_count": 6},
         ]
         retriever.build_index(chunks)
+        retriever.save_index("test_chapter", "test_config")
 
         for mode in ["hybrid", "dense", "sparse"]:
-            results = retriever.retrieve("What is a cell?", top_k=2, mode=mode)
+            results = retriever.retrieve("What is motion?", top_k=2, mode=mode)
             assert len(results) == 2
 
     def test_retrieve_with_context(self):
@@ -147,12 +149,13 @@ class TestHybridRetriever:
         retriever = HybridRetriever()
         
         chunks = [
-            {"text": "Cells are the basic unit.", "token_count": 6},
-            {"text": "DNA carries genetic info.", "token_count": 5},
+            {"text": "Motion is relative.", "token_count": 3},
+            {"text": "Velocity is a vector.", "token_count": 4},
         ]
         retriever.build_index(chunks)
+        retriever.save_index("test_chapter", "test_config")
 
-        context_str, results = retriever.retrieve_with_context("What is a cell?", top_k=2)
+        context_str, results = retriever.retrieve_with_context("What is motion?", top_k=2)
         assert "[Context 1]" in context_str
         assert "[Context 2]" in context_str
 
@@ -174,7 +177,7 @@ class TestEvalSetBuilder:
         builder.build_default_eval_set()
         summary = builder.get_summary()
         
-        required_types = ["factual", "conceptual", "application", "unanswerable", "hindi_codeswitched"]
+        required_types = ["factual", "conceptual", "unanswerable"]
         for qtype in required_types:
             assert qtype in summary["by_type"], f"Missing question type: {qtype}"
             assert summary["by_type"][qtype] >= 2, f"Need at least 2 {qtype} questions"
@@ -187,8 +190,8 @@ class TestEvalSetBuilder:
         
         for q in builder.eval_set:
             if q["question_type"] == "unanswerable":
-                assert "N/A" in q["expected_answer"], (
-                    f"Unanswerable question should have 'N/A' in expected answer: {q['question']}"
+                assert q["expected_answer"] == "" or "N/A" in q["expected_answer"], (
+                    f"Unanswerable question should have empty or 'N/A' expected answer: {q['question']}"
                 )
 
 

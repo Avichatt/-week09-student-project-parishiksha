@@ -20,7 +20,7 @@ class TestTextCleaner:
 
     def test_mojibake_fixing(self):
         """Test that common mojibake patterns are fixed."""
-        text = "The temperature is 25â€™C and the equation is H₂O â†' H⁺ + OH⁻"
+        text = "The speed is 25â€™m/s and the equation is v = u â†' at"
         cleaned, report = self.cleaner._clean_page_text(text, page_num=1)
         assert "â€™" not in cleaned
         assert report["mojibake_fixes"] > 0
@@ -34,41 +34,41 @@ class TestTextCleaner:
 
     def test_dangling_reference_detection(self):
         """Test detection of figure references."""
-        text = "As shown in Fig. 5.3, the cell membrane is selectively permeable."
+        text = "As shown in Fig. 4.3, the motion of the car is uniform."
         cleaned, report = self.cleaner._clean_page_text(text, page_num=1)
         assert len(report["dangling_refs"]) > 0
 
     def test_page_merge_hyphenation(self):
         """Test that hyphenated words across pages are rejoined."""
         pages = [
-            (1, "The process of photo-"),
-            (2, "synthesis is essential for life.")
+            (1, "The average accel-"),
+            (2, "eration is constant.")
         ]
         merged = self.cleaner._merge_pages(pages)
-        assert "photosynthesis" in merged
-        assert "photo-\nsynthesis" not in merged
+        assert "acceleration" in merged
+        assert "accel-\neration" not in merged
 
     def test_section_detection(self):
         """Test that section headings are detected."""
         text = """Introduction paragraph here.
 
-5.1 CELL ORGANELLES
+4.1 DESCRIBING MOTION
 
-The cell has many organelles including mitochondria.
+We describe the location of an object by specifying a reference point.
 
-5.2 CELL MEMBRANE
+4.2 MEASURING THE RATE OF MOTION
 
-The cell membrane controls substances."""
+The rate of motion is speed."""
         sections = self.cleaner._detect_sections(text)
         assert len(sections) >= 2
         headings = [s["heading"] for s in sections]
-        assert any("CELL" in h for h in headings)
+        assert any("MOTION" in h for h in headings)
 
     def test_content_type_classification(self):
         """Test content type detection."""
-        assert self.cleaner._classify_content("Q. What is a cell?") == "question"
-        assert self.cleaner._classify_content("Activity 5.1: Observe the slide") == "activity"
-        assert self.cleaner._classify_content("Cells are the basic units.") == "narrative"
+        assert self.cleaner._classify_content("Q. What is linear motion?") == "question"
+        assert self.cleaner._classify_content("Activity 4.1: Measure the time") == "activity"
+        assert self.cleaner._classify_content("Motion is relative.") == "narrative"
 
     def test_empty_text_handling(self):
         """Test that empty text is handled gracefully."""

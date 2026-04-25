@@ -16,21 +16,19 @@ class TestTextChunker:
     def setup_method(self):
         self.chunker = TextChunker(tokenizer_name="bert-base-uncased")
         self.sample_text = (
-            "The cell is the fundamental structural and functional unit of all living organisms. "
-            "Robert Hooke first observed cells in 1665 using a primitive microscope. "
-            "He observed thin slices of cork and noticed small compartments which he called cells. "
-            "The cell theory states that all living organisms are composed of cells, "
-            "the cell is the basic unit of life, and all cells arise from pre-existing cells. "
-            "Prokaryotic cells lack a well-defined nuclear membrane. "
-            "Eukaryotic cells have a well-defined nucleus bounded by a nuclear membrane. "
-            "The plasma membrane is selectively permeable and controls the transport of substances. "
-            "The cell wall in plants provides structural strength and is made of cellulose. "
-            "Mitochondria are known as the powerhouse of the cell because they generate energy. "
-            "The endoplasmic reticulum is a network of membranes involved in protein synthesis. "
-            "The Golgi apparatus packages and dispatches materials synthesized in the cell. "
-            "Lysosomes contain digestive enzymes and are called the suicide bags of the cell. "
-            "Chloroplasts are found in plant cells and contain chlorophyll for photosynthesis. "
-            "The nucleus contains chromosomes which carry genetic information in the form of DNA."
+            "Motion is a change of position; it can be described in terms of the distance moved or the displacement. "
+            "The motion of an object could be uniform or non-uniform depending on whether its velocity is constant or changing. "
+            "The speed of an object is the distance covered per unit time, and velocity is the displacement per unit time. "
+            "The acceleration of an object is the change in velocity per unit time. "
+            "Uniform and non-uniform motions of objects can be shown through graphs. "
+            "The motion of an object moving at uniform acceleration can be described with the help of three equations. "
+            "If an object moves in a circular path with uniform speed, its motion is called uniform circular motion. "
+            "Displacement is the shortest distance measured from the initial to the final position of an object. "
+            "Odometer is an instrument for measuring the distance travelled by a vehicle. "
+            "Speed has only magnitude, whereas velocity has both magnitude and direction. "
+            "The SI unit of distance and displacement is metre (m). "
+            "The SI unit of speed and velocity is metre per second (m/s). "
+            "The SI unit of acceleration is metre per second square (m/s squared)."
         )
 
     def test_fixed_token_chunking_produces_chunks(self):
@@ -79,12 +77,12 @@ class TestTextChunker:
         sections = [
             {
                 "heading": "Introduction",
-                "text": "The cell is the fundamental unit of life. All living organisms are made of cells.",
+                "text": "Motion is a change of position. It can be uniform or non-uniform.",
                 "content_type": "narrative",
             },
             {
-                "heading": "Cell Organelles",
-                "text": "Mitochondria are the powerhouse. The ER is a membrane network. Golgi packages materials.",
+                "heading": "Rate of Motion",
+                "text": "Speed is distance per unit time. Velocity is displacement per unit time.",
                 "content_type": "narrative",
             },
         ]
@@ -120,8 +118,9 @@ class TestTextChunker:
             assert "chunk_id" in chunk
             assert "text" in chunk
             assert "token_count" in chunk
-            assert "strategy" in chunk
-            assert chunk["strategy"] == "fixed_token"
+            assert "metadata" in chunk
+            assert "strategy" in chunk["metadata"]
+            assert chunk["metadata"]["strategy"] == "fixed_token"
 
     def test_chunking_experiment(self):
         """Test the full chunking experiment runner."""
@@ -154,7 +153,7 @@ class TestTokenizerAnalyzer:
         analyzer = TokenizerAnalyzer()
         analyzer.load_tokenizers({"bert": "bert-base-uncased"})
 
-        report = analyzer.compare_on_terms(["photosynthesis", "mitochondria"])
+        report = analyzer.compare_on_terms(["displacement", "acceleration"])
         assert len(report["terms"]) == 2
         assert "bert" in report["summary"]
 
@@ -164,7 +163,7 @@ class TestTokenizerAnalyzer:
         analyzer = TokenizerAnalyzer()
         analyzer.load_tokenizers({"bert": "bert-base-uncased"})
 
-        report = analyzer.compare_on_terms(["cell", "deoxyribonucleic acid"])
+        report = analyzer.compare_on_terms(["speed", "uniform circular motion"])
         cell_tokens = report["terms"][0]["tokenizations"]["bert"]["num_tokens"]
         dna_tokens = report["terms"][1]["tokenizations"]["bert"]["num_tokens"]
         assert dna_tokens > cell_tokens, "Complex term should use more tokens"

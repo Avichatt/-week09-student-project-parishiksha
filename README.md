@@ -51,6 +51,7 @@ graph TD
 parishiksha/
 ├── main.py                         # Unified industrial pipeline orchestrator
 ├── requirements.txt                # List of all production-grade dependencies
+├── evaluation_results.md           # Detailed benchmarking report
 ├── config/
 │   └── config.py                   # Central hyperparameters & Prompt Engineering
 ├── src/
@@ -59,8 +60,10 @@ parishiksha/
 │   ├── retrieval/                  # ChromaDB, BM25, and Cross-Encoder integration
 │   ├── generation/                 # Grounded Answer generation and Verifier
 │   └── evaluation/                 # Schema-driven metrics (Recall@K, MRR, Precision)
-├── data/                           # Persistent storage for PDFs & ChromaDB
-└── outputs/                        # Evaluation reports & generation logs
+├── data/                           # Raw NCERT PDFs and Extracted/Processed text
+├── docs/                           # Technical notes and architecture documentation
+├── tests/                          # Unit and integration tests
+└── outputs/                        # ChromaDB storage, eval reports, and logs
 ```
 
 ---

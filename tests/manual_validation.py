@@ -4,7 +4,7 @@ from pathlib import Path
 from loguru import logger
 
 # Add project root to path
-sys.path.append(str(Path(__file__).resolve().parent))
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from src.generation.answer_generator import AnswerGenerator
 

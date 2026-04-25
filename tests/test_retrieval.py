@@ -16,17 +16,17 @@ class TestGroundingChecker:
     def setup_method(self):
         self.checker = GroundingChecker()
         self.context = (
-            "The cell membrane is a selectively permeable membrane that controls "
-            "the movement of substances in and out of the cell. It is made up of "
-            "a lipid bilayer with embedded proteins. The process by which water "
-            "molecules move through the cell membrane is called osmosis."
+            "Uniform motion is a type of motion where an object covers equal "
+            "distances in equal intervals of time. In contrast, non-uniform "
+            "motion means unequal distances in equal intervals of time. The "
+            "rate of motion can be calculated by finding the average speed."
         )
 
     def test_grounded_answer_passes(self):
         """Test that a clearly grounded answer is marked as grounded."""
         answer = (
-            "The cell membrane controls the movement of substances in and out of "
-            "the cell. It is selectively permeable. Water moves through it by osmosis."
+            "Uniform motion occurs when an object covers equal distances in equal "
+            "time intervals. Finding the average speed helps calculate the rate of motion."
         )
         result = self.checker.check_grounding(answer, self.context)
         assert result["grounded"] is True
@@ -35,9 +35,9 @@ class TestGroundingChecker:
     def test_hallucinated_answer_fails(self):
         """Test that a hallucinated answer is caught."""
         answer = (
-            "The cell membrane was first described by Singer and Nicolson in 1972 "
-            "as the fluid mosaic model. It contains cholesterol molecules that "
-            "maintain membrane fluidity at different temperatures."
+            "The theory of relativity was first described by Albert Einstein in 1905. "
+            "It explains that the speed of light is constant in a vacuum and "
+            "time dilation occurs at high speeds."
         )
         result = self.checker.check_grounding(answer, self.context)
         assert bool(result["grounded"]) is False
@@ -56,8 +56,8 @@ class TestGroundingChecker:
         """Test that partial answers get partial scores."""
         # Mix of grounded and ungrounded content
         answer = (
-            "The cell membrane is selectively permeable. "
-            "It was discovered by Robert Brown in 1831."
+            "Uniform motion means covering equal distances in equal time intervals. "
+            "It was first studied extensively by Isaac Newton in the 17th century."
         )
         result = self.checker.check_grounding(answer, self.context)
         assert 0 < result["score"] < 1.0
@@ -71,7 +71,7 @@ class TestGroundingChecker:
         """Test the lexical overlap helper."""
         # High overlap
         score_high = self.checker._compute_lexical_overlap(
-            "cell membrane selectively permeable",
+            "uniform motion equal distances intervals",
             self.context
         )
         # Low overlap
@@ -84,11 +84,11 @@ class TestGroundingChecker:
     def test_stop_words_excluded(self):
         """Test that stop words are excluded from overlap computation."""
         content_words = self.checker._extract_content_words(
-            "The cell is a fundamental unit of life"
+            "The motion is a fundamental concept of physics"
         )
         assert "the" not in content_words
         assert "is" not in content_words
-        assert "cell" in content_words
+        assert "motion" in content_words
         assert "fundamental" in content_words
 
 

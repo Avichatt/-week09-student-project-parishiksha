@@ -198,7 +198,16 @@ class PariShikshaEvaluator:
 
         # Step 2: Generation
         try:
-            gen_result = self.generator.generate_answer(question, context, model_type)
+            # Check if retrieved_chunks exists in the current scope
+            current_retrieved_chunks = locals().get('retrieved_chunks', None)
+            
+            gen_result = self.generator.generate_answer(
+                question, 
+                context, 
+                source_chunks=current_retrieved_chunks,
+                model_type=model_type,
+                teacher_mode=True
+            )
             generated_answer = gen_result.get("answer", "")
             result["generation"] = {"answer": generated_answer}
         except Exception as e:
@@ -379,7 +388,8 @@ class PariShikshaEvaluator:
             score = r.get("overall_score", 0)
             print(f"ID: {q_id}... | Score: {score:.1%} | Q: {r['question'][:50]}...")
             if "generation" in r and "answer" in r["generation"]:
-                print(f"  Ans: {r['generation']['answer'][:80]}...")
+                ans_display = r["generation"]["answer"][:80].encode("ascii", "ignore").decode("ascii")
+                print(f"  Ans: {ans_display}...")
 
 
 

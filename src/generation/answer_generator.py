@@ -21,6 +21,7 @@ from loguru import logger
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from config.config import GENERATION_CONFIG, GEMINI_API_KEY
+from src.generation.guardrails import GuardrailVerifier
 
 
 class AnswerGenerator:
@@ -60,6 +61,7 @@ class AnswerGenerator:
         self.gemini_model = None
         self.t5_model = None
         self.t5_tokenizer = None
+        self.guardrails = GuardrailVerifier()
         self._setup_logging()
 
     def _setup_logging(self):
@@ -245,27 +247,63 @@ ANSWER:"""
         self,
         question: str,
         context: str,
+        source_chunks: Optional[List[Dict]] = None,
         model_type: str = "gemini",
+        teacher_mode: bool = True,
     ) -> Dict:
         """
-        Industrial-grade generation with context window security.
+        Industrial-grade generation with guardrails and teacher-mode citations.
         """
-        # Gap 7: Strict Context Window Safety
-        # We limit the context to ~1500 tokens to preserve focus
+        # 1. Input Guardrails
+        is_safe, error_msg = self.guardrails.verify_input(question)
+        if not is_safe:
+            return {
+                "answer": error_msg,
+                "model": model_type,
+                "status": "blocked_input"
+            }
+
+        # 2. Scope Guardrails
+        in_scope, scope_msg = self.guardrails.check_scope(question, [])
+        if not in_scope:
+             return {
+                "answer": scope_msg,
+                "model": model_type,
+                "status": "out_of_scope"
+            }
+
+        # 3. Context Window Safety
         max_ctx_tokens = self.config.get("max_context_tokens", 1500)
-        # Using 4 chars per token as a robust heuristic for English science text
         max_ctx_chars = max_ctx_tokens * 4
         
         if len(context) > max_ctx_chars:
             logger.warning(f"Context too long ({len(context)} chars). Truncating for safety.")
             context = context[:max_ctx_chars] + "\n[Context Truncated for Safety...]"
 
+        # 4. Generation
         if model_type == "gemini":
             result = self._generate_gemini(question, context)
         elif model_type == "t5":
             result = self._generate_t5(question, context)
         else:
             raise ValueError(f"Unknown model type: {model_type}. Use 'gemini' or 't5'.")
+
+        # 5. Output Guardrails
+        is_output_safe, output_error = self.guardrails.verify_output(result["answer"])
+        if not is_output_safe:
+            result["answer"] = output_error
+            result["status"] = "blocked_output"
+
+        # 6. Teacher Mode (Citations)
+        if teacher_mode and source_chunks and result["status"] == "success":
+            citations = []
+            for i, chunk in enumerate(source_chunks[:3]): # Top 3 citations
+                page = chunk.get("metadata", {}).get("page_number", "N/A")
+                section = chunk.get("metadata", {}).get("section", "General")
+                citations.append(f"Source {i+1}: Page {page}, Section: {section}")
+            
+            if citations:
+                result["answer"] += "\n\n📚 **Textbook References:**\n- " + "\n- ".join(citations)
 
         # Log generation
         result["question"] = question

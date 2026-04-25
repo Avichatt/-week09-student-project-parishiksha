@@ -243,9 +243,11 @@ def stage_3_embed_and_retrieve():
             "What is string theory and M-theory?", # Unknown question
         ]
 
-        logger.info(f"\nSample retrievals for {chapter_key}:")
+        logger.info(f"\nSample retrievals for {chapter_key} (filtered):")
         for query in test_queries:
-            context, results = retriever.retrieve_with_context(query, top_k=3)
+            context, results = retriever.retrieve_with_context(
+                query, top_k=3, chapter_filter=chapter_key
+            )
             top_score = results[0]["score"] if results else 0
             logger.info(f"  Q: '{query[:50]}...' → top_score={top_score:.3f}")
 

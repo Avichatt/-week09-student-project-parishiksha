@@ -248,23 +248,17 @@ ANSWER:"""
         model_type: str = "gemini",
     ) -> Dict:
         """
-        Generate a grounded answer using the specified model.
-        
-        Parameters
-        ----------
-        question : str
-            The student's question
-        context : str
-            Retrieved context from the textbook (formatted by retriever)
-        model_type : str
-            "gemini" (decoder-only) or "t5" (encoder-decoder)
-            
-        Returns
-        -------
-        dict
-            {"answer": str, "model": str, "status": str, ...}
+        Industrial-grade generation with context window security.
         """
-        logger.info(f"Generating answer with {model_type}: '{question[:60]}...'")
+        # Gap 7: Strict Context Window Safety
+        # We limit the context to ~1500 tokens to preserve focus
+        max_ctx_tokens = self.config.get("max_context_tokens", 1500)
+        # Using 4 chars per token as a robust heuristic for English science text
+        max_ctx_chars = max_ctx_tokens * 4
+        
+        if len(context) > max_ctx_chars:
+            logger.warning(f"Context too long ({len(context)} chars). Truncating for safety.")
+            context = context[:max_ctx_chars] + "\n[Context Truncated for Safety...]"
 
         if model_type == "gemini":
             result = self._generate_gemini(question, context)

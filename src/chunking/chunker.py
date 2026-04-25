@@ -13,6 +13,7 @@
 # and measures how well retrieval performs across configurations.
 
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -86,28 +87,11 @@ class TextChunker:
         chunk_size: int = 256,
         overlap_ratio: float = 0.15,
         sections: Optional[List[Dict]] = None,
+        chapter_key: Optional[str] = None,
+        source_file: Optional[str] = None,
     ) -> List[Dict]:
         """
-        Chunk text using specified strategy.
-        
-        Parameters
-        ----------
-        text : str
-            Clean text to chunk
-        strategy : str
-            One of: "fixed_token", "sentence_based", "semantic_paragraph"
-        chunk_size : int
-            Target chunk size in tokens (for fixed_token and sentence_based)
-        overlap_ratio : float
-            Fraction of overlap between consecutive chunks
-        sections : list of dict, optional
-            Section structure from TextCleaner (needed for semantic_paragraph)
-            
-        Returns
-        -------
-        list of dict
-            Each chunk: {"chunk_id": int, "text": str, "token_count": int,
-                         "strategy": str, "metadata": {...}}
+        Chunk text with source traceability and stable IDs.
         """
         if strategy == "fixed_token":
             chunks = self._chunk_fixed_token(text, chunk_size, overlap_ratio)
@@ -115,29 +99,35 @@ class TextChunker:
             chunks = self._chunk_sentence_based(text, chunk_size, overlap_ratio)
         elif strategy == "semantic_paragraph":
             if sections is None:
-                logger.warning(
-                    "semantic_paragraph requires sections. "
-                    "Falling back to paragraph-based splitting."
-                )
+                logger.warning("semantic_paragraph requires sections. Falling back.")
                 chunks = self._chunk_paragraph_fallback(text, chunk_size)
             else:
                 chunks = self._chunk_semantic_paragraph(sections, chunk_size)
         else:
-            raise ValueError(f"Unknown strategy: {strategy}. Use: {self.config['strategies']}")
+            raise ValueError(f"Unknown strategy: {strategy}")
 
-        # Add common metadata
-        for i, chunk in enumerate(chunks):
-            chunk["chunk_id"] = i
-            chunk["strategy"] = strategy
-            chunk["chunk_size_config"] = chunk_size
+        # Add industrial metadata & Stable IDs (Gap 1, 2, 3)
+        for chunk in chunks:
+            # 1. Content-based stable ID (Gap 2)
+            chunk["chunk_id"] = hashlib.md5(chunk["text"].encode()).hexdigest()
+            
+            # 2. Source Traceability (Gap 1)
+            chunk["metadata"].update({
+                "chapter_key": chapter_key,
+                "source_file": source_file,
+                "strategy": strategy,
+                "chunk_size_config": chunk_size
+            })
+            
+            # 3. Heading Context Injection (Gap 3)
+            # If we don't have a heading, we use chapter as context
+            if "section_heading" not in chunk["metadata"]:
+                context_prefix = f"[{chapter_key.replace('_', ' ').title()}]" if chapter_key else "[NCERT Science]"
+                chunk["text"] = f"{context_prefix}\n{chunk['text']}"
 
         # Filter out tiny chunks
         min_tokens = self.config.get("min_chunk_tokens", 50)
         filtered = [c for c in chunks if c["token_count"] >= min_tokens]
-        removed = len(chunks) - len(filtered)
-        if removed > 0:
-            logger.info(f"Removed {removed} chunks below {min_tokens} tokens")
-
         return filtered
 
     def run_chunking_experiment(
@@ -265,7 +255,7 @@ class TextChunker:
         chunks can be unevenly sized.
         """
         sentences = nltk.sent_tokenize(text)
-        overlap_sentences = max(1, int(len(sentences) * overlap_ratio / 10))
+        target_overlap_tokens = int(target_chunk_size * overlap_ratio)
 
         chunks = []
         current_sentences = []
@@ -281,17 +271,22 @@ class TextChunker:
                     "text": chunk_text,
                     "token_count": current_tokens,
                     "num_sentences": len(current_sentences),
-                    "metadata": {
-                        "first_sentence": current_sentences[0][:80],
-                    },
+                    "metadata": {},
                 })
 
-                # Overlap: keep last N sentences
-                overlap = current_sentences[-overlap_sentences:]
-                current_sentences = overlap.copy()
-                current_tokens = sum(
-                    len(self.tokenizer.tokenize(s)) for s in current_sentences
-                )
+                # Determine overlap based on tokens (Gap 4)
+                overlap = []
+                overlap_tokens = 0
+                for s in reversed(current_sentences):
+                    s_tok = len(self.tokenizer.tokenize(s))
+                    if overlap_tokens + s_tok <= target_overlap_tokens:
+                        overlap.insert(0, s)
+                        overlap_tokens += s_tok
+                    else:
+                        break
+                
+                current_sentences = overlap
+                current_tokens = overlap_tokens
 
             current_sentences.append(sentence)
             current_tokens += sent_tokens

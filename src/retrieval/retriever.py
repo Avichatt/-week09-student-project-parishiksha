@@ -55,34 +55,111 @@ class HybridRetriever:
         # State
         self.chunks = None
         self.is_loaded = False
+        self.chroma_client = None
+        self.collection = None
+        self.bm25 = None
+        self.cross_encoder = None
 
     # -------------------------------------------------------------------------
     # Index Management
     # -------------------------------------------------------------------------
 
+    def _init_bm25(self) -> None:
+        """Initialize BM25 index for keyword search."""
+        if not self.chunks:
+            return
+            
+        from rank_bm25 import BM25Okapi
+        # Simple tokenization by splitting on whitespace/lowercase
+        corpus = [chunk["text"].lower().split() for chunk in self.chunks]
+        self.bm25 = BM25Okapi(corpus)
+        logger.info(f"BM25 index built with {len(corpus)} documents")
+
+    def _init_cross_encoder(self) -> None:
+        """Initialize Cross-Encoder for high-precision re-ranking."""
+        if self.cross_encoder is not None:
+            return
+            
+        from sentence_transformers import CrossEncoder
+        model_name = self.config.get("cross_encoder", "cross-encoder/ms-marco-MiniLM-L-6-v2")
+        logger.info(f"Loading Cross-Encoder re-ranker: {model_name}")
+        self.cross_encoder = CrossEncoder(model_name)
+
+    def _init_chroma(self, chapter_key: str) -> None:
+        """Initialize ChromaDB collection for dense retrieval."""
+        import chromadb
+        from chromadb.config import Settings
+        
+        persist_dir = self.config.get("retrieval_output_dir", RETRIEVAL_OUTPUT_DIR) / "chroma_db"
+        self.chroma_client = chromadb.PersistentClient(path=str(persist_dir))
+        
+        # We use one collection per chapter or a shared one with metadata filters
+        collection_name = f"parishiksha_{chapter_key}"
+        self.collection = self.chroma_client.get_or_create_collection(
+            name=collection_name,
+            metadata={"hnsw:space": "cosine"} # Use cosine similarity
+        )
+        logger.info(f"ChromaDB collection '{collection_name}' initialized at {persist_dir}")
+
     def build_index(self, chunks: List[Dict]) -> None:
         """
-        Build retrieval index from chunks.
-        
-        Generates both dense and sparse embeddings.
+        Build retrieval index from chunks and ingest into ChromaDB.
         """
         logger.info(f"Building retrieval index from {len(chunks)} chunks")
-        self.embedder.embed_dense(chunks)
-        self.embedder.embed_sparse(chunks)
         self.chunks = chunks
+        
+        # 1. Dense Embeddings
+        self.embedder.embed_dense(chunks)
+        
+        # 2. Sparse Index (Brain)
+        self._init_bm25()
+        
+        # Note: Ingestion happens in save_index or directly here
         self.is_loaded = True
-        logger.info("Index built successfully")
+        logger.info("Index built in memory")
 
     def save_index(self, chapter_key: str, config_label: str) -> None:
-        """Save index for later use."""
+        """Save index to ChromaDB (Memory) and local files (Brain)."""
         self.embedder.save_embeddings(chapter_key, config_label)
+        
+        # Initialize Chroma for this specific chapter
+        self._init_chroma(f"{chapter_key}_{config_label}")
+        
+        # Upsert data into ChromaDB
+        if self.embedder.dense_embeddings is not None:
+            # Prepare data
+            documents = [c["text"] for c in self.chunks]
+            # Convert np.ndarray to list of lists for Chroma
+            embeddings = self.embedder.dense_embeddings.tolist()
+            # Ensure metadatas are clean dicts AND contain chapter info (Gap 4)
+            metadatas = []
+            for c in self.chunks:
+                meta = c.get("metadata", {}).copy()
+                meta["chapter"] = chapter_key # Inject identifier
+                metadatas.append(meta)
+            
+            # Chroma IDs must be strings
+            ids = [f"c_{i}" for i in range(len(self.chunks))]
+            
+            self.collection.upsert(
+                ids=ids,
+                embeddings=embeddings,
+                documents=documents,
+                metadatas=metadatas
+            )
+            logger.info(f"Ingested {len(ids)} chunks into ChromaDB collection")
 
     def load_index(self, chapter_key: str, config_label: str) -> None:
-        """Load a previously saved index."""
+        """Load a previously saved index from ChromaDB."""
         self.embedder.load_embeddings(chapter_key, config_label)
         self.chunks = self.embedder.chunks
+        
+        # Connect to Chroma collection
+        self._init_chroma(f"{chapter_key}_{config_label}")
+        
+        self._init_bm25()
         self.is_loaded = True
-        logger.info(f"Index loaded: {chapter_key}/{config_label}")
+        logger.info(f"Industrial Index Loaded: {chapter_key}/{config_label}")
 
     # -------------------------------------------------------------------------
     # Retrieval
@@ -93,91 +170,115 @@ class HybridRetriever:
         query: str,
         top_k: Optional[int] = None,
         mode: str = "hybrid",
+        chapter_filter: Optional[str] = None,
+        do_rerank: bool = True,
     ) -> List[Dict]:
         """
-        Retrieve top-k relevant chunks for a query.
-        
-        Parameters
-        ----------
-        query : str
-            The student's question
-        top_k : int, optional
-            Number of chunks to retrieve. Defaults to config value.
-        mode : str
-            Retrieval mode: "hybrid", "dense", or "sparse"
-            
-        Returns
-        -------
-        list of dict
-            Ranked results with scores:
-            [{"chunk_id": int, "text": str, "score": float, "dense_score": float,
-              "sparse_score": float, "metadata": dict}, ...]
+        Industrial-grade retrieval: Normalize -> Filter -> Hybrid Search -> Deduplicate -> Re-rank.
         """
         if not self.is_loaded:
-            raise RuntimeError("No index loaded. Call build_index() or load_index() first.")
+            raise RuntimeError("No index loaded.")
 
         top_k = top_k or self.top_k
-
-        # Compute dense scores
-        dense_scores = np.zeros(len(self.chunks))
-        if mode in ("hybrid", "dense") and self.embedder.dense_embeddings is not None:
-            query_dense = self.embedder.embed_query_dense(query)
-            dense_scores = cosine_similarity(
-                query_dense.reshape(1, -1),
-                self.embedder.dense_embeddings
-            )[0]
-
-        # Compute sparse scores
-        sparse_scores = np.zeros(len(self.chunks))
-        if mode in ("hybrid", "sparse") and self.embedder.sparse_embeddings is not None:
-            query_sparse = self.embedder.embed_query_sparse(query)
-            sparse_scores = cosine_similarity(
-                query_sparse,
-                self.embedder.sparse_embeddings
-            )[0]
-
-        # Combine scores
-        if mode == "hybrid":
-            combined_scores = self.alpha * dense_scores + (1 - self.alpha) * sparse_scores
-        elif mode == "dense":
-            combined_scores = dense_scores
-        else:
-            combined_scores = sparse_scores
-
-        # Rank and return top-k
-        top_indices = np.argsort(combined_scores)[::-1][:top_k]
-
-        results = []
-        for idx in top_indices:
-            chunk = self.chunks[idx]
-            results.append({
-                "chunk_id": chunk.get("chunk_id", idx),
-                "text": chunk["text"],
-                "score": float(combined_scores[idx]),
-                "dense_score": float(dense_scores[idx]),
-                "sparse_score": float(sparse_scores[idx]),
-                "token_count": chunk.get("token_count", 0),
-                "metadata": chunk.get("metadata", {}),
+        # Stage 1: Broad candidate retrieval (Chroma + Metadata Filter)
+        candidate_k = 50 
+        
+        # 1. Query Normalization (Gap 7)
+        normalized_query = query.lower().strip()
+        
+        # 2. Dense Candidate Fetch (Gap 1, 2)
+        query_dense = self.embedder.embed_query_dense(normalized_query).tolist()
+        
+        where_clause = {"chapter": chapter_filter} if chapter_filter else None
+        
+        dense_results = self.collection.query(
+            query_embeddings=[query_dense],
+            n_results=candidate_k,
+            where=where_clause,
+            include=["documents", "metadatas", "distances"]
+        )
+        
+        # Map Chroma results to our internal format
+        candidates = []
+        for i, (doc, meta, dist, id_str) in enumerate(zip(
+            dense_results["documents"][0],
+            dense_results["metadatas"][0],
+            dense_results["distances"][0],
+            dense_results["ids"][0]
+        )):
+            candidates.append({
+                "chunk_id": id_str,
+                "text": doc,
+                "dense_score": 1.0 - dist,
+                "metadata": meta,
+                "temp_idx": int(id_str.split("_")[1])
             })
 
-        return results
+        # 3. Efficient Sparse Re-scoring (Gap 3)
+        # We only score the 50 candidates fetched by dense search
+        if self.bm25 is not None and mode in ("hybrid", "sparse"):
+            tokenized_query = normalized_query.split()
+            # Calculate all scores once for the entire corpus
+            full_bm25_scores = self.bm25.get_scores(tokenized_query)
+            
+            for cand in candidates:
+                actual_idx = cand["temp_idx"]
+                # Safeguard against index out of bounds if chunks changed
+                if actual_idx < len(full_bm25_scores):
+                    cand["sparse_score"] = float(full_bm25_scores[actual_idx])
+                else:
+                    cand["sparse_score"] = 0.0
+        else:
+            for cand in candidates: cand["sparse_score"] = 0.0
+
+        # 4. Hybrid Combination & Dedup (Gap 5, 8)
+        seen_texts = set()
+        final_candidates = []
+        
+        # Normalize sparse scores among candidates for stable hybrid weighting
+        max_sparse = max([c["sparse_score"] for c in candidates]) if candidates else 0
+        
+        for cand in candidates:
+            # Deduplication
+            text_hash = cand["text"].strip().lower()
+            if text_hash in seen_texts: continue
+            seen_texts.add(text_hash)
+            
+            # Combine scores
+            norm_sparse = cand["sparse_score"] / max_sparse if max_sparse > 0 else 0
+            cand["combined_score"] = self.alpha * cand["dense_score"] + (1 - self.alpha) * norm_sparse
+            # Ensure a 'score' key exists even before re-ranking
+            cand["score"] = cand["combined_score"]
+            final_candidates.append(cand)
+
+        # Sort by hybrid score
+        final_candidates = sorted(final_candidates, key=lambda x: x["combined_score"], reverse=True)
+        
+        # 5. Semantic Re-ranking (Stage 3)
+        initial_top = final_candidates[:top_k * 3]
+        if do_rerank and self.cross_encoder and len(initial_top) > 1:
+            try:
+                pairs = [[normalized_query, c["text"]] for c in initial_top]
+                rerank_scores = self.cross_encoder.predict(pairs)
+                for i, score in enumerate(rerank_scores):
+                    initial_top[i]["score"] = float(score)
+                initial_top = sorted(initial_top, key=lambda x: x["score"], reverse=True)
+            except Exception as e:
+                logger.warning(f"Reranking failed: {e}")
+
+        return initial_top[:top_k]
 
     def retrieve_with_context(
         self,
         query: str,
         top_k: Optional[int] = None,
         mode: str = "hybrid",
+        chapter_filter: Optional[str] = None,
     ) -> Tuple[str, List[Dict]]:
         """
         Retrieve chunks and format them as a context string for generation.
-        
-        Returns
-        -------
-        tuple of (context_str, results)
-            context_str: formatted context for the LLM prompt
-            results: ranked retrieval results
         """
-        results = self.retrieve(query, top_k=top_k, mode=mode)
+        results = self.retrieve(query, top_k=top_k, mode=mode, chapter_filter=chapter_filter)
 
         # Format context for generation prompt
         context_parts = []

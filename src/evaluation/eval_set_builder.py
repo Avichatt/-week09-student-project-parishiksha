@@ -14,6 +14,7 @@
 
 
 import json
+import uuid
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -61,51 +62,64 @@ class EvalSetBuilder:
 
     # Building the Eval Set
 
-
     def add_question(
         self,
         question: str,
         question_type: str,
-        expected_answer: str,
-        source_section: str = "",
+        expected_answer: str = "",
+        gold_chunks: Optional[List[int]] = None,
+        page_numbers: Optional[List[int]] = None,
+        answer_type: str = "explanation",
         expected_keywords: Optional[List[str]] = None,
+        eval_criteria: Optional[Dict] = None,
+        expected_behavior: str = "answer",
+        valid_refusal_patterns: Optional[List[str]] = None,
+        expected_language: str = "en",
+        source_section: str = "",
         chapter: str = "",
         difficulty: str = "medium",
         notes: str = "",
     ) -> None:
         """
-        Add a question to the evaluation set.
-        
-        Parameters
-        ----------
-        question : str
-            The question text
-        question_type : str
-            One of: factual, conceptual, application, unanswerable, hindi_codeswitched
-        expected_answer : str
-            The reference answer (from textbook for answerable, "N/A" for unanswerable)
-        source_section : str
-            Which textbook section contains the answer
-        expected_keywords : list of str
-            Key terms that should appear in a correct answer
-        chapter : str
-            Chapter identifier (e.g., "chapter_5")
-        difficulty : str
-            easy, medium, hard
-        notes : str
-            Additional notes for evaluation
+        Add a question to the enhanced evaluation set.
         """
         valid_types = EVALUATION_CONFIG.get("question_types", [])
         if question_type not in valid_types:
             logger.warning(f"Unknown question type: {question_type}. Valid: {valid_types}")
 
+        # Default criteria
+        if eval_criteria is None:
+            eval_criteria = {
+                "must_include": expected_keywords or [],
+                "must_not_include": [],
+                "min_keyword_coverage": 0.6
+            }
+
+        # Default refusal patterns for unanswerable
+        if question_type == "unanswerable" and not valid_refusal_patterns:
+            valid_refusal_patterns = [
+                "I don't know", 
+                "not in the textbook", 
+                "insufficient information",
+                "I cannot answer this",
+                "I don't have enough information from the textbook to answer this",
+                "I don't have enough information"
+            ]
+
         entry = {
-            "id": len(self.eval_set) + 1,
+            "id": str(uuid.uuid4()),
             "question": question,
             "question_type": question_type,
+            "answer_type": answer_type,
             "expected_answer": expected_answer,
-            "source_section": source_section,
+            "gold_chunks": gold_chunks or [],
+            "page_numbers": page_numbers or [],
+            "eval_criteria": eval_criteria,
+            "expected_behavior": expected_behavior,
+            "valid_refusal_patterns": valid_refusal_patterns or [],
+            "expected_language": expected_language,
             "expected_keywords": expected_keywords or [],
+            "source_section": source_section,
             "chapter": chapter,
             "difficulty": difficulty,
             "notes": notes,
@@ -114,107 +128,176 @@ class EvalSetBuilder:
 
     def build_default_eval_set(self) -> List[Dict]:
         """
-        Build the default evaluation set for NCERT Class 9 Science Chapter 4
-        (Describing Motion Around Us).
+        Build the enhanced evaluation set for NCERT Class 9 Science Chapter 4.
+        Targeting 20 questions: 12 direct, 3 paraphrased, 5 out-of-scope.
         """
         self.eval_set = []
 
-        # --- FACTUAL QUESTIONS ---
+        # --- DIRECT FROM TEXTBOOK (12) ---
+        
         self.add_question(
-            question="What is the name of the ancient Indian treatise from the 5th century CE that mentions the concept of speed?",
+            question="What is linear motion?",
             question_type="factual",
-            expected_answer="The treatise is Aryabhatiya.",
-            source_section="India's Scientific Contributions",
-            expected_keywords=["Aryabhatiya"],
+            expected_answer="Linear motion is the motion of an object in a straight line.",
+            expected_keywords=["straight line", "object", "moves"],
             chapter="chapter_4",
             difficulty="easy",
         )
-
         self.add_question(
-            question="In the context of motion in a straight line, how are the two possible directions of motion represented?",
+            question="Define displacement.",
             question_type="factual",
-            expected_answer="They are represented by plus (+) and minus (-) signs.",
-            source_section="Describing position",
-            expected_keywords=["plus", "minus", "+", "-"],
+            expected_answer="Displacement is the net change in the position of an object between two given instants of time.",
+            expected_keywords=["net change", "position", "instants of time"],
             chapter="chapter_4",
             difficulty="easy",
         )
-
         self.add_question(
-            question="In Example 4.1 from Ganitakaumudi regarding the two postmen, what is the initial distance between them?",
+            question="What is the SI unit for distance and displacement?",
             question_type="factual",
-            expected_answer="The initial distance between them is 210 yojanas.",
-            source_section="India's Scientific Contributions",
-            expected_keywords=["210", "yojanas"],
+            expected_answer="The SI unit for both distance and displacement is the metre (m).",
+            expected_keywords=["metre", "m"],
+            chapter="chapter_4",
+            difficulty="easy",
+        )
+        self.add_question(
+            question="When are the total distance travelled and magnitude of displacement equal?",
+            question_type="factual",
+            expected_answer="They are equal if the object moves without turning back, i.e., if it moves in one direction.",
+            expected_keywords=["one direction", "turning back"],
+            chapter="chapter_4",
+            difficulty="medium",
+        )
+        self.add_question(
+            question="How is average speed calculated?",
+            question_type="factual",
+            expected_answer="Average speed is the total distance travelled divided by the time interval.",
+            expected_keywords=["total distance", "time interval", "divided"],
+            chapter="chapter_4",
+            difficulty="easy",
+        )
+        self.add_question(
+            question="Define uniform motion in a straight line.",
+            question_type="factual",
+            expected_answer="If an object moving in a straight line travels equal distances in equal intervals of time, it is in uniform motion.",
+            expected_keywords=["equal distances", "equal intervals of time"],
+            chapter="chapter_4",
+            difficulty="medium",
+        )
+        self.add_question(
+            question="What is average velocity?",
+            question_type="factual",
+            expected_answer="Average velocity is the displacement divided by the time interval.",
+            expected_keywords=["displacement", "time interval", "divided"],
+            chapter="chapter_4",
+            difficulty="easy",
+        )
+        self.add_question(
+            question="What is the SI unit of average velocity?",
+            question_type="factual",
+            expected_answer="The SI unit of average velocity is metre per second (m/s).",
+            expected_keywords=["metre per second", "m/s"],
+            chapter="chapter_4",
+            difficulty="easy",
+        )
+        self.add_question(
+            question="Define average acceleration.",
+            question_type="factual",
+            expected_answer="Average acceleration is the change in velocity divided by the time interval.",
+            expected_keywords=["change in velocity", "time interval"],
+            chapter="chapter_4",
+            difficulty="easy",
+        )
+        self.add_question(
+            question="What does a negative sign in average acceleration indicate?",
+            question_type="factual",
+            expected_answer="A negative sign indicates that the acceleration is acting opposite to the direction of velocity.",
+            expected_keywords=["opposite", "direction of velocity"],
+            chapter="chapter_4",
+            difficulty="medium",
+        )
+        self.add_question(
+            question="What is the SI unit of average acceleration?",
+            question_type="factual",
+            expected_answer="The SI unit of average acceleration is m/s^2.",
+            expected_keywords=["m/s^2", "metre per second squared"],
+            chapter="chapter_4",
+            difficulty="easy",
+        )
+        self.add_question(
+            question="What is the acceleration due to gravitational force (g) on Earth?",
+            question_type="factual",
+            expected_answer="The acceleration due to gravity is approximately 9.8 m/s^2.",
+            expected_keywords=["9.8", "m/s^2"],
             chapter="chapter_4",
             difficulty="medium",
         )
 
-        # --- CONCEPTUAL QUESTIONS ---
+        # --- PARAPHRASED (3) ---
+
         self.add_question(
-            question="What is the condition for the distance travelled by an object to be equal to the magnitude of its displacement?",
+            question="If I walk from my home to school and back, what is my net displacement?",
             question_type="conceptual",
-            expected_answer="The distance travelled and the magnitude of displacement are equal if the object moves in a straight line without turning back, i.e., it moves in one direction only.",
-            source_section="Distance travelled and displacement",
-            expected_keywords=["straight line", "without turning back", "one direction"],
+            expected_answer="Your net displacement is zero because your final position is the same as your starting position.",
+            expected_keywords=["zero", "starting position"],
             chapter="chapter_4",
             difficulty="medium",
         )
-
         self.add_question(
-            question="What happens to the average velocity as the time interval becomes infinitesimally small?",
+            question="Is a car speeding up on a highway an example of non-uniform motion?",
             question_type="conceptual",
-            expected_answer="When the time interval becomes infinitesimally small, the average value of velocity approaches a fixed value called the instantaneous velocity.",
-            source_section="Ready to Go Beyond",
-            expected_keywords=["instantaneous velocity", "infinitesimally small", "approaches"],
+            expected_answer="Yes, because its speed is changing, meaning it travels unequal distances in equal intervals of time.",
+            expected_keywords=["Yes", "unequal distances"],
             chapter="chapter_4",
             difficulty="medium",
         )
-
-        # --- APPLICATION QUESTIONS ---
         self.add_question(
-            question="If an athlete runs 100 meters forward on a straight track and then runs 100 meters back to the starting point, what are the total distance travelled and the displacement?",
-            question_type="application",
-            expected_answer="The total distance travelled is 200 meters, but the displacement is 0 meters since the starting and stopping positions are the same.",
-            source_section="Distance travelled and displacement",
-            expected_keywords=["200 meters", "0 meters"],
+            question="Why is direction important when talking about velocity but not speed?",
+            question_type="conceptual",
+            expected_answer="Velocity is a vector quantity that describes both how fast and in what direction an object moves, while speed is a scalar.",
+            expected_keywords=["direction", "vector", "scalar"],
             chapter="chapter_4",
             difficulty="hard",
         )
 
-        self.add_question(
-            question="Sarang swims from one end of a 25 m pool to the other end and back to his starting point in 50 seconds. What is his average speed and average velocity?",
-            question_type="application",
-            expected_answer="His average speed is 1 m/s (50m/50s), and his average velocity is 0 m/s because his displacement is zero.",
-            source_section="Average speed and average velocity",
-            expected_keywords=["1 m s-1", "0 m s-1", "average speed", "average velocity"],
-            chapter="chapter_4",
-            difficulty="hard",
-        )
+        # --- OUT-OF-SCOPE (5) ---
 
-        # --- UNANSWERABLE QUESTIONS ---
         self.add_question(
-            question="How does Albert Einstein's theory of general relativity explain the curvature of spacetime caused by a black hole?",
+            question="What is the Schwarzschild radius of a black hole?",
             question_type="unanswerable",
-            expected_answer="N/A — General Theory of Relativity and black holes are not covered in the opening motion chapter.",
-            source_section="",
-            expected_keywords=[],
+            expected_behavior="refuse",
+            chapter="chapter_4",
+            difficulty="hard",
+        )
+        self.add_question(
+            question="Explain Einstein's theory of general relativity.",
+            question_type="unanswerable",
+            expected_behavior="refuse",
+            chapter="chapter_4",
+            difficulty="hard",
+        )
+        self.add_question(
+            question="How does photosynthesis work in plants?",
+            question_type="unanswerable",
+            expected_behavior="refuse",
+            chapter="chapter_4",
+            difficulty="hard",
+        )
+        self.add_question(
+            question="What are quarks and how do they behave?",
+            question_type="unanswerable",
+            expected_behavior="refuse",
+            chapter="chapter_4",
+            difficulty="hard",
+        )
+        self.add_question(
+            question="What is the chemical formula for sulfuric acid?",
+            question_type="unanswerable",
+            expected_behavior="refuse",
             chapter="chapter_4",
             difficulty="hard",
         )
 
-        # --- HINDI CODE-SWITCHED QUESTIONS ---
-        self.add_question(
-            question="Motion in a straight line ko aur kis naam se jaana jaata hai, according to the textbook?",
-            question_type="hindi_codeswitched",
-            expected_answer="It is also called linear motion.",
-            source_section="Motion in a Straight Line",
-            expected_keywords=["linear motion"],
-            chapter="chapter_4",
-            difficulty="medium",
-        )
-
-        logger.info(f"Built Motion (Ch 4) eval set with {len(self.eval_set)} questions")
+        logger.info(f"Built expanded eval set with {len(self.eval_set)} questions")
         return self.eval_set
 
 

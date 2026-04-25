@@ -60,7 +60,7 @@ TARGET_CHAPTERS = {
 }
 
 # NCERT PDF download URLs (official NCERT website)
-NCERT_BASE_URL = "https://ncert.nic.in/textbook/pdf"
+NCERT_BASE_URL = "https://ncert.nic.in/textbook.php?iesc1=0-11"
 
 
 # TOKENIZER MODELS (for comparison in Stage 1)
@@ -74,22 +74,23 @@ TOKENIZER_MODELS = {
 
 # Scientific terms to test tokenizer behavior on
 SCIENCE_TERMS = [
-    "velocity",
-    "acceleration",
-    "displacement",
-    "kinematics",
-    "instantaneous speed",
-    "momentum",
-    "gravitation",
-    "thermodynamics",
-    "electromagnetic induction",
-    "centripetal force",
-    "inertia",
-    "projectiles",
-    "refraction",
-    "diffraction",
-    "vector quantities",
-    "scalar quantities",
+    "photosynthesis",
+    "mitochondria",
+    "endoplasmic reticulum",
+    "specific heat capacity",
+    "electromagnetic spectrum",
+    "nucleotide",
+    "chlorophyll",
+    "ribonucleic acid",
+    "deoxyribonucleic acid",
+
+    "prokaryotic",
+    "eukaryotic",
+    "Golgi apparatus",
+    "osmosis",
+    "plasmolysis",
+    "chromatin",
+    "cytoplasm",
 ]
 
 

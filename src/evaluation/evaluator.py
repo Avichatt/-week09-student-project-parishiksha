@@ -148,16 +148,19 @@ class PariShikshaEvaluator:
         retrieval_mode: str = "hybrid",
         top_k: int = 5,
     ) -> Dict:
-        """Evaluate a single question through the full pipeline."""
+        """Evaluate a single question through the enhanced full pipeline."""
         question = question_entry["question"]
         question_type = question_entry["question_type"]
+        answer_type = question_entry.get("answer_type", "explanation")
         expected_answer = question_entry.get("expected_answer", "")
-        expected_keywords = question_entry.get("expected_keywords", [])
-
+        eval_criteria = question_entry.get("eval_criteria", {})
+        gold_chunks = set(question_entry.get("gold_chunks", []))
+        
         result = {
-            "question_id": question_entry.get("id", 0),
+            "question_id": question_entry.get("id"),
             "question": question,
             "question_type": question_type,
+            "answer_type": answer_type,
             "expected_answer": expected_answer,
         }
 
@@ -167,145 +170,106 @@ class PariShikshaEvaluator:
                 context, retrieved_chunks = self.retriever.retrieve_with_context(
                     question, top_k=top_k, mode=retrieval_mode
                 )
+                
+                # Retrieval Performance
+                found_gold_indices = []
+                for i, chunk in enumerate(retrieved_chunks):
+                    # Match by chunk_id if available, otherwise fallback to keyword heuristic
+                    chunk_id = chunk.get("chunk_id")
+                    if chunk_id is not None and chunk_id in gold_chunks:
+                        found_gold_indices.append(i)
+                    elif not gold_chunks:
+                        # Falling back to heuristic if no gold_chunks defined
+                        hits = sum(1 for kw in eval_criteria.get("must_include", []) if kw.lower() in chunk["text"].lower())
+                        if hits > 0:
+                            found_gold_indices.append(i)
+
                 result["retrieval"] = {
-                    "num_chunks_retrieved": len(retrieved_chunks),
-                    "top_scores": [round(c["score"], 3) for c in retrieved_chunks[:3]],
-                    "context_length_chars": len(context),
+                    "recall_at_k": 1.0 if found_gold_indices else 0.0,
+                    "mrr": 1.0 / (found_gold_indices[0] + 1) if found_gold_indices else 0.0,
+                    "num_chunks": len(retrieved_chunks),
                 }
-
-                # Check if expected keywords appear in retrieved chunks
-                retrieved_text = " ".join(c["text"].lower() for c in retrieved_chunks)
-                keyword_hits = {
-                    kw: kw.lower() in retrieved_text
-                    for kw in expected_keywords
-                }
-                result["retrieval"]["keyword_recall"] = (
-                    sum(keyword_hits.values()) / len(keyword_hits)
-                    if keyword_hits else 0.0
-                )
-                result["retrieval"]["keyword_hits"] = keyword_hits
-
             except Exception as e:
                 context = ""
                 result["retrieval"] = {"error": str(e)}
         else:
-            # No retriever — use a placeholder context or skip
-            context = f"[No retriever configured. Question: {question}]"
-            result["retrieval"] = {"status": "skipped", "reason": "no_retriever"}
+            context = ""
+            result["retrieval"] = {"status": "skipped"}
 
         # Step 2: Generation
         try:
-            gen_result = self.generator.generate_answer(
-                question=question,
-                context=context,
-                model_type=model_type,
-            )
-            result["generation"] = {
-                "answer": gen_result.get("answer", ""),
-                "model": gen_result.get("model", model_type),
-                "status": gen_result.get("status", "unknown"),
-            }
+            gen_result = self.generator.generate_answer(question, context, model_type)
+            generated_answer = gen_result.get("answer", "")
+            result["generation"] = {"answer": generated_answer}
         except Exception as e:
-            result["generation"] = {"answer": "", "status": "error", "error": str(e)}
+            result["generation"] = {"error": str(e)}
+            generated_answer = ""
 
-        # Step 3: Grounding Check
-        generated_answer = result.get("generation", {}).get("answer", "")
-        if generated_answer and context:
-            grounding_result = self.grounding_checker.check_grounding(
-                answer=generated_answer,
-                context=context,
-                question=question,
-            )
-            result["grounding"] = {
-                "grounded": grounding_result["grounded"],
-                "score": grounding_result["score"],
-                "is_refusal": grounding_result["is_refusal"],
-                "ungrounded_count": len(grounding_result.get("ungrounded_claims", [])),
-            }
-        else:
-            result["grounding"] = {"status": "skipped"}
-
-        # Step 4: Answer Quality Scoring
-        if generated_answer and expected_answer and expected_answer != "N/A":
-            quality_scores = self._score_answer_quality(
-                generated_answer, expected_answer, expected_keywords
-            )
-            result["quality"] = quality_scores
-        elif question_type == "unanswerable":
-            # For unanswerable questions, check if model correctly refuses
-            is_refusal = result.get("grounding", {}).get("is_refusal", False)
-            result["quality"] = {
-                "correct_refusal": is_refusal,
-                "score": 1.0 if is_refusal else 0.0,
-            }
-        else:
-            result["quality"] = {"status": "skipped"}
+        # Step 3: Comprehensive Validation
+        validation = self._validate_answer(generated_answer, question_entry, context)
+        result["validation"] = validation
+        result["overall_score"] = validation["total_score"]
 
         return result
 
-
-    # Answer Quality Scoring
-
-
-    def _score_answer_quality(
-        self,
-        generated: str,
-        expected: str,
-        expected_keywords: List[str],
-    ) -> Dict:
-        """
-        Score the quality of a generated answer against the expected answer.
-        
-        Metrics:
-        - keyword_precision: fraction of expected keywords in generated answer
-        - lexical_overlap: word overlap between generated and expected
-        - rouge_l: ROUGE-L score (longest common subsequence)
-        """
+    def _validate_answer(self, answer: str, entry: Dict, context: str) -> Dict:
+        """Enhanced validation logic."""
         scores = {}
+        criteria = entry.get("eval_criteria", {})
+        q_type = entry.get("question_type")
+        
+        # 1. Refusal Detection (for unanswerable)
+        if q_type == "unanswerable":
+            refusal_patterns = entry.get("valid_refusal_patterns", [])
+            is_refusal = any(pat.lower() in answer.lower() for pat in refusal_patterns)
+            scores["refusal_correct"] = 1.0 if is_refusal else 0.0
+            return {"total_score": scores["refusal_correct"], "details": scores}
 
-        # Keyword precision
-        gen_lower = generated.lower()
-        keyword_hits = sum(1 for kw in expected_keywords if kw.lower() in gen_lower)
-        scores["keyword_precision"] = (
-            round(keyword_hits / len(expected_keywords), 3)
-            if expected_keywords else 0.0
-        )
-
-        # Lexical overlap (F1)
-        gen_words = set(generated.lower().split())
-        exp_words = set(expected.lower().split())
-        if gen_words and exp_words:
-            intersection = gen_words.intersection(exp_words)
-            precision = len(intersection) / len(gen_words) if gen_words else 0
-            recall = len(intersection) / len(exp_words) if exp_words else 0
-            f1 = (
-                2 * precision * recall / (precision + recall)
-                if (precision + recall) > 0 else 0
-            )
-            scores["lexical_f1"] = round(f1, 3)
+        # 2. Mandatory Keywords (must_include)
+        must_include = criteria.get("must_include", [])
+        if must_include:
+            hits = sum(1 for kw in must_include if kw.lower() in answer.lower())
+            scores["keyword_coverage"] = hits / len(must_include)
         else:
-            scores["lexical_f1"] = 0.0
+            scores["keyword_coverage"] = 1.0
 
-        # ROUGE-L (longest common subsequence)
-        try:
-            from rouge_score import rouge_scorer
-            scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
-            rouge_result = scorer.score(expected, generated)
-            scores["rouge_l"] = round(rouge_result["rougeL"].fmeasure, 3)
-        except ImportError:
-            scores["rouge_l"] = None
-            logger.warning("rouge_score not installed, skipping ROUGE-L")
+        # 3. Forbidden Keywords (must_not_include)
+        must_not_include = criteria.get("must_not_include", [])
+        forbidden_hits = sum(1 for kw in must_not_include if kw.lower() in answer.lower())
+        scores["forbidden_penalty"] = 1.0 if forbidden_hits == 0 else 0.0
 
-        # Overall quality score (weighted average)
-        available_scores = [
-            scores["keyword_precision"],
-            scores["lexical_f1"],
-        ]
-        if scores.get("rouge_l") is not None:
-            available_scores.append(scores["rouge_l"])
+        # 4. Numerical Tolerance
+        if entry.get("answer_type") == "numerical":
+            import re
+            numbers_expected = re.findall(r"[-+]?\d*\.\d+|\d+", entry.get("expected_answer", ""))
+            numbers_actual = re.findall(r"[-+]?\d*\.\d+|\d+", answer)
+            if numbers_expected and numbers_actual:
+                scores["numerical_accuracy"] = 1.0 if numbers_expected[0] in numbers_actual else 0.0
+            else:
+                scores["numerical_accuracy"] = 0.5 
 
-        scores["overall"] = round(np.mean(available_scores), 3) if available_scores else 0.0
+        # 5. Language Check
+        expected_lang = entry.get("expected_language", "en")
+        has_hindi = any('\u0900' <= c <= '\u097F' for c in answer)
+        if expected_lang == "hi" and not has_hindi:
+            scores["language_match"] = 0.0
+        elif expected_lang == "en" and has_hindi:
+            scores["language_match"] = 0.5
+        else:
+            scores["language_match"] = 1.0
 
+        # Grounding check (external call)
+        grounding_result = self.grounding_checker.check_grounding(answer, context)
+        scores["grounding_score"] = grounding_result.get("score", 0.0)
+
+        # Weighted score
+        total = (
+            scores.get("grounding_score", 0) * 0.4 +
+            scores.get("keyword_coverage", 0) * 0.3 +
+            scores.get("forbidden_penalty", 1.0) * 0.2 +
+            scores.get("language_match", 1.0) * 0.1
+        )
+        scores["total_score"] = round(total, 3)
         return scores
 
  
@@ -313,14 +277,14 @@ class PariShikshaEvaluator:
 
 
     def _compute_aggregate_metrics(self, per_question: List[Dict]) -> Dict:
-        """Compute aggregate metrics from per-question results."""
+        """Compute aggregate metrics from enhanced per-question results."""
         aggregates = {
             "total_evaluated": len(per_question),
             "by_question_type": {},
             "overall_score": 0.0,
         }
 
-        # Group by question type
+        all_scores = []
         type_groups = {}
         for result in per_question:
             qtype = result.get("question_type", "unknown")
@@ -328,57 +292,46 @@ class PariShikshaEvaluator:
                 type_groups[qtype] = []
             type_groups[qtype].append(result)
 
-        all_scores = []
-
         for qtype, results in type_groups.items():
-            type_metrics = {
+            metrics = {
                 "count": len(results),
-                "grounded_count": 0,
-                "avg_grounding_score": 0.0,
-                "avg_quality_score": 0.0,
-                "avg_retrieval_keyword_recall": 0.0,
+                "avg_total_score": 0.0,
+                "avg_recall_k": 0.0,
+                "avg_mrr": 0.0,
+                "avg_grounding": 0.0,
+                "avg_keyword_coverage": 0.0,
             }
 
-            grounding_scores = []
-            quality_scores = []
-            retrieval_recalls = []
+            total_scores = []
+            recalls = []
+            mrrs = []
+            groundings = []
+            coverages = []
 
             for r in results:
-                # Grounding
-                if r.get("grounding", {}).get("grounded"):
-                    type_metrics["grounded_count"] += 1
-                gs = r.get("grounding", {}).get("score")
-                if gs is not None:
-                    grounding_scores.append(gs)
+                total_scores.append(r.get("overall_score", 0))
+                all_scores.append(r.get("overall_score", 0))
+                
+                ret = r.get("retrieval", {})
+                recalls.append(ret.get("recall_at_k", 0))
+                mrrs.append(ret.get("mrr", 0))
 
-                # Quality
-                qs = r.get("quality", {}).get("overall")
-                if qs is None:
-                    qs = r.get("quality", {}).get("score")
-                if qs is not None:
-                    quality_scores.append(qs)
-                    all_scores.append(qs)
+                val = r.get("validation", {})
+                if qtype != "unanswerable":
+                    groundings.append(val.get("grounding_score", 0))
+                    coverages.append(val.get("keyword_coverage", 0))
+                else:
+                    groundings.append(val.get("refusal_correct", 0))
 
-                # Retrieval
-                rr = r.get("retrieval", {}).get("keyword_recall")
-                if rr is not None:
-                    retrieval_recalls.append(rr)
+            metrics["avg_total_score"] = np.mean(total_scores) if total_scores else 0.0
+            metrics["avg_recall_k"] = np.mean(recalls) if recalls else 0.0
+            metrics["avg_mrr"] = np.mean(mrrs) if mrrs else 0.0
+            metrics["avg_grounding"] = np.mean(groundings) if groundings else 0.0
+            metrics["avg_keyword_coverage"] = np.mean(coverages) if coverages else 0.0
 
-            type_metrics["avg_grounding_score"] = (
-                round(np.mean(grounding_scores), 3) if grounding_scores else 0.0
-            )
-            type_metrics["avg_quality_score"] = (
-                round(np.mean(quality_scores), 3) if quality_scores else 0.0
-            )
-            type_metrics["avg_retrieval_keyword_recall"] = (
-                round(np.mean(retrieval_recalls), 3) if retrieval_recalls else 0.0
-            )
+            aggregates["by_question_type"][qtype] = metrics
 
-            aggregates["by_question_type"][qtype] = type_metrics
-
-        # Overall score
-        aggregates["overall_score"] = round(np.mean(all_scores), 3) if all_scores else 0.0
-
+        aggregates["overall_score"] = np.mean(all_scores) if all_scores else 0.0
         return aggregates
 
     # Reporting
@@ -395,44 +348,38 @@ class PariShikshaEvaluator:
         return output_path
 
     def print_summary(self, report: Dict) -> None:
-        """Print a human-readable evaluation summary."""
+        """Print a human-readable enhanced evaluation summary."""
         print("\n" + "=" * 70)
-        print("PARISHIKSHA EVALUATION REPORT")
+        print("PARISHIKSHA ENHANCED EVALUATION REPORT")
         print("=" * 70)
 
         meta = report.get("metadata", {})
-        print(f"\nTimestamp: {meta.get('timestamp', 'N/A')}")
-        print(f"Model: {meta.get('model_type', 'N/A')}")
-        print(f"Retrieval mode: {meta.get('retrieval_mode', 'N/A')}")
-        print(f"Questions evaluated: {meta.get('total_questions', 0)}")
-        print(f"Time: {meta.get('total_time_seconds', 0):.1f}s")
-
+        print(f"Model: {meta.get('model_type', 'N/A')} | Retrieval: {meta.get('retrieval_mode', 'N/A')}")
+        
         agg = report.get("aggregate", {})
-        print(f"\n{'-'*50}")
-        print(f"OVERALL SCORE: {agg.get('overall_score', 0):.1%}")
-        print(f"{'-'*50}")
+        print(f"\nOVERALL PERFORMANCE: {agg.get('overall_score', 0):.1%}")
 
-        print(f"\nBreakdown by question type:")
+        print("\nMETRICS BY CATEGORY:")
         for qtype, metrics in agg.get("by_question_type", {}).items():
-            print(f"\n  {qtype} ({metrics['count']} questions):")
-            print(f"    Avg quality score:     {metrics['avg_quality_score']:.1%}")
-            print(f"    Avg grounding score:   {metrics['avg_grounding_score']:.1%}")
-            print(f"    Grounded answers:      {metrics['grounded_count']}/{metrics['count']}")
-            print(f"    Retrieval recall:      {metrics['avg_retrieval_keyword_recall']:.1%}")
+            print(f"\n  [{qtype.upper()}] ({metrics['count']} questions)")
+            print(f"    Validation Score:   {metrics['avg_total_score']:.1%}")
+            print(f"    Retrieval Recall:   {metrics['avg_recall_k']:.1%}")
+            print(f"    Mean Reciprocal Rank: {metrics['avg_mrr']:.3f}")
+            if qtype == "unanswerable":
+                print(f"    Refusal Accuracy:   {metrics['avg_grounding']:.1%}")
+            else:
+                print(f"    Grounding Score:    {metrics['avg_grounding']:.1%}")
+                print(f"    Keyword Coverage:   {metrics['avg_keyword_coverage']:.1%}")
 
-        # Per-question details
-        print(f"\n{'-'*50}")
-        print("PER-QUESTION RESULTS")
-        print(f"{'-'*50}")
+        print(f"\n{'-'*70}")
+        print("PER-QUESTION DETAILS")
+        print(f"{'-'*70}")
         for r in report.get("per_question", []):
-            qtype = r.get("question_type", "?")
-            quality = r.get("quality", {}).get("overall", r.get("quality", {}).get("score", "?"))
-            grounded = r.get("grounding", {}).get("grounded", "?")
-            print(f"\n  Q{r.get('question_id', '?')}: [{qtype}] {r['question'][:60]}...")
-            print(f"    Quality: {quality}  |  Grounded: {grounded}")
-            answer = r.get("generation", {}).get("answer", "")
-            if answer:
-                print(f"    Answer: {answer[:100]}...")
+            q_id = str(r.get("question_id"))[:8]
+            score = r.get("overall_score", 0)
+            print(f"ID: {q_id}... | Score: {score:.1%} | Q: {r['question'][:50]}...")
+            if "generation" in r and "answer" in r["generation"]:
+                print(f"  Ans: {r['generation']['answer'][:80]}...")
 
 
 

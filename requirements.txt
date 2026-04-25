@@ -16,7 +16,10 @@ tiktoken>=0.5.0           # OpenAI BPE tokenizer for comparison
 nltk>=3.8.1               # Sentence tokenization, text utilities
 spacy>=3.7.0              # Sentence segmentation, NER
 
-# --- Embeddings & Similarity ---
+# --- Vector Database & Industrial Retrieval ---
+chromadb>=0.4.0           # Persistent vector database
+rank-bm25>=0.2.2          # Probabilistic keyword ranking
+faiss-cpu>=1.7.0          # Optimized vector search indexing
 sentence-transformers>=2.2.2   # SBERT for dense embeddings
 scikit-learn>=1.3.0            # TF-IDF, cosine similarity, metrics
 numpy>=1.24.0

@@ -125,7 +125,7 @@ EMBEDDING_CONFIG = {
 GENERATION_CONFIG = {
     # Gemini (decoder-only)
     "gemini_model": "models/gemini-flash-latest",
-    "gemini_temperature": 0.3,         # Low temperature for factual grounding
+    "gemini_temperature": 0.0,         # Zero temperature for reproducible evaluation
     "gemini_max_tokens": 512,
     # T5 (encoder-decoder, for Stretch)
     "t5_model": "google/flan-t5-base",
@@ -134,10 +134,10 @@ GENERATION_CONFIG = {
     # Grounding prompt template
     "system_prompt": (
         "You are a study assistant for Class 9 and 10 NCERT Science students. "
-        "Answer the question using ONLY the provided textbook context. "
-        "If the context does not contain enough information to answer, say: "
+        "You MUST check whether the answer is explicitly present in the provided context. "
+        "If the answer is NOT in the context, you MUST REFUSE to answer and exactly say: "
         "'I don't have enough information from the textbook to answer this.' "
-        "Do not add information beyond what is in the context. "
+        "Only answer from the context. Do not invent or add outside information. "
         "Use simple language appropriate for a Class 9-10 student."
     ),
 }

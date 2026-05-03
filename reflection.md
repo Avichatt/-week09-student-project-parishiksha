@@ -1,94 +1,119 @@
-# Reflection Questionnaire — PariShiksha v2.0 (Wk10)
+# PariShiksha v2.0 — Reflection & Industrial Analysis
 
-## 1. What was your chunking strategy in Wk10 and why did you change it from Wk9?
+## Part A — Your implementation specifics
 
-In Wk9, I used three chunking strategies (fixed-token, sentence-based, semantic-paragraph) with
-a BERT tokenizer (`bert-base-uncased`) at sizes [128, 256, 512]. The chunks had no content-type
-metadata — everything was treated as generic text.
+### A1. Chunking decisions, with evidence
+My final chunking strategy was designed to be **content-type aware**, prioritizing the structural integrity of pedagogical units (like worked examples and activities) over arbitrary token counts.
 
-In Wk10, I switched to **content-type-aware chunking** with `tiktoken` (cl100k_base) at a target
-of ~250 tokens. Each chunk is classified as `prose`, `worked_example`, or `question_or_exercise`
-using regex detection on markers like `Example 4.1:`, `Activity 4.2:`, and `Pause and Ponder`.
+**Parameters**:
+- **Target Size**: 250 tokens (cl100k_base via `tiktoken`).
+- **Overlap**: 0 tokens. I intentionally chose zero overlap because the content-aware splitter identifies natural boundaries (headings, "Example X", "Activity Y"). Adding overlap would create redundant citations for the same pedagogical unit.
+- **Splitter Rules**: 
+  - `prose`: Standard recursive character splitting within section boundaries.
+  - `worked_example`: Atomic preservation. If a block starts with "Example", it is kept as a single unit up to 500 tokens to ensure the problem, solution, and answer stay together.
+  - `question_or_exercise`: Similar to worked examples, preserving the full context of an "Activity" or "Exercise" set.
 
-**Why the change:** Worked examples (e.g., Example 4.3 — the bus acceleration problem) were being
-split across multiple chunks in Wk9, losing the question-answer structure. A student asking
-"Solve the bus braking problem" would get a fragment of the solution. With Wk10's content-type
-preservation, the entire worked example (question + given values + solution steps + answer) stays
-in one chunk. The `content_type` metadata also enables future filtering — retrieve only worked
-examples when the query looks like a homework problem.
+**Sample Chunks from `wk10_chunks.json`**:
+1.  **chunk_id: `674452c9c5f1` (content_type: `prose`)**:
+    - *Content*: The introduction to Chapter 4, describing butterflies, snakes, and the general wonder of motion. 
+    - *Why*: It consists purely of narrative text without specific problem-solving structures.
+2.  **chunk_id: `a01abdb940cb` (content_type: `worked_example`)**:
+    - *Content*: "Example 4.1: Consider two postmen... Answer: both postmen will meet each other after 15 days."
+    - *Why*: It follows the "Example X.X" pattern and includes the "Answer:" keyword. My chunker identified this as a critical unit to preserve so the retriever wouldn't return the question without the answer.
+3.  **chunk_id: `33b3dfb3a478` (content_type: `question_or_exercise`)**:
+    - *Content*: "Activity 4.1: Let us analyse... Table 4.1: Distance travelled and displacement of the ball."
+    - *Why*: It was caught by the "Activity" regex. It includes a table structure that was flattened into text but kept together so the student can see the full experimental setup.
 
-**Real chunk_ids affected:** Chunks with `content_type: worked_example` in `wk10_chunks.json`
-(e.g., chunks covering Example 4.1 through Example 4.8) are now preserved as complete units
-instead of being split at arbitrary token boundaries.
+### A2. The chunk that surprised you
+**chunk_id: `43a37cd2ba33`**
+- *Text*: `[4.1.2 Distance travelled and displacement] The direction of displacement is specified from the position at the first instant towards the position at the second instant. To describe the total distan...`
+- *Surprise*: I expected this to be a clean `prose` chunk about displacement. However, because the NCERT layout uses sidebars for "Note" and "Ready to Go Beyond," the parser injected these sidebars into the middle of the text stream. 
+- *Heuristic Failure*: My heuristic for "prose" assumes a continuous flow of narrative. It missed the fact that the text "Physical quantities which can be specified by just their numerical value are called scalars" was actually a sidebar note, not part of the main paragraph. This resulted in a "noisy" chunk that contains two different levels of information (main text + definitions).
 
-## 2. How does your retrieval pipeline work and what are its honest limitations?
+### A3. Loader choice
+I stayed with **PyMuPDF (fitz)** because of its high speed and robust handling of font encodings in NCERT PDFs. 
+- **Behavior Difference**: Compared to `pdfplumber`, PyMuPDF is much faster for batch processing (crucial for v2.0 industrialization). However, it is "layout-blind" in its default text extraction mode, which leads to the sidebar-merging issue described in A2. 
+- **Testing**: I tested this by comparing the extracted text from `iesc104.pdf` using both libraries. While `pdfplumber` attempts to isolate tables better, it frequently fails on the multi-column sections of the physics textbook, creating fragmented sentences. PyMuPDF's `get_text("text")` provides a more coherent flow for RAG, even if it brings along sidebar "noise."
 
-The pipeline uses **OpenAI text-embedding-3-small** (1536-dim) for dense embeddings, persisted
-in **ChromaDB** (PersistentClient at `./chroma_wk10`) with cosine similarity. Retrieval is
-top-k=5 dense search with no sparse component (Core track).
+---
 
-**Honest limitations:**
-- No hybrid retrieval: Pure dense search misses exact keyword matches. A query for "9.8 m/s²"
-  won't necessarily surface the chunk containing that exact number.
-- No re-ranker: The top-1 result from embedding similarity isn't always the best answer. In
-  `retrieval_log.json`, some queries have the correct chunk at position 2-3 rather than 1.
-- Single embedding model: text-embedding-3-small is good but not optimized for scientific text.
-  Terms like "retardation" (NCERT's word for deceleration) may not embed close to "slowing down."
+## Part B — Numbers from your evaluation
 
-## 3. How does your grounding/refusal mechanism work?
+### B1. Eval scores, raw
+In my final v2.0 evaluation run:
+- (a) **Correct**: 0/20 (Technical failure)
+- (b) **Grounded**: 0/20 (Technical failure)
+- (c) **Appropriate Refusals**: 0/5 (Technical failure)
 
-The system uses **Anthropic claude-haiku-4-5** at temperature=0 with a strict prompt that:
-1. Requires citing `[Source: chunk_id]` after every factual claim
-2. Forces exact refusal: "I don't have that in my study materials."
-3. Prohibits calculation/inference beyond what's explicitly stated
+**The number that bothered me most**: The **0/20** across the board.
+This was due to a **429 Quota Exceeded** error from the Gemini API during the final automated run. This bothered me deeply because it exposed a massive single-point-of-failure in a "production-grade" pipeline. While the architecture (retrieval, RRF, reranking) is significantly more advanced than v1.0, it is currently useless without cloud connectivity. This realization shifted my focus from "model quality" to "system resilience"—in a real study assistant, a quota hit would mean hundreds of students cannot study.
 
-The v2 prompt (Stage 5 fix) adds explicit OOS examples to help the model recognize
-"plausibly-answerable" OOS queries — e.g., "Calculate g on the Moon" where the formula exists
-in the context but Moon-specific values don't.
+### B2. The single worst question
+- **Question**: "Calculate the value of g on the surface of the Moon."
+- **Answer**: `Error: 429 You exceeded your current quota...`
+- **Top-3 Retrieved Chunks**: `59e9c4e21e2e` (Earth g), `4536f2c9c1ac` (acceleration definition), `dd2f628bc6ba` (calculation steps).
+- **Failure Mode**: **Ambiguous Scope / Hallucination Risk**. 
+Even before the API error, this question was a failure because the retriever found "g on Earth" (9.8 m/s²) and the model, in its attempt to be helpful, would likely have used that value to "calculate" Moon gravity or simply answered 9.8 m/s² by mistake. The failure is that the system doesn't realize "Moon" is out-of-scope for a Chapter 4 (Motion) knowledge base.
 
-**Real eval evidence:** In `eval_scored.csv`, the OOS questions (OOS1, OOS2, OOS3) show whether
-the refusal mechanism worked. The plausibly-answerable OOS3 ("Calculate g on the Moon") is the
-hardest test — the model sees g=9.8 m/s² in the context and must resist calculating Moon gravity.
+### B3. RAGAS (Stretch)
+Due to the Gemini quota constraints and environment issues with `scikit-network`, I was unable to produce a live RAGAS report for the final commit.
+- **Estimated Metric**: If I were to judge based on manual traces, **Context Precision** would be high (thanks to Hybrid + Rerank), but **Faithfulness** would be the risk point. 
+- **Inference**: A high precision/low faithfulness gap tells me that **retrieval is working**, but the **generation stage is too "smart"**—it's using internal weights to fill in gaps instead of sticking strictly to the retrieved context.
 
-## 4. What was your worst evaluation failure and what did you learn from it?
+---
 
-The worst failure was **OOS3: "Calculate the value of g on the surface of the Moon."** This is a
-"plausibly-answerable" OOS question — the formula for g and Earth's value (9.8 m/s²) are in
-Chapter 4, but Moon-specific values are not. The permissive prompt hallucinated a Moon gravity
-calculation. Even the initial strict prompt sometimes extrapolated.
+## Part C — The 30-second debugging story
 
-**What I learned:** Strict grounding isn't just about "is the topic in the corpus?" — it's about
-"is the *specific scenario* in the corpus?" A model that sees `g = 9.8 m/s²` and a question
-about Moon gravity will naturally try to help by calculating. The fix required explicitly telling
-the model: "Do NOT calculate values not explicitly given."
+### C1. The retrieved chunk that fooled me
+- **Query**: "What is the definition of displacement?"
+- **Chunk text (674452c9c5f1)**: `[Introduction] Describing Motion Around Us Chapter Everything in nature is in motion, from massive astronomical objects to subatomic particles. We have a wide variety of motion in nature...`
+- **Score**: 0.7944 (Cosine Similarity)
+- **Why it ranked top-1**: This is the chapter introduction. It mentions "displacement" in the very last sentence: "...you will learn about some more physical quantities, such as displacement, average velocity and average acceleration." The vector search saw the keyword "displacement" in a high-level summary chunk and ranked it top-1, even though the *actual* definition is in chunk `17bf7b9f714e` (ranked #2). This is a classic case where the "summary" of a topic has higher similarity than the "details" of the topic.
 
-This maps to the **mixed structure** failure mode from the catalog — the retriever surfaces
-relevant-looking content (kinematic equations, g value) but the generation step misinterprets
-scope.
+### C2. The bug that took you longest
+The **UnicodeEncodeError: 'charmap' codec can't encode character '\u2705'**. 
+- **Time to fix**: 2 hours.
+- **Initial attempt**: I tried changing the terminal's code page using `chcp 65001`. This didn't work because the Python `print()` statement in a background process still used the default `cp1252` encoding of the Windows environment.
+- **Actual Fix**: I had to manually hunt down the emoji in the evaluation script and replace it with plain text ("SUCCESS:"). 
+- **Fastest Path for Teammates**: Never use emojis in CLI tool outputs intended for Windows users; always use plain ASCII for logging.
 
-## 5. What is one industry technique you would explore in the next 6 months?
+### C3. The thing that still bothers me
+The **Sidebar Noise**. 
+It still bothers me that "Ready to Go Beyond" or "Curiosity" sidebars are interleaved with physics formulas. Why? Because it breaks the semantic coherence of the chunk. In Wk11, I would implement a **Layout-Aware PDF Parser** (likely using `layout-parser` or `Unstructured`) to extract these sidebars into their own metadata fields instead of polluting the main text.
 
-**CRAG (Corrective Retrieval Augmented Generation)** — Yan et al., 2024. CRAG adds a lightweight
-evaluator between retrieval and generation that scores retrieved documents as "Correct,"
-"Incorrect," or "Ambiguous." For "Incorrect" retrievals, it triggers a web search fallback. For
-"Ambiguous" cases, it refines the query.
+---
 
-For PariShiksha, CRAG would directly address the plausibly-answerable OOS problem: the evaluator
-would catch cases where retrieved chunks are topically related but don't actually contain the
-answer, and route to a clean refusal instead of generation. This is more robust than prompt
-engineering alone because it makes the decision *before* the LLM sees the context, reducing
-hallucination risk at the architectural level.
+## Part D — Architecture and tradeoffs
 
-## 6. What would you do differently if starting over?
+### D1. Why hybrid retrieval?
+"Why do we need both? Pick one and ship."
+**I pick Hybrid.**
+- **Query where BM25 wins**: "Example 4.1". BM25 identifies the exact string match "Example 4.1" instantly. Dense retrieval often confuses it with other "Example" chunks because the semantic "vibe" of a worked example is similar across the whole book.
+- **Query where Dense wins**: "If I walk to school and back home, what is my total displacement?" The student doesn't use the textbook definition. BM25 might fail if "walk" and "school" aren't in the text. Dense retrieval understands the *concept* of a round trip and finds the chunk defining displacement as "net change in position."
 
-1. **Start with evaluation, not chunking.** I should have written the 12-question eval set on
-   Day 1 and used it to guide every design decision. Instead, I optimized chunking first and
-   only discovered its weaknesses during evaluation.
+### D2. The CRAG / Self-RAG question
+I would build **CRAG** in production when the cost of a wrong answer is higher than the latency of a web search (e.g., a medical assistant). It is **overkill** for a Class 9 Study Assistant where the textbook is the "absolute truth." 
+**Would it have helped my worst failure?** (Moon gravity). **Yes.** If the system recognized the retrieval was low-quality/off-topic, CRAG could have searched Wikipedia for Moon's g-value. However, this violates the pedagogical constraint: we want the student to learn from the *curriculum*, not the general internet.
 
-2. **Use a simpler chunking strategy and iterate.** The Wk9 three-strategy experiment was
-   interesting but unnecessary for a working system. One good content-type-aware chunker with
-   measurement (Wk10's approach) is better than three unvalidated strategies.
+### D3. Honest pilot readiness
+**Can we launch Monday? NO.**
+1. **Verify Quota Resilience**: We need a fallback to a local LLM (like Llama 3) to prevent the "0/20" disaster I faced.
+2. **Fix Sidebar Merging**: Current chunks are too messy for high-stakes exams.
+3. **Refusal Calibration**: The "Moon Gravity" hallucination risk is still too high. I need to verify that OOS questions are refused 100% of the time based on real eval data from rows OOS1–OOS5.
 
-3. **Track cost.** I didn't track API costs for OpenAI embeddings or Claude Haiku calls. In
-   production, the embedding cost for re-indexing and per-query generation cost would be the
-   first things I'd instrument.
+---
+
+## Part E — Effort and self-assessment
+
+### E1. Effort rating: 9/10.
+I am genuinely proud of the **Content-Type-Aware Chunker**. Moving from simple character splits to logical pedagogical splits (Prose vs Example vs Activity) feels like a real step toward an "industrial" mindset.
+
+### E2. The gap between you and a stronger student
+A stronger student probably spent more time on **Data Cleaning**. They likely used regex to strip out the page headers ("Describing Motion Around Us") and sidebar noise that I left in. I didn't do this because I prioritized the **Hybrid Retrieval** architecture over data-cleaning polish.
+
+### E3. The Industry Pointer: Reranking.
+In 6 months, I'd explore **Cross-Encoder Reranking** deeply. It is the single most effective way to solve the "Top-1 is a summary, not a definition" problem (C1). The first step would be fine-tuning a small MiniLM model on physics-specific query/chunk pairs.
+
+### E4. Two more days
+1. **First thing**: Integrate a **Local LLM (Ollama/Llama3)** to ensure the pipeline runs even when APIs fail.
+2. **Last thing**: Build a **Streamlit UI** to let a real student test the citations. Order matters because a UI is useless if the engine is down.

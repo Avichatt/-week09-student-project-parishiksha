@@ -11,121 +11,85 @@ with strict grounding, honest evaluation, and citation-enforced generation.
 
 ---
 
-## 🏗️ Architecture (v2.0)
+## 🏗️ Architecture (v2.0 Stretch)
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Student Question                         │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│  RETRIEVAL: Google text-embedding-004 + ChromaDB            │
-│  - PersistentClient at ./chroma_wk10                        │
-│  - Cosine similarity, top-k=5                               │
-│  - Chunk metadata: {source, section, content_type, page}    │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│  GENERATION: Google Gemini 1.5 Flash @ temperature=0        │
-│  - Strict prompt with [Source: chunk_id] citations          │
-│  - Clean refusal: "I don't have that in my study materials" │
-│  - Anti-extrapolation rules for plausibly-answerable OOS    │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│  OUTPUT: {answer, sources, chunk_ids}                       │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    User([Student Question]) --> MQ[MultiQuery: Gemini Rewrites x3]
+    
+    subgraph Retrieval
+        MQ --> BM25[BM25 Retrieval]
+        MQ --> Dense[Dense: gemini-embedding-001 + Chroma/Qdrant]
+        BM25 --> RRF[RRF Fusion]
+        Dense --> RRF
+    end
+    
+    subgraph Post-Processing
+        RRF --> Rerank[Local Cross-Encoder Reranker]
+    end
+    
+    subgraph Generation
+        Rerank --> Ask[Gemini 2.0 Flash + Strict Prompt]
+    end
+    
+    Ask --> Output{Grounded Answer + Citations}
 ```
 
 ---
 
-## 📂 Project Structure
+## 📽️ Submission Video
+**Loom Link:** [https://www.loom.com/share/placeholder](https://www.loom.com/share/placeholder) (5 min Stretch Walkthrough)
+
+---
+
+## 📂 Project Structure (v2.0)
 
 ```
 parishiksha/
-├── wk10_pipeline.py          # v2.0 pipeline orchestrator (all 5 stages)
-├── wk10_chunker.py           # Stage 1: Content-type-aware chunking (tiktoken)
-├── wk10_embedder.py          # Stage 2: Gemini embeddings + ChromaDB retrieval
-├── wk10_ask.py               # Stage 3: ask() with Gemini 1.5 Flash + strict prompt
-├── wk10_eval.py              # Stage 4+5: 12-Q evaluation + targeted fix
-├── wk10_chunks.json          # Persisted chunks with content_type metadata
-├── chroma_wk10/              # ChromaDB persistent storage
+├── wk10_stretch_pipeline.py  # Stretch orchestrator (RRF, Rerank, MultiQuery)
+├── wk10_stretch_stage1.py    # Multi-variant chunking comparison
+├── wk10_stretch_stage2.py    # DB & Embedding benchmarking
+├── wk10_stretch_stage3.py    # Hybrid Retrieval (BM25 + Dense)
+├── wk10_stretch_stage4.py    # Reranking + MultiQuery + RAGAS
 │
-├── main.py                   # Wk9 legacy pipeline (preserved)
-├── config/config.py          # Central configuration
-├── src/                      # Wk9 modules (extraction, chunking, retrieval, etc.)
-├── data/                     # Raw PDFs + processed text
-│   ├── raw/                  # NCERT PDFs (not committed)
-│   └── processed/            # Cleaned text + sections JSON
+├── wk10_chunker.py           # Content-type-aware chunking
+├── wk10_embedder.py          # Gemini-embedding-001 + ChromaDB
+├── wk10_ask.py               # Gemini 2.0 Flash + strict prompt
+│
+├── chunking_compare.md       # Stretch Stage 1: Variant comparison
+├── db_benchmark.csv          # Stretch Stage 2: Latency/Recall data
+├── db_comparison.md          # Stretch Stage 2: Scaling analysis
+├── ragas_report.csv          # Stretch Stage 4: Faithfulness/Relevancy
+├── failure_memo.md           # Stretch Stage 5: Top failures + Architecture
 │
 ├── reflection.md             # Wk10 reflection questionnaire
-├── chunking_diff.md          # Stage 1 evidence: Wk9 vs Wk10 comparison
-├── retrieval_log.json        # Stage 2 evidence: top-1 results for 10 queries
-├── retrieval_misses.md       # Stage 2 evidence: miss diagnosis
-├── prompt_diff.md            # Stage 3 evidence: permissive vs strict prompt
-├── eval_raw.csv              # Stage 4 evidence: raw ask() output
-├── eval_scored.csv           # Stage 4 evidence: hand-scored 3-axis
-├── eval_v2_scored.csv        # Stage 5 evidence: post-fix scores
-├── fix_memo.md               # Stage 5 evidence: fix description + delta
-│
-├── requirements.txt          # Python dependencies
-├── .env.example              # API key placeholders
+├── requirements.txt          # Pinned dependencies
 └── .gitignore
 ```
 
 ---
 
-## 🚀 Quick Start (Fresh Clone)
+## 🚀 Quick Start (Stretch Track)
 
 ### 1. Install Dependencies
-
 ```bash
-git clone <repository-url>
-cd parishiksha
 pip install -r requirements.txt
-python -c "import nltk; nltk.download('punkt_tab')"
 ```
 
-### 2. Configure API Keys
-
+### 2. Run the Stretch Pipeline
 ```bash
-cp .env.example .env
-# Edit .env and add:
-#   GEMINI_API_KEY=AIzaSy...
-```
-
-### 3. Run the Wk10 Pipeline
-
-```bash
-# Run all 5 stages
-python wk10_pipeline.py --stage all
-
-# Or run individual stages
-python wk10_pipeline.py --stage chunk      # Stage 1: Chunking
-python wk10_pipeline.py --stage embed      # Stage 2: Embedding + Retrieval
-python wk10_pipeline.py --stage generate   # Stage 3: Generation + Prompt Comparison
-python wk10_pipeline.py --stage evaluate   # Stage 4+5: Evaluation + Fix
-```
-
-### 4. Interactive Q&A
-
-```bash
-python wk10_ask.py
-# Type questions and get grounded, cited answers
+# This will run comparison, benchmarking, hybrid retrieval, and reranking
+python wk10_stretch_pipeline.py
 ```
 
 ---
 
-## 📊 Evaluation Summary (Core Track)
+## 📊 Evaluation Summary
 
-| Metric | v1 (Before Fix) | v2 (After Fix) |
-|--------|-----------------|----------------|
-| Correct (Y) | See eval_scored.csv | See eval_v2_scored.csv |
-| Grounded (Y) | See eval_scored.csv | See eval_v2_scored.csv |
-| OOS Refused | See eval_scored.csv | See eval_v2_scored.csv |
+- **Faithfulness Target**: ≥ 0.7 (RAGAS)
+- **Hybrid Retrieval**: BM25 + Dense (Fused via RRF)
+- **Reranking**: Local `ms-marco-MiniLM-L-6-v2`
+- **MultiQuery**: Gemini-powered query expansion (x3)
 
 **Eval set:** 12 questions (6 direct + 3 paraphrased + 3 OOS including 1 plausibly-answerable).
 **Scoring axes:** (a) correct Y/N/partial, (b) grounded Y/N, (c) refused_when_oos Y/N/NA.

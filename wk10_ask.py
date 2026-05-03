@@ -61,8 +61,8 @@ class Wk10AskEngine:
     Grounded question-answering engine for PariShiksha v2.0.
     
     Uses:
-      - Wk10Embedder for retrieval (OpenAI embeddings + ChromaDB)
-      - Anthropic claude-haiku-4-5 for generation at temperature=0
+      - Wk10Embedder for retrieval (Google embeddings + ChromaDB)
+      - Google Gemini 1.5 Flash for generation at temperature=0
       - Strict prompt with citation enforcement
     """
 
@@ -73,7 +73,7 @@ class Wk10AskEngine:
         """
         self.embedder = Wk10Embedder()
         self.prompt_mode = prompt_mode
-        self._anthropic_client = None
+        self._genai_configured = False
         
         # Ensure collection is loaded
         self.embedder.collection = self.embedder.client.get_or_create_collection(
@@ -81,17 +81,17 @@ class Wk10AskEngine:
             metadata={"hnsw:space": "cosine"},
         )
 
-    def _get_anthropic_client(self):
-        """Lazy-init Anthropic client."""
-        if self._anthropic_client is None:
-            import anthropic
-            api_key = os.getenv("ANTHROPIC_API_KEY", "")
+    def _configure_genai(self):
+        """Configure Google Generative AI."""
+        if not self._genai_configured:
+            import google.generativeai as genai
+            api_key = os.getenv("GEMINI_API_KEY", "")
             if not api_key:
                 raise ValueError(
-                    "ANTHROPIC_API_KEY not set. Add it to .env file."
+                    "GEMINI_API_KEY not set. Add it to .env file."
                 )
-            self._anthropic_client = anthropic.Anthropic(api_key=api_key)
-        return self._anthropic_client
+            genai.configure(api_key=api_key)
+            self._genai_configured = True
 
     def ask(self, question: str, k: int = 5) -> Dict:
         """
@@ -115,7 +115,7 @@ class Wk10AskEngine:
         else:
             prompt = STRICT_PROMPT.format(context=context, question=question)
         
-        # Step 3: Generate with Claude Haiku
+        # Step 3: Generate with Gemini
         answer = self._generate(prompt)
         
         # Step 4: Structure result
@@ -139,21 +139,21 @@ class Wk10AskEngine:
         }
 
     def _generate(self, prompt: str) -> str:
-        """Generate answer using Anthropic claude-haiku-4-5 at temperature=0."""
-        client = self._get_anthropic_client()
+        """Generate answer using Gemini 2.0 Flash at temperature=0."""
+        self._configure_genai()
+        import google.generativeai as genai
         
         try:
-            message = client.messages.create(
-                model="claude-haiku-4-5-20250514",
-                max_tokens=512,
-                temperature=0,
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
+            model = genai.GenerativeModel("gemini-2.0-flash")
+            response = model.generate_content(
+                prompt,
+                generation_config=genai.types.GenerationConfig(
+                    temperature=0.0,
+                )
             )
-            return message.content[0].text.strip()
+            return response.text.strip()
         except Exception as e:
-            logger.error(f"Claude generation failed: {e}")
+            logger.error(f"Gemini generation failed: {e}")
             return f"Error: {str(e)}"
 
 

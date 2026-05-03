@@ -1,0 +1,92 @@
+[
+  {
+    "query": "What is displacement?",
+    "top1_chunk_id": "17bf7b9f714e",
+    "top1_section": "4.1.2 Distance travelled and displacement",
+    "top1_score": 0.7944,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.1.2 Distance travelled and displacement]\nSuppose an athlete starts running from point O at time t = 0 s, reaches \npoint B at t = 4 s, then reaches point A at t = 10 s, then runs back along the \nsam",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "Define uniform motion in a straight line.",
+    "top1_chunk_id": "3db87f3be65b",
+    "top1_section": "4.1 Motion in a Straight Line",
+    "top1_score": 0.8648,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.1 Motion in a Straight Line]\nYou have learnt that when an object moves in a straight line, its motion is \ncalled linear motion. It can also be called motion in a straight line. It is the \nsimplest ",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "How is average speed calculated?",
+    "top1_chunk_id": "6b148ba4c908",
+    "top1_section": "4.1.3 Average speed and average velocity",
+    "top1_score": 0.8474,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.1.3 Average speed and average velocity]\nYou have learnt about average speed in an earlier grade. It tells us how \nfast or slow an object moves. The average speed of an object is the total \ndistance",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "What is average velocity?",
+    "top1_chunk_id": "d112263b4ff6",
+    "top1_section": "4.1.3 Average speed and average velocity",
+    "top1_score": 0.8684,
+    "top1_content_type": "worked_example",
+    "top1_text_preview": "[4.1.3 Average speed and average velocity]\n(ii)  magnitude of average velocity of an object zero while its average speed is not zero?",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "Define average acceleration.",
+    "top1_chunk_id": "4536f2c9c1ac",
+    "top1_section": "4.1.4 Average acceleration",
+    "top1_score": 0.8798,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.1.4 Average acceleration]\nWhen you sit in a vehicle and it suddenly moves from rest, you feel a \nnoticeable jolt. Similarly, when the vehicle is in motion and suddenly \nstops, you experience a jolt",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "What are the kinematic equations?",
+    "top1_chunk_id": "bd677cd67ee2",
+    "top1_section": "4.3 Kinematic Equations for Motion in a Straight",
+    "top1_score": 0.8749,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.3 Kinematic Equations for Motion in a Straight]\n(4.4b), we obtain\nv\nu\nv\nu\ns\nu\na\na\na\n−\n−\n\n\n\n\n=\n+\n×\n\n\n\n\n\n\n\n\n⇒ \nuv\nu\nu\nv\nuv\ns\na\na\n−\n+\n−\n=\n+\n⇒ \nuv\nu\nu\nv\nuv\ns\na\n−\n+\n+\n−\n=\n⇒ \nu\nv\ns\na\n−\n+\n=\n⇒ ",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "What is uniform circular motion?",
+    "top1_chunk_id": "8a7fe42cf60e",
+    "top1_section": "4.4.1 Uniform circular motion",
+    "top1_score": 0.8589,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.4.1 Uniform circular motion]\n4.1)\n \n \n \n  \n \nav\nR\nv\nT\nπ\n=\n  \n \n \n (4.5)\nwhile the average velocity during the time interval T will be 0, since the \ndisplacement is 0. Let us now consider a particul",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "What does a negative acceleration indicate?",
+    "top1_chunk_id": "f9e157f7a192",
+    "top1_section": "4.2.3 Velocity-time graphs",
+    "top1_score": 0.8417,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.2.3 Velocity-time graphs]\nA straight line velocity-time graph as shown in Fig. 4.17b indicates that \nthe velocity is increasing with a constant acceleration (in the direction of \nvelocity). Whereas",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "When are distance and displacement equal?",
+    "top1_chunk_id": "ff8b0e64f755",
+    "top1_section": "4.1.2 Distance travelled and displacement",
+    "top1_score": 0.8456,
+    "top1_content_type": "question_or_exercise",
+    "top1_text_preview": "[4.1.2 Distance travelled and displacement]\n4.5: A ball\nin vertical motion (two \nseparate lines are shown \nonly for clarity; in reality, \nthe object goes up and \nfalls back in the same \nstraight line)",
+    "manual_top1_correct": "YES"
+  },
+  {
+    "query": "What is the SI unit of velocity?",
+    "top1_chunk_id": "4536f2c9c1ac",
+    "top1_section": "4.1.4 Average acceleration",
+    "top1_score": 0.8438,
+    "top1_content_type": "prose",
+    "top1_text_preview": "[4.1.4 Average acceleration]\nWhen you sit in a vehicle and it suddenly moves from rest, you feel a \nnoticeable jolt. Similarly, when the vehicle is in motion and suddenly \nstops, you experience a jolt",
+    "manual_top1_correct": "YES"
+  }
+]

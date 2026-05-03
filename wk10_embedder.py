@@ -39,39 +39,32 @@ class Wk10Embedder:
         self.client = chromadb.PersistentClient(path=chroma_path)
         self.collection = None
         self.chunks = []
-        self._openai_client = None
+        self._genai_configured = False
 
-    def _get_openai_client(self):
-        """Lazy-init OpenAI client."""
-        if self._openai_client is None:
-            from openai import OpenAI
-            api_key = os.getenv("OPENAI_API_KEY", "")
+    def _configure_genai(self):
+        """Configure Google Generative AI."""
+        if not self._genai_configured:
+            import google.generativeai as genai
+            api_key = os.getenv("GEMINI_API_KEY", "")
             if not api_key:
                 raise ValueError(
-                    "OPENAI_API_KEY not set. Add it to .env file."
+                    "GEMINI_API_KEY not set. Add it to .env file."
                 )
-            self._openai_client = OpenAI(api_key=api_key)
-        return self._openai_client
+            genai.configure(api_key=api_key)
+            self._genai_configured = True
 
     def _embed_texts(self, texts: List[str]) -> List[List[float]]:
-        """Embed a batch of texts using OpenAI text-embedding-3-small."""
-        client = self._get_openai_client()
+        """Embed a batch of texts using Google gemini-embedding-001."""
+        self._configure_genai()
+        import google.generativeai as genai
         
-        # OpenAI allows max 2048 texts per batch, chunk if needed
-        all_embeddings = []
-        batch_size = 100
-        
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i:i + batch_size]
-            response = client.embeddings.create(
-                model="text-embedding-3-small",
-                input=batch,
-            )
-            batch_embeddings = [item.embedding for item in response.data]
-            all_embeddings.extend(batch_embeddings)
-            logger.info(f"  Embedded batch {i//batch_size + 1}: {len(batch)} texts")
-        
-        return all_embeddings
+        # Google allows batch embedding
+        response = genai.embed_content(
+            model="models/gemini-embedding-001",
+            content=texts,
+            task_type="retrieval_document",
+        )
+        return response['embedding']
 
     def load_and_embed(self, chunks_path: str = "wk10_chunks.json") -> None:
         """
@@ -124,15 +117,22 @@ class Wk10Embedder:
             }
             metadatas.append(meta)
 
-        # Embed with OpenAI
-        logger.info("Embedding with OpenAI text-embedding-3-small...")
-        embeddings = self._embed_texts(texts)
-        logger.info(f"Generated {len(embeddings)} embeddings (dim={len(embeddings[0])})")
+        # Embed with Google
+        logger.info("Embedding with Google gemini-embedding-001...")
+        # Embed in batches to avoid API limits if corpus was very large
+        all_embeddings = []
+        batch_size = 100
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i+batch_size]
+            all_embeddings.extend(self._embed_texts(batch))
+            logger.info(f"  Embedded batch {i//batch_size + 1}")
+        
+        logger.info(f"Generated {len(all_embeddings)} embeddings (dim={len(all_embeddings[0])})")
 
         # Upsert into ChromaDB
         self.collection.add(
             ids=ids,
-            embeddings=embeddings,
+            embeddings=all_embeddings,
             documents=texts,
             metadatas=metadatas,
         )

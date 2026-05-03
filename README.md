@@ -20,7 +20,7 @@ with strict grounding, honest evaluation, and citation-enforced generation.
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  RETRIEVAL: OpenAI text-embedding-3-small + ChromaDB        │
+│  RETRIEVAL: Google text-embedding-004 + ChromaDB            │
 │  - PersistentClient at ./chroma_wk10                        │
 │  - Cosine similarity, top-k=5                               │
 │  - Chunk metadata: {source, section, content_type, page}    │
@@ -28,7 +28,7 @@ with strict grounding, honest evaluation, and citation-enforced generation.
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  GENERATION: Anthropic claude-haiku-4-5 @ temperature=0     │
+│  GENERATION: Google Gemini 1.5 Flash @ temperature=0        │
 │  - Strict prompt with [Source: chunk_id] citations          │
 │  - Clean refusal: "I don't have that in my study materials" │
 │  - Anti-extrapolation rules for plausibly-answerable OOS    │
@@ -48,8 +48,8 @@ with strict grounding, honest evaluation, and citation-enforced generation.
 parishiksha/
 ├── wk10_pipeline.py          # v2.0 pipeline orchestrator (all 5 stages)
 ├── wk10_chunker.py           # Stage 1: Content-type-aware chunking (tiktoken)
-├── wk10_embedder.py          # Stage 2: OpenAI embeddings + ChromaDB retrieval
-├── wk10_ask.py               # Stage 3: ask() with Claude Haiku + strict prompt
+├── wk10_embedder.py          # Stage 2: Gemini embeddings + ChromaDB retrieval
+├── wk10_ask.py               # Stage 3: ask() with Gemini 1.5 Flash + strict prompt
 ├── wk10_eval.py              # Stage 4+5: 12-Q evaluation + targeted fix
 ├── wk10_chunks.json          # Persisted chunks with content_type metadata
 ├── chroma_wk10/              # ChromaDB persistent storage
@@ -94,8 +94,7 @@ python -c "import nltk; nltk.download('punkt_tab')"
 ```bash
 cp .env.example .env
 # Edit .env and add:
-#   OPENAI_API_KEY=sk-...
-#   ANTHROPIC_API_KEY=sk-ant-...
+#   GEMINI_API_KEY=AIzaSy...
 ```
 
 ### 3. Run the Wk10 Pipeline
@@ -155,9 +154,9 @@ python wk10_ask.py
 
 | Component | Technology |
 |-----------|-----------|
-| Embedding | OpenAI text-embedding-3-small |
+| Embedding | Google text-embedding-004 |
 | Vector DB | ChromaDB (PersistentClient) |
-| Generation | Anthropic claude-haiku-4-5 |
+| Generation | Google Gemini 1.5 Flash |
 | Token counting | tiktoken (cl100k_base) |
 | Chunking | Content-type-aware (prose/worked_example/exercise) |
 

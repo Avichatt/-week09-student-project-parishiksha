@@ -1,0 +1,13 @@
+id,question,type,answer_preview,correct,grounded,refused_when_oos,top_chunk_id
+D1,What is displacement?,direct,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+D2,What is the SI unit of average acceleration?,direct,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+D3,Define uniform motion in a straight line.,direct,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+D4,What are the three kinematic equations for constant acceleration?,direct,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+D5,What is the acceleration due to gravity (g) on Earth?,direct,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+D6,What is uniform circular motion?,direct,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+P1,"If I walk to school and back home, what's my total displacement?",paraphrased,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+P2,Why does a speedometer not tell us velocity?,paraphrased,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+P3,Can something move fast and still have zero acceleration?,paraphrased,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,NA,
+OOS1,What is the speed of light in a vacuum?,oos,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,N,
+OOS2,Explain how photosynthesis works in plants.,oos,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,N,
+OOS3,Calculate the value of g on the surface of the Moon.,oos,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google",N,N,N,

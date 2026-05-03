@@ -112,9 +112,9 @@ def _write_chunking_diff(wk10_chunks):
 
 
 def stage_2_embed():
-    """Stage 2: Embed with OpenAI and persist to ChromaDB."""
+    """Stage 2: Embed with Google and persist to ChromaDB."""
     logger.info("=" * 60)
-    logger.info("STAGE 2: OpenAI Embedding + ChromaDB")
+    logger.info("STAGE 2: Google Embedding + ChromaDB")
     logger.info("=" * 60)
     
     from wk10_embedder import Wk10Embedder

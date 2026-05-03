@@ -460,7 +460,7 @@ def run_full_evaluation():
     print(f"Grounded:     {v2_grounded}/12 (delta: {v2_grounded - grounded_count:+d})")
     print(f"OOS Refused:  {v2_oos}/3 (delta: {v2_oos - oos_refused:+d})")
     
-    print(f"\n✅ All evaluation artifacts saved.")
+    print(f"\nSUCCESS: All evaluation artifacts saved.")
     print(f"  - eval_raw.csv")
     print(f"  - eval_scored.csv")
     print(f"  - eval_v2_scored.csv")

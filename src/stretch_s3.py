@@ -19,13 +19,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from wk10_embedder import Wk10Embedder
-from wk10_ask import Wk10AskEngine, STRICT_PROMPT
+from retrieval import Wk10Embedder
+from generation import Wk10AskEngine, STRICT_PROMPT
 
 class HybridRetriever:
     """Combines BM25 and Vector Search using Reciprocal Rank Fusion (RRF)."""
 
-    def __init__(self, chunks_path: str = "wk10_chunks.json"):
+    def __init__(self, chunks_path: str = "data/results/wk10_chunks.json"):
         with open(chunks_path, "r", encoding="utf-8") as f:
             self.chunks = json.load(f)
         

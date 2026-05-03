@@ -6,7 +6,7 @@
 #   - Token-aware sizing with tiktoken (~250 tokens)
 #   - Worked-example tables preserved
 #   - Chunk metadata: {source, section, content_type, page}
-#   - Persist as wk10_chunks.json
+#   - Persist as data/results/wk10_chunks.json
 # =============================================================================
 
 import hashlib
@@ -268,7 +268,7 @@ class Wk10Chunker:
         # Chapter 4 spans roughly pages 49-72 in the PDF
         return 49 + (chunk_index // 4)
 
-    def save_chunks(self, chunks: List[Dict], output_path: str = "wk10_chunks.json"):
+    def save_chunks(self, chunks: List[Dict], output_path: str = "data/results/wk10_chunks.json"):
         """Persist chunks as JSON."""
         path = Path(output_path)
         with open(path, "w", encoding="utf-8") as f:

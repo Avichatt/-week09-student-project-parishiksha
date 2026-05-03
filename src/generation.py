@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from wk10_embedder import Wk10Embedder
+from retrieval import Wk10Embedder
 
 
 # ---------------------------------------------------------------------------
@@ -160,7 +160,7 @@ class Wk10AskEngine:
 def run_prompt_comparison():
     """
     Stage 3 evidence: Run 3 queries (including 1 OOS) with both prompts.
-    Saves prompt_diff.md with verbatim responses.
+    Saves docs/prompt_diff.md with verbatim responses.
     """
     test_queries = [
         "What is displacement?",
@@ -177,7 +177,7 @@ def run_prompt_comparison():
             result = engine.ask(q)
             results[mode].append(result)
     
-    # Generate prompt_diff.md
+    # Generate docs/prompt_diff.md
     lines = [
         "# Prompt Comparison: Permissive vs Strict\n",
         "## Stage 3 Evidence — PariShiksha Wk10\n",
@@ -213,10 +213,10 @@ def run_prompt_comparison():
     lines.append("3. For OOS queries, the strict prompt produces clean refusal: \"I don't have that in my study materials.\"\n")
     lines.append("4. The hallucination risk from permissive prompting is clearly visible in Query 3.\n")
     
-    with open("prompt_diff.md", "w", encoding="utf-8") as f:
+    with open("docs/prompt_diff.md", "w", encoding="utf-8") as f:
         f.writelines(lines)
     
-    logger.info("Saved prompt_diff.md")
+    logger.info("Saved docs/prompt_diff.md")
     return results
 
 

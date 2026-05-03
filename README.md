@@ -46,23 +46,27 @@ graph TD
 
 ```
 parishiksha/
-├── wk10_stretch_pipeline.py  # Stretch orchestrator (RRF, Rerank, MultiQuery)
-├── wk10_stretch_stage1.py    # Multi-variant chunking comparison
-├── wk10_stretch_stage2.py    # DB & Embedding benchmarking
-├── wk10_stretch_stage3.py    # Hybrid Retrieval (BM25 + Dense)
-├── wk10_stretch_stage4.py    # Reranking + MultiQuery + RAGAS
+├── src/                      # Core Logic & Pipeline Stages
+│   ├── pipeline.py           # Core orchestrator
+│   ├── stretch_pipeline.py   # Stretch track orchestrator
+│   ├── chunking.py           # Content-type-aware splitter
+│   ├── retrieval.py          # Embedding + Vector search
+│   ├── generation.py         # Gemini-powered generation
+│   ├── evaluation.py         # Automated & manual scoring
+│   └── stretch_s1..s4.py     # Stretch track logic modules
 │
-├── wk10_chunker.py           # Content-type-aware chunking
-├── wk10_embedder.py          # Gemini-embedding-001 + ChromaDB
-├── wk10_ask.py               # Gemini 2.0 Flash + strict prompt
+├── data/                     # Data persistence
+│   ├── processed/            # Cleaned NCERT sections
+│   └── results/              # Chunks, CSVs, and JSON logs
 │
-├── chunking_compare.md       # Stretch Stage 1: Variant comparison
-├── db_benchmark.csv          # Stretch Stage 2: Latency/Recall data
-├── db_comparison.md          # Stretch Stage 2: Scaling analysis
-├── ragas_report.csv          # Stretch Stage 4: Faithfulness/Relevancy
-├── failure_memo.md           # Stretch Stage 5: Top failures + Architecture
+├── docs/                     # Submission Artifacts
+│   ├── reflection.md         # Final questionnaire
+│   ├── failure_memo.md       # Architecture & Failure analysis
+│   ├── chunking_compare.md   # Chunker variant study
+│   └── *_diff.md             # Evidence documents
 │
-├── reflection.md             # Wk10 reflection questionnaire
+├── wk10_pipeline.py          # Root entry point (Core)
+├── wk10_stretch_pipeline.py  # Root entry point (Stretch)
 ├── requirements.txt          # Pinned dependencies
 └── .gitignore
 ```
@@ -91,38 +95,33 @@ python wk10_stretch_pipeline.py
 - **Reranking**: Local `ms-marco-MiniLM-L-6-v2`
 - **MultiQuery**: Gemini-powered query expansion (x3)
 
-**Eval set:** 12 questions (6 direct + 3 paraphrased + 3 OOS including 1 plausibly-answerable).
-**Scoring axes:** (a) correct Y/N/partial, (b) grounded Y/N, (c) refused_when_oos Y/N/NA.
-
 ---
 
 ## 📦 Wk10 Deliverables Checklist
 
-| # | Deliverable | File |
-|---|-------------|------|
-| 1 | Chunks with content_type metadata | `wk10_chunks.json` |
-| 2 | Chunking diff (Wk9 → Wk10) | `chunking_diff.md` |
-| 3 | Retrieval log (10 queries) | `retrieval_log.json` |
-| 4 | Retrieval miss diagnosis | `retrieval_misses.md` |
-| 5 | ask() function | `wk10_ask.py` |
-| 6 | Prompt comparison | `prompt_diff.md` |
-| 7 | Raw eval output | `eval_raw.csv` |
-| 8 | Hand-scored eval | `eval_scored.csv` |
-| 9 | Post-fix eval | `eval_v2_scored.csv` |
-| 10 | Fix memo | `fix_memo.md` |
-| 11 | Reflection | `reflection.md` |
+| # | Deliverable | Location |
+|---|-------------|----------|
+| 1 | Chunks with metadata | `data/results/wk10_chunks.json` |
+| 2 | Chunking comparison | `docs/chunking_compare.md` |
+| 3 | Retrieval log | `data/results/retrieval_log.json` |
+| 4 | DB Benchmark | `data/results/db_benchmark.csv` |
+| 5 | RAGAS Report | `data/results/ragas_report.csv` |
+| 6 | Fix Memo | `docs/fix_memo.md` |
+| 7 | Reflection | `docs/reflection.md` |
 
 ---
 
-## 🔧 Technology Stack
+## 🔧 Technology Stack (v2.0)
 
 | Component | Technology |
 |-----------|-----------|
-| Embedding | Google text-embedding-004 |
-| Vector DB | ChromaDB (PersistentClient) |
-| Generation | Google Gemini 1.5 Flash |
+| Embedding | Google gemini-embedding-001 |
+| Vector DB | ChromaDB + Qdrant (Local) |
+| Generation | Google Gemini 2.0 Flash |
+| Reranker | Local CrossEncoder (ms-marco-MiniLM) |
+| MultiQuery | Gemini 2.0 Flash |
 | Token counting | tiktoken (cl100k_base) |
-| Chunking | Content-type-aware (prose/worked_example/exercise) |
+| Chunking | Content-type-aware + Semantic Chunker |
 
 ---
 

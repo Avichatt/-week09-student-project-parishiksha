@@ -6,7 +6,7 @@
 #   - Two Models: Gemini (Cloud) + BGE (Local)
 #   - 4 combinations benchmarked
 #   - Capture Latency (p50, p95) + Recall@5
-#   - Save db_benchmark.csv & db_comparison.md
+#   - Save data/results/db_benchmark.csv & docs/db_comparison.md
 # =============================================================================
 
 import csv
@@ -31,7 +31,7 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 
 class BenchmarkEngine:
-    def __init__(self, chunks_path: str = "wk10_chunks.json"):
+    def __init__(self, chunks_path: str = "data/results/wk10_chunks.json"):
         with open(chunks_path, "r", encoding="utf-8") as f:
             self.chunks = json.load(f)
         
@@ -159,12 +159,12 @@ class BenchmarkEngine:
             })
             
         # Save results
-        with open("db_benchmark.csv", "w", newline="") as f:
+        with open("data/results/db_benchmark.csv", "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=["db", "model", "p50_ms", "p95_ms", "recall_at_5"])
             writer.writeheader()
             writer.writerows(results)
             
-        logger.info("Saved db_benchmark.csv")
+        logger.info("Saved data/results/db_benchmark.csv")
         self._write_comparison(results)
 
     def _write_comparison(self, results):
@@ -189,9 +189,9 @@ class BenchmarkEngine:
             "3. **Cost**: At scale, Gemini cost ($0.02 per 1M tokens) is negligible, but the 429 quota limits on free tiers make local models (BGE) the more reliable choice for development.\n"
         ])
         
-        with open("db_comparison.md", "w", encoding="utf-8") as f:
+        with open("docs/db_comparison.md", "w", encoding="utf-8") as f:
             f.writelines(lines)
-        logger.info("Saved db_comparison.md")
+        logger.info("Saved docs/db_comparison.md")
 
 if __name__ == "__main__":
     engine = BenchmarkEngine()

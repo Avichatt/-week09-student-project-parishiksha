@@ -6,7 +6,7 @@
 #   - 10-question micro-eval set
 #   - BM25 retrieval comparison
 #   - Score top-1 hit rate
-#   - Save chunking_compare.md
+#   - Save docs/chunking_compare.md
 # =============================================================================
 
 import json
@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from wk10_chunker import Wk10Chunker
+from chunking import Wk10Chunker
 
 # ---------------------------------------------------------------------------
 # Micro-Eval Set (10 questions)
@@ -145,13 +145,13 @@ def run_comparison():
         "We will carry **Variant 1 (Content-Aware)** into Stage 2. For an educational RAG system, preserving the structural integrity of exercises and examples is more valuable than semantic boundary alignment in generic prose.\n"
     ]
     
-    with open("chunking_compare.md", "w", encoding="utf-8") as f:
+    with open("docs/chunking_compare.md", "w", encoding="utf-8") as f:
         f.writelines(lines)
     
-    logger.info("Saved chunking_compare.md")
+    logger.info("Saved docs/chunking_compare.md")
     
     # Save V1 chunks as the master for future stages
-    with open("wk10_chunks.json", "w", encoding="utf-8") as f:
+    with open("data/results/wk10_chunks.json", "w", encoding="utf-8") as f:
         json.dump(v1_chunks, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":

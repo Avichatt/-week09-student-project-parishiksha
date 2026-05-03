@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from wk10_stretch_stage3 import HybridRetriever
-from wk10_ask import Wk10AskEngine
+from generation import Wk10AskEngine
 
 class StretchEngine(Wk10AskEngine):
     """Advanced RAG engine with Reranking and MultiQuery."""
@@ -88,7 +88,7 @@ class StretchEngine(Wk10AskEngine):
             context_parts.append(f"[Source: {r['chunk_id']}]\n{r['text']}")
         context = "\n\n---\n\n".join(context_parts)
         
-        from wk10_ask import STRICT_PROMPT
+        from generation import STRICT_PROMPT
         prompt = STRICT_PROMPT.format(context=context, question=query)
         answer = self._generate(prompt)
         
@@ -160,12 +160,12 @@ def run_stretch_stage4():
 
     # Save RAGAS report
     import csv
-    with open("ragas_report.csv", "w", newline="") as f:
+    with open("data/results/ragas_report.csv", "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["question", "answer", "faithfulness", "relevancy"])
         writer.writeheader()
         writer.writerows(results)
     
-    logger.info("Saved ragas_report.csv")
+    logger.info("Saved data/results/ragas_report.csv")
 
 if __name__ == "__main__":
     run_stretch_stage4()

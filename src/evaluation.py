@@ -5,13 +5,13 @@
 #   Stage 4:
 #     - 12-question eval set: 6 direct + 3 paraphrased + 3 OOS
 #     - Include 1 "plausibly answerable" OOS
-#     - Run all through ask(), save eval_raw.csv
+#     - Run all through ask(), save data/results/eval_raw.csv
 #     - Hand-score on 3 axes: correct, grounded, refused_when_oos
-#     - Save eval_scored.csv
+#     - Save data/results/eval_scored.csv
 #   Stage 5:
 #     - Pick worst failure, implement 1 targeted fix
-#     - Re-run full 12-Q eval → eval_v2_scored.csv
-#     - Write fix_memo.md
+#     - Re-run full 12-Q eval → data/results/eval_v2_scored.csv
+#     - Write docs/fix_memo.md
 # =============================================================================
 
 import csv
@@ -21,7 +21,7 @@ from typing import Dict, List
 
 from loguru import logger
 
-from wk10_ask import Wk10AskEngine
+from generation import Wk10AskEngine
 
 
 # =============================================================================
@@ -142,7 +142,7 @@ def run_evaluation(engine: Wk10AskEngine, eval_set: List[Dict]) -> List[Dict]:
     return results
 
 
-def save_raw_csv(results: List[Dict], path: str = "eval_raw.csv"):
+def save_raw_csv(results: List[Dict], path: str = "data/results/eval_raw.csv"):
     """Save raw evaluation output as CSV."""
     fieldnames = ["id", "question", "type", "expected", "answer", "chunk_ids", "top_source", "top_score"]
     
@@ -226,7 +226,7 @@ def hand_score_results(results: List[Dict]) -> List[Dict]:
     return scored
 
 
-def save_scored_csv(scored: List[Dict], path: str = "eval_scored.csv"):
+def save_scored_csv(scored: List[Dict], path: str = "data/results/eval_scored.csv"):
     """Save hand-scored evaluation as CSV."""
     fieldnames = ["id", "question", "type", "answer_preview", "correct", "grounded", "refused_when_oos", "top_chunk_id"]
     
@@ -288,7 +288,7 @@ def apply_targeted_fix(engine: Wk10AskEngine, scored: List[Dict]) -> Wk10AskEngi
     and add a post-generation refusal check for plausibly-answerable OOS.
     """
     # The fix: Enhanced prompt with explicit OOS examples
-    import wk10_ask
+    import generation
     
     enhanced_prompt = """You are a study assistant for NCERT Class 9 Science Chapter 4: Motion.
 You must answer ONLY using the provided textbook context below.
@@ -328,7 +328,7 @@ ANSWER:"""
 
 
 def write_fix_memo(scored_v1: List[Dict], scored_v2: List[Dict]):
-    """Write fix_memo.md comparing v1 and v2 eval results."""
+    """Write docs/fix_memo.md comparing v1 and v2 eval results."""
     
     # Compute deltas
     v1_correct = sum(1 for s in scored_v1 if s["correct"] == "Y")
@@ -398,10 +398,10 @@ def write_fix_memo(scored_v1: List[Dict], scored_v2: List[Dict]):
     else:
         lines.append("\n**No regressions detected.** The fix improved or maintained all scores.\n")
     
-    with open("fix_memo.md", "w", encoding="utf-8") as f:
+    with open("docs/fix_memo.md", "w", encoding="utf-8") as f:
         f.writelines(lines)
     
-    logger.info("Saved fix_memo.md")
+    logger.info("Saved docs/fix_memo.md")
 
 
 # =============================================================================
@@ -418,10 +418,10 @@ def run_full_evaluation():
     # Stage 4: Run eval with current system
     engine = Wk10AskEngine(prompt_mode="strict")
     raw_results = run_evaluation(engine, EVAL_SET)
-    save_raw_csv(raw_results, "eval_raw.csv")
+    save_raw_csv(raw_results, "data/results/eval_raw.csv")
     
     scored_v1 = hand_score_results(raw_results)
-    save_scored_csv(scored_v1, "eval_scored.csv")
+    save_scored_csv(scored_v1, "data/results/eval_scored.csv")
     
     diagnosis = compute_diagnosis(scored_v1)
     print(f"\nDiagnosis: {diagnosis}")
@@ -443,10 +443,10 @@ def run_full_evaluation():
     # Stage 5: Apply fix and re-run
     fixed_engine = apply_targeted_fix(engine, scored_v1)
     raw_v2 = run_evaluation(fixed_engine, EVAL_SET)
-    save_raw_csv(raw_v2, "eval_v2_raw.csv")
+    save_raw_csv(raw_v2, "data/results/eval_v2_raw.csv")
     
     scored_v2 = hand_score_results(raw_v2)
-    save_scored_csv(scored_v2, "eval_v2_scored.csv")
+    save_scored_csv(scored_v2, "data/results/eval_v2_scored.csv")
     
     write_fix_memo(scored_v1, scored_v2)
     
@@ -461,10 +461,10 @@ def run_full_evaluation():
     print(f"OOS Refused:  {v2_oos}/3 (delta: {v2_oos - oos_refused:+d})")
     
     print(f"\nSUCCESS: All evaluation artifacts saved.")
-    print(f"  - eval_raw.csv")
-    print(f"  - eval_scored.csv")
-    print(f"  - eval_v2_scored.csv")
-    print(f"  - fix_memo.md")
+    print(f"  - data/results/eval_raw.csv")
+    print(f"  - data/results/eval_scored.csv")
+    print(f"  - data/results/eval_v2_scored.csv")
+    print(f"  - docs/fix_memo.md")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 # PariShiksha Wk10 — Stage 2: OpenAI Embedding + ChromaDB Persistence
 # =============================================================================
 # Rubric requirements:
-#   - Embed wk10_chunks.json with OpenAI text-embedding-3-small
+#   - Embed data/results/wk10_chunks.json with OpenAI text-embedding-3-small
 #   - Persist to Chroma (PersistentClient, path ./chroma_wk10)
 #   - Use cosine similarity
 #   - Don't re-embed every kernel restart
@@ -66,7 +66,7 @@ class Wk10Embedder:
         )
         return response['embedding']
 
-    def load_and_embed(self, chunks_path: str = "wk10_chunks.json") -> None:
+    def load_and_embed(self, chunks_path: str = "data/results/wk10_chunks.json") -> None:
         """
         Load chunks and embed into ChromaDB.
         Skips if collection already has the right number of documents.
@@ -194,9 +194,9 @@ class Wk10Embedder:
 if __name__ == "__main__":
     embedder = Wk10Embedder()
     
-    chunks_path = Path("wk10_chunks.json")
+    chunks_path = Path("data/results/wk10_chunks.json")
     if not chunks_path.exists():
-        print("Run wk10_chunker.py first to generate wk10_chunks.json")
+        print("Run wk10_chunker.py first to generate data/results/wk10_chunks.json")
         exit(1)
     
     embedder.load_and_embed(str(chunks_path))

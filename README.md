@@ -1,121 +1,171 @@
-# PariShiksha — Industrial-Grade Science Study Assistant (RAG)
+# PariShiksha — NCERT Science Study Assistant v2.0
 
 > **"Bridging the Classroom Gap with Truth-Bound AI"**
-> Week 9 Mini-Project · PG Diploma in AI-ML & Agentic AI Engineering · Cohort 2
+> Week 10 · Core Track · PG Diploma in AI-ML & Agentic AI Engineering · Cohort 2
 
-PariShiksha is a production-ready, NCERT-grounded study assistant designed for Class 9–10 Science students. It implements an **Industrial RAG Pipeline** that prioritizes pedagogical accuracy by enforcing strict grounding rules and utilizing a multi-stage retrieval architecture.
+PariShiksha is a production-ready, NCERT-grounded study assistant for Class 9 Science
+(Chapter 4: Describing Motion Around Us). It implements a **content-type-aware RAG pipeline**
+with strict grounding, honest evaluation, and citation-enforced generation.
 
----
-
-## 🌟 State-of-the-Art Features
-
-*   **Persistent Vector DB**: powered by **ChromaDB** for manageable, scalable, and metadata-rich document storage.
-*   **3-Stage Industrial Retrieval**:
-    1.  **Dense Retrieval**: High-speed semantic candidate selection using ChromaDB & SBERT.
-    2.  **Sparse Re-scoring**: Probabilistic keyword grounding using **BM25** on retrieved candidates.
-    3.  **Semantic Re-ranking**: High-precision ordering using a **Cross-Encoder** (`ms-marco-MiniLM`).
-*   **Metadata Filtering**: Native support for chapter-level and section-level scoping to eliminate irrelevant noise.
-*   **Strict Grounding Engine**: Advanced system prompting that eliminates hallucinations by forcing models to "admit ignorance" if facts aren't in the provided textbook context.
-*   **Unified Pipeline Orchestrator**: A single CLI (`main.py`) to manage extraction, chunking, indexing, and evaluation.
+**NCERT Source:** [https://ncert.nic.in/textbook.php?iesc1=0-11](https://ncert.nic.in/textbook.php?iesc1=0-11)
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Architecture (v2.0)
 
-```mermaid
-graph TD
-    A[NCERT PDF] --> B[Dual-Backend Extraction]
-    B --> C[7-Step Science Cleaning]
-    C --> D[Multi-Strategy Chunker]
-    D --> E[SBERT Embedder]
-    
-    E --> F[(ChromaDB)]
-    F --> G[Metadata Filters]
-    
-    H[Student Query] --> I[Normalized Search]
-    I --> J[Stage 1: Chroma Dense]
-    J --> K[Stage 2: BM25 Sparse]
-    K --> L[Stage 3: Cross-Encoder]
-    
-    L --> M[Top-5 Grounded Contexts]
-    M --> N[Gemini/T5 Generator]
-    N --> O[Strict Grounding Verifier]
-    O --> P[ pedagological Answer]
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Student Question                         │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  RETRIEVAL: OpenAI text-embedding-3-small + ChromaDB        │
+│  - PersistentClient at ./chroma_wk10                        │
+│  - Cosine similarity, top-k=5                               │
+│  - Chunk metadata: {source, section, content_type, page}    │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  GENERATION: Anthropic claude-haiku-4-5 @ temperature=0     │
+│  - Strict prompt with [Source: chunk_id] citations          │
+│  - Clean refusal: "I don't have that in my study materials" │
+│  - Anti-extrapolation rules for plausibly-answerable OOS    │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  OUTPUT: {answer, sources, chunk_ids}                       │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## 📂 Project Structure
 
-```text
+```
 parishiksha/
-├── main.py                         # Unified industrial pipeline orchestrator
-├── requirements.txt                # List of all production-grade dependencies
-├── config/
-│   └── config.py                   # Central hyperparameters & Prompt Engineering
-├── src/
-│   ├── extraction/                 # PDF processing & science-text cleaning
-│   ├── chunking/                   # Strategy-based segmentation (Semantic/Token)
-│   ├── retrieval/                  # ChromaDB, BM25, and Cross-Encoder integration
-│   ├── generation/                 # Grounded Answer generation and Verifier
-│   └── evaluation/                 # Schema-driven metrics (Recall@K, MRR, Precision)
-├── data/                           # Raw NCERT PDFs and Extracted/Processed text
-├── docs/                           # Technical notes, eval results, and failure modes
-├── tests/                          # Unit, integration, and manual validation tests
-└── outputs/                        # ChromaDB storage, raw reports, and logs
+├── wk10_pipeline.py          # v2.0 pipeline orchestrator (all 5 stages)
+├── wk10_chunker.py           # Stage 1: Content-type-aware chunking (tiktoken)
+├── wk10_embedder.py          # Stage 2: OpenAI embeddings + ChromaDB retrieval
+├── wk10_ask.py               # Stage 3: ask() with Claude Haiku + strict prompt
+├── wk10_eval.py              # Stage 4+5: 12-Q evaluation + targeted fix
+├── wk10_chunks.json          # Persisted chunks with content_type metadata
+├── chroma_wk10/              # ChromaDB persistent storage
+│
+├── main.py                   # Wk9 legacy pipeline (preserved)
+├── config/config.py          # Central configuration
+├── src/                      # Wk9 modules (extraction, chunking, retrieval, etc.)
+├── data/                     # Raw PDFs + processed text
+│   ├── raw/                  # NCERT PDFs (not committed)
+│   └── processed/            # Cleaned text + sections JSON
+│
+├── reflection.md             # Wk10 reflection questionnaire
+├── chunking_diff.md          # Stage 1 evidence: Wk9 vs Wk10 comparison
+├── retrieval_log.json        # Stage 2 evidence: top-1 results for 10 queries
+├── retrieval_misses.md       # Stage 2 evidence: miss diagnosis
+├── prompt_diff.md            # Stage 3 evidence: permissive vs strict prompt
+├── eval_raw.csv              # Stage 4 evidence: raw ask() output
+├── eval_scored.csv           # Stage 4 evidence: hand-scored 3-axis
+├── eval_v2_scored.csv        # Stage 5 evidence: post-fix scores
+├── fix_memo.md               # Stage 5 evidence: fix description + delta
+│
+├── requirements.txt          # Python dependencies
+├── .env.example              # API key placeholders
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start (Fresh Clone)
 
-### 1. Setup & Installation
+### 1. Install Dependencies
 
 ```bash
-# Clone and enter repo
-git clone [repository-url]
+git clone <repository-url>
 cd parishiksha
-
-# Install industrial dependencies
 pip install -r requirements.txt
-
-# Download NLP artifacts
 python -c "import nltk; nltk.download('punkt_tab')"
 ```
 
-### 2. Configure Your Keys
-
-1. Create a `.env` file from the `.env.example`.
-2. Add your `GEMINI_API_KEY`.
-
-### 3. Run the Pipeline
+### 2. Configure API Keys
 
 ```bash
-# Run all stages: Extract -> Chunk -> Index -> Retrieve -> Evaluate
-python main.py --stage all
+cp .env.example .env
+# Edit .env and add:
+#   OPENAI_API_KEY=sk-...
+#   ANTHROPIC_API_KEY=sk-ant-...
+```
 
-# Run specific industrial stage
-python main.py --stage retrieve   # Tests the 3-stage retrieval logic
-python main.py --stage evaluate   # Runs the full benchmarking suite
+### 3. Run the Wk10 Pipeline
 
-# Run manual safety & guardrail validation
-python tests/manual_validation.py
+```bash
+# Run all 5 stages
+python wk10_pipeline.py --stage all
+
+# Or run individual stages
+python wk10_pipeline.py --stage chunk      # Stage 1: Chunking
+python wk10_pipeline.py --stage embed      # Stage 2: Embedding + Retrieval
+python wk10_pipeline.py --stage generate   # Stage 3: Generation + Prompt Comparison
+python wk10_pipeline.py --stage evaluate   # Stage 4+5: Evaluation + Fix
+```
+
+### 4. Interactive Q&A
+
+```bash
+python wk10_ask.py
+# Type questions and get grounded, cited answers
 ```
 
 ---
 
-## 📊 Industrial Evaluation Benchmarks
+## 📊 Evaluation Summary (Core Track)
 
-PariShiksha utilizes a **Schema-Driven Evaluation Set** supporting:
-*   **Recall@K / MRR**: Measuring retrieval fidelity.
-*   **Context Precision**: Measuring grounding effectiveness.
-*   **Refusal Accuracy**: Ensuring the model correctly identifies out-of-domain queries (e.g., Astrophysics vs Class 9 Motion).
+| Metric | v1 (Before Fix) | v2 (After Fix) |
+|--------|-----------------|----------------|
+| Correct (Y) | See eval_scored.csv | See eval_v2_scored.csv |
+| Grounded (Y) | See eval_scored.csv | See eval_v2_scored.csv |
+| OOS Refused | See eval_scored.csv | See eval_v2_scored.csv |
+
+**Eval set:** 12 questions (6 direct + 3 paraphrased + 3 OOS including 1 plausibly-answerable).
+**Scoring axes:** (a) correct Y/N/partial, (b) grounded Y/N, (c) refused_when_oos Y/N/NA.
 
 ---
 
-## 📜 Reflection: Moving to Industrial Standards
+## 📦 Wk10 Deliverables Checklist
 
-The transition from a research prototype to this industrial version involved three critical shifts:
-1.  **Memory over Files**: Moving from flat JSON files to **ChromaDB** allowed for metadata filtering which reduced noise by 40% in large-scale tests.
-2.  **Precision over Recall**: The addition of a **Cross-Encoder re-ranker** significantly improved "Top-1" answer quality by analyzing the deep semantic relationship between queries and textbook passages.
-3.  **Strictness over Creativity**: Standard LLMs love to "explain". PariShiksha is trained to be a **Silent Scholar**—if it isn't in the NCERT text, it doesn't exist.
+| # | Deliverable | File |
+|---|-------------|------|
+| 1 | Chunks with content_type metadata | `wk10_chunks.json` |
+| 2 | Chunking diff (Wk9 → Wk10) | `chunking_diff.md` |
+| 3 | Retrieval log (10 queries) | `retrieval_log.json` |
+| 4 | Retrieval miss diagnosis | `retrieval_misses.md` |
+| 5 | ask() function | `wk10_ask.py` |
+| 6 | Prompt comparison | `prompt_diff.md` |
+| 7 | Raw eval output | `eval_raw.csv` |
+| 8 | Hand-scored eval | `eval_scored.csv` |
+| 9 | Post-fix eval | `eval_v2_scored.csv` |
+| 10 | Fix memo | `fix_memo.md` |
+| 11 | Reflection | `reflection.md` |
+
+---
+
+## 🔧 Technology Stack
+
+| Component | Technology |
+|-----------|-----------|
+| Embedding | OpenAI text-embedding-3-small |
+| Vector DB | ChromaDB (PersistentClient) |
+| Generation | Anthropic claude-haiku-4-5 |
+| Token counting | tiktoken (cl100k_base) |
+| Chunking | Content-type-aware (prose/worked_example/exercise) |
+
+---
+
+## 📜 Wk9 → Wk10 Migration
+
+- Wk9 final commit tagged as `v1.0-wk9`
+- Wk10 work on `main` with feature branches `feat/v2-*`
+- Final submission tagged as `v2.0-wk10`
+- Wk9 code preserved in `src/` and `main.py` (not deleted)

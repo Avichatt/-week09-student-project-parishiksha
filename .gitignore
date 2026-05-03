@@ -28,10 +28,12 @@ build/
 # Data (keep structure, ignore large files)
 data/raw/*.pdf
 data/extracted/*.txt
-data/processed/*.json
 data/processed/*.pkl
 
-# Outputs (generated during runs)
+# ChromaDB persistence (generated at runtime)
+chroma_wk10/
+
+# Outputs (generated during Wk9 runs)
 outputs/
 
 # OS

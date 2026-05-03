@@ -1,277 +1,577 @@
 id,question,type,expected,answer,chunk_ids,top_source,top_score
-D1,What is displacement?,direct,Displacement is the net change in the position of an object between two given instants of time.,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 29.426593147s. [links {
+D1,What is displacement?,direct,Displacement is the net change in the position of an object between two given instants of time.,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 33.711973684s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+, retry_delay {
+  seconds: 33
+}
+]","[""17bf7b9f714e"", ""652edaa0b51f"", ""879fd08fb5bd""]",17bf7b9f714e,0.7944
+D2,What is the SI unit of average acceleration?,direct,m/s² or m s⁻²,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 32.942892661s. [links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+, retry_delay {
+  seconds: 32
+}
+]","[""4536f2c9c1ac"", ""e5b96c93d542"", ""49255883a5a7""]",4536f2c9c1ac,0.8898
+D3,Define uniform motion in a straight line.,direct,An object travels equal distances in equal intervals of time.,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 32.153159513s. [links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+, retry_delay {
+  seconds: 32
+}
+]","[""3db87f3be65b"", ""6b148ba4c908"", ""e487057c5805""]",3db87f3be65b,0.8648
+D4,What are the three kinematic equations for constant acceleration?,direct,"v = u + at, s = ut + ½at², v² = u² + 2as","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 31.443425493s. [links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+, retry_delay {
+  seconds: 31
+}
+]","[""bd677cd67ee2"", ""e487057c5805"", ""9b64d92d4ea5""]",bd677cd67ee2,0.8751
+D5,What is the acceleration due to gravity (g) on Earth?,direct,9.8 m/s²,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 30.640300582s. [links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+, retry_delay {
+  seconds: 30
+}
+]","[""59e9c4e21e2e"", ""dd2f628bc6ba"", ""4536f2c9c1ac""]",59e9c4e21e2e,0.8222
+D6,What is uniform circular motion?,direct,When an object moves in a circular path with constant speed.,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 29.872096689s. [links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
 }
 , retry_delay {
   seconds: 29
 }
-]",[],,0.0
-D2,What is the SI unit of average acceleration?,direct,m/s² or m s⁻²,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 29.140967223s. [links {
+]","[""8a7fe42cf60e"", ""30563ae0eb96"", ""d9a20ee16d47""]",8a7fe42cf60e,0.8589
+P1,"If I walk to school and back home, what's my total displacement?",paraphrased,"Zero, because the starting and ending positions are the same.","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 29.15503569s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
 }
 , retry_delay {
   seconds: 29
 }
-]",[],,0.0
-D3,Define uniform motion in a straight line.,direct,An object travels equal distances in equal intervals of time.,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 29.002658339s. [links {
+]","[""17bf7b9f714e"", ""a5c2e2973a62"", ""ff8b0e64f755""]",17bf7b9f714e,0.8257
+P2,Why does a speedometer not tell us velocity?,paraphrased,"Because speedometer shows only magnitude (speed), not direction.","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 28.444456971s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
-, retry_delay {
-  seconds: 29
-}
-]",[],,0.0
-D4,What are the three kinematic equations for constant acceleration?,direct,"v = u + at, s = ut + ½at², v² = u² + 2as","ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 28.707095499s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
-, retry_delay {
-  seconds: 28
-}
-]",[],,0.0
-D5,What is the acceleration due to gravity (g) on Earth?,direct,9.8 m/s²,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 28.570663412s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
 , retry_delay {
   seconds: 28
 }
-]",[],,0.0
-D6,What is uniform circular motion?,direct,When an object moves in a circular path with constant speed.,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 28.276726098s. [links {
+]","[""d112263b4ff6"", ""6b148ba4c908"", ""ddb816630547""]",d112263b4ff6,0.8355
+P3,Can something move fast and still have zero acceleration?,paraphrased,"Yes, if it moves at constant velocity (no change in velocity).","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 27.689738246s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
-, retry_delay {
-  seconds: 28
-}
-]",[],,0.0
-P1,"If I walk to school and back home, what's my total displacement?",paraphrased,"Zero, because the starting and ending positions are the same.","ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 28.149413876s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
-, retry_delay {
-  seconds: 28
-}
-]",[],,0.0
-P2,Why does a speedometer not tell us velocity?,paraphrased,"Because speedometer shows only magnitude (speed), not direction.","ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 27.85445185s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
 , retry_delay {
   seconds: 27
 }
-]",[],,0.0
-P3,Can something move fast and still have zero acceleration?,paraphrased,"Yes, if it moves at constant velocity (no change in velocity).","ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 27.701279038s. [links {
+]","[""09007b9489c5"", ""d112263b4ff6"", ""755086325488""]",09007b9489c5,0.8576
+OOS1,What is the speed of light in a vacuum?,oos,REFUSE — not in Chapter 4 (Motion),"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 26.991738852s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
-, retry_delay {
-  seconds: 27
-}
-]",[],,0.0
-OOS1,What is the speed of light in a vacuum?,oos,REFUSE — not in Chapter 4 (Motion),"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 27.446979025s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
-, retry_delay {
-  seconds: 27
-}
-]",[],,0.0
-OOS2,Explain how photosynthesis works in plants.,oos,"REFUSE — biology topic, not in corpus","ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 27.277357033s. [links {
-  description: ""Learn more about Gemini API quotas""
-  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
-}
-, violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
 }
 , retry_delay {
-  seconds: 27
+  seconds: 26
 }
-]",[],,0.0
-OOS3,Calculate the value of g on the surface of the Moon.,oos,REFUSE — formula for g is in corpus but Moon-specific values are NOT,"ERROR: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0
-Please retry in 27.016247247s. [links {
+]","[""d112263b4ff6"", ""6b148ba4c908"", ""bd677cd67ee2""]",d112263b4ff6,0.78
+OOS2,Explain how photosynthesis works in plants.,oos,"REFUSE — biology topic, not in corpus","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 26.26506027s. [links {
   description: ""Learn more about Gemini API quotas""
   url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
 }
 , violations {
-  quota_metric: ""generativelanguage.googleapis.com/embed_content_free_tier_requests""
-  quota_id: ""EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier""
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
   quota_dimensions {
     key: ""model""
-    value: ""gemini-embedding-1.0""
+    value: ""gemini-2.0-flash""
   }
   quota_dimensions {
     key: ""location""
     value: ""global""
   }
-  quota_value: 100
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
 }
 , retry_delay {
-  seconds: 27
+  seconds: 26
 }
-]",[],,0.0
+]","[""9c4721a7009f"", ""674452c9c5f1"", ""d112263b4ff6""]",9c4721a7009f,0.7388
+OOS3,Calculate the value of g on the surface of the Moon.,oos,REFUSE — formula for g is in corpus but Moon-specific values are NOT,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 25.513293346s. [links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_input_token_count""
+  quota_id: ""GenerateContentInputTokensPerModelPerMinute-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerMinutePerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.0-flash""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+}
+, retry_delay {
+  seconds: 25
+}
+]","[""dd2f628bc6ba"", ""59e9c4e21e2e"", ""f6b5ea21cdba""]",dd2f628bc6ba,0.7899

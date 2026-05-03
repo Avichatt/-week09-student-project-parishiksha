@@ -1,7 +1,7 @@
-# PariShiksha — NCERT Science Study Assistant v2.0
+# PariShiksha — NCERT Science Study Assistant v2.0 (STRETCH TRACK)
 
 > **"Bridging the Classroom Gap with Truth-Bound AI"**
-> Week 10 · Core Track · PG Diploma in AI-ML & Agentic AI Engineering · Cohort 2
+> Week 10 · Stretch Track · PG Diploma in AI-ML & Agentic AI Engineering · Cohort 2
 
 PariShiksha is a production-ready, NCERT-grounded study assistant for Class 9 Science
 (Chapter 4: Describing Motion Around Us). It implements a **content-type-aware RAG pipeline**

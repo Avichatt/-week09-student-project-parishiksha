@@ -23,12 +23,71 @@ from loguru import logger
 
 from engine_generation import Wk10AskEngine
 
+class Wk10Evaluator:
+    """Industrial evaluation engine for PariShiksha."""
+    
+    def generate_chunking_diff(self, chunks_path: str, output_path: str):
+        """Generate a markdown diff report for chunking verification."""
+        logger.info(f"Generating chunking diff for {chunks_path}")
+        with open(chunks_path, "r", encoding="utf-8") as f:
+            chunks = json.load(f)
+        
+        lines = ["# Chunking Verification Diff\n", "## Stage 1 Evidence\n", "---\n"]
+        for i, c in enumerate(chunks[:5]): # Sample first 5
+            lines.append(f"### Chunk {i+1} ({c['chunk_id']})\n")
+            lines.append(f"**Type**: {c['metadata'].get('content_type', 'unknown')}\n")
+            lines.append(f"```text\n{c['text']}\n```\n\n")
+        
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.writelines(lines)
+
+    def generate_miss_report(self, log_path: str, output_path: str):
+        """Generate a report for retrieval misses."""
+        logger.info(f"Generating retrieval miss report for {log_path}")
+        with open(log_path, "r", encoding="utf-8") as f:
+            logs = json.load(f)
+        
+        lines = ["# Retrieval Misses & Hallucination Risk\n", "## Stage 2 Evidence\n", "---\n"]
+        for entry in logs:
+            lines.append(f"### Query: \"{entry['query']}\"\n")
+            lines.append(f"- **Top-1 ID**: {entry['results'][0]['chunk_id']}\n")
+            lines.append(f"- **Score**: {entry['results'][0]['score']}\n\n")
+            
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.writelines(lines)
+
+    def run_full_evaluation(self):
+        """Proxy to the top-level function."""
+        run_full_evaluation()
+
 
 # =============================================================================
-# Stage 4: Evaluation Set (12 questions)
+# Evaluation Set Loading
 # =============================================================================
 
-EVAL_SET = [
+def load_eval_set(json_path: str = "data/evaluation/eval_set.json") -> List[Dict]:
+    """Load evaluation set from JSON file if it exists, else use fallback."""
+    path = Path(json_path)
+    if path.exists():
+        logger.info(f"Loading eval set from {json_path}")
+        with open(path, "r", encoding="utf-8") as f:
+            full_set = json.load(f)
+        
+        # Standardize format for evaluation engine
+        standardized = []
+        for item in full_set:
+            standardized.append({
+                "id": item.get("id", "N/A"),
+                "question": item.get("question", ""),
+                "type": item.get("question_type", "direct"),
+                "expected": item.get("expected_answer", ""),
+            })
+        return standardized
+    
+    logger.warning(f"{json_path} not found. Using hardcoded fallback.")
+    return FALLBACK_EVAL_SET
+
+FALLBACK_EVAL_SET = [
     # --- 6 DIRECT questions ---
     {
         "id": "D1",
@@ -106,6 +165,37 @@ EVAL_SET = [
         "type": "oos",
         "expected": "REFUSE — formula for g is in corpus but Moon-specific values are NOT",
         "notes": "Plausibly answerable OOS: g=9.8 m/s² is in the chapter but Moon gravity (1.63 m/s²) is not.",
+    },
+    # --- 5 HINGLISH questions ---
+    {
+        "id": "H1",
+        "question": "Displacement kya hota hai?",
+        "type": "hinglish",
+        "expected": "Displacement is the net change in position.",
+    },
+    {
+        "id": "H2",
+        "question": "Acceleration ki SI unit batao.",
+        "type": "hinglish",
+        "expected": "m/s²",
+    },
+    {
+        "id": "H3",
+        "question": "Uniform motion aur non-uniform motion mein kya difference hai?",
+        "type": "hinglish",
+        "expected": "Equal vs unequal distances in equal time.",
+    },
+    {
+        "id": "H4",
+        "question": "Example 4.1 explain karo physics textbook se.",
+        "type": "hinglish",
+        "expected": "Motion of two postmen meeting.",
+    },
+    {
+        "id": "H5",
+        "question": "Kya speedometer velocity batata hai ya speed?",
+        "type": "hinglish",
+        "expected": "Speed only.",
     },
 ]
 
@@ -318,7 +408,7 @@ STUDENT'S QUESTION:
 
 ANSWER:"""
     
-    wk10_ask.STRICT_PROMPT = enhanced_prompt
+    engine_generation.STRICT_PROMPT = enhanced_prompt
     
     # Create new engine with enhanced prompt
     fixed_engine = Wk10AskEngine(prompt_mode="strict")
@@ -412,12 +502,14 @@ def run_full_evaluation():
     """Run the complete Stage 4 + Stage 5 pipeline."""
     
     print("=" * 60)
-    print("STAGE 4: Evaluation (12 questions)")
+    print("STAGE 4: Evaluation")
     print("=" * 60)
+    
+    eval_set = load_eval_set()
     
     # Stage 4: Run eval with current system
     engine = Wk10AskEngine(prompt_mode="strict")
-    raw_results = run_evaluation(engine, EVAL_SET)
+    raw_results = run_evaluation(engine, eval_set)
     save_raw_csv(raw_results, "data/results/eval_raw.csv")
     
     scored_v1 = hand_score_results(raw_results)
@@ -429,12 +521,14 @@ def run_full_evaluation():
     # Print summary
     correct_count = sum(1 for s in scored_v1 if s["correct"] == "Y")
     grounded_count = sum(1 for s in scored_v1 if s["grounded"] == "Y")
+    oos_total = sum(1 for s in scored_v1 if s["type"] == "oos")
     oos_refused = sum(1 for s in scored_v1 if s["type"] == "oos" and s["refused_when_oos"] == "Y")
     
     print(f"\n--- Stage 4 Summary ---")
-    print(f"Correct:      {correct_count}/12")
-    print(f"Grounded:     {grounded_count}/12")
-    print(f"OOS Refused:  {oos_refused}/3")
+    print(f"Total Questions: {len(eval_set)}")
+    print(f"Correct:        {correct_count}/{len(eval_set)}")
+    print(f"Grounded:       {grounded_count}/{len(eval_set)}")
+    print(f"OOS Refused:    {oos_refused}/{oos_total}")
     
     print(f"\n{'='*60}")
     print("STAGE 5: Targeted Fix")
@@ -442,7 +536,7 @@ def run_full_evaluation():
     
     # Stage 5: Apply fix and re-run
     fixed_engine = apply_targeted_fix(engine, scored_v1)
-    raw_v2 = run_evaluation(fixed_engine, EVAL_SET)
+    raw_v2 = run_evaluation(fixed_engine, eval_set)
     save_raw_csv(raw_v2, "data/results/eval_v2_raw.csv")
     
     scored_v2 = hand_score_results(raw_v2)
@@ -456,9 +550,9 @@ def run_full_evaluation():
     v2_oos = sum(1 for s in scored_v2 if s["type"] == "oos" and s["refused_when_oos"] == "Y")
     
     print(f"\n--- Stage 5 Summary (After Fix) ---")
-    print(f"Correct:      {v2_correct}/12 (delta: {v2_correct - correct_count:+d})")
-    print(f"Grounded:     {v2_grounded}/12 (delta: {v2_grounded - grounded_count:+d})")
-    print(f"OOS Refused:  {v2_oos}/3 (delta: {v2_oos - oos_refused:+d})")
+    print(f"Correct:      {v2_correct}/{len(eval_set)} (delta: {v2_correct - correct_count:+d})")
+    print(f"Grounded:     {v2_grounded}/{len(eval_set)} (delta: {v2_grounded - grounded_count:+d})")
+    print(f"OOS Refused:  {v2_oos}/{oos_total} (delta: {v2_oos - oos_refused:+d})")
     
     print(f"\nSUCCESS: All evaluation artifacts saved.")
     print(f"  - data/results/eval_raw.csv")

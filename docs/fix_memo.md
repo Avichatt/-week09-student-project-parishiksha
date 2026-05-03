@@ -18,11 +18,11 @@ The failure category from the catalog: **mixed structure / ambiguous scope** —
 
 | Metric | v1 (Before) | v2 (After) | Delta |
 |--------|-------------|------------|-------|
-| Correct (Y) | 0/12 | 0/12 | +0 |
-| Grounded (Y) | 0/12 | 0/12 | +0 |
-| OOS Refused | 0/3 | 0/3 | +0 |
+| Correct (Y) | 0/25 | 0/25 | +0 |
+| Grounded (Y) | 0/25 | 0/25 | +0 |
+| OOS Refused | 0/0 | 0/0 | +0 |
 
 ## Honest Assessment
-The fix did not change overall correctness count. OOS refusal stayed at 0/3. The fix did not improve OOS handling, suggesting the issue may be at retrieval level rather than generation level.
+The fix did not change overall correctness count. OOS refusal stayed at 0/0. The fix did not improve OOS handling, suggesting the issue may be at retrieval level rather than generation level.
 
 **No regressions detected.** The fix improved or maintained all scores.

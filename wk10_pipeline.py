@@ -12,7 +12,7 @@ sys.path.append(str(Path(__file__).parent / "src"))
 
 from engine_chunking import Wk10Chunker
 from engine_retrieval import Wk10Embedder
-from engine_generation import GeminiGenerator # Note: Renamed in move? No, I named it generation.py
+from engine_generation import Wk10AskEngine
 from engine_evaluation import Wk10Evaluator
 
 # Configure logging

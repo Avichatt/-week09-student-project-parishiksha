@@ -19,8 +19,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from retrieval import Wk10Embedder
-from generation import Wk10AskEngine, STRICT_PROMPT
+from engine_retrieval import Wk10Embedder
+from engine_generation import Wk10AskEngine, STRICT_PROMPT
 
 class HybridRetriever:
     """Combines BM25 and Vector Search using Reciprocal Rank Fusion (RRF)."""

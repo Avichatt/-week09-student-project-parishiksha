@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from chunking import Wk10Chunker
+from engine_chunking import Wk10Chunker
 
 # ---------------------------------------------------------------------------
 # Micro-Eval Set (10 questions)

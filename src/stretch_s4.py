@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from wk10_stretch_stage3 import HybridRetriever
-from generation import Wk10AskEngine
+from engine_generation import Wk10AskEngine
 
 class StretchEngine(Wk10AskEngine):
     """Advanced RAG engine with Reranking and MultiQuery."""
@@ -88,7 +88,7 @@ class StretchEngine(Wk10AskEngine):
             context_parts.append(f"[Source: {r['chunk_id']}]\n{r['text']}")
         context = "\n\n---\n\n".join(context_parts)
         
-        from generation import STRICT_PROMPT
+        from engine_generation import STRICT_PROMPT
         prompt = STRICT_PROMPT.format(context=context, question=query)
         answer = self._generate(prompt)
         

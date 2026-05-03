@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from retrieval import Wk10Embedder
+from engine_retrieval import Wk10Embedder
 
 
 # ---------------------------------------------------------------------------

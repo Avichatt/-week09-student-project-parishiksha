@@ -10,10 +10,10 @@ from loguru import logger
 # Add src to path for industry-standard module resolution
 sys.path.append(str(Path(__file__).parent / "src"))
 
-from chunking import Wk10Chunker
-from retrieval import Wk10Embedder
-from generation import GeminiGenerator # Note: Renamed in move? No, I named it generation.py
-from evaluation import Wk10Evaluator
+from engine_chunking import Wk10Chunker
+from engine_retrieval import Wk10Embedder
+from engine_generation import GeminiGenerator # Note: Renamed in move? No, I named it generation.py
+from engine_evaluation import Wk10Evaluator
 
 # Configure logging
 logger.remove()

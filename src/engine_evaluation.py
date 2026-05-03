@@ -21,7 +21,7 @@ from typing import Dict, List
 
 from loguru import logger
 
-from generation import Wk10AskEngine
+from engine_generation import Wk10AskEngine
 
 
 # =============================================================================
@@ -288,7 +288,7 @@ def apply_targeted_fix(engine: Wk10AskEngine, scored: List[Dict]) -> Wk10AskEngi
     and add a post-generation refusal check for plausibly-answerable OOS.
     """
     # The fix: Enhanced prompt with explicit OOS examples
-    import generation
+    import engine_generation
     
     enhanced_prompt = """You are a study assistant for NCERT Class 9 Science Chapter 4: Motion.
 You must answer ONLY using the provided textbook context below.

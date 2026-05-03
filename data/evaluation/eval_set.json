@@ -573,5 +573,97 @@
     "chapter": "chapter_4",
     "difficulty": "hard",
     "notes": ""
+  },
+  {
+    "id": "hinglish-001",
+    "question": "Displacement kya hota hai?",
+    "question_type": "factual",
+    "answer_type": "explanation",
+    "expected_answer": "Displacement is the net change in the position of an object between two given instants of time.",
+    "eval_criteria": {
+      "must_include": [
+        "net change",
+        "position"
+      ],
+      "min_keyword_coverage": 0.5
+    },
+    "expected_behavior": "answer",
+    "expected_language": "hi-en",
+    "chapter": "chapter_4",
+    "difficulty": "easy"
+  },
+  {
+    "id": "hinglish-002",
+    "question": "Acceleration ki SI unit batao.",
+    "question_type": "factual",
+    "answer_type": "short",
+    "expected_answer": "The SI unit of acceleration is m/s² (meters per second squared).",
+    "eval_criteria": {
+      "must_include": [
+        "m/s",
+        "meter"
+      ],
+      "min_keyword_coverage": 0.5
+    },
+    "expected_behavior": "answer",
+    "expected_language": "hi-en",
+    "chapter": "chapter_4",
+    "difficulty": "easy"
+  },
+  {
+    "id": "hinglish-003",
+    "question": "Uniform motion aur non-uniform motion mein kya difference hai?",
+    "question_type": "conceptual",
+    "answer_type": "explanation",
+    "expected_answer": "In uniform motion, an object covers equal distances in equal intervals of time. In non-uniform motion, the distances covered are unequal.",
+    "eval_criteria": {
+      "must_include": [
+        "equal distances",
+        "equal intervals",
+        "unequal"
+      ],
+      "min_keyword_coverage": 0.5
+    },
+    "expected_behavior": "answer",
+    "expected_language": "hi-en",
+    "chapter": "chapter_4",
+    "difficulty": "medium"
+  },
+  {
+    "id": "hinglish-004",
+    "question": "Example 4.1 explain karo physics textbook se.",
+    "question_type": "factual",
+    "answer_type": "explanation",
+    "expected_answer": "Example 4.1 discusses the motion of two postmen meeting after 15 days.",
+    "eval_criteria": {
+      "must_include": [
+        "postmen",
+        "15 days"
+      ],
+      "min_keyword_coverage": 0.5
+    },
+    "expected_behavior": "answer",
+    "expected_language": "hi-en",
+    "chapter": "chapter_4",
+    "difficulty": "medium"
+  },
+  {
+    "id": "hinglish-005",
+    "question": "Kya speedometer velocity batata hai ya speed?",
+    "question_type": "conceptual",
+    "answer_type": "explanation",
+    "expected_answer": "A speedometer shows only speed (magnitude), not velocity (direction).",
+    "eval_criteria": {
+      "must_include": [
+        "speed",
+        "magnitude",
+        "not velocity"
+      ],
+      "min_keyword_coverage": 0.5
+    },
+    "expected_behavior": "answer",
+    "expected_language": "hi-en",
+    "chapter": "chapter_4",
+    "difficulty": "easy"
   }
 ]

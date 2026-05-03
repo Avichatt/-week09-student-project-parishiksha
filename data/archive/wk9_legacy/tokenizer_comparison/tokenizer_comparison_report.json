@@ -1,0 +1,1211 @@
+{
+  "tokenizers_compared": [
+    "bert_base",
+    "bert_bio",
+    "t5_base",
+    "gpt2"
+  ],
+  "term_analysis": {
+    "terms": [
+      {
+        "term": "photosynthesis",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "photos",
+              "##yn",
+              "##thesis"
+            ],
+            "token_ids": [
+              7760,
+              6038,
+              25078
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "photos",
+              "##ynth",
+              "##esis"
+            ],
+            "token_ids": [
+              7630,
+              26588,
+              16317
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁photo",
+              "synthesis"
+            ],
+            "token_ids": [
+              1202,
+              17282
+            ],
+            "num_tokens": 2,
+            "fragmentation": 2.0
+          },
+          "gpt2": {
+            "tokens": [
+              "photos",
+              "ynthesis"
+            ],
+            "token_ids": [
+              24729,
+              44411
+            ],
+            "num_tokens": 2,
+            "fragmentation": 2.0
+          }
+        }
+      },
+      {
+        "term": "mitochondria",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "mit",
+              "##och",
+              "##ond",
+              "##ria"
+            ],
+            "token_ids": [
+              10210,
+              11663,
+              15422,
+              4360
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "mit",
+              "##och",
+              "##ond",
+              "##ria"
+            ],
+            "token_ids": [
+              26410,
+              9962,
+              16838,
+              3464
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁mitochondria"
+            ],
+            "token_ids": [
+              28642
+            ],
+            "num_tokens": 1,
+            "fragmentation": 1.0
+          },
+          "gpt2": {
+            "tokens": [
+              "mit",
+              "ochond",
+              "ria"
+            ],
+            "token_ids": [
+              2781,
+              22400,
+              7496
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          }
+        }
+      },
+      {
+        "term": "endoplasmic reticulum",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "end",
+              "##op",
+              "##las",
+              "##mic",
+              "re",
+              "##tic",
+              "##ulum"
+            ],
+            "token_ids": [
+              2203,
+              7361,
+              8523,
+              7712,
+              2128,
+              4588,
+              25100
+            ],
+            "num_tokens": 7,
+            "fragmentation": 3.5
+          },
+          "bert_bio": {
+            "tokens": [
+              "end",
+              "##op",
+              "##las",
+              "##mic",
+              "re",
+              "##tic",
+              "##ulum"
+            ],
+            "token_ids": [
+              1322,
+              4184,
+              7580,
+              7257,
+              1231,
+              2941,
+              19463
+            ],
+            "num_tokens": 7,
+            "fragmentation": 3.5
+          },
+          "t5_base": {
+            "tokens": [
+              "▁end",
+              "o",
+              "plasm",
+              "ic",
+              "▁",
+              "reti",
+              "cul",
+              "um"
+            ],
+            "token_ids": [
+              414,
+              32,
+              21178,
+              447,
+              3,
+              10682,
+              1497,
+              440
+            ],
+            "num_tokens": 8,
+            "fragmentation": 4.0
+          },
+          "gpt2": {
+            "tokens": [
+              "end",
+              "opl",
+              "asm",
+              "ic",
+              "Ġret",
+              "ic",
+              "ulum"
+            ],
+            "token_ids": [
+              437,
+              20106,
+              8597,
+              291,
+              1005,
+              291,
+              14452
+            ],
+            "num_tokens": 7,
+            "fragmentation": 3.5
+          }
+        }
+      },
+      {
+        "term": "specific heat capacity",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "specific",
+              "heat",
+              "capacity"
+            ],
+            "token_ids": [
+              3563,
+              3684,
+              3977
+            ],
+            "num_tokens": 3,
+            "fragmentation": 1.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "specific",
+              "heat",
+              "capacity"
+            ],
+            "token_ids": [
+              2747,
+              3208,
+              3211
+            ],
+            "num_tokens": 3,
+            "fragmentation": 1.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁specific",
+              "▁heat",
+              "▁capacity"
+            ],
+            "token_ids": [
+              806,
+              1678,
+              2614
+            ],
+            "num_tokens": 3,
+            "fragmentation": 1.0
+          },
+          "gpt2": {
+            "tokens": [
+              "specific",
+              "Ġheat",
+              "Ġcapacity"
+            ],
+            "token_ids": [
+              11423,
+              4894,
+              5339
+            ],
+            "num_tokens": 3,
+            "fragmentation": 1.0
+          }
+        }
+      },
+      {
+        "term": "electromagnetic spectrum",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "electromagnetic",
+              "spectrum"
+            ],
+            "token_ids": [
+              17225,
+              8674
+            ],
+            "num_tokens": 2,
+            "fragmentation": 1.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "electromagnetic",
+              "spectrum"
+            ],
+            "token_ids": [
+              19805,
+              10122
+            ],
+            "num_tokens": 2,
+            "fragmentation": 1.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁electromagnetic",
+              "▁spectrum"
+            ],
+            "token_ids": [
+              28641,
+              10113
+            ],
+            "num_tokens": 2,
+            "fragmentation": 1.0
+          },
+          "gpt2": {
+            "tokens": [
+              "elect",
+              "rom",
+              "agnetic",
+              "Ġspectrum"
+            ],
+            "token_ids": [
+              9509,
+              398,
+              25145,
+              10958
+            ],
+            "num_tokens": 4,
+            "fragmentation": 2.0
+          }
+        }
+      },
+      {
+        "term": "nucleotide",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "nu",
+              "##cle",
+              "##otide"
+            ],
+            "token_ids": [
+              16371,
+              14321,
+              26601
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "n",
+              "##uc",
+              "##leo",
+              "##tide"
+            ],
+            "token_ids": [
+              183,
+              21977,
+              26918,
+              23767
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁nu",
+              "cle",
+              "o",
+              "t",
+              "ide"
+            ],
+            "token_ids": [
+              206,
+              2482,
+              32,
+              17,
+              1599
+            ],
+            "num_tokens": 5,
+            "fragmentation": 5.0
+          },
+          "gpt2": {
+            "tokens": [
+              "n",
+              "ucle",
+              "otide"
+            ],
+            "token_ids": [
+              77,
+              14913,
+              45608
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          }
+        }
+      },
+      {
+        "term": "chlorophyll",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "ch",
+              "##lor",
+              "##op",
+              "##hyl",
+              "##l"
+            ],
+            "token_ids": [
+              10381,
+              10626,
+              7361,
+              29598,
+              2140
+            ],
+            "num_tokens": 5,
+            "fragmentation": 5.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "ch",
+              "##lor",
+              "##op",
+              "##hyl",
+              "##l"
+            ],
+            "token_ids": [
+              22572,
+              10885,
+              4184,
+              18873,
+              1233
+            ],
+            "num_tokens": 5,
+            "fragmentation": 5.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁chlor",
+              "o",
+              "phy",
+              "ll"
+            ],
+            "token_ids": [
+              19782,
+              32,
+              6941,
+              195
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "gpt2": {
+            "tokens": [
+              "chlor",
+              "ophy",
+              "ll"
+            ],
+            "token_ids": [
+              36813,
+              16982,
+              297
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          }
+        }
+      },
+      {
+        "term": "ribonucleic acid",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "rib",
+              "##on",
+              "##uc",
+              "##lei",
+              "##c",
+              "acid"
+            ],
+            "token_ids": [
+              19395,
+              2239,
+              14194,
+              23057,
+              2278,
+              5648
+            ],
+            "num_tokens": 6,
+            "fragmentation": 3.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "rib",
+              "##on",
+              "##uc",
+              "##le",
+              "##ic",
+              "acid"
+            ],
+            "token_ids": [
+              23298,
+              1320,
+              21977,
+              1513,
+              1596,
+              5190
+            ],
+            "num_tokens": 6,
+            "fragmentation": 3.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁",
+              "rib",
+              "on",
+              "u",
+              "cle",
+              "ic",
+              "▁acid"
+            ],
+            "token_ids": [
+              3,
+              6520,
+              106,
+              76,
+              2482,
+              447,
+              3562
+            ],
+            "num_tokens": 7,
+            "fragmentation": 3.5
+          },
+          "gpt2": {
+            "tokens": [
+              "rib",
+              "on",
+              "ucle",
+              "ic",
+              "Ġacid"
+            ],
+            "token_ids": [
+              822,
+              261,
+              14913,
+              291,
+              7408
+            ],
+            "num_tokens": 5,
+            "fragmentation": 2.5
+          }
+        }
+      },
+      {
+        "term": "deoxyribonucleic acid",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "de",
+              "##ox",
+              "##yr",
+              "##ib",
+              "##on",
+              "##uc",
+              "##lei",
+              "##c",
+              "acid"
+            ],
+            "token_ids": [
+              2139,
+              11636,
+              12541,
+              12322,
+              2239,
+              14194,
+              23057,
+              2278,
+              5648
+            ],
+            "num_tokens": 9,
+            "fragmentation": 4.5
+          },
+          "bert_bio": {
+            "tokens": [
+              "de",
+              "##ox",
+              "##yr",
+              "##ib",
+              "##on",
+              "##uc",
+              "##le",
+              "##ic",
+              "acid"
+            ],
+            "token_ids": [
+              1260,
+              10649,
+              12577,
+              13292,
+              1320,
+              21977,
+              1513,
+              1596,
+              5190
+            ],
+            "num_tokens": 9,
+            "fragmentation": 4.5
+          },
+          "t5_base": {
+            "tokens": [
+              "▁de",
+              "oxy",
+              "rib",
+              "on",
+              "u",
+              "cle",
+              "ic",
+              "▁acid"
+            ],
+            "token_ids": [
+              20,
+              9773,
+              6520,
+              106,
+              76,
+              2482,
+              447,
+              3562
+            ],
+            "num_tokens": 8,
+            "fragmentation": 4.0
+          },
+          "gpt2": {
+            "tokens": [
+              "de",
+              "oxy",
+              "rib",
+              "on",
+              "ucle",
+              "ic",
+              "Ġacid"
+            ],
+            "token_ids": [
+              2934,
+              23536,
+              822,
+              261,
+              14913,
+              291,
+              7408
+            ],
+            "num_tokens": 7,
+            "fragmentation": 3.5
+          }
+        }
+      },
+      {
+        "term": "prokaryotic",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "pro",
+              "##kar",
+              "##yo",
+              "##tic"
+            ],
+            "token_ids": [
+              4013,
+              6673,
+              7677,
+              4588
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "pro",
+              "##kar",
+              "##yo",
+              "##tic"
+            ],
+            "token_ids": [
+              5250,
+              6610,
+              7490,
+              2941
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁pro",
+              "k",
+              "ary",
+              "otic"
+            ],
+            "token_ids": [
+              813,
+              157,
+              1208,
+              9798
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "gpt2": {
+            "tokens": [
+              "pro",
+              "k",
+              "ary",
+              "otic"
+            ],
+            "token_ids": [
+              1676,
+              74,
+              560,
+              6210
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          }
+        }
+      },
+      {
+        "term": "eukaryotic",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "eu",
+              "##kar",
+              "##yo",
+              "##tic"
+            ],
+            "token_ids": [
+              7327,
+              6673,
+              7677,
+              4588
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "e",
+              "##uka",
+              "##ryo",
+              "##tic"
+            ],
+            "token_ids": [
+              174,
+              12658,
+              26503,
+              2941
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁",
+              "e",
+              "uk",
+              "ary",
+              "otic"
+            ],
+            "token_ids": [
+              3,
+              15,
+              1598,
+              1208,
+              9798
+            ],
+            "num_tokens": 5,
+            "fragmentation": 5.0
+          },
+          "gpt2": {
+            "tokens": [
+              "e",
+              "uk",
+              "ary",
+              "otic"
+            ],
+            "token_ids": [
+              68,
+              2724,
+              560,
+              6210
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          }
+        }
+      },
+      {
+        "term": "Golgi apparatus",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "go",
+              "##l",
+              "##gi",
+              "apparatus"
+            ],
+            "token_ids": [
+              2175,
+              2140,
+              5856,
+              14709
+            ],
+            "num_tokens": 4,
+            "fragmentation": 2.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "go",
+              "##l",
+              "##gi",
+              "apparatus"
+            ],
+            "token_ids": [
+              1301,
+              1233,
+              5389,
+              16486
+            ],
+            "num_tokens": 4,
+            "fragmentation": 2.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁Go",
+              "l",
+              "g",
+              "i",
+              "▁apparatus"
+            ],
+            "token_ids": [
+              1263,
+              40,
+              122,
+              23,
+              20282
+            ],
+            "num_tokens": 5,
+            "fragmentation": 2.5
+          },
+          "gpt2": {
+            "tokens": [
+              "G",
+              "ol",
+              "gi",
+              "Ġapparatus"
+            ],
+            "token_ids": [
+              38,
+              349,
+              12397,
+              21152
+            ],
+            "num_tokens": 4,
+            "fragmentation": 2.0
+          }
+        }
+      },
+      {
+        "term": "osmosis",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "os",
+              "##mos",
+              "##is"
+            ],
+            "token_ids": [
+              9808,
+              15530,
+              2483
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "o",
+              "##smos",
+              "##is"
+            ],
+            "token_ids": [
+              184,
+              18818,
+              1548
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁",
+              "o",
+              "s",
+              "mos",
+              "is"
+            ],
+            "token_ids": [
+              3,
+              32,
+              7,
+              3972,
+              159
+            ],
+            "num_tokens": 5,
+            "fragmentation": 5.0
+          },
+          "gpt2": {
+            "tokens": [
+              "os",
+              "m",
+              "osis"
+            ],
+            "token_ids": [
+              418,
+              76,
+              5958
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          }
+        }
+      },
+      {
+        "term": "plasmolysis",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "pl",
+              "##as",
+              "##mo",
+              "##lysis"
+            ],
+            "token_ids": [
+              20228,
+              3022,
+              5302,
+              26394
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "p",
+              "##las",
+              "##mo",
+              "##lysis"
+            ],
+            "token_ids": [
+              185,
+              7580,
+              3702,
+              15140
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁",
+              "plasm",
+              "o",
+              "lysis"
+            ],
+            "token_ids": [
+              3,
+              21178,
+              32,
+              21091
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "gpt2": {
+            "tokens": [
+              "pl",
+              "asm",
+              "oly",
+              "sis"
+            ],
+            "token_ids": [
+              489,
+              8597,
+              3366,
+              13429
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          }
+        }
+      },
+      {
+        "term": "chromatin",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "ch",
+              "##rom",
+              "##atin"
+            ],
+            "token_ids": [
+              10381,
+              21716,
+              20363
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "ch",
+              "##roma",
+              "##tin"
+            ],
+            "token_ids": [
+              22572,
+              18885,
+              6105
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁",
+              "chromat",
+              "in"
+            ],
+            "token_ids": [
+              3,
+              25620,
+              77
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "gpt2": {
+            "tokens": [
+              "chrom",
+              "atin"
+            ],
+            "token_ids": [
+              28663,
+              10680
+            ],
+            "num_tokens": 2,
+            "fragmentation": 2.0
+          }
+        }
+      },
+      {
+        "term": "cytoplasm",
+        "tokenizations": {
+          "bert_base": {
+            "tokens": [
+              "cy",
+              "##top",
+              "##las",
+              "##m"
+            ],
+            "token_ids": [
+              22330,
+              14399,
+              8523,
+              2213
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          },
+          "bert_bio": {
+            "tokens": [
+              "c",
+              "##yt",
+              "##op",
+              "##las",
+              "##m"
+            ],
+            "token_ids": [
+              172,
+              25669,
+              4184,
+              7580,
+              1306
+            ],
+            "num_tokens": 5,
+            "fragmentation": 5.0
+          },
+          "t5_base": {
+            "tokens": [
+              "▁",
+              "cyto",
+              "plasm"
+            ],
+            "token_ids": [
+              3,
+              14578,
+              21178
+            ],
+            "num_tokens": 3,
+            "fragmentation": 3.0
+          },
+          "gpt2": {
+            "tokens": [
+              "cy",
+              "top",
+              "l",
+              "asm"
+            ],
+            "token_ids": [
+              948,
+              4852,
+              75,
+              8597
+            ],
+            "num_tokens": 4,
+            "fragmentation": 4.0
+          }
+        }
+      }
+    ],
+    "summary": {
+      "bert_base": {
+        "mean_tokens_per_term": 4.25,
+        "max_tokens_per_term": 9,
+        "min_tokens_per_term": 2,
+        "total_tokens": 68
+      },
+      "bert_bio": {
+        "mean_tokens_per_term": 4.38,
+        "max_tokens_per_term": 9,
+        "min_tokens_per_term": 2,
+        "total_tokens": 70
+      },
+      "t5_base": {
+        "mean_tokens_per_term": 4.31,
+        "max_tokens_per_term": 8,
+        "min_tokens_per_term": 1,
+        "total_tokens": 69
+      },
+      "gpt2": {
+        "mean_tokens_per_term": 3.88,
+        "max_tokens_per_term": 7,
+        "min_tokens_per_term": 2,
+        "total_tokens": 62
+      }
+    }
+  },
+  "text_analysis": {
+    "chapter_key": "chapter_4",
+    "char_count": 57262,
+    "tokenizers": {
+      "bert_base": {
+        "total_tokens": 13393,
+        "unique_tokens": 1175,
+        "compression_ratio": 4.28,
+        "chunks_at_512": 27,
+        "chunks_at_256": 53,
+        "chunks_at_128": 105
+      },
+      "bert_bio": {
+        "total_tokens": 13651,
+        "unique_tokens": 1165,
+        "compression_ratio": 4.19,
+        "chunks_at_512": 27,
+        "chunks_at_256": 54,
+        "chunks_at_128": 107
+      },
+      "t5_base": {
+        "total_tokens": 14952,
+        "unique_tokens": 1420,
+        "compression_ratio": 3.83,
+        "chunks_at_512": 30,
+        "chunks_at_256": 59,
+        "chunks_at_128": 117
+      },
+      "gpt2": {
+        "total_tokens": 17026,
+        "unique_tokens": 1735,
+        "compression_ratio": 3.36,
+        "chunks_at_512": 34,
+        "chunks_at_256": 67,
+        "chunks_at_128": 134
+      }
+    }
+  },
+  "recommendations": {
+    "for_chunking": "Prefer 'gpt2' for chunk size estimation. It uses 3.9 tokens/term on average vs 4.4 for 'bert_bio'. Fewer tokens per scientific term means your chunks preserve more semantic content within the same token budget.",
+    "for_embedding": "For semantic search, consider that 'bert_bio' fragments scientific terms the most. This can hurt embedding quality for science-specific queries. If using SBERT, the tokenizer is fixed to the model's, but chunk boundaries should be set considering the embedding model's tokenizer.",
+    "rationale": "Tokenizer choice is a pre-retrieval decision with downstream consequences. A tokenizer that fragments 'photosynthesis' into 4 sub-words will produce different chunk boundaries than one that keeps it as 1-2 tokens. This affects both chunk content density and embedding fidelity."
+  }
+}

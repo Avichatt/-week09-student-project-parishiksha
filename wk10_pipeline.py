@@ -35,7 +35,7 @@ def stage_1_chunk():
 
 def stage_2_embed():
     logger.info("STAGE 2: Google Embedding + ChromaDB")
-    embedder = Wk10Embedder(persist_directory="./chroma_wk10")
+    embedder = Wk10Embedder(persist_directory="./storage/chroma_wk10")
     chunks_path = "data/results/wk10_chunks.json"
     embedder.load_and_embed(chunks_path)
     

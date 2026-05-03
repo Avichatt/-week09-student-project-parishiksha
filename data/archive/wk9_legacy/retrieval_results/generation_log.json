@@ -1,0 +1,52 @@
+[
+  {
+    "answer": "Based on the textbook context provided, there is no specific definition for \"uniform motion\" in general",
+    "model": "gemini",
+    "model_name": "models/gemini-flash-latest",
+    "prompt_tokens": 732,
+    "temperature": 0.3,
+    "status": "success",
+    "question": "What is uniform motion?",
+    "context_length_chars": 3475
+  },
+  {
+    "answer": "Based on the provided textbook context, here is the difference between distance and displacement:\n\n**1. Definition",
+    "model": "gemini",
+    "model_name": "models/gemini-flash-latest",
+    "prompt_tokens": 756,
+    "temperature": 0.3,
+    "status": "success",
+    "question": "What is the difference between distance and displacement?",
+    "context_length_chars": 3531
+  },
+  {
+    "answer": "To calculate average velocity, you can follow these steps based on the textbook:\n\n**1. Definition**",
+    "model": "gemini",
+    "model_name": "models/gemini-flash-latest",
+    "prompt_tokens": 727,
+    "temperature": 0.3,
+    "status": "success",
+    "question": "How do you calculate average velocity?",
+    "context_length_chars": 3072
+  },
+  {
+    "answer": "Based on the textbook context provided, the total distance travelled and the magnitude of displacement are equal under the following",
+    "model": "gemini",
+    "model_name": "models/gemini-flash-latest",
+    "prompt_tokens": 769,
+    "temperature": 0.3,
+    "status": "success",
+    "question": "When is the total distance travelled equal to the magnitude of displacement?",
+    "context_length_chars": 3497
+  },
+  {
+    "answer": "I don't have enough information from the textbook to answer this.",
+    "model": "gemini",
+    "model_name": "models/gemini-flash-latest",
+    "prompt_tokens": 653,
+    "temperature": 0.3,
+    "status": "success",
+    "question": "What is string theory and M-theory?",
+    "context_length_chars": 3197
+  }
+]

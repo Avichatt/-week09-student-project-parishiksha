@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-25T22:25:45.214780",
+    "model_type": "t5",
+    "retrieval_mode": "hybrid",
+    "top_k": 5,
+    "total_questions": 20,
+    "total_time_seconds": 56.02
+  },
+  "per_question": [
+    {
+      "question_id": "a4ea9827-e6d7-499b-a43c-2f878e71821d",
+      "question": "What is linear motion?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Linear motion is the motion of an object in a straight line.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "(a) Constant velocity Position (m) Time (s)"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "273cbaaf-2ce8-4e3c-b44e-33361d78c4a1",
+      "question": "Define displacement.",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Displacement is the net change in the position of an object between two given instants of time.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "equal"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "8cc620f6-ac9e-4657-8b68-d5294cefe9cd",
+      "question": "What is the SI unit for distance and displacement?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The SI unit for both distance and displacement is the metre (m).",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "160 m"
+      },
+      "validation": {
+        "keyword_coverage": 0.5,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.6,
+        "total_score": 0.69
+      },
+      "overall_score": 0.69
+    },
+    {
+      "question_id": "1951529e-0669-404a-93a9-5f2fc8c778af",
+      "question": "When are the total distance travelled and magnitude of displacement equal?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "They are equal if the object moves without turning back, i.e., if it moves in one direction.",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "(ii)"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "0d17ab62-a491-4ecd-a3c6-14291fa86e96",
+      "question": "How is average speed calculated?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Average speed is the total distance travelled divided by the time interval.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "239af9d6-c847-46d1-bdda-0a1d2560ef47",
+      "question": "Define uniform motion in a straight line.",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "If an object moving in a straight line travels equal distances in equal intervals of time, it is in uniform motion.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "c8a414f7-ca23-43c3-874b-dcb28bded668",
+      "question": "What is average velocity?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Average velocity is the displacement divided by the time interval.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "metre per second"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "6ae92146-fa83-4821-84ba-6cb0756df477",
+      "question": "What is the SI unit of average velocity?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The SI unit of average velocity is metre per second (m/s).",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "259f625a-d454-45a2-b0d3-29c7aaa3f3ce",
+      "question": "Define average acceleration.",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Average acceleration is the change in velocity divided by the time interval.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "velocity"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "67595c2f-b466-48a6-8b34-fbdbf7344e98",
+      "question": "What does a negative sign in average acceleration indicate?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "A negative sign indicates that the acceleration is acting opposite to the direction of velocity.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context."
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "3da16f40-21fa-4637-85e1-8a69eb0dbe78",
+      "question": "What is the SI unit of average acceleration?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The SI unit of average acceleration is m/s^2.",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context."
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "8b580034-b79c-42fe-b3e1-8af4ac94ef47",
+      "question": "What is the acceleration due to gravitational force (g) on Earth?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The acceleration due to gravity is approximately 9.8 m/s^2.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "d9fc8dac-b4c7-4280-bd30-d4d469a730d3",
+      "question": "If I walk from my home to school and back, what is my net displacement?",
+      "question_type": "conceptual",
+      "answer_type": "explanation",
+      "expected_answer": "Your net displacement is zero because your final position is the same as your starting position.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "OA + AB = 100 m"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "c22e5587-de6c-477a-83d0-347a7f754b34",
+      "question": "Is a car speeding up on a highway an example of non-uniform motion?",
+      "question_type": "conceptual",
+      "answer_type": "explanation",
+      "expected_answer": "Yes, because its speed is changing, meaning it travels unequal distances in equal intervals of time.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "average speed"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "53c217d5-9c33-4feb-8ef1-52a34c284cbf",
+      "question": "Why is direction important when talking about velocity but not speed?",
+      "question_type": "conceptual",
+      "answer_type": "explanation",
+      "expected_answer": "Velocity is a vector quantity that describes both how fast and in what direction an object moves, while speed is a scalar.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 1.0,
+        "total_score": 0.7
+      },
+      "overall_score": 0.7
+    },
+    {
+      "question_id": "569c83fb-993b-4406-97e4-3568fc08f748",
+      "question": "What is the Schwarzschild radius of a black hole?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context."
+      },
+      "validation": {
+        "total_score": 1.0,
+        "details": {
+          "refusal_correct": 1.0
+        }
+      },
+      "overall_score": 1.0
+    },
+    {
+      "question_id": "ae768a77-bfa7-467e-a629-c1571a96431b",
+      "question": "Explain Einstein's theory of general relativity.",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "acceleration of an object."
+      },
+      "validation": {
+        "total_score": 0.0,
+        "details": {
+          "refusal_correct": 0.0
+        }
+      },
+      "overall_score": 0.0
+    },
+    {
+      "question_id": "1482c779-76e4-41ad-9ea2-8bc56d9f4d10",
+      "question": "How does photosynthesis work in plants?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I cannot answer this from the given context."
+      },
+      "validation": {
+        "total_score": 1.0,
+        "details": {
+          "refusal_correct": 1.0
+        }
+      },
+      "overall_score": 1.0
+    },
+    {
+      "question_id": "f2a37a22-ee4e-4c98-88ad-4051875ff2cb",
+      "question": "What are quarks and how do they behave?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Phyphox"
+      },
+      "validation": {
+        "total_score": 0.0,
+        "details": {
+          "refusal_correct": 0.0
+        }
+      },
+      "overall_score": 0.0
+    },
+    {
+      "question_id": "ae102f24-63ad-4002-be2d-2e3b2b47bad6",
+      "question": "What is the chemical formula for sulfuric acid?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "30 seconds are up."
+      },
+      "validation": {
+        "total_score": 0.0,
+        "details": {
+          "refusal_correct": 0.0
+        }
+      },
+      "overall_score": 0.0
+    }
+  ],
+  "aggregate": {
+    "total_evaluated": 20,
+    "by_question_type": {
+      "factual": {
+        "count": 12,
+        "avg_total_score": 0.6991666666666667,
+        "avg_recall_k": 0.8333333333333334,
+        "avg_mrr": 0.7916666666666666,
+        "avg_grounding": 0.9666666666666667,
+        "avg_keyword_coverage": 0.041666666666666664
+      },
+      "conceptual": {
+        "count": 3,
+        "avg_total_score": 0.6999999999999998,
+        "avg_recall_k": 1.0,
+        "avg_mrr": 0.4444444444444444,
+        "avg_grounding": 1.0,
+        "avg_keyword_coverage": 0.0
+      },
+      "unanswerable": {
+        "count": 5,
+        "avg_total_score": 0.4,
+        "avg_recall_k": 0.0,
+        "avg_mrr": 0.0,
+        "avg_grounding": 0.0,
+        "avg_keyword_coverage": 0.0
+      }
+    },
+    "overall_score": 0.6244999999999999
+  }
+}

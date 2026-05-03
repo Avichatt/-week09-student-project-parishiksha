@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": 0,
+    "text": "Motion is relative.",
+    "token_count": 3,
+    "metadata": {}
+  },
+  {
+    "chunk_id": 1,
+    "text": "Velocity is a vector.",
+    "token_count": 4,
+    "metadata": {}
+  }
+]

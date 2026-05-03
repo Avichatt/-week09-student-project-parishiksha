@@ -1,0 +1,89 @@
+{
+  "chapter_key": "chapter_6",
+  "tokenizer": "bert-base-uncased",
+  "total_chars": 56518,
+  "total_tokens": 12564,
+  "configurations": [
+    {
+      "strategy": "fixed_token",
+      "target_chunk_size": 128,
+      "num_chunks": 115,
+      "avg_tokens_per_chunk": 128.0,
+      "min_tokens": 128,
+      "max_tokens": 128,
+      "std_tokens": 0.0
+    },
+    {
+      "strategy": "fixed_token",
+      "target_chunk_size": 256,
+      "num_chunks": 58,
+      "avg_tokens_per_chunk": 254.0,
+      "min_tokens": 138,
+      "max_tokens": 256,
+      "std_tokens": 15.4
+    },
+    {
+      "strategy": "fixed_token",
+      "target_chunk_size": 512,
+      "num_chunks": 29,
+      "avg_tokens_per_chunk": 506.6,
+      "min_tokens": 356,
+      "max_tokens": 512,
+      "std_tokens": 28.5
+    },
+    {
+      "strategy": "sentence_based",
+      "target_chunk_size": 128,
+      "num_chunks": 616,
+      "avg_tokens_per_chunk": 199.7,
+      "min_tokens": 94,
+      "max_tokens": 579,
+      "std_tokens": 63.3
+    },
+    {
+      "strategy": "sentence_based",
+      "target_chunk_size": 256,
+      "num_chunks": 250,
+      "avg_tokens_per_chunk": 265.1,
+      "min_tokens": 200,
+      "max_tokens": 579,
+      "std_tokens": 55.3
+    },
+    {
+      "strategy": "sentence_based",
+      "target_chunk_size": 512,
+      "num_chunks": 44,
+      "avg_tokens_per_chunk": 499.3,
+      "min_tokens": 351,
+      "max_tokens": 579,
+      "std_tokens": 33.3
+    },
+    {
+      "strategy": "semantic_paragraph",
+      "target_chunk_size": 128,
+      "num_chunks": 30,
+      "avg_tokens_per_chunk": 425.8,
+      "min_tokens": 105,
+      "max_tokens": 721,
+      "std_tokens": 178.0
+    },
+    {
+      "strategy": "semantic_paragraph",
+      "target_chunk_size": 256,
+      "num_chunks": 30,
+      "avg_tokens_per_chunk": 427.0,
+      "min_tokens": 105,
+      "max_tokens": 721,
+      "std_tokens": 176.8
+    },
+    {
+      "strategy": "semantic_paragraph",
+      "target_chunk_size": 512,
+      "num_chunks": 29,
+      "avg_tokens_per_chunk": 441.4,
+      "min_tokens": 105,
+      "max_tokens": 721,
+      "std_tokens": 172.5
+    }
+  ]
+}

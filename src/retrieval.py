@@ -3,7 +3,7 @@
 # =============================================================================
 # Rubric requirements:
 #   - Embed data/results/wk10_chunks.json with OpenAI text-embedding-3-small
-#   - Persist to Chroma (PersistentClient, path ./chroma_wk10)
+#   - Persist to Chroma (PersistentClient, path ./storage/chroma_wk10)
 #   - Use cosine similarity
 #   - Don't re-embed every kernel restart
 #   - Build retrieve(query, k=5) returning chunks with similarity scores
@@ -27,14 +27,14 @@ class Wk10Embedder:
     
     Key design decisions:
     - Uses OpenAI's text-embedding-3-small (1536-dim) per rubric
-    - ChromaDB PersistentClient at ./chroma_wk10 for persistence
+    - ChromaDB PersistentClient at ./storage/chroma_wk10 for persistence
     - Cosine similarity for retrieval
     - Skips re-embedding if collection already populated
     """
 
     COLLECTION_NAME = "parishiksha_wk10"
 
-    def __init__(self, chroma_path: str = "./chroma_wk10"):
+    def __init__(self, chroma_path: str = "./storage/chroma_wk10"):
         self.chroma_path = chroma_path
         self.client = chromadb.PersistentClient(path=chroma_path)
         self.collection = None

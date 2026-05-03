@@ -1,0 +1,350 @@
+[
+  {
+    "text": "[Introduction]\nExploring Mixtures \nand their Separation\nChapter \nHave you ever wondered how sweet, white crystals of sugar are \nobtained from tall, green sugarcane plants? Or how do doctors \ndetect diseases like malaria using just a few drops of blood? \nMany such everyday activities are made possible by techniques \nbased on the fascinating science of separating mixtures.\nYou have learnt about mixtures and some simple \nmethods to separate them. In this chapter, you will \nexplore mixtures in greater depth, including their \nproperties, behaviour and the various techniques used to \nseparate them. From industrial processes like sugar production \nto life-saving medical tests, the separation of mixtures plays a \ncrucial role in our daily lives.\nGrade 6\nCuriosity\nThink It Over\n y\nWhy do suspended \nparticles settle in \nmuddy water over \ntime but not in milk?\n y\nHow is evaporation \ndifferent from boiling? \n y\nWhy do you see bright \nrays of sunlight when \nit passes through \nsmall gaps between \nthe leaves of a dense \ntree?\n\n\nExploring Mixtures and their Separation\n(a)\n(b)\n(c)\nFig. 5.3: Passing laser light through various mixtures (a) salt \nand water, (b) chalk powder and water, and (c) milk and water",
+    "token_count": 238,
+    "metadata": {
+      "section_heading": "Introduction",
+      "content_type": "narrative",
+      "split": false
+    },
+    "chunk_id": 0,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.1 How Can We Classify Mixtures?]\nYou have learnt that a mixture of sugar and \nwater has a uniform composition throughout. \nA well-stirred mixture of sugar and water \nis equally sweet in the first and the last sip. Such a \nmixture is called a homogeneous mixture (Fig. 5.1) or \na solution. Other examples of homogeneous mixtures \nare vinegar (acetic acid in water), aerated drinks like \nsoda (carbon dioxide in water), etc. A solution always \nremains homogeneous.\nOn the other hand, a stirred mixture of sand and water \nis not uniform. The sand particles are easily visible in \nthe water and settle with time. Such a mixture is called a \nheterogeneous mixture (Fig. 5.2). Is the mixture of oil and \nwater homogeneous or heterogeneous? Can you think of \nsome other heterogeneous mixtures?\nActivity 5.1: Let us experiment — Group activity \nDivide the class into three groups — A, B and C. Each group \nprepares a mixture in a colourless, transparent glass \ntumbler or a 100 mL beaker by following these steps: \n1.  Group A: Add one spatula of common salt to 50 mL of \nwater in a beaker and stir it well. \nLabel it A. \n2.  Group B: Add one spatula of chalk \npowder to 50 mL of water in a \nbeaker and stir it well. Label it B.\n3.  Group C: Add a few drops of milk to \n50 mL of water in a beaker and stir \nit well. Label it C.\n4.  Are \nthe \nparticles \nvisible \nin \neach \nmixture? \nRecord \nyour \nobservations. \n5.  Direct the light from a laser \npointer \nthrough \nthe \nbeakers \ncontaining the mixtures (Fig. 5.3) \nand observe it from the side \nof the beaker in a direction \nperpendicular to the laser beam. \nRecord your observations. \nSafety first: Do not look directly into the \nlaser beam. It can cause irreversible eye \ndamage.\n6.  Predict what you would observe \nin each of the beakers if you \nleave them undisturbed for a few \nminutes.\nFig. 5.1: Homogeneous mixture\nFig. 5.2: Heterogeneous mixture\nGrade 8\nCuriosity\n\n\nExploration|Grade 9\n7.  Set up a filtration apparatus and filter each mixture separately. Is \nthere any residue left on the filter paper?\n8.  Based on your observations, do you think these are the same types of \nmixtures or are they different?\nThese are indeed different types of mixtures. How? Let us explore \nfurther!",
+    "token_count": 515,
+    "metadata": {
+      "section_heading": "5.1 How Can We Classify Mixtures?",
+      "content_type": "narrative",
+      "split": false
+    },
+    "chunk_id": 1,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2 Solutions]\nYou have learnt that solutions are homogeneous mixtures. You have also \nlearnt that solutions are prepared when a solute (the substance that gets \ndissolved) is mixed with a solvent (the substance that dissolves the solute). \nIn the mixture of sugar and water, sugar is the solute, and water is the \nsolvent. In what proportion are a solute and a solvent present in a solution? \nCan these be expressed quantitatively?",
+    "token_count": 93,
+    "metadata": {
+      "section_heading": "5.2 Solutions",
+      "content_type": "narrative",
+      "split": false
+    },
+    "chunk_id": 2,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2.1 Concentration of a solution]\nYou have learnt how Oral Rehydration Solution (ORS) is prepared. We add \nspecified amounts of salt and sugar to a fixed amount of water to prepare \nORS. If we change the amount of salt or sugar added to the same volume \nof water, or change the volume of water for the specified amounts of salt \nand sugar, we will get a solution of salt and sugar in water but that will \nnot be ORS. In other words, we cannot freely add any amount of salt and \nsugar to a fixed amount of water to make ORS.\nLet us take another example. When farmers spray pesticides on their \ncrops, they must mix the right amount of pesticide with a fixed amount of \nwater to prepare a solution. If they do not do so, what is likely to happen? \nToo little pesticide may not protect crops, while too much can damage \ncrops, soil and the environment.\nCan you think of other such examples?\nThe right proportion is always essential when preparing a \nsolution.\nThe amount of solute dissolved in a given amount of \nsolvent or solution is termed as the concentration of the \nsolution. \nUnderstanding concentration is essential not only in science \nlaboratories but also in everyday life, whether in medicine, \nagriculture, food, cosmetics, or even while making a simple \ncup of tea!",
+    "token_count": 269,
+    "metadata": {
+      "section_heading": "5.2.1 Concentration of a solution",
+      "content_type": "narrative",
+      "split": false
+    },
+    "chunk_id": 3,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2.2 How do we express concentration?]\nLet us now explore the different ways to express the \nconcentration of a solution, and understand where and why \neach method is more suitable.\nCollect some commercial packaged products (Fig. 5.4) and \nnote down the information given for each item.\nGrade 8\nCuriosity\nGrade 6\nCuriosity\nNote\nNot all sugary \ndrinks prepared \nat home or sold \nin the market \nare ORS.\nDilip \nMahalanabis, \nan Indian \npaediatrician, \nfirst \ndeveloped \nand \nimplemented the treatment \nfor dehydration caused \nby diseases, such as \ndiarrhoea and cholera. He \nformulated the ORS that has \nrevolutionised rehydration \ntherapy. It has saved millions \nof lives after the World \nHealth Organization (WHO) \npopularised it worldwide.\nMeet a Scientist\n\nExploring Mixtures and their Separation\nThe concentration of a solution can be expressed in several ways, a \ncommon one being the percentage which we are discussing here. You will \nlearn about other methods in higher grades.\nThe three main ways to express the concentration of a solution in terms \nof percentage are given below.\nA. Mass by mass percentage (% m/m or % w/w) \nThis method is commonly used to express the concentration of \nhomogeneous mixtures. It tells us how many grams of solute are present \nin 100 grams of the total solution. \nThis can be expressed mathematically as,\n×\nMass by mass percentage\nMass of solution\nMass of solute\n=\n (5.1)\nThis method of expressing concentration is also used for heterogeneous \nmixtures, such as milk powder (Fig. 5.4a) and spice mixtures. It is also used \nto label the composition of packaged foods, showing how much salt, sugar, \nor protein is present in them.\nExample 5.1: If 10 g of salt is dissolved in 90 g of water, calculate the mass \nby mass percentage of the solution formed.\nAnswer: Mass of salt (solute) = 10 g\nMass of water (solvent) = 90 g\nTotal mass of solution = Mass of solute + Mass of solvent\n\n= 10 g + 90 g = 100 g\n×\nMass by mass percentage\nMass of solution\nMass of solute\n=",
+    "token_count": 438,
+    "metadata": {
+      "section_heading": "5.2.2 How do we express concentration?",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 4,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2.2 How do we express concentration?]\n×\n%\n/\ng\ng\nm m\n=\n=\nB. Mass by volume percentage (% m/v or % w/v) \nThis method is used where measuring the volume of a liquid is easier \nthan weighing it, for example, in medicines and laboratories. A common \nexample is 5% glucose solution (Fig. 5.4b). It tells us how many grams of the \nsolute is present in 100 millilitres of the solution.\nMathematically,\n×\nMass by volume percentage\nVolume of solution\nMass of solute\n=\n (5.2) \nExample 5.2: If 5 g of glucose is dissolved in water to make 100 mL of \nsolution, calculate its concentration in mass by volume percentage.\nAnswer: Mass of glucose (solute) = 5 g\nVolume of solution = 100 mL\n×\nMass by volume percentage\nVolume of solution\nMass of solute\n=\n\n×\n%\n/\nmL\ng\nm v\n=\n=\nNext \nLevel \nUp\n(a)\n(c)\nFig. 5.4: Composition \nof some commercial \npackaged products \n(a) milk powder, \n(b) glucose solution, and \n(c) vinegar\n(b)\n\nExploration|Grade 9\nC. Volume by volume percentage (% v/v) \nThis method is used when two miscible liquids are mixed, \nfor example, in perfumes, cosmetics and vinegar (Fig. 5.4c). \nThe volume by volume percentage (% v/v) tells us how many \nmillilitres of the solute is present in 100 millilitres of the solution.\nMathematically,\n×\nVolume by volume percentage\nVolume of solution\nVolume of solute\n=\n\b (5.3)\nExample 5.3: If 1 mL of a liquid pesticide is mixed with a \nsufficient amount of water to form 100 mL of a pesticide spray \nfor rice crop, calculate its volume by volume percentage.\nAnswer: Volume of pesticide (solute) = 1 mL\nTotal volume of solution = 100 mL\nVolume by volume percentage \n\n×\nVolume of solution\nVolume of solute\n=",
+    "token_count": 410,
+    "metadata": {
+      "section_heading": "5.2.2 How do we express concentration?",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 5,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2.2 How do we express concentration?]\n×\n% /\nmL\nmL\nv v\n=\n=\nNote\nCommonly used unit in industries is weight by weight percentage (% w/w), as weight and mass are \ngenerally used interchangeably. Numerically, both % m/m and % w/w are equal to each other.\n1.  A common talcum powder contains 4 % m/m zinc oxide, which acts as an antiseptic. How \nmuch zinc oxide is present in 300 g of the talcum powder?\n2.  Your mother gives you a bottle of orange juice concentrate to mix with water and serve it to \nyour visiting friends. She asks you to mix two tablespoons of the concentrate with water in a \nglass tumbler. If each tablespoon measures 15 mL and you make 150 mL of juice per person, \nwhat is the % v/v of orange juice concentrate in the mixture you prepared?\n3.  Vinegar, used as a food preservative and additive, contains 5 % v/v acetic acid. Glacial acetic \nacid is a liquid, i.e., 100% acetic acid. If you want to make vinegar from glacial acetic acid, how \nwould you proceed? \nPause and Ponder",
+    "token_count": 251,
+    "metadata": {
+      "section_heading": "5.2.2 How do we express concentration?",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 6,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2.3 Solubility of substances]\nYou have learnt that the maximum amount of solute that dissolves in a \nfixed quantity of the solvent (100 mL or 100 g) is called its solubility at a \ngiven temperature. A solution that cannot dissolve any more solute at that \ntemperature is called a saturated solution. Why do we mention the \ntemperature? This is because the solubility of a solid solute in a liquid \nsolvent generally increases with temperature. On the other hand, in the \ncase of gases dissolved in liquids, their solubility generally decreases with \nan increase in temperature. Solubility is an important property used to \nseparate substances from mixtures. Let us explore it further! \nGrade 8\nCuriosity\nThreads of \nCuriosity\nA saline drip in hospitals \nis usually 0.9 % m/v \nsodium \nchloride \n(common \nsalt) in \nwater. That \nmeans 0.9 g \nof salt in \n100 mL of \nsolution \n(Fig. 5.5). \n0.9% saline \nsolution \nis safe for \nblood and \nreplaces lost \nfluids in the \nbody.\nFig. 5.5: Saline \nsolution",
+    "token_count": 219,
+    "metadata": {
+      "section_heading": "5.2.3 Solubility of substances",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 7,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.2.3 Solubility of substances]\nExploring Mixtures and their Separation\nActivity 5.2: Let us represent solubility graphically\nConsider water as the solvent, and compounds ‘A’ and ‘B’ as the solutes. Each \nsubstance has a different solubility. A graph of solubility versus temperature \nis called a solubility curve. The solubility curves for ‘A’ and ‘B’ as solutes \nare shown in Fig. 5.6. The x-axis shows temperature (°C), whereas the y-axis \nindicates the solubility of the solute in grams per 100 g of water. \nFig. 5.6: Solubility curves of compounds ‘A’ and ‘B’ in water\ny\nx\nTemperature (°C)\nSolubility (g per 100 g water)\nCompound ‘A’\nCompound ‘B’\nBased on the information from the above graph, predict which of the \ntwo compounds, ‘A’ or ‘B’, will dissolve more in a given amount of water at \na given temperature? \nObserve Fig. 5.6 and fill in the blanks of the following statements:\n(i)  The solubility of compound ‘A’ in water at 20 °C is ______________ (less \nthan/more than/similar to) its solubility at 60 °C.\n(ii)  The solubility of compound ‘B’ at 20 °C is ____________ (less than/\nmore than/similar to) its solubility at 60 °C. \n(iii)  The \nsolubility \nof _____________ increases \nmore \nthan \nthat \nof ______________ with an increase in the temperature.\nWhat do you think will happen if you make a saturated solution at a \nhigher temperature and cool it slowly? Let us find out!",
+    "token_count": 404,
+    "metadata": {
+      "section_heading": "5.2.3 Solubility of substances",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 8,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3 Methods of Separation of Homogeneous Mixtures]\n5.3.1 Crystallization\nYou have learnt to prepare a saturated solution. If you take a saturated \nsolution of compound ‘B’ in water at 60 °C, prepared by dissolving 287 g \nof compound ‘B’ in 100 g of water, what will happen if you gradually cool \nit to 40 °C? As per Fig. 5.6, the solubility of compound ‘B’ is 241 g per 100 g \nof water at 40 °C. It implies that only 241 g of compound ‘B’ can remain \nin the solution and the rest of it will separate out as a pure solid, often \nas crystals. A crystal is a solid that is made up of particles arranged in a \nregular geometric pattern. \nGrade 8\nCuriosity",
+    "token_count": 158,
+    "metadata": {
+      "section_heading": "5.3 Methods of Separation of Homogeneous Mixtures",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 9,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3 Methods of Separation of Homogeneous Mixtures]\nExploration|Grade 9\nYou might have observed many types of crystals in everyday life, such \nas rock salt crystals (Fig. 5.7a) or sugar crystals (Fig. 5.7b) that grow while \nmaking candy sugar (called mishri in Hindi). Snowflakes are also crystals \nformed when water vapour freezes in the air. Even frost on windows is \nformed when water vapour turns into ice crystals (Fig. 5.7c). This is how \ncrystals form naturally.\nIn laboratories, the process of forming crystals from a saturated solution \nis called crystallization. This method can be used for the separation of \ntwo solids in which one of the compounds is present in small quantity \nand both are soluble in the same solvent. This method can also be used \nfor purification of solids. The principle of purification by crystallization \nis based on the differences in the solubility of a substance at different \ntemperatures. \nTry creating your own crystals.\nActivity 5.3: Let us prepare \n1.  Collect a sample of copper sulfate (blue vitriol). If \ncopper sulfate is unavailable, you can use common \nsalt as an alternative.\nSafety first: Copper sulfate is toxic. Perform the experiment under adult \nsupervision and do not touch it with your bare hands.\n2.  Take 1 g of copper sulfate and place \nit in a 100 mL beaker. Add 25 mL of \nwater to the beaker and add a drop \nof dilute sulfuric acid. Gently heat \nthe mixture in a water bath while \nstirring constantly. Sulfuric acid \nhelps in making pure crystals by \npreventing unwanted reactions. \nSafety first: It is advised that the teacher \nshould add a drop of sulfuric acid. Handle \nsulfuric acid very carefully! \n3.  Gradually, \nadd \nmore \ncopper \nsulfate until the solution becomes \nsaturated (Fig. 5.8a).\n4.  Filter the hot solution to remove \ninsoluble impurities (Fig. 5.8b). \nCollect it in a clean beaker and \ncover it with a watch glass.\n5.  Allow the solution to cool slowly \nwithout disturbing it (Fig. 5.8c). It \ngives enough time to the particles \nin the solution to come together, \nresulting in the formation of \nlarger, shiny, well-shaped and \nblue-coloured crystals. \n6.  Filter the crystals, rinse them with \ncold water and allow them to dry \non a watch glass (Fig. 5.8d).\nNote\nSulfuric acid is \nrequired for the \ncrystallization of \nonly some salts.\n(a) Preparing the saturated \nsolution\n(b) Filtering the hot saturated \nsolution\n(c) Cooling down the filtrate \n(d) Crystals of copper sulfate\nFig. 5.8: Steps involved in the process of crystallization\nGlass rod\nGlass rod\nBurner\nWater \nbath\nConical \nfunnel\nWatch \nglass\nLaboratory \nstand\nCopper \nsulfate \ncrystals\nTripod \nstand\nBeaker\nBeaker\nFiltrate\nBeaker\nCopper \nsulfate \nsolution\n(a)\n(b)\n(c)\nFig. 5.7: Crystals of \n(a) rock salt, \n(b) candy sugar, and \n(c) frost\nWatch \nglass",
+    "token_count": 622,
+    "metadata": {
+      "section_heading": "5.3 Methods of Separation of Homogeneous Mixtures",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 10,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3 Methods of Separation of Homogeneous Mixtures]\nExploring Mixtures and their Separation\nYou may also try:\n1.  Place 1 – 2 mL of the saturated copper sulfate solution on a small glass \nplate or a lamination sheet.\n2.  Leave it for some time. What do you observe? \nDid you get crystals? If yes, is this a good way to experiment? Explain. \nCrystallization is a common technique for separating pure substances \n(crystals) from homogeneous mixtures. When new compounds are prepared, \nthey are often accompanied by unwanted impurities. Crystallization helps \nto separate the desired pure substance from the undesired impurities.\nIf a hot, saturated solution of copper sulfate is cooled rapidly in ice-cold water, smaller and less \nwell-formed crystals will form than if it is cooled slowly at room temperature. How would you \ndesign and perform an experiment to test this hypothesis?\nHint: Prepare a hot saturated solution of copper sulfate and divide it into two equal parts. \nThink as a Scientist\n4.  Refer to the solubility curves given in Activity 5.2. If equal masses of hot, saturated solutions \nof compounds ‘A’ and ‘B’ are cooled from 80 °C to 60 °C, which solution is likely to deposit \nmore solid? \n5.  Will there be any change in the size of common salt crystals if the rate of evaporation is \nincreased or decreased? Explain.\nPause and Ponder\nActivity 5.4: Let us describe a process\nObserve Fig. 5.9, it shows how salt crystals are obtained from seawater. \nCan you describe the process in your own words?\nSeawater\nSaturated \nsolution\nSalt crystals\nFig. 5.9: Steps followed in the salt manufacturing process \nReady to Go Beyond \n(a)\n(b)\nHave you visited a place where large \ncrystal deposits can be observed in nature? \nSuch crystals can be found in various \nlocations, including mines, caves and even \nwithin the Earth’s crust. One such example \nis the Mawsmai Cave (Fig. 5.10a) in Sohra \n(Cherrapunji), known for its fascinating \nnatural formations. Quartz (Fig. 5.10b) is \nalso one of the beautiful crystals found in \nnature.\nFig. 5.10: Naturally occurring crystals (a) in caves and (b) quartz",
+    "token_count": 461,
+    "metadata": {
+      "section_heading": "5.3 Methods of Separation of Homogeneous Mixtures",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 11,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3 Methods of Separation of Homogeneous Mixtures]\nExploration|Grade 9\nWhen we allow a solvent to evaporate to get a solute, \nsuch as salt from a salt solution, the solvent disappears. \nHowever, we may also want to recover the solvent. What \nshould we do then? \nWhile experimenting in the laboratory, a student \naccidentally mixed acetone and water, two miscible \nliquids. How can we separate the two miscible liquids? Is it \npossible to separate the mixture of two miscible liquids by \nevaporation and obtain both the liquids?",
+    "token_count": 115,
+    "metadata": {
+      "section_heading": "5.3 Methods of Separation of Homogeneous Mixtures",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 12,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3.2 Distillation]\nA homogeneous mixture of two miscible liquids can be \nseparated by heating the mixture until the liquid with \nthe lower boiling point vaporises. The vapour is then \ncooled, turning back into liquid (Fig. 5.11). This process \nis known as distillation. It allows the recovery of the \nsolvent or the separation of liquids that differ in boiling \npoint by at least about 25 °C. This method can also be \nused to separate a liquid from a solution containing \ndissolved solids.\nDuring the process, vapours of the lower-boiling liquid \nare passed through a condenser where they are cooled, \nusually by circulating water or air and condensed as \na pure liquid. The pure liquid is collected in a separate \nvessel, while the solid or other liquid from the mixture \nremains in the distillation flask. A distillation set-up is \nshown in Fig. 5.12.\nFig. 5.12: Distillation set-up\nThermometer\nWater outlet\nWater \ncondenser\nWater inlet\nConical flask\nAcetone\nDistillation flask\nMixture of acetone and water\nTripod stand\nWire gauze\nBurner\nLaboratory \nstand\nLiquid\nVapour\nLiquid\n(Distillate)\nHeating\nCooling\nFig. 5.11: Distillation process\nIndia’s Scientific \nContributions\nCrystallization of salt was \nan ancient process used \nby the local communities \nof the coastal areas in \nIndia. The panga salt \nwas obtained by boiling \nconcentrated sea brines, \nwhile the evaporation \nof sea water produced \nthe karkatch salt. Salt \ncrystals of different sizes \nwere produced by these \nmethods.",
+    "token_count": 323,
+    "metadata": {
+      "section_heading": "5.3.2 Distillation",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 13,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3.2 Distillation]\nExploring Mixtures and their Separation\nA mixture of acetone and water can be separated by distillation because \ntheir boiling points differ sufficiently. Acetone boils at about 56 °C and \nwater boils at 100 °C. A large difference in boiling points allows one liquid \nto vaporise before the vapours of the other liquid are formed in significant \namount. \nThe process of distillation has been used for a long time for \nvarious purposes, including extraction of fragrances from \nflowers to make perfumes.\nYou must have noticed the pleasant earthy smell that \nrises from the ground after the first rain. In Kannauj, a \ntown in Uttar Pradesh known as the perfume capital of \nIndia, this beautiful fragrance is captured and turned into \na natural perfume called Mitti ka Ittar (earthy fragrance). \nThis perfume is made using a traditional distillation method \nknown as the Deg-Bhapka method (Fig. 5.13), which has \nbeen passed down through generations in Kannauj. It is \nin great demand, both in India and around the world. The \nFragrance and Flavour Development Centre in Kannauj \nhas facilities for separating flavour and fragrance components from flowers, leaves and other parts \nof plants. It also supports farmers in cultivating fragrance-producing plants and offers expertise to \nthose looking to establish their own perfume businesses.\nIndia’s Scientific Contributions\nFig. 5.13: Deg-Bhapka method\nReady to Go Beyond\nFig. 5.14: (a) Petroleum refinery, and (b) products of fractional distillation of crude petroleum \n(a)\nA petroleum refinery (Fig. 5.14a) is an industrial unit where crude oil is processed to obtain \nvarious useful petroleum products. Petroleum products are mixtures of useful gases and liquids, \nsuch as petroleum gas, petrol, kerosene, diesel, etc. Crude \npetroleum is extracted from the Earth’s crust and separated \ninto these different fractions using the process of fractional \ndistillation (Fig. 5.14b). Fractional distillation is the process \nof separating components of a mixture with relatively \nsmall differences (less then 25 °C) in their boiling points. \nThe gaseous fraction is filled in steel cylinders under high \npressure, where it gets liquefied. It is used as domestic fuel \nin the form of Liquefied Petroleum Gas (LPG).\n(b)\nBitumen\nDiesel\nPetrol\nPetroleum gas\nLubricating oil\nAviation fuel \n(Kerosene)\nFurnace\nCrude \noil\n\nExploration|Grade 9",
+    "token_count": 513,
+    "metadata": {
+      "section_heading": "5.3.2 Distillation",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 14,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.3.3 Paper Chromatography]\nHave you ever observed what happens when a drop of water \nfalls on something written with a sketch pen on a paper? You \nmay have noticed that the colour spreads. If the sketch pen is \nblack, different colours might spread out. If you have not noticed \nthis before, try it now!\nActivity 5.5: Let us investigate\n1.  Take a 3 cm wide strip of chromatographic paper and draw \na straight, horizontal line, 2 cm from the bottom of the \npaper with a pencil (Fig. 5.15a). Alternatively, you can use a \nstrip of filter paper.\n2.  Mark a spot with a black sketch pen at the centre of the line \n(Fig. 5.15b). \n3.  Take enough water to make a thin \nlayer at the bottom of a gas jar, a \nmeasuring cylinder, or a beaker.\n4.  Place the paper strip with the ink \nspot vertically into the container, \nso that its lower end dips into the \nwater. The water level should \nbe below the spot, as shown in \nFig. 5.15c.\n5.  Observe the paper as the water rises \nthrough the paper. What do you \nnotice?\n6.  As the water rises, the ink starts to \nseparate into different colour spots. \nWhat can you infer from this? \nThis method of separating the components of a mixture is known as \npaper chromatography. It uses differences in the interactions of the \ncomponents with the solvent and the paper to separate them. The liquid \ncarries the substances up the paper, separating them based on how fast \nthey move. You can also try this with green food colour instead of black ink \nand use a 2 % m/v salt solution as the solvent.\nSimilarly, you can separate different pigments present in the green \nextract of spinach leaves or coloured pigments from the flower petals. Will \nwater work as a solvent in every case? In some cases, you may need to use \na different solvent, such as alcohol or a mixture of solvents.\n6.  State whether the following statements are True or False. Also, correct the False statements.\n(i)  Salt can be separated from a salt solution by evaporation or distillation.\n(ii)  Distillation can be used for separation of two liquids even when these have the same \nboiling point.\n(iii)  In paper chromatography, the solvent level should be above the sample spot at the \nbeginning of the experiment.\n(iv)  Evaporation and crystallization are the same processes.\nPause and Ponder\nThreads of \nCuriosity\nThe word ‘chromatography’ \ncomes from the Greek \nwords chroma, meaning \n‘colour’ and graphein, \nmeaning ‘to write’. It \nactually means ‘writing \nwith colour’ because it \nwas first used to separate \ncoloured substances like \ndyes and inks.\nFig. 5.15: Paper chromatography\n(a)\n(c)\nChromatographic\npaper\nLine drawn \nwith pencil\nWatch \nglass\nGas jar\nWater\n(b)\nInk \nspot",
+    "token_count": 610,
+    "metadata": {
+      "section_heading": "5.3.3 Paper Chromatography",
+      "content_type": "mixed",
+      "split": true
+    },
+    "chunk_id": 15,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.4.1 Separation of two immiscible liquids]\nYou have learnt about non-uniform mixtures. Have you noticed what \nhappens when water falls into a container that has oil? The oil and water \nform separate layers. They do not mix and are called immiscible liquids. \nSimilarly, sand and water do not mix, nor do iron filings and sulfur. These \nare examples of heterogeneous mixtures.\nHow can you separate the components of a mixture of two immiscible \nliquids? \nLet us try to separate mustard oil from water. \nActivity 5.6: Let us separate\n1.  Pour a mixture of 5 mL mustard oil and \n20 mL water into a 50 mL separating \nfunnel. \n2.  Let it stand undisturbed. What do you \nobserve?\n3.  You will see the formation of two separate \nlayers of mustard oil and water (Fig. 5.16). \nThe yellow-coloured mustard oil forms the \nupper layer and water forms the lower \nlayer. Can you explain why?\n4.  Open the stopcock of the separating funnel \nslowly to collect the lower layer of water \ncarefully into a container.\n5.  Close the stopcock when the water is almost \nfully drained.\n6.  Collect the next small portion that may \ncontain both liquids and discard it.\n7.  Collect the layer of oil separately by opening the stopcock again.\nYou now have two separate liquids.\nCan you think of any heterogeneous mixtures with a gas as \none of the components? \nGas particles are free to move in all directions, so they mix \neasily and uniformly with other gases. Hence, most mixtures of \ngases are homogeneous, such as a mixture of hydrogen and \noxygen, which is used as a rocket fuel. On the other hand, smoke \n(solid particles suspended in air), fog (tiny liquid water droplets \npresent in air) and dust in the air are some heterogeneous \nmixtures with gas as one of the components.\nMost of the solid-solid mixtures are heterogeneous. You \ncan use a property of one of the solids to separate the mixture. \nYou have learnt how to separate iron nails from sawdust \nusing a magnet. Now, let us explore another technique to \nseparate solid-solid mixtures.\nGrade 8\nCuriosity\nGrade 6\nCuriosity\nSeparating funnel\nWater\nConical flask\nMustard oil\nFig. 5.16: Separation of immiscible liquids\nLaboratory stand\nGlass stopper\nStopcock\nWhat if …\ntwo immiscible liquids \nof the same density are \nmixed in a separating \nfunnel, how will the \nlayers form?\n\n\nExploration|Grade 9",
+    "token_count": 516,
+    "metadata": {
+      "section_heading": "5.4.1 Separation of two immiscible liquids",
+      "content_type": "mixed",
+      "split": false
+    },
+    "chunk_id": 18,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.4.2 Sublimation]\nActivity 5.7: Let us explore\n1.  Take a spatula full of the mixture containing crushed camphor and \nsand. Put it into a clean and dry china dish. Place it on the tripod stand \nusing a wire gauze.\n2.  Take a clean and dry glass funnel. Plug its \nnozzle with cotton.\n3.  Keep this funnel inverted on the china dish \nand set up the apparatus as shown in Fig. 5.17. \n4.  Light the burner and place it under the wire \ngauze.\n5.  Heat the china dish gently for a few minutes.\n6.  Observe the inner wall of the funnel carefully. \nDo you notice any solid deposits?\n7.  You may find white, solid camphor deposits \non the inner wall of the funnel while sand \nremains in the china dish. \nCamphor, on heating (below its melting point), \nchanges directly from the solid state to the vapour \nstate without passing through the liquid state, this \nprocess is called sublimation. On cooling, vapours \ncondense back into a solid without becoming a \nliquid, this is called deposition. Hence, camphor sublimes and separates \nfrom sand because sand does not sublime on heating. \nYou can also perform this activity using any other sublimable substance, \nsuch as naphthalene, in place of camphor. \nSimilarly, solid carbon dioxide, known as dry ice which is used for ice \ncream storage, also undergoes sublimation. Can you think of any other \nmixtures where sublimation can be used to separate the components?\nIs it possible to dissolve one metal in another?\nMetals do not dissolve into each other at room temperature. However, \nwhen metals are melted at high temperatures, they can be mixed to form a \nsolution. When such a hot mixture of two or more metals cools, it solidifies \ninto a new material that appears to be a single metal. A homogeneous \nmixture of two or more metals, or a metal and a non-metal, is called an \nalloy. Physical methods cannot separate the components of an alloy. They \nare generally prepared to produce materials that are stronger, \nmore rigid, or more corrosion-resistant. Common examples \nof alloys include brass — a mixture of approximately 80% \ncopper and 20% zinc; bronze — a mixture of approximately \n80% copper and 20% tin; stainless steel — usually a mixture \nof iron and other elements, such as carbon (about 0.03 – 0.8%), \nchromium (16 – 18%), nickel (10.0 –14.0%) and molybdenum \n(2.0 – 3.0%).\nCotton plug\nGlass funnel\nChina dish containing \nmixture of camphor and \nsand\nWire gauze\nTripod stand\nBurner\nFig. 5.17: Sublimation of camphor\nPause and Ponder\n7.  Why do immiscible liquids \nform two separate layers \nin a separating funnel?\n8.  Is sublimation different \nfrom evaporation? Justify.",
+    "token_count": 606,
+    "metadata": {
+      "section_heading": "5.4.2 Sublimation",
+      "content_type": "mixed",
+      "split": true
+    },
+    "chunk_id": 19,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.4.3 Suspensions]\nLet us look closely at the container shown in Fig. 5.2. No matter how well \nyou stir, the sand particles can be seen clearly, unlike in a solution, where \nthe solute particles are not visible. Such heterogeneous mixtures in which \nthe solid particles (sand) do not dissolve but remain suspended throughout \nthe bulk of the medium (water) are called suspensions. In the case of a \nsuspension, the particles of the undissolved substance are larger in size \nthan the particles present in the solution. Particles of a suspension are \nvisible to the naked eye. Some other examples of suspension are sawdust \nsuspended in water and tea leaves in water.\nHow can we separate mud from water?\nIf you leave a container of muddy water undisturbed, the heavier mud \nparticles settle at the bottom and the water may still appear cloudy. You can \nfilter the muddy water through a cotton cloth or filter paper. While some \nlarger particles will be removed, the water often remains cloudy. This shows \nthat filtration is not always enough to separate tiny particles. If the muddy \nwater is still not clear even after keeping for some time, how can it be cleaned? \nIn such cases, we use techniques, such as centrifugation and/or coagulation. \nLet us explore these processes!\nA. Centrifugation\nLet us understand this by playing a game. Choose a partner. \nThen, cross your arms and hold each other’s hands as shown \nin Fig. 5.18. Now spin around together. Do you feel as if you \nare being pulled outwards? A similar force helps to separate \na mixture in a tube by centrifugation. This process involves \nspinning a mixture in a tube at a high speed (Fig. 5.19). During \ncentrifugation, the tubes become horizontal and the centrifugal \nforce (outward force acting on a body moving in circular \nmotion) causes the heavier particles to move outwards, where \nthey settle at the bottom of the tube, while the lighter liquid \nremains at the top.\nFig. 5.19: Centrifugation machine (a) outer view and (b) inner view\n(a)\n(b)\nCentrifugation is widely used in laboratories to separate the \ncomponents of blood, such as red blood cells and plasma and in many \nchemical industries.\nThreads of \nCuriosity\nThe spinning game is a folk \ndance \ncalled \nphugadi \nin \nMarathi and kikli in Punjabi. \nWhat is this called in your \nlocal language?\nFig. 5.18: A spinning game ",
+    "token_count": 520,
+    "metadata": {
+      "section_heading": "5.4.3 Suspensions",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 21,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.4.3 Suspensions]\nExploration|Grade 9\nThe Paperfuge\nCentrifugation is usually done using an electric \nmachine but by applying ideas from a common \ntoy, a simple hand-powered device called a \npaperfuge (Fig. 5.20) can perform the same process \nwithout electricity. By spinning the blood samples \nat a very high speed, the paperfuge separates \nheavier components from lighter ones, just like \na laboratory centrifuge. This low-cost tool can \nhelp detect diseases like malaria and anaemia in \nremote areas. Find out more about such simple \ntechnological inventions that improve access to \nmedical care in remote places.\nBridging Science and Society\nTape\n Fig. 5.20: Paperfuge \nBlood sample\nString\nHandle\nCardboard disc\nActivity 5.8: Let us make a model\nMake your own centrifuge with a cardboard \ndisc and thick thread. You will be able to see \nhow the heavier particles move outwards. It \nis a fun and hands-on way to understand the \nscience behind separation. Which mixture \nwould you like to separate using this mini \ncentrifuge?\nB. Coagulation\nPowdered alum (fitkari) can be added to a \nbeaker containing muddy water (Fig. 5.21a). \nAlum is a white crystalline chemical \nsubstance often used in water purification. \nThe alum causes the fine suspended \nparticles to clump together. This process \nis called coagulation and the alum is said \nto act as a coagulant (Fig. 5.21b). These \nlarger clumps thus formed, settle by gravity \n(sedimentation), as shown in Fig. 5.21c and \ncan be separated from water by decantation \nor filtration.\nCan you think of any other coagulation \nprocesses used in everyday life?\nThe formation of cheese (paneer) from milk also involves coagulation, \nin which acid (lemon juice or vinegar) is used as a coagulant. It causes the \ncoagulation of milk proteins, forming cheese.",
+    "token_count": 411,
+    "metadata": {
+      "section_heading": "5.4.3 Suspensions",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 22,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.4.4 Colloids]\nIf the components of blood can be separated by centrifugation and the \nblood coagulates, is it a suspension? However, we cannot see blood cells \nwith the naked eye. Is it a solution?\nBlood is neither a solution nor a true suspension. It is a colloid. Some \nother examples of colloids are milk, tomato sauce and ice cream.\nFig. 5.21: Process of coagulation\n(c) Impurities settle at the bottom\n(a) Adding powdered \nalum to suspended \nimpurities in water\nPowdered \nalum\n(b) Alum coagulates \nthe suspended \nimpurities\nMuddy \nwater\nSettled impurities \n\n\nExploring Mixtures and their Separation\nDonate Blood \nBridging Science and Society\nPlasma\nPlatelets and \nwhite blood cells\nBlood sample\nTest tube stand\nFig. 5.22: Components of blood (a) before \ncentrifugation and (b) after centrifugation \nRed blood cells\nDonating blood saves lives. People in emergencies, \nduring surgeries, or with serious illnesses may need a \nblood transfusion, which is the transfer of blood from a \nhealthy person to a patient.\nDonated blood is tested and when the blood group \nis identified, it is separated into its components, such as \nplasma, platelets, white and red blood cells (Fig. 5.22). \nThese are stored safely in blood banks and supplied \nwhen required. In Chapter 3, Tissues in Action, you \nhave learnt that blood connects different parts of the \nbody by transporting nutrients, gases and hormones.\nThe body replaces the donated blood naturally \nwithin a few weeks, making blood donation safe and \nhelpful.\nDo you know your blood group? Find out!\n(a)\n(b)\nLet us try to understand what are colloids. \nHow are they different from solutions and \nsuspensions? Can you think of some other \nsubstances that could be colloids?\nSolutions, \nsuspensions \nand \ncolloids \n(Fig. 5.23) differ mainly in the size of the \ndissolved or the suspended particles. The \nparticle size of a solute is the smallest (less \nthan 1 nm diameter) in a solution. Colloids \nhave larger particles (1 – 1000 nm), while \nsuspensions have much larger particles (more \nthan 1000 nm in diameter). \nUnlike suspension, the particles in a colloid do not settle over time from \nthe mixture. They are uniformly dispersed throughout the mixture as in \na solution.",
+    "token_count": 489,
+    "metadata": {
+      "section_heading": "5.4.4 Colloids",
+      "content_type": "figure_reference",
+      "split": false
+    },
+    "chunk_id": 23,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\nLet us go back to Activity 5.1. What happened to the thin beam of laser \nlight when it was passed through the beakers containing the mixtures? \nYou might have observed that the path of the light beam was not visible \nin solution A. The particles in suspension B scattered (spread) the beam \nof light making its path visible. In mixture C too, the path of light was \nvisible, indicating that the particles scattered the light, though the mixture \nappeared homogeneous. \nHave you ever observed light scattering by particles in your \nsurroundings? The scattering of light by particles is known as the Tyndall \neffect. It is called so because it was first explained by the scientist John \nTyndall, who studied the scattering of light by particles.\nThis effect can also be observed when a fine beam of light enters a dark \nroom through a small hole. This happens because light gets scattered by \nFig. 5.23: (a) Solution, (b) suspension, and (c) colloid\n(a)\n(b)\n(c)",
+    "token_count": 215,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 24,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\nExploration|Grade 9\nthe dust and smoke particles in the air. You might have also \nobserved this phenomenon in the floodlights in a sports \nstadium (Fig. 5.24). Think of some more examples!\nScattering of light occurs when it passes through a \ncolloid or a suspension but not when it passes through a \ntransparent solution.\nThe components of a colloid are called the dispersed \nphase and the dispersion medium. The solute-like component \nor the dispersed particles, in a colloid form the dispersed \nphase and the component in which the dispersed phase is \nsuspended is known as the dispersion medium.\nSome common colloids we encounter in our daily lives have both the dispersed phase and the \ndispersion medium as liquids. These are called emulsions. Emulsions containing oil and water are \nfurther classified as oil-in-water or water-in-oil, depending on the nature of the dispersed phase \nand the dispersion medium. Milk and vanishing creams are common examples of oil-in-water \nemulsions, whereas butter, body lotions, cold cream, etc., are examples of water-in-oil emulsions. \nSome medicines are prepared as emulsions to disperse them in water and make them easily \npalatable. This also reduces the greasy feeling of the liquid medicine.\nThe presence of emulsifying agents stabilises emulsions. For example, proteins in milk and \nbutter act as emulsifying agents. \nYou can make an emulsion by thoroughly mixing and shaking a few drops of cooking oil with \nwater containing a few drops of soap solution. \nThreads of Curiosity\n  9.  Clouds are made up of tiny water droplets or ice crystals floating in the air. Based on what you \nknow about solutions, suspensions and colloids, what type of mixture do you think clouds are \nand why?\n  10.  Why do cities with a lot of smoke and dust in the air often look hazy?\nPause and Ponder\nActivity 5.9: Complete Table 5.1 and review what you have learnt about \nsolutions, suspensions and colloids.\nTable 5.1: Properties of different types of mixtures\nS. No.\nProperty\nSolution\nSuspension\nColloid\n1.\nNature (homogeneous/heterogeneous)\n2.\nParticle size\n3.\nVisibility\n4.\nSeparation by filtration\n5.\nSettling\n6.\nTyndall effect\nFig. 5.24: Demonstration of Tyndall effect in \na sports stadium",
+    "token_count": 498,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 25,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\nExploring Mixtures and their Separation\nWe use various properties, such as size, density and solubility to separate \nmixtures. However, separation is not always simple. Imagine trying to \nseparate all the ingredients in a lemonade once they have been mixed. Can \nyou do it? \nDo you know that separation happens in nature and in our bodies, \ntoo? For example, our kidneys remove waste from our blood. Today, we \nface bigger challenges like cleaning oceans and rivers by removing plastic \nwaste. It is also essential to treat sewage water before releasing it into the \nenvironment. Sewage treatment involves steps, such as sedimentation, \ncoagulation and filtration. Clean water obtained in this way can be reused \nfor flushing toilets or watering plants.\nAnother important task is sorting or segregating the waste at home. Dry \nwaste, such as plastic, paper, glass and metal can be recycled, while wet \nwaste like food scraps, vegetable peels, etc., can be composted. Researchers \nare also finding ways to recover valuable materials, such as lithium from \nold batteries used in mobile phones and laptops.\nBy improving the methods for separating waste and recycling materials, \nyou can help make the world cleaner, healthier and more sustainable.\n y Mixtures are classified as homogeneous or heterogeneous and also \nas solutions, suspensions, or colloids.\n y Separation of mixtures is a crucial process for obtaining pure \nsubstances. \n y Crystallization is a technique used to get a pure solid from its \nsaturated solution.\n y Distillation is used to separate two miscible liquids with a \nminimum difference of 25 °C in boiling points. It can also be used \nto obtain a liquid from a mixture of a liquid and a solid.\n y Paper chromatography can be used to separate compounds by \ntaking advantage of differences in their rates of movement on the \npaper.\n y A separating funnel is used to separate two immiscible liquids \nbased on their different densities. \n y The transition of a solid directly into a vapour (below its melting \npoint) without passing through the liquid state is called sublimation. \nThe process when the vapour cools and changes back into a solid \nwithout becoming a liquid is called deposition.\n y Centrifugation uses rapid spinning to separate heavier solid \nparticles from a solid-liquid mixture.\n y Coagulation involves the addition of a substance, called a coagulant, \nto make smaller particles clump together and settle down in a \nheterogeneous mixture of solids and liquids.\n y The dispersed particles in a colloid or suspension scatter light, \nwhich is known as the Tyndall effect.\nAt a Glance ",
+    "token_count": 539,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 26,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\nExploration|Grade 9\n1.  Which of the following mixtures are correctly classified as \nhomogeneous (Hm) and heterogeneous (Ht)? Choose the correct \noption.\n(i)  Air — Hm, Milk — Ht, Sugar solution — Hm, Smoke — Hm\n(ii)  Brass — Ht, Fog — Ht, Vinegar — Ht, Muddy water — Hm\n(iii)  Copper sulfate solution — Hm, Salt solution — Hm, Milk — Hm, \nBronze — Hm\n(iv)  Muddy water — Ht, Milk — Ht, Blood — Ht, Brass — Hm\n2.  Choose the correct options, and explain the reason for the correct and \nincorrect options.\n\nWhich among the following mixtures show the Tyndall Effect? \nA mixture of:\n(a)  air and dust particles\n(b)  copper sulfate and water\n(c)  starch and water\n(d)  acetone and water",
+    "token_count": 192,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 27,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\n  (i) a and b \n(ii) b and d \n(iii) a and c \n(iv) c and d \n3.  A mixture can be categorised as a solution, a suspension, or a colloid, \neach possessing distinct properties. Utilise the words or phrases \nprovided in the box to fill in the Table 5.2. Words and phrases may be \nused more than once.\nWords and Phrases \nLarge-sized particles; Particles remain evenly distributed; Small-sized particles \n(less than 1 nm diameter); Moderate-sized particles (1 – 1000 nm); Settles down \nwhen left undisturbed (more than 1000 nm in diameter); Does not settle down; \nScatters light; Separates by filtration; Transparent; Salt solution; Milk; Sand in \nwater; Smoke; Heterogeneous mixture; Cannot be separated by filtration; Mud; \nButter; Brass. \nComplete the Table 5.2.\nTable 5.2\nSolution\nSuspension\nColloid\nProperties\n__________________________\n__________________________\nProperties\n__________________________\n__________________________\nProperties\n__________________________\n__________________________\nExamples\n__________________________\n__________________________\nExamples\n__________________________\n__________________________\nExamples\n__________________________\n__________________________\nRevise, Reflect, Refine",
+    "token_count": 531,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 28,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\nExploring Mixtures and their Separation\n4.  Solve the following problems:\n(i)  A cake recipe uses dry ingredients, namely 75 g of sugar for \n420 g of all-purpose flour and 5 g of sodium hydrogencarbonate. \nExpress the concentration of each component in the mixture using \nan appropriate method.\n(ii)  A brass alloy contains 70% copper by mass. Calculate the quantities \nof copper and zinc present in 120 g of brass. \n5.  The label on a cooking oil pack says one litre (910 g). If this oil is mixed \nwith water, will it form a separate layer? If so, which substance will be \non top? How will you separate the two layers? Also, draw the diagram \nof the apparatus used.\n6.  Assertion (A): Solutions do not exhibit the Tyndall effect.\n\nReason (R): The particles in solutions are larger than 100 nm, so they \ncannot scatter light.\n\nChoose the correct option:\n(i)  Both A and R are true, and R is the correct explanation of A.\n(ii)  Both A and R are true, but R is not the correct explanation of A.\n(iii)  A is true, but R is false.\n(iv)  A is false, but R is true.\n7.  How would you separate the mixtures given in Table 5.3? Mention the \nreason for choosing your method. If a mixture cannot be separated, \nexplain why.\nTable 5.3\nMixture\nMethod of separation\nReason for selection\nMud from muddy water\nPlasma from other components \nin the blood sample \nNaphthalene and sand\nChalk powder and common \nsalt\nCommon salt and water \nOil from water \nPigments of the flower\n8.  Two miscible liquids, A and B, are present in a mixture. The boiling \npoint of A is 60 °C and the boiling point of B is 90 °C. Suggest a method \nto separate them. Also, draw a labelled diagram of the method \nsuggested.\n9.  Compare evaporation, crystallization and distillation. In which \nsituation, would you prefer each of these over the others?\n10.  Blood is an example of a colloidal mixture. (i) What would happen if \nblood behaved like a true suspension inside the body? (ii) In a blood \nsample, identify the dispersed phase and the dispersion medium.",
+    "token_count": 473,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 29,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\nExploration|Grade 9\n11.  You are given a mixture of sand, common salt and naphthalene \n(Fig. 5.25a). The Fig. 5.25b depicts various steps used to separate the \ncomponents of this mixture. Identify and write down the correct \nsequence of separation techniques.\nFig. 5.25: (b)\nFig. 5.25: (a)\n12.  Why is distillation an effective method for separating a mixture of \nwater and acetone?\n13.  Answer the following questions with the help of the data given in \nTable 5.4.\nTable 5.4: Solubility of various salts (in g per 100 g of water) \nat different temperatures\nSalts\nTemperature (°C)\n10 °C\n20 °C\n30 °C\n40 °C\n60 °C\n80 °C\nPotassium nitrate\nSodium chloride\n36.3\n36.5\nPotassium chloride\n37.4\nAmmonium chloride\n(i)  What mass of potassium nitrate would be needed to prepare its  \nsaturated solution in 50 g of water at 40 °C?\n(ii)  A student makes a saturated solution of potassium chloride in \nwater at 80 °C and leaves the solution to cool at room temperature \n(25 °C). What would she observe as the solution cools? Explain.\n(iii)  What is the effect of a change in temperature on the solubility of \nsalts? Also, compare the changes in the solubility of the four given \nsalts with increasing temperature from 10 °C to 80 °C.\n14.  Three students, A, B and C, are preparing sugar solutions for an \nexperiment:\n y Student A dissolves 20 g of sugar in 80 g of water.\n y Student B dissolves 20 g of sugar in 100 g of water.\n y Student C dissolves 30 g of sugar in 80 g of water. \n(i)  Calculate the mass percentage (% m/m) concentration of sugar in \neach student’s solution.\n(ii)  Whose solution is the most concentrated? Explain why.\n\nExploring Mixtures and their Separation\nThe Journey Beyond\n15.  Examine Fig. 5.26.\n(i)  Identify the separation technique marked as ‘S’.\n(ii)  Label the apparatus A, B and C.\n(iii)  Which of the following mixtures can be separated \nby the technique identified above? Use the data \ngiven in Table 5.5. Mixtures: \n(a) water — acetone  \n(b) water — salt\n\n  (c) acetone — alcohol  \n(d) sand — salt",
+    "token_count": 497,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 30,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  },
+  {
+    "text": "[5.5 Tyndall Effect]\n  (e) alcohol — chloroform   (f) alcohol — benzene\nS ...........................................\nFig. 5.26\nA\nB\nC\n y Demonstrate the Tyndall effect using different colloids. Create a series \nof experiments showcasing how light scatters in colloids making the \nbeam visible. Use laser pointers (Safety first: Use it under the supervision \nof an adult), flashlights, or other light sources for your demonstrations.\n y Make crystals of different compounds (common salt, epsom salt, sugar, \nborax, nickel sulfate, etc.). Observe them under a magnifying glass or a \nmicroscope. Note down their colours and shapes. \n y Do red leaves also contain green pigments? Investigate it using paper \nchromatography.\n y You can try chromatography to find the number of components present \nin a food colour (green, orange, yellow, etc.) or in coloured mouth \nfresheners (fennel seeds).\n y Design an educational game where players identify and apply \nseparation techniques to different mixtures through interactive \nchallenges and hands-on activities.\n y If you are camping outdoors and running short on clean water, you can \nobtain clean water by distillation. Can you think of a set-up with the \nitems available to you?\n y To learn more about the states of matter and concentration of solutions, \nyou can explore the links given below:\n\n https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/\nstates-of-matter-basics_en.html\n\n https://phet.colorado.edu/sims/html/concentration/latest/\nconcentration_all.html\nTable 5.5: Boiling points of some compounds\nSolvent\nWater\nAcetone\nAlcohol\nChloroform\nBenzene\nTemperature (°C)\n100 °C\n56 °C\n78 °C\n61 °C\n80 °C\nCan we create artificial blood that works just as real blood for all patients?\nThe Quest Continues …",
+    "token_count": 449,
+    "metadata": {
+      "section_heading": "5.5 Tyndall Effect",
+      "content_type": "narrative",
+      "split": true
+    },
+    "chunk_id": 31,
+    "strategy": "semantic_paragraph",
+    "chunk_size_config": 512
+  }
+]

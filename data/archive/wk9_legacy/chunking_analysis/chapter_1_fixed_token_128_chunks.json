@@ -1,0 +1,398 @@
+[
+  {
+    "text": "exploration : entering the world of secondary science in the middle stage, science invited you to be curious and observe the world closely, to ask questions, and to find out how things work. in our journey, we discovered that science began with wonder and grew through careful experiments. we connected ideas across the world of the living and non - living. as you now enter the secondary stage, this journey continues, but with an emphasis on deep exploration. science is not only about what we know, but also about how we know it — how observations lead to measurements, how patterns are expressed using symbols and equations, how models are built to represent complex systems",
+    "token_count": 128,
+    "start_token": 0,
+    "end_token": 128,
+    "metadata": {
+      "overlap_with_previous": 0
+    },
+    "chunk_id": 0,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "measurements, how patterns are expressed using symbols and equations, how models are built to represent complex systems, and how ideas are tested, often revised, and sometimes even discarded. in our secondary stage, textbook of science, exploration, we will look more closely, think more carefully, and find out how scientific ideas help us make sense of nature, technology and our place within them. to reflect the approach of this textbook, the page numbers have been thoughtfully designed, and are framed by a magnifying glass and a compass. the magnifying glass symbolises careful observation — noticing patterns and paying attention to what might otherwise be missed. the compass",
+    "token_count": 128,
+    "start_token": 109,
+    "end_token": 237,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 1,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "symbolises careful observation — noticing patterns and paying attention to what might otherwise be missed. the compass reminds us that exploration also needs direction — choosing appropriate models, asking the right questions, and knowing the limits of where our ideas apply. together, they tell us that exploration in science is not wandering aimlessly, but trying to make sense of our world with care and purpose. chapter exploration : entering the world of secondary science exploration | grade 9 the natural world is complex, and studying it in full detail is often impossible. to make sense of this complexity, science uses models. these are simplified ways of looking at real systems that focus only on what",
+    "token_count": 128,
+    "start_token": 218,
+    "end_token": 346,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 2,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": ", science uses models. these are simplified ways of looking at real systems that focus only on what is most important for a given question. in physics, a moving car may be represented as a single point, while in chemistry, atoms and molecules are drawn as spheres and bonds. in biology, cells are shown as diagrams highlighting key parts, and in earth science, the earth may be treated as a smooth sphere layered into distinct regions. building such models involves making assumptions and deliberately ignoring certain details. for example, when studying the motion of a falling object, air resistance may be neglected to understand the basic effect of gravity. in biology, when studying",
+    "token_count": 128,
+    "start_token": 327,
+    "end_token": 455,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 3,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": ", air resistance may be neglected to understand the basic effect of gravity. in biology, when studying how the heart pumps blood, many individual cells are ignored so that the organ can be understood as a functioning system. remember that these choices are not mistakes, they are done on purpose to keep things simple enough, but still allow us to find answers to what we are looking for. example 1. 1 : a cricket shot. think of a cricket ball being hit for a six. you want to make a simple model. what details would you include? what would you ignore? answer : we must ask, “ will the ball cross the boundary without",
+    "token_count": 128,
+    "start_token": 436,
+    "end_token": 564,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 4,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "what would you ignore? answer : we must ask, “ will the ball cross the boundary without hitting the ground first? ”. for this, things like the brand of the bat, the colour of the ball, the amount of grass on the field will make no difference. on the other hand, the mass of the ball, and the speed and direction in which it has been hit will be very important. air resistance, the spin of the ball, and the stitching of the threads at the seam have smaller effects that can be ignored in a simple model. as we build more and more complex models, we add extra details for greater",
+    "token_count": 128,
+    "start_token": 545,
+    "end_token": 673,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 5,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "a simple model. as we build more and more complex models, we add extra details for greater accuracy. activity 1. 1 : let us model suppose you ride a bicycle from your school to your home. you want to model the time it takes to go home from school. what details would you keep? what details could you ignore? suggest why ignoring some details may actually be useful. as you explore science more deeply, you will notice that it uses language in a very careful and precise way. many words that we use in everyday life, such as force, work, cell, or reaction have specific meanings in science. these meanings are often",
+    "token_count": 128,
+    "start_token": 654,
+    "end_token": 782,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 6,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "as force, work, cell, or reaction have specific meanings in science. these meanings are often very specific because scientific ideas must be communicated clearly and unambiguously. to allow scientists across the world to describe observations, compare results, and build ideas together, science uses a shared language of these specific terms, symbols, and units. quantities, such as mass, velocity, force, and electric current are represented by symbols like m, v, f, and i each associated with a defined unit. to make this even more precise, science often turns to mathematics to allow relationships between quantities to be expressed clearly and tested carefully. this can sometimes",
+    "token_count": 128,
+    "start_token": 763,
+    "end_token": 891,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 7,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "turns to mathematics to allow relationships between quantities to be expressed clearly and tested carefully. this can sometimes feel meet a scientist simplifying the stars : science often begins by ignoring details. when physicist meghnad saha studied the light from stars, he did not try to model every atom, every reaction, or every movement inside a star. instead, he treated the matter in the star as a hot gas, ignored many complex processes, and focused only on temperature, pressure, and how atoms formed ions. this simplification allowed him to explain how the colour of stars is deeply connected to their temperature. meghnad saha on an",
+    "token_count": 128,
+    "start_token": 872,
+    "end_token": 1000,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 8,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "how the colour of stars is deeply connected to their temperature. meghnad saha on an indian postage stamp exploration : entering the world of secondary science challenging, but it is important to remember that mathematics in science is not meant to be a hurdle. instead, it is a language that helps us think more clearly about the world. an equation is not just a calculation tool, it is a compact statement about how certain things are related. for example, describing motion using quantities, such as distance, time, and velocity allows us to answer questions about where an object will be at a later moment. in the same way, mathematical expressions are used",
+    "token_count": 128,
+    "start_token": 981,
+    "end_token": 1109,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 9,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "where an object will be at a later moment. in the same way, mathematical expressions are used to describe rates of chemical reactions, patterns of population growth, or changes in energy within a system. learning to use mathematics in science does not mean memorising equations. it means understanding the situation first, identifying relevant quantities, and then using mathematical relationships to reason carefully. in this way, mathematics becomes a powerful language for thinking, not just for finding numerical answers. if you focus first on understanding the situation and the quantities involved, equations will begin to feel less like obstacles and more like helpful guides in your exploration of science. ready to go beyond",
+    "token_count": 128,
+    "start_token": 1090,
+    "end_token": 1218,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 10,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "feel less like obstacles and more like helpful guides in your exploration of science. ready to go beyond airplane fuel miscalculation in a well - known incident, a passenger aircraft ran out of fuel mid - flight due to a mix - up in units. the flight needed 22, 300 kg fuel in total, but the ground crew miscalculated the fuel required, since they used the density of fuel in pounds ( lb ) per litre rather than kilograms ( kg ) per litre. the aircraft was about 15, 000 litres short of fuel and luckily could glide to an emergency landing, which damaged the aircraft though there were no casualties. pounds",
+    "token_count": 128,
+    "start_token": 1199,
+    "end_token": 1327,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 11,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "luckily could glide to an emergency landing, which damaged the aircraft though there were no casualties. pounds and kilograms are very different. using standard units ( si ) everywhere avoids conversions and errors. why is a kilogram used everywhere? when we buy rice or vegetables we expect a kilogram to mean the same amount everywhere ( fig. 1. 1 ). imagine the confusion if we used different weights everywhere! thankfully, measurements are based on agreed international standards, not local objects or opinions. standard units allow scientific results to be compared, and ensure fairness in daily life and trade. threads of curiosity fig. 1. 1 : a vegetable seller using a",
+    "token_count": 128,
+    "start_token": 1308,
+    "end_token": 1436,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 12,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "daily life and trade. threads of curiosity fig. 1. 1 : a vegetable seller using a pan balance as observations are repeated, measurements refined, and ideas tested through experiments we can organise our understanding of the world in a systematic way. in the secondary stage, you will come across terms, such as laws, theories, and principles — terms that have specific meaning in science. a law usually describes a regular pattern observed in nature, often expressed using words or mathematical relationships. for example, newton ’ s laws of motion explain the jerk felt when a bus stops suddenly. threads of curiosity why is the speed of light denoted by ‘ c ’?",
+    "token_count": 128,
+    "start_token": 1417,
+    "end_token": 1545,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 13,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "bus stops suddenly. threads of curiosity why is the speed of light denoted by ‘ c ’? scientific symbols often come from history, and are based on international agreements, not necessarily abbreviations of convenience. for example, the speed of light, is usually denoted with the symbol c, since it comes from the latin word celeritas, meaning speed. today, the speed of light is one of the physical constants, defined to be exactly 299792458 m / s. exploration | grade 9 a theory goes a step further and provides an explanation of why those patterns occur, usually based on evidence gathered over time and available at that",
+    "token_count": 128,
+    "start_token": 1526,
+    "end_token": 1654,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 14,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "an explanation of why those patterns occur, usually based on evidence gathered over time and available at that time. for example, the atomic theory explains how molecules are formed. principles are broad ideas that help us make sense in a given situation. for example, the principle of conservation of energy being applied when climbing up the stairs. do remember that in science, a theory does not mean a guess or an untested idea, it is an explanation based on careful testing and critical examination. these ideas are always open to improvement and often change as new evidence becomes available. this is a key feature of science that makes it reliable. one of the most",
+    "token_count": 128,
+    "start_token": 1635,
+    "end_token": 1763,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 15,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "becomes available. this is a key feature of science that makes it reliable. one of the most remarkable strengths of science is its ability to make predictions. when laws, theories, and models are well established they allow us to anticipate what will happen under new or different conditions, before we can perform an experiment, and in many cases even if we cannot perform an experiment. using ideas about motion, we can predict how far a kicked football will travel ; using knowledge of chemical reactions, we can estimate how much carbon dioxide will be produced, or how soft a baked bread would be ; using biological principles, we can predict how one ’ s",
+    "token_count": 128,
+    "start_token": 1744,
+    "end_token": 1872,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 16,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "how soft a baked bread would be ; using biological principles, we can predict how one ’ s breathing would change while running. remember that these predictions are not guesses, they are reasoned expectations based on evidence and careful thinking. when predictions match observations, confidence in the underlying science grows. but even more important, when they do not, scientists re - examine their assumptions, models, or measurements. in this way, prediction is a powerful tool that drives further exploration and a deeper understanding of the world. example 1. 2 : how do we check predictions? varsha told her friend meghna, “ it will rain this afternoon because the",
+    "token_count": 128,
+    "start_token": 1853,
+    "end_token": 1981,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 17,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "predictions? varsha told her friend meghna, “ it will rain this afternoon because the clouds look dark ”. think of some questions meghna could ask varsha to make this prediction scientifically testable. answer : good scientific questions will look for measurable evidence and past patterns. questions with simple yes / no answers are usually not so useful. meghna could ask varsha questions like ( these are just examples ) “ what was the condition of sky when it rained the last time? what is the humidity today? was it above 80 per cent the last time it rained? what is today ’ s wind speed and direction",
+    "token_count": 128,
+    "start_token": 1962,
+    "end_token": 2090,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 18,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "above 80 per cent the last time it rained? what is today ’ s wind speed and direction? is the temperature dropping like it did before the recent rains? ”. questions like these ask about measurable data and past patterns, which go beyond mere ‘ clouds look dark ’. why do weather forecasts sometimes go wrong? weather depends on many changing factors, such as temperature, pressure, humidity, and wind. weather forecasts use measurements and models, but very tiny differences in conditions can grow over time and lead to something completely different. this is why forecasts are usually reliable for a few hours or even a few days, but less",
+    "token_count": 128,
+    "start_token": 2071,
+    "end_token": 2199,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 19,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "is why forecasts are usually reliable for a few hours or even a few days, but less certain further into the future. ready to go beyond even the most successful scientific theories have limits and may fail when new conditions are explored or when measurements become more 1. think of a prediction you or your family made recently ( for example, the outcome of a cricket match ). was it based on evidence and reasoning, or mainly on guesswork? how can scientific thinking improve such predictions? pause and ponder exploration : entering the world of secondary science precise. such failures are not a weakness of science ; in fact, they are its greatest strength. when",
+    "token_count": 128,
+    "start_token": 2180,
+    "end_token": 2308,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 20,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "such failures are not a weakness of science ; in fact, they are its greatest strength. when predictions do not match observations, scientists do not reject ideas based on opinion or belief, but only on evidence. no scientific theory is ever final and none is beyond question. this openness to being corrected by nature itself is what has allowed science to help us in understanding the world we live in. threads of curiosity checking ‘ viral ’ claims on social media : is eating food harmful during an eclipse? a commonly circulated claim is that, “ food should not be eaten during an eclipse because it becomes harmful ”. disproof comes from asking simple",
+    "token_count": 128,
+    "start_token": 2289,
+    "end_token": 2417,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 21,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "be eaten during an eclipse because it becomes harmful ”. disproof comes from asking simple scientific questions. an eclipse is just a play of shadows ( fig. 1. 2 ). what physical change occurs during an eclipse? does temperature change significantly? does food go bad if it is left in a shadow? you will conclude that no physical, chemical, or biological mechanism supports such a claim. fig. 1. 2 : a total solar eclipse as you continue your journey through science in grades 9 and 10, you will gradually develop habits of thinking that are useful far beyond the classroom. a helpful strategy is to first understand the situation being",
+    "token_count": 128,
+    "start_token": 2398,
+    "end_token": 2526,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 22,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "thinking that are useful far beyond the classroom. a helpful strategy is to first understand the situation being studied, then identify the quantities that matter, and finally make a rough estimate to check whether an answer makes sense. exact values are not always necessary, especially in the early stages of reasoning. often, an approximate estimate is enough to tell us whether a result is reasonable or impossible. learning to estimate helps you build intuition, detect errors, and develop confidence in your thinking. science values careful reasoning perhaps much more than accurate calculations! how much rice would feed a family of four for a month? to make a rough estimate, assume that all their cal",
+    "token_count": 128,
+    "start_token": 2507,
+    "end_token": 2635,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 23,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "a family of four for a month? to make a rough estimate, assume that all their calorie needs come from rice alone ( fig. 1. 3 ). an average adult needs about 2000 – 2500 kilocalories ( kcal ) per day. find out how many calories 100 g of uncooked rice provides when cooked and use this to estimate the daily requirement for the family. the aim is not to get an exact number, but to check whether the answer makes sense as 100 g for a month is clearly too little, while a few tonnes is far too much. such estimation helps connect science to everyday questions about",
+    "token_count": 128,
+    "start_token": 2616,
+    "end_token": 2744,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 24,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": ", while a few tonnes is far too much. such estimation helps connect science to everyday questions about food and resources, and shows why approximate reasoning is an important scientific skill. ready to go beyond fig. 1. 3 : rice being cooked on a gas stove exploration | grade 9 example 1. 3 : estimate how many litres of air you breathe in one day. start by estimating how many breaths you take per minute, and the volume of one breath. your aim is not to find an exact answer, but a reasonable estimate. answer : at rest, we take about 12 – 15 breaths a minute, and there are 60 × 24 =",
+    "token_count": 128,
+    "start_token": 2725,
+    "end_token": 2853,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 25,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "rest, we take about 12 – 15 breaths a minute, and there are 60 × 24 = 1440 minutes in a day, so we take roughly 18 – 22 thousand breaths, about 20 thousand breaths a day. we also need to find the volume of air in one breath. one way to estimate this is to think that it takes about 4 – 5 breaths to fill a typical rubber party balloon, which when inflated has a volume of about 2 litres. so, one breath is perhaps about 0. 5 litre. hence, we breathe in about 10, 000 litres of air a day! now, it is hard to see if this estimate",
+    "token_count": 128,
+    "start_token": 2834,
+    "end_token": 2962,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 26,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "10, 000 litres of air a day! now, it is hard to see if this estimate is reasonable or not. but if we go back to our balloon example, one could blow up a balloon in about 20 s, so maybe we could fill 3 balloons a minute. multiplying minute 3 balloon × balloon 2 litres × day 1440 minutes will give about 8640 litres, which for estimation purposes is reasonably close to our earlier estimate of 10, 000 litres. naturally, we would get extremely tired very quickly after blowing balloons nonstop, unlike normal restful breathing. pause and ponder 2. describe one situation where an approximate answer is good",
+    "token_count": 128,
+    "start_token": 2943,
+    "end_token": 3071,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 27,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "normal restful breathing. pause and ponder 2. describe one situation where an approximate answer is good enough, and one where you would need a very exact value. after grade 10, if you decide to study science, it will be divided into branches like physics, chemistry, biology and earth science, and even in grades 9 and 10, the chapters you have will focus on some of these areas. we ’ ve highlighted some of the exciting things you may learn about in the next level up boxes. however, do remember that the natural world does not have any such boundaries. these divisions are made by us to only help organise knowledge, they are",
+    "token_count": 128,
+    "start_token": 3052,
+    "end_token": 3180,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 28,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "have any such boundaries. these divisions are made by us to only help organise knowledge, they are not independent of each other. most of the real - world problems today, such as understanding climate change, developing medicines, or designing sustainable technologies require ideas from several disciplines together. science also connects naturally with mathematics, technology, arts, and social sciences. to make sense of the world fully, we need to connect multiple ways of knowing and expressing ideas, each enriching the other. pause and ponder 3. choose a real ‑ life object ( maybe a pressure cooker or a mobile phone ) or a problem ( maybe a traffic jam near your",
+    "token_count": 128,
+    "start_token": 3161,
+    "end_token": 3289,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 29,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "a pressure cooker or a mobile phone ) or a problem ( maybe a traffic jam near your school ). make a sketch listing what kind of ideas from physics, chemistry, biology, earth science, or mathematics are involved. show how at least two branches of science connect with your example. exploration : entering the world of secondary science ready to go beyond how does a mask really work? solving real problems requires knowledge from several branches of science. during the covid - 19 pandemic, we all used masks for safety ( fig. 1. 4 ). understanding how a mask works requires concepts from physics ( particle motion and electrostatic attraction",
+    "token_count": 128,
+    "start_token": 3270,
+    "end_token": 3398,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 30,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "4 ). understanding how a mask works requires concepts from physics ( particle motion and electrostatic attraction ), chemistry ( properties of polymer fibres ), biology ( size and behaviour of viruses ), and mathematics ( modelling airflow and filtration efficiency ). fig. 1. 4 : a collection of surgical masks finally, as we have mentioned in every textbook, science is not just a collection of facts, equations, or experiments. it is a human activity shaped by curiosity, creativity, collaboration, and careful questioning. it grows as people ask questions, test ideas, share results, and learn from mistakes. science develops over time through the",
+    "token_count": 128,
+    "start_token": 3379,
+    "end_token": 3507,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 31,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  },
+  {
+    "text": "questions, test ideas, share results, and learn from mistakes. science develops over time through the work of many individuals across different cultures and generations. even if you do not choose to study science beyond grade 10, scientific thinking will be very important in whatever you do. it helps you understand the technology that surrounds you, and helps you evaluate information critically and make sense of the world you live in. as you begin this stage of exploration, science invites you not only to learn about the world, but also to learn ‘ how ’ we are trying to understand it. embark on your journey of discovery — looking carefully through the magnifying glass of",
+    "token_count": 128,
+    "start_token": 3488,
+    "end_token": 3616,
+    "metadata": {
+      "overlap_with_previous": 19
+    },
+    "chunk_id": 32,
+    "strategy": "fixed_token",
+    "chunk_size_config": 128
+  }
+]

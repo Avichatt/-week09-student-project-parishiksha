@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-25T23:41:31.918271",
+    "model_type": "gemini",
+    "retrieval_mode": "hybrid",
+    "top_k": 5,
+    "total_questions": 20,
+    "total_time_seconds": 176.3
+  },
+  "per_question": [
+    {
+      "question_id": "74246a7a-d866-42f1-985a-9a6188cbf08c",
+      "question": "What is linear motion?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Linear motion is the motion of an object in a straight line.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "According to the textbook, **linear motion** is when an object moves in a straight line. It is also called **motion in a straight line** and is considered the simplest kind of motion.\n\nThe textbook provides several examples of linear motion:\n*   Children in a swimming race.\n*   A vertically falling ball.\n*   A car moving along a straight stretch of a highway.\n*   A train moving on a straight track.\n\nAs stated in the text: *\"You have learnt that when an object moves in a straight line, its motion\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 1.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.7,
+        "total_score": 0.88
+      },
+      "overall_score": 0.88
+    },
+    {
+      "question_id": "67b6e6bd-0bd9-4c6f-ac66-b6b00b40bf32",
+      "question": "Define displacement.",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Displacement is the net change in the position of an object between two given instants of time.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "40 m), which is different from the total distance they ran.\n\n    *   Simple\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.334,
+        "total_score": 0.434
+      },
+      "overall_score": 0.434
+    },
+    {
+      "question_id": "ccb9bbad-c5f2-49f6-9fbc-5081962e3600",
+      "question": "What is the SI unit for distance and displacement?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The SI unit for both distance and displacement is the metre (m).",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "According to the textbook context, the SI unit for both distance and displacement is the **metre (m)**.\n\nAs stated in the text:\n\"The SI unit for both is the metre (m).\" (Context 1)\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 1.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.384,
+        "total_score": 0.754
+      },
+      "overall_score": 0.754
+    },
+    {
+      "question_id": "d02223b5-b843-41a0-a63c-77944358eb2b",
+      "question": "When are the total distance travelled and magnitude of displacement equal?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "They are equal if the object moves without turning back, i.e., if it moves in one direction.",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Based on the textbook context provided, the total distance travelled and the magnitude of displacement are equal under the following conditions:\n\n1.  **Motion in a straight line:** The object must be moving along a straight path.\n2.  **No change in direction:** The object must move without turning back.\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.5,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.573,
+        "total_score": 0.679
+      },
+      "overall_score": 0.679
+    },
+    {
+      "question_id": "a3386bd5-12ac-4e0d-b18f-cac7d75f6211",
+      "question": "How is average speed calculated?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Average speed is the total distance travelled divided by the time interval.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Based on the textbook context provided, average speed is calculated using the following steps:\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.227,
+        "total_score": 0.391
+      },
+      "overall_score": 0.391
+    },
+    {
+      "question_id": "006f75d4-40b7-40d7-8556-952bdd723401",
+      "question": "Define uniform motion in a straight line.",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "If an object moving in a straight line travels equal distances in equal intervals of time, it is in uniform motion.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "According to the textbook, **uniform motion in a straight line** is defined as follows:\n\n\"If an object\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.357,
+        "total_score": 0.443
+      },
+      "overall_score": 0.443
+    },
+    {
+      "question_id": "debd207f-f6ae-4ed7-92a1-75decffd1a1e",
+      "question": "What is average velocity?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Average velocity is the displacement divided by the time interval.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Based on the textbook context provided, here is the explanation of average velocity:\n\n**Definition**\nAverage velocity is the ratio of the change in position (\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.338,
+        "total_score": 0.435
+      },
+      "overall_score": 0.435
+    },
+    {
+      "question_id": "44f63c97-9abf-4a23-a940-9143eda5baf3",
+      "question": "What is the SI unit of average velocity?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The SI unit of average velocity is metre per second (m/s).",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Based on the textbook context provided, the SI unit of average velocity is the **metre per second**.\n\nAccording to the text:\n\"The SI unit of average speed and average velocity are the same. It is **metre per second** which is represented by **m s⁻¹** or **m/s**.\" (Context 1)\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 1.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.533,
+        "total_score": 0.813
+      },
+      "overall_score": 0.813
+    },
+    {
+      "question_id": "07a5d4e1-2e45-490d-9ea6-0f800d386920",
+      "question": "Define average acceleration.",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "Average acceleration is the change in velocity divided by the time interval.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Based on the textbook context provided, here is the definition and explanation of average acceleration:\n\n**Definition**\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.292,
+        "total_score": 0.417
+      },
+      "overall_score": 0.417
+    },
+    {
+      "question_id": "84c716c9-f407-4b93-9da9-0b7de8b73341",
+      "question": "What does a negative sign in average acceleration indicate?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "A negative sign indicates that the acceleration is acting opposite to the direction of velocity.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 36.967322554s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 36\n}\n]"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.013,
+        "total_score": 0.305
+      },
+      "overall_score": 0.305
+    },
+    {
+      "question_id": "b93e1eb9-79ac-4000-b427-adf1be2ba725",
+      "question": "What is the SI unit of average acceleration?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The SI unit of average acceleration is m/s^2.",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 36.64619875s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 36\n}\n]"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.077,
+        "total_score": 0.331
+      },
+      "overall_score": 0.331
+    },
+    {
+      "question_id": "5ddbdc4f-c591-4563-af37-2647d4a22cc6",
+      "question": "What is the acceleration due to gravitational force (g) on Earth?",
+      "question_type": "factual",
+      "answer_type": "explanation",
+      "expected_answer": "The acceleration due to gravity is approximately 9.8 m/s^2.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Based on the textbook context provided, the acceleration due to gravitational force by the Earth is:\n\n*   **Value:** It\n\n📚 **Textbook References:**\n- Source 1: Page N/A, Section: General\n- Source 2: Page N/A, Section: General\n- Source 3: Page N/A, Section: General"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.4,
+        "total_score": 0.46
+      },
+      "overall_score": 0.46
+    },
+    {
+      "question_id": "446603e9-4102-4312-be5f-2af37abf1f48",
+      "question": "If I walk from my home to school and back, what is my net displacement?",
+      "question_type": "conceptual",
+      "answer_type": "explanation",
+      "expected_answer": "Your net displacement is zero because your final position is the same as your starting position.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.3333333333333333,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 32.350231519s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 32\n}\n]"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.074,
+        "total_score": 0.33
+      },
+      "overall_score": 0.33
+    },
+    {
+      "question_id": "4bd2018e-26f7-44e5-96e3-23047d939fd5",
+      "question": "Is a car speeding up on a highway an example of non-uniform motion?",
+      "question_type": "conceptual",
+      "answer_type": "explanation",
+      "expected_answer": "Yes, because its speed is changing, meaning it travels unequal distances in equal intervals of time.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 32.038640695s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 32\n}\n]"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.032,
+        "total_score": 0.313
+      },
+      "overall_score": 0.313
+    },
+    {
+      "question_id": "a1308138-7b5f-487f-90c0-1abf3cfd6334",
+      "question": "Why is direction important when talking about velocity but not speed?",
+      "question_type": "conceptual",
+      "answer_type": "explanation",
+      "expected_answer": "Velocity is a vector quantity that describes both how fast and in what direction an object moves, while speed is a scalar.",
+      "retrieval": {
+        "recall_at_k": 1.0,
+        "mrr": 0.5,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 31.880505208s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 31\n}\n]"
+      },
+      "validation": {
+        "keyword_coverage": 0.0,
+        "forbidden_penalty": 1.0,
+        "language_match": 1.0,
+        "grounding_score": 0.032,
+        "total_score": 0.313
+      },
+      "overall_score": 0.313
+    },
+    {
+      "question_id": "aaf33439-f4df-4837-bb0b-ddc68b9be39e",
+      "question": "What is the Schwarzschild radius of a black hole?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I don't have enough information from the textbook to answer about black hole."
+      },
+      "validation": {
+        "total_score": 1.0,
+        "details": {
+          "refusal_correct": 1.0
+        }
+      },
+      "overall_score": 1.0
+    },
+    {
+      "question_id": "77af9b83-e94f-49d9-92f3-b9b494411608",
+      "question": "Explain Einstein's theory of general relativity.",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I don't have enough information from the textbook to answer about general relativity."
+      },
+      "validation": {
+        "total_score": 1.0,
+        "details": {
+          "refusal_correct": 1.0
+        }
+      },
+      "overall_score": 1.0
+    },
+    {
+      "question_id": "ea2b9c15-4a6d-4783-abe3-cd421e9046fe",
+      "question": "How does photosynthesis work in plants?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "I don't have enough information from the textbook to answer about photosynthesis."
+      },
+      "validation": {
+        "total_score": 1.0,
+        "details": {
+          "refusal_correct": 1.0
+        }
+      },
+      "overall_score": 1.0
+    },
+    {
+      "question_id": "3702d52b-5389-45af-9e09-2b059054cff8",
+      "question": "What are quarks and how do they behave?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 31.676262209s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 31\n}\n]"
+      },
+      "validation": {
+        "total_score": 0.0,
+        "details": {
+          "refusal_correct": 0.0
+        }
+      },
+      "overall_score": 0.0
+    },
+    {
+      "question_id": "fc39581b-abb2-46fb-97fe-896946e3bdfd",
+      "question": "What is the chemical formula for sulfuric acid?",
+      "question_type": "unanswerable",
+      "answer_type": "explanation",
+      "expected_answer": "",
+      "retrieval": {
+        "recall_at_k": 0.0,
+        "mrr": 0.0,
+        "num_chunks": 5
+      },
+      "generation": {
+        "answer": "Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3-flash\nPlease retry in 31.520486728s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n, retry_delay {\n  seconds: 31\n}\n]"
+      },
+      "validation": {
+        "total_score": 0.0,
+        "details": {
+          "refusal_correct": 0.0
+        }
+      },
+      "overall_score": 0.0
+    }
+  ],
+  "aggregate": {
+    "total_evaluated": 20,
+    "by_question_type": {
+      "factual": {
+        "count": 12,
+        "avg_total_score": 0.5285,
+        "avg_recall_k": 0.8333333333333334,
+        "avg_mrr": 0.7916666666666666,
+        "avg_grounding": 0.35233333333333333,
+        "avg_keyword_coverage": 0.2916666666666667
+      },
+      "conceptual": {
+        "count": 3,
+        "avg_total_score": 0.31866666666666665,
+        "avg_recall_k": 1.0,
+        "avg_mrr": 0.4444444444444444,
+        "avg_grounding": 0.046000000000000006,
+        "avg_keyword_coverage": 0.0
+      },
+      "unanswerable": {
+        "count": 5,
+        "avg_total_score": 0.6,
+        "avg_recall_k": 0.0,
+        "avg_mrr": 0.0,
+        "avg_grounding": 0.0,
+        "avg_keyword_coverage": 0.0
+      }
+    },
+    "overall_score": 0.5149
+  }
+}

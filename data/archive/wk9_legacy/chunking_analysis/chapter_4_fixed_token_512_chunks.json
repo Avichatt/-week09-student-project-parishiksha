@@ -1,0 +1,436 @@
+[
+  {
+    "text": "[NCERT Science]\ndescribing motion around us chapter everything in nature is in motion, from massive astronomical objects to subatomic particles. we have a wide variety of motion in nature, such as flitting butterflies, slithering snakes, hopping hares, galloping horses, tendrils of climbers twinning around a support, closing of flytraps, dancing dust particles in a sunbeam, smoke particles moving in air, rising and falling of ocean tides, and gathering clouds. isn ’ t motion in nature wonderful? but how do we study the wide variety of complex motions around us? as you have read in the first chapter, to explore a complex phenomenon, scientists first study it in its idealised simplified forms. such types of motion are linear, circular and oscillatory about which you learnt in earlier grades. in this chapter, you will learn more about linear motion ( motion in a straight line ) and uniform circular motion. earlier, you learnt about some physical quantities, such as distance, time and speed. now, you will learn y how much distance should we maintain from the truck ahead to avoid a collision if it suddenly applies the brakes? y does this distance depend upon the speed with which we are moving? think it over grade 6 curiosity grade 7 curiosity describing motion around us about some more physical quantities, such as displacement, average velocity and average acceleration. you will also learn to describe motion not only in words, but also with numbers, equations and graphs. 4. 1 motion in a straight line you have learnt that when an object moves in a straight line, its motion is called linear motion. it can also be called motion in a straight line. it is the simplest kind of motion. have you noticed it around you, such as children in a swimming race, a vertically falling ball, a car moving along a straight stretch of a highway or a train moving on a straight track ( fig. 4. 1 )? fig. 4. 1 : objects in a straight line motion to discuss about the motion of an object, you first need to describe its position at various instants of time. 4. 1. 1 describing position how do we describe the position of an object? for that, as you learnt earlier, we first need to specify a fixed point as the reference point. the distance and direction of the object with respect to the reference point, at any instant of time, describes the position of the object at that instant of time. note that apart from the distance, we also specify the direction from the reference point in which the object",
+    "token_count": 512,
+    "start_token": 0,
+    "end_token": 512,
+    "metadata": {
+      "overlap_with_previous": 0,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "ae01921a64a7c641f3affbab0a2aeac6"
+  },
+  {
+    "text": "[NCERT Science]\nan object? for that, as you learnt earlier, we first need to specify a fixed point as the reference point. the distance and direction of the object with respect to the reference point, at any instant of time, describes the position of the object at that instant of time. note that apart from the distance, we also specify the direction from the reference point in which the object is located to describe its position. but when do we say that an object is in motion? if the position of the object with respect to the reference point changes with time, the object is said to be in motion. on the other hand, the object is said to be at rest if its position with respect to the reference point does not change with time. grade 6 curiosity exploration | grade 9 let us take the example of an athlete running on a straight track ( fig. 4. 2 ). to describe the position of neena, an athlete, let us take her starting point as the reference point. as shown in fig. 4. 3, let us make a straight line with distances marked on it and mark the reference point on it as the origin ʻoʼ. the athlete starts running from o, and her positions at two instants of time are marked by points b and a. fig. 4. 3 : reference point and positions of the athlete at different instants of time on a straight line o b a 0 m 20 m 20 m 40 m 60 m 80 m 100 m to describe the position of an object, we also need to specify its direction. for the object moving in a straight line, the object can move only in one of the two directions — forward and backward. thus, the direction is represented by plus ( ) and minus ( – ) signs as shown in fig. 4. 3. positions to the right of the reference point o are generally taken as positive and to the left of o as negative ( fig. 4. 3 ). 4. 1. 2 distance travelled and displacement suppose an athlete starts running from point o at time t = 0 s, reaches point b at t = 4 s, then reaches point a at t = 10 s, then runs back along the same path till point b reaching there at t = 16 s ( fig. 4. 4 ). how much is the total distance travelled by the athlete between the starting and stopping positions? the total distance travelled is oa + ab = 100 m + 60 m = 160 m. let us now think about the distance between the starting and the stopping positions of the",
+    "token_count": 512,
+    "start_token": 436,
+    "end_token": 948,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "ea8e503f82fc437b7d3718b06759eaa5"
+  },
+  {
+    "text": "[NCERT Science]\nruns back along the same path till point b reaching there at t = 16 s ( fig. 4. 4 ). how much is the total distance travelled by the athlete between the starting and stopping positions? the total distance travelled is oa + ab = 100 m + 60 m = 160 m. let us now think about the distance between the starting and the stopping positions of the athlete. it is ob = 40 m, which is different from the total distance travelled by the athlete. so, let us now define another quantity — displacement. displacement is the net change in the position of an object between the two given instants of time. a complete description of physical quantities like displacement requires specifying both a direction and its numerical value ( with units ). the numerical value ( with units ) of such a physical quantity is called its magnitude. the magnitude of displacement is the distance between the object ’ s positions at the two instants. the direction of displacement is specified from the position at the first instant towards the position at the second instant. to describe the total distance travelled, fig. 4. 2 : an athlete running on a straight track fig. 4. 4 : reference point and positions of athlete at different instants of time total distance travelled displacement 0 m o b a 20 m t = 0 s t = 4 s t = 10 s t = 16 s 40 m 60 m 80 m 100 m an instant of time and a time interval are not the same thing. an instant of time is a single reading of clock at a given point of time. whereas, a time interval is the time duration between two instants of time, i. e., between two readings of a clock. note ready to go beyond physical quantities which can be specified by just their numerical value are called scalars. physical quantities which require specifying both the direction and magnitude are called vectors. you will learn about these in higher grades. next level up describing motion around us only the numerical value ( with units ) is required, not the direction of motion. the si unit for both is the metre ( m ). for example, in fig. 4. 4, between t = 0 s and t = 16 s, the total distance travelled by the athlete is 160 m, but her displacement is 40 m in the positive direction. we find that between these two instants, the total distance travelled and the magnitude of displacement are not equal. can these quantities ever be equal? activity 4. 1 : let us analyse 1. as shown in fig. 4. 5",
+    "token_count": 512,
+    "start_token": 872,
+    "end_token": 1384,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "77a4580b18bfdd76bd792e46d9772d91"
+  },
+  {
+    "text": "[NCERT Science]\nand t = 16 s, the total distance travelled by the athlete is 160 m, but her displacement is 40 m in the positive direction. we find that between these two instants, the total distance travelled and the magnitude of displacement are not equal. can these quantities ever be equal? activity 4. 1 : let us analyse 1. as shown in fig. 4. 5, a ball is thrown vertically upwards from o. it moves up straight till b and then falls back to o. can this be considered a motion in a straight line? 2. for this motion, fill up the values in table 4. 1. table 4. 1 : distance travelled and displacement of the ball s. no. position total distance travelled by the ball from o till that position displacement of the ball from o till that position 1. o 0 cm 0 cm 2. a 40 cm 40 cm in upward direction 3. b 4. c 5. o 3. analyse the data filled in table 4. 1 and choose which of the following is true for displacement : ( i ) it is never zero. ( ii ) its magnitude can be greater than the total distance travelled. ( iii ) its magnitude is less than or equal to the total distance travelled. ( iv ) its magnitude is less than the total distance travelled in all cases. fig. 4. 5 : a ball in vertical motion ( two separate lines are shown only for clarity ; in reality, the object goes up and falls back in the same straight line ) 0 cm 20 cm 40 cm 60 cm 80 cm 100 cm 120 cm 140 cm a c b a o for motion in a straight line, the total distance travelled and the magnitude of displacement are equal if the object moves without turning back, i. e., if it moves in one direction. note 1. in the example of an athlete running back and forth on a straight track ( fig. 4. 4 ), when will the displacement of the athlete be zero? what will be the total distance travelled in that case? 2. fuel used up in a vehicle depends on which of the following? justify your answer. ( i ) total distance travelled ( ii ) displacement 3. a ball rolls down an inclined track as shown in fig. 4. 6. is its motion, a straight line motion? assuming the starting point of the ball ( o ) to be the origin, can its motion from o to d be depicted using a horizontal line as shown in fig. 4. 3? are the values of total distance travelled and magnitude of displacement",
+    "token_count": 512,
+    "start_token": 1308,
+    "end_token": 1820,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "4d64c374ce95f3bd3da7f33e8924aa1a"
+  },
+  {
+    "text": "[NCERT Science]\ndisplacement 3. a ball rolls down an inclined track as shown in fig. 4. 6. is its motion, a straight line motion? assuming the starting point of the ball ( o ) to be the origin, can its motion from o to d be depicted using a horizontal line as shown in fig. 4. 3? are the values of total distance travelled and magnitude of displacement from o equal or different at positions a, b, c and d? fig. 4. 6 : a ball rolling down an inclined track 40 cm 10 cm 20 cm 30 cm a b c d o pause and ponder exploration | grade 9 motion, i. e., a change in the position of an object, can be described in terms of the total distance travelled by the object and its displacement. but how can you describe how fast or slow an object is moving? 4. 1. 3 average speed and average velocity you have learnt about average speed in an earlier grade. it tells us how fast or slow an object moves. the average speed of an object is the total distance travelled divided by the time interval during which this distance is covered. thus, total distance travelled average speed = time interval ( 4. 1 ) since distance travelled has no direction ( but only a numerical value ), the average speed, which is calculated from distance travelled, also has no direction but only a numerical value. if an object moving in a straight line travels equal distances in equal intervals of time ( for all possible choices of time intervals ), it is said to be in uniform motion in a straight line. in this case, the object moves at a constant speed. on the other hand, if the object travels unequal distances in equal intervals of time, then it is in non - uniform motion in a straight line. in this case, the object moves with increasing speed or decreasing speed, or a combination of both. if the distances travelled in the successive intervals of times are increasing, its speed is increasing. the concept that an object ’ s speed is the distance travelled divided by the time taken is well - established, dating back to ancient times even in india, as seen in the treatise aryabhatiya ( 5th century ce ). the following problem, based on this concept, is from a comprehensive mathematical text, the ganitakaumudi ( 14th century ce ). indiaʼs scientific contributions example 4. 1 : consider two postmen. they start walking towards each other from a distance of 210 yojanas ( yojana is a unit of distance used in ancient india )",
+    "token_count": 512,
+    "start_token": 1744,
+    "end_token": 2256,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "1b282cfa6e14daeb3017433dfeaa98b8"
+  },
+  {
+    "text": "[NCERT Science]\n( 5th century ce ). the following problem, based on this concept, is from a comprehensive mathematical text, the ganitakaumudi ( 14th century ce ). indiaʼs scientific contributions example 4. 1 : consider two postmen. they start walking towards each other from a distance of 210 yojanas ( yojana is a unit of distance used in ancient india ). one travels 9 yojanas per day and the other covers 5 yojanas per day. can you determine in how many days they will meet each other? answer : total of distance covered by each postman in one day = 9 yojanas + 5 yojanas = 14 yojanas. to meet with each other, the postmen need to cover 210 yojanas together. time taken by them to cover 210 yojanas together = = days. so, both postmen will meet each other after 15 days. ( in 15 days, first postman will cover 135 yojanas and the second postman will cover 75 yojanas ). the speed tells us how fast an object is moving but it provides no information about the direction of motion. there are many situations where along with the speed, you also need to know the direction of motion to get a complete picture, particularly in case of complicated real - world motions. grade 7 curiosity describing motion around us let us define another physical quantity, average velocity, which describes how fast the position of an object is changing and in which direction. the average velocity of an object in a time interval is the change in the position ( or displacement ) divided by the time interval in which the change in position ( or displacement ) occurs. thus, change in position displacement average velocity = = time interval time interval ( 4. 2a ) if we represent average velocity by vav, displacement by s and time interval by t, then eq. ( 4. 2a ) can be written as av s v = t ( 4. 2b ) to express the average velocity, you need to specify its magnitude as well as the direction. how do we associate direction with velocity when the motion is in a straight line? the direction of the velocity is the same as the direction of displacement and is indicated by a ʻ ʼ or ʻ – ʼ sign. the si unit of average speed and average velocity are the same. it is metre per second which is represented by m s – 1 or m / s. it is also commonly measured in kilometre per hour ( km h – 1 ). to describe how fast or slow a",
+    "token_count": 512,
+    "start_token": 2180,
+    "end_token": 2692,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "ef0d8e6dec4b7fe91993c52c6138df2b"
+  },
+  {
+    "text": "[NCERT Science]\nvelocity is the same as the direction of displacement and is indicated by a ʻ ʼ or ʻ – ʼ sign. the si unit of average speed and average velocity are the same. it is metre per second which is represented by m s – 1 or m / s. it is also commonly measured in kilometre per hour ( km h – 1 ). to describe how fast or slow a change in a physical quantity happens, we use the idea of a rate of change. the ratio of change in one quantity to the corresponding change in time is called the rate of change. to calculate average velocity, we find the ratio of change in position to the time taken ( eq. 4. 2a ). so, we can say that average velocity is the average rate of change of position of an object with respect to time. example 4. 2 : sarang takes 50 seconds to swim from one end to the other end and back in the swimming pool shown in fig. 4. 7. find his average speed and average velocity within the time interval of 50 s. answer : total distance travelled by sarang in 50 s = 50 m displacement of sarang in 50 s = 0 m total distance travelled 50 m average speed = = = 1 m s time interval 50 s − displacement 0 m average velocity = = = 0 m s time interval 50 s − during the 50 s time interval, the average speed of sarang is approximately 1 m s – 1 while his average velocity is 0 m s – 1. 4. during a family road trip, you drive 200 km north in three hours. afterwards, you drive 200 km south in two hours. find the average speed and average velocity for your entire trip. 5. under what condition ( s ) is the ( i ) magnitude of average velocity of an object equal to its average speed? ( ii ) magnitude of average velocity of an object zero while its average speed is not zero? pause and ponder fig. 4. 7 : swimming pool 25 m note for motion in a straight line, the average speed and the magnitude of average velocity in a time interval are equal if the object moves in one direction. exploration | grade 9 the average velocity of an object over a large time interval may differ from its velocity at a particular instant. throughout this chapter, we will use the term ‘ velocity ’ to mean the velocity of an object at a particular instant. ready to go beyond what we simply called ‘ velocity at an instant ’ is known as ‘ instantaneous velocity ’. as the time interval around an instant is made progressively smaller",
+    "token_count": 512,
+    "start_token": 2616,
+    "end_token": 3128,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "54e84706abcb794f331b2226a5370c37"
+  },
+  {
+    "text": "[NCERT Science]\nof an object over a large time interval may differ from its velocity at a particular instant. throughout this chapter, we will use the term ‘ velocity ’ to mean the velocity of an object at a particular instant. ready to go beyond what we simply called ‘ velocity at an instant ’ is known as ‘ instantaneous velocity ’. as the time interval around an instant is made progressively smaller ( eqn. 4. 2b ), the change in average velocity gets smaller and smaller. when the time interval becomes infinitesimally small, the average value of velocity approaches a fixed value called the instantaneous velocity. you will learn more about this physical quantity in higher grades. next level up the velocity of an object can be constant or it can change with time. how can we express the change in velocity of an object? 4. 1. 4 average acceleration when you sit in a vehicle and it suddenly moves from rest, you feel a noticeable jolt. similarly, when the vehicle is in motion and suddenly stops, you experience a jolt. these occurrences capture the feeling of the change in velocity. you can find the change in velocity if you know the velocity at two different instants of time. let us now learn another physical quantity, the average acceleration. the average acceleration of an object over a time interval is the change in its velocity divided by the time interval. that is, change in velocity average acceleration = time interval ( 4. 3a ) final velocity initial velocity average acceleration = time interval − ( 4. 3b ) if the velocity of an object changes from an initial value u at time t1 to the final value v at time t2, the average acceleration a is, v u a t t − = − ( 4. 3c ) the si unit of average acceleration is m s – 2 or m / s2. like displacement and velocity, we need to specify the magnitude as well as the direction of acceleration. for motion in a straight line, if the magnitude of velocity is increasing in a given time interval, the average acceleration is in the direction of velocity ( fig. 4. 8 ). whereas, the average acceleration is opposite to the direction of velocity if the magnitude of velocity is decreasing. velocity velocity acceleration acceleration fig. 4. 8 : direction of average acceleration when magnitude of velocity is ( a ) increasing, and ( b ) decreasing car is speeding up car is slowing down the reading of the speedometer of a vehicle is nearly ( but not exactly ) the same as the magnitude of the velocity at an instant while the direction of",
+    "token_count": 512,
+    "start_token": 3052,
+    "end_token": 3564,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "e9edf780cb4588d927f8acb67f202ba2"
+  },
+  {
+    "text": "[NCERT Science]\nif the magnitude of velocity is decreasing. velocity velocity acceleration acceleration fig. 4. 8 : direction of average acceleration when magnitude of velocity is ( a ) increasing, and ( b ) decreasing car is speeding up car is slowing down the reading of the speedometer of a vehicle is nearly ( but not exactly ) the same as the magnitude of the velocity at an instant while the direction of tyres gives the direction of velocity at that instant. threads of curiosity describing motion around us the average acceleration can result from change in the magnitude of velocity or change in its direction, or both. later in section 4. 4, we will discuss an example of acceleration resulting from only the change of direction of the motion while the speed remains constant. activity 4. 2 : let us calculate 1. the magnitude of average acceleration of cars is generally specified as the time taken by the car to go from 0 km h – 1 to 100 km h – 1. look it up on the internet and find this time for various cars, and record those in table 4. 2. 2. calculate the magnitude of average acceleration for each car. table 4. 2 : the magnitude of average acceleration in a time interval car type time interval during which the speed goes from 0 to 100 km h – 1 magnitude of average acceleration ( m s – 2 ) example 4. 3 : a bus is moving on a long straight highway ( fig. 4. 9 ) with a velocity of 36 km h – 1. the driver presses the accelerator for a time interval of 10 s and velocity of the bus increases to 54 km h – 1. for some time, the bus moves at a constant velocity. then, the driver notices an obstacle on the road ahead and presses the brake. the bus comes to a stop in a time interval of 5 s. find the average acceleration in the two time intervals, ( i ) when the accelerator was pressed, and ( ii ) when the brakes were pressed. fig. 4. 9 : a bus moving on a long straight highway answer : ( i ) when the driver presses the accelerator u = 36 km h – 1 1000 m = 36 × = 60×60 s 10 m s – 1, v = 54 km h – 1 = 15 m s – 1, t = 10 s, a =? using eq. ( 4. 3c ), we obtain the average acceleration 15 m s 10 m s 5 m s = = = 0. 5 m s 10 s 10 s a − − − − − since the magnitude of velocity of the bus is increasing",
+    "token_count": 512,
+    "start_token": 3488,
+    "end_token": 4000,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "5c2d4f994dc7fe675e7592a843f820dd"
+  },
+  {
+    "text": "[NCERT Science]\n, v = 54 km h – 1 = 15 m s – 1, t = 10 s, a =? using eq. ( 4. 3c ), we obtain the average acceleration 15 m s 10 m s 5 m s = = = 0. 5 m s 10 s 10 s a − − − − − since the magnitude of velocity of the bus is increasing, the acceleration is acting in the direction of velocity. ( ii ) when the driver presses the brake u = 54 km h – 1 = 15 m s – 1, v = 0 m s – 1, t = 5 s, a =? using eq. ( 4. 3c ) again, we obtain 0 m s 15 m s 15 m s = = = 3 m s 5 s 5 s a − − − − − − − the minus sign indicates that the acceleration is acting opposite to the direction of velocity ( since the magnitude of velocity of the bus is decreasing ). an object can be moving very fast and yet have zero acceleration. acceleration depends not on how fast an object is moving, but on how quickly its velocity is changing. for example, a bus moving on a straight highway at constant velocity has zero acceleration, even though its velocity may be high. note exploration | grade 9 the average acceleration during different time intervals can either be constant or changing. for an object moving in a straight line in the same direction, if the magnitude of its velocity increases or decreases by equal amounts in equal intervals of time ( for all possible choices of time intervals ), the acceleration of the object is constant. example 4. 4 : as we learnt earlier, when an object is dropped from a height, it takes a straight vertical path downwards before touching the ground. while coming down, the velocity of the object increases as shown in fig. 4. 10 at different instants. find the magnitude of the average acceleration of the object in every successive interval of a second. is the average acceleration constant across all intervals? what is the direction of this average acceleration? answer : the magnitude of the average acceleration in every successive interval is ( ) ( ) 9. 8 0 m s average acceleration between 0 s and 1 s 9. 8 m s 1 0 s − − − = = − ( ) ( ) 19. 6 9. 8 m s average acceleration between 1 s and 2 s 9. 8 m s 2 1 s − − − = = − ( ) ( ) 29. 4 19. 6 m s average acceleration between 2 s and 3 s 9. 8",
+    "token_count": 512,
+    "start_token": 3924,
+    "end_token": 4436,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "57e4f461f1afa1bcddcc3c85edf28607"
+  },
+  {
+    "text": "[NCERT Science]\n0 s and 1 s 9. 8 m s 1 0 s − − − = = − ( ) ( ) 19. 6 9. 8 m s average acceleration between 1 s and 2 s 9. 8 m s 2 1 s − − − = = − ( ) ( ) 29. 4 19. 6 m s average acceleration between 2 s and 3 s 9. 8 m s 3 2 s − − − = = − ( ) ( ) 39. 2 29. 4 m s average acceleration between 3 s and 4 s 9. 8 m s 3 s − − − = = − we note that the average acceleration is constant and equal to 9. 8 m s – 2. as the velocity is increasing in the direction of motion, the acceleration is in the direction of motion. this acceleration is called the acceleration due to gravitational force by the earth and is denoted by g. did you notice that in fig. 4. 5, we chose the origin at the ground level while in fig. 4. 10, we chose the origin at the point from where the object is dropped? in this example, we use down side as positive. we can choose the origin and positive direction as per our convenience. however, once chosen, it should not be changed while solving a problem. just like we can specify the velocity of an object at an instant, we can specify the acceleration of an object at an instant. 4. 2 graphical representation of motion one useful way of representing motion can be a graphical representation. it provides a visual representation of how position, velocity and acceleration change with time. such graphs help in comparing the motion of two objects, in calculating physical quantities, or in identifying whether the motion is uniform or non - uniform. as you have learnt in mathematics, graphs come in various forms, each suited to different types of data representation. to describe motion, we will use graphs to show dependence of one physical quantity, such as position, velocity or acceleration, on another quantity, such as time. let us learn to plot and interpret line graphs for motion. grade 8 curiosity grade 8 ganita prakash ganita prakash part ii fig. 4. 10 : an object dropped from a height 0 m 10 m 20 m 30 m 40 m 50 m 60 m 70 m 80 m v = 39. 2 m s – 1, t = 4 s v = 29. 4 m s – 1, t = 3 s v = 19. 6 m s – 1, t = 2 s v = 9. 8 m s – 1, t = 1",
+    "token_count": 512,
+    "start_token": 4360,
+    "end_token": 4872,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "85063929b9865b981307c001dbbab499"
+  },
+  {
+    "text": "[NCERT Science]\nfrom a height 0 m 10 m 20 m 30 m 40 m 50 m 60 m 70 m 80 m v = 39. 2 m s – 1, t = 4 s v = 29. 4 m s – 1, t = 3 s v = 19. 6 m s – 1, t = 2 s v = 9. 8 m s – 1, t = 1 s u = 0 m s – 1, t = 0 s note in this chapter, we will consider only the cases where the acceleration is constant. ready to go beyond similar to ʻvelocity at an instantʼ, ʻacceleration at an instant ’ is known as ‘ instantaneous acceleration ’. you will learn more about it in higher grades. next level up describing motion around us note all the graphs that we will discuss in this chapter are for motion in a straight line in one direction only. in this special case, distance travelled and magnitude of displacement are equal, and speed and magnitude of velocity are also equal. if position is zero at time zero, then the position - time graph is same as the distance - time graph and the velocity - time graph is same as the speed - time graph. 4. 2. 1 plotting graph to plot a graph, let us use the data given in table 4. 3 for a vehicle moving on a straight road. table 4. 3 : positions of vehicle at different instants of time time 0 s 1 s 2 s 3 s 4 s 5 s 6 s position 0 m 20 m 40 m 60 m 80 m 100 m 120 m fig. 4. 11 ( a ) : marking origin, x and y axes on graph paper o time ( s ) position ( m ) x y activity 4. 3 : let us plot a graph 1. take a sheet of graph paper. this paper is pre - divided into small squares ( fig. 4. 11a ), making it easier to plot data accurately. 2. on the graph paper, draw two lines perpendicular to each other as shown in fig. 4. 11a. their point of intersection is known as origin o. mark the horizontal line as ox. it is known as the x - axis. similarly, mark the vertical line as oy. it is called the y - axis. 3. refer to table 4. 3. we need to decide which quantity ( time or position ) to be shown along each axis. for the data we have ( table 4. 3 ), we will show time along the x - axis and position along the y -",
+    "token_count": 512,
+    "start_token": 4796,
+    "end_token": 5308,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "ccd56440aa6856c29a6918c749b7e8ac"
+  },
+  {
+    "text": "[NCERT Science]\nx - axis. similarly, mark the vertical line as oy. it is called the y - axis. 3. refer to table 4. 3. we need to decide which quantity ( time or position ) to be shown along each axis. for the data we have ( table 4. 3 ), we will show time along the x - axis and position along the y - axis. 4. determine a suitable scale for each quantity to represent it on the graph paper. we need to choose scales that allow us to represent the data effectively and conveniently while utilising the available space. the scale can be x - axis : 5 divisions = 1 s y - axis : 5 divisions = 20 m 5. use the chosen scale to mark values for time ( 1 s, 2 s, … ) along the x - axis from the origin. similarly, mark values for position ( 20 m, 40 m, … ) along the y - axis ( fig. 4. 11b ). 6. begin plotting points on the graph paper to represent each set of time and position values from table 4. 3. ( i ) table 4. 3 shows that at time 0 s, the position is also 0 m. the point corresponding to this set of values on the graph will therefore be the origin itself. ( ii ) at 1 s, the position of vehicle is at 20 m. to mark these values, look for the point that represents 1 s on the x - axis. draw a line parallel to the y - axis at fig. 4. 11 ( b ) : plotting points on the graph position ( m ) time ( s ) ( 1 s, 20 m ) ( 2 s, 40 m ) ( 3 s, 60 m ) x y exploration | grade 9 this point. then, draw a line parallel to the x - axis from the point corresponding to distance 20 m on the y - axis. the point where these two lines intersect represents the position 20 m at time t = 1 s on the graph ( fig. 4. 11b ). ( iii ) similarly, plot on the graph paper all points corresponding to positions of the vehicle at different instants of time. 7. once all points are plotted, connect them to create the position - time graph for the vehicle ’ s motion ( fig. 4. 11c ). it is a straight line for the data given in table 4. 3. this was an example of plotting a position - time graph. similar procedure can be used to plot the other graphs which you will be",
+    "token_count": 512,
+    "start_token": 5232,
+    "end_token": 5744,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "f563e4db75bfc3bd7fc24da17d4ebaf9"
+  },
+  {
+    "text": "[NCERT Science]\nof time. 7. once all points are plotted, connect them to create the position - time graph for the vehicle ’ s motion ( fig. 4. 11c ). it is a straight line for the data given in table 4. 3. this was an example of plotting a position - time graph. similar procedure can be used to plot the other graphs which you will be learning ahead. ready to go beyond the intermediate points represent possible values for position of vehicle at intermediate times. they are correct if vehicle is moving with a constant speed. example 4. 5 : for a vehicle starting from rest and speeding up, the data for position and time are given in table 4. 4. plot the position - time graph corresponding to it. table 4. 4 : positions of vehicle at different instants of time time position 0 s 0 m 2 s 1 m 4 s 4 m 6 s 9 m 8 s 16 m 10 s 25 m 12 s 36 m answer : choosing the scale to be x - axis : 5 divisions = 2 s y - axis : 5 divisions = 5 m and following the procedure of activity 4. 3, all points corresponding to positions of the vehicle at different instants of time are marked. unlike fig. 4. 11c, the points do not fall on a straight line. the points can be joined by a curve as shown in fig. 4. 12. now that you know how to plot a graph from the data given for the motion of an object, let us learn to interpret the graphs. remember, a graph is not a route map. it does not show the route but how the position of the object changes with time with respect to the origin. note fig. 4. 11 ( c ) : making a graph position ( m ) time ( s ) x y fig. 4. 12 : position - time graph of the vehicle position ( m ) x y describing motion around us 4. 2. 2 position - time graphs the position - time graph represents the motion of object, i. e., the change in its position with time. you have already plotted two position - time graphs ( figs. 4. 11c and 4. 12 ). now, what information can you obtain from these graphs about the motion of the object? what does the shape of the position - time graph indicate about the nature of motion? ( a ) constant velocity position ( m ) time ( s ) ( b ) changing velocity position ( m ) time ( s ) in equal intervals of time ( say, between two instant",
+    "token_count": 512,
+    "start_token": 5668,
+    "end_token": 6180,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "8db72d73d1e6d6bf8f35128c935e6ae5"
+  },
+  {
+    "text": "[NCERT Science]\n4. 12 ). now, what information can you obtain from these graphs about the motion of the object? what does the shape of the position - time graph indicate about the nature of motion? ( a ) constant velocity position ( m ) time ( s ) ( b ) changing velocity position ( m ) time ( s ) in equal intervals of time ( say, between two instants 2 – 3 s and 5 – 6 s ) the magnitudes of displacements of object are equal ( 20 m ) magnitude of velocity is constant in equal intervals of time ( say, 4 – 6 s and 10 – 12 s ) the magnitudes of displacements of object are increasing magnitude of velocity is increasing fig. 4. 13 : position - time graph of a moving object y y x x as we can see in fig. 4. 13a, a straight line position - time graph indicates that the object is moving with a constant velocity. on the other hand, a curved position - time graph as in fig. 4. 13b, indicates that the velocity is not constant, and thus, the object is in accelerated motion. which physical quantities can be obtained from a position - time graph? from the position - time graph, you can find the position of an object at each instant of time. does the graph provide information about any other physical quantity as well? in fact, you can also calculate how fast the position is changing, i. e., the magnitude of velocity of the object. how can you do that? activity 4. 4 : let us calculate 1. in the position - time graph we plotted ( fig. 4. 11c ), consider a part ( say, ab ) of the graph as shown in fig. 4. 14. from a, draw a line parallel to x - axis and another line parallel to y - axis. repeat the same from b. 2. extend the horizontal line from a and a triangle abc is formed. what do the sides bc and ca of the triangle represent? bc represents the change in position ( s2 – s1 ), and ac represents the change in time ( t2 – t1 ). fig. 4. 14 : calculating velocity from a position - time graph position ( m ) time ( s ) s2 b c a s1 t1 t2 y x exploration | grade 9 3. as per eq. ( 4. 2a ), by dividing the change in position ( bc ) by the change in time ( ca ), you get the average velocity bc ca s",
+    "token_count": 512,
+    "start_token": 6104,
+    "end_token": 6616,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "d1c66c56861b4cf4479fc40d877d6667"
+  },
+  {
+    "text": "[NCERT Science]\n4. 14 : calculating velocity from a position - time graph position ( m ) time ( s ) s2 b c a s1 t1 t2 y x exploration | grade 9 3. as per eq. ( 4. 2a ), by dividing the change in position ( bc ) by the change in time ( ca ), you get the average velocity bc ca s s v t t − = = − 4. by extracting values of time t1 and t2, and distances s1 and s2 from the graph, the magnitude of average velocity can be calculated as v − − = = = − 80 m 40 m 40 m 20 m s 4 s 2 s 2 s from a position - time graph, by finding the positions of the object at two instants of time, you can calculate the average velocity by using eq. ( 4. 2a ). geometrically, bc ca is called the slope of line ab connecting initial position a and final position b in fig. 4. 14. the slope of a line is the steepness of the line. the slope of a graph gives information about the rate of change of the quantity shown on y - axis with respect to the quantity shown on x - axis. for the case of a curve, the velocity at any instant can also be calculated geometrically from the position - time graph. you will learn how to do it in higher grades. ready to go beyond next level up example 4. 6 : what does the graph shown in fig. 4. 15 indicate about the nature of motion of the vehicle? answer : the position of the vehicle is 40 m from the origin and is not changing with time. thus, the vehicle is at rest at 40 m from the origin. a straight line parallel to the time axis on a position - time graph represents a stationary object ( in this case, the position - time graph is not the distance - time graph ). example 4. 7 : the position - time graphs of two objects a and b are given in fig. 4. 16a. which object of the magnitude of average velocity is higher? answer : by making lines parallel to axes as shown in fig. 4. 16b, it is found that the displacement of object b is more than object a for the same time interval. that is, the slope of line for b is steeper than the slope for line a. thus, the velocity of b is higher than that of a. fig. 4. 16 ( a ) : position - time graph of two objects",
+    "token_count": 512,
+    "start_token": 6540,
+    "end_token": 7052,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "e3020a45f38834ee082e084279206553"
+  },
+  {
+    "text": "[NCERT Science]\nin fig. 4. 16b, it is found that the displacement of object b is more than object a for the same time interval. that is, the slope of line for b is steeper than the slope for line a. thus, the velocity of b is higher than that of a. fig. 4. 16 ( a ) : position - time graph of two objects position time b a fig. 4. 16 ( b ) : comparing displacement of two objects from position - time graph position time time interval t displacement of b in time interval t displacement of a in time interval t b a x x y y fig. 4. 15 : position - time graph of a vehicle position ( m ) time ( s ) y x describing motion around us 4. 2. 3 velocity - time graphs the velocity - time graph of an object in motion represents the change in its velocity with time. in a manner similar to the position - time graph, you can plot velocity - time graphs following the steps of activity 4. 3. let us take the example of a car moving in the same direction on a straight stretch of a highway at a steady velocity of 72 km h – 1 or 20 m s – 1. the velocity - time graph corresponding to it is shown in fig. 4. 17a. consider another car that starts moving from rest and its velocity increases with time as shown in table 4. 5. the velocity - time graph plotted for this case is shown in fig. 4. 17b. consider yet another car moving with a velocity of 15. 0 m s – 1. its velocity decreases with time as shown in table 4. 6 and its velocity - time graph is shown in fig. 4. 17c. what does the shape of the velocity - time graph indicate about the nature of motion? fig. 4. 17 : velocity - time graph of a moving car in equal intervals of time velocity is increasing by equal amounts acceleration is constant and in the direction of velocity 2. 5 5. 0 7. 5 10. 0 12. 5 15. 0 20 25 velocity ( m s – 1 ) time ( s ) ( b ) increasing velocity with constant acceleration in equal intervals of time velocity is decreasing by equal amounts acceleration is constant and opposite to the direction of velocity 2. 5 5. 0 7. 5 10. 0 12. 5 15. 0 20 25 velocity ( m s – 1 ) time ( s ) ( c ) decreasing velocity with constant acceleration velocity is not changing with time velocity is constant acceleration is zero velocity ( m",
+    "token_count": 512,
+    "start_token": 6976,
+    "end_token": 7488,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "c2f3d18d69aa36b295fd2340f6edbb6d"
+  },
+  {
+    "text": "[NCERT Science]\nacceleration in equal intervals of time velocity is decreasing by equal amounts acceleration is constant and opposite to the direction of velocity 2. 5 5. 0 7. 5 10. 0 12. 5 15. 0 20 25 velocity ( m s – 1 ) time ( s ) ( c ) decreasing velocity with constant acceleration velocity is not changing with time velocity is constant acceleration is zero velocity ( m s – 1 ) time ( s ) ( a ) constant velocity x y y y x x when the velocity of the car is constant, the velocity - time graph is a straight line parallel to the x - axis ( fig. 4. 17a ) and acceleration is zero. a straight line velocity - time graph as shown in fig. 4. 17b indicates that the velocity is increasing with a constant acceleration ( in the direction of velocity ). whereas, a straight line velocity - time graph as shown in fig. 4. 17c indicates that the velocity is decreasing with a constant acceleration ( opposite to the direction of velocity ). table 4. 5 : increasing velocity table 4. 6 : decreasing velocity time velocity of car 0 s 0 m s – 1 5 s 2. 5 m s – 1 10 s 5. 0 m s – 1 15 s 7. 5 m s – 1 20 s 10. 0 m s – 1 25 s 12. 5 m s – 1 30 s 15. 0 m s – 1 time velocity of car 0 s 15. 0 m s – 1 5 s 12. 5 m s – 1 10 s 10. 0 m s – 1 15 s 7. 5 m s – 1 20 s 5. 0 m s – 1 25 s 2. 5 m s – 1 30 s 0 m s – 1 exploration | grade 9 which physical quantities can be obtained from a velocity - time graph? apart from finding the magnitude of velocity of the object at each instant of time, what other physical quantities can be calculated from the velocity - time graph? slope of the straight line on graph in section 4. 2. 2, we found that velocity can be determined from the slope of the straight line on position - time graph. what can you find from the slope of the straight line on a velocity - time graph? the slope of the line on velocity - time graph gives how fast the velocity is changing with time, i. e., the acceleration. for the graph shown in fig. 4. 17a, there is no change in the height of the line from the x - axis, i. e., its slope is zero",
+    "token_count": 512,
+    "start_token": 7412,
+    "end_token": 7924,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "d380404c40f86dd527bd8047e836e418"
+  },
+  {
+    "text": "[NCERT Science]\nof the straight line on a velocity - time graph? the slope of the line on velocity - time graph gives how fast the velocity is changing with time, i. e., the acceleration. for the graph shown in fig. 4. 17a, there is no change in the height of the line from the x - axis, i. e., its slope is zero. hence, the velocity is constant and the acceleration is zero in this case. now consider the graph shown in fig. 4. 17d which is the same as fig. 4. 17b, except for some markings. consider a part of the line, ab. suppose at time t1 corresponding to point a, the velocity is denoted by ‘ u ’, and at time t2 corresponding to point b, it is represented by ‘ v ’. by dividing the change in velocity ( bc ) by the change in time ( ca ), you get, bc ca v u a t t − = = − substituting the values from graph, we obtain the magnitude of average acceleration between the time interval from 10 s to 20 s 10 m s 5 m s 5 m s 0 5 m s 20 s 10 s 10 s a − − − − − = = = −. if we follow the above steps for the graph shown in fig. 4. 17e which is same as fig. 4. 17c, we obtain average acceleration to be – 0. 5 m s – 2. the minus sign indicates that the direction of acceleration is opposite to the direction of velocity ( as the velocity is decreasing ). can you calculate some other physical quantity from the velocity - time graph? area enclosed by the line on graph and time axis the graphs shown in fig. 4. 18 are same as fig. 4. 17, except that some parts between the line on graph and the time axis are shaded. does the area of the shaded part represent some physical quantity? in fig. 4. 18a, oa is magnitude of the velocity and oc is the time interval. so, area of rectangle oabc = oa × oc = velocity × time interval ( since, the velocity is constant, it is equal to the average velocity ). using eq. ( 4. 2a ), we can say, area of rectangle oabc = displacement substituting the values from graph, we obtain displacement between 0 s and 6 s = area of oabc = 20 m s – 1 × 6 s = 120 m velocity ( m s –",
+    "token_count": 512,
+    "start_token": 7848,
+    "end_token": 8360,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "a22cd730e101dbb470cdb74938354b6f"
+  },
+  {
+    "text": "[NCERT Science]\nthe velocity is constant, it is equal to the average velocity ). using eq. ( 4. 2a ), we can say, area of rectangle oabc = displacement substituting the values from graph, we obtain displacement between 0 s and 6 s = area of oabc = 20 m s – 1 × 6 s = 120 m velocity ( m s – 1 ) 2. 5 5. 0 7. 5 10. 0 12. 5 15. 0 20 25 fig. 4. 17 ( d ) : calculating acceleration from a velocity - time graph time ( s ) a b v t1 t2 u c y x velocity ( m s – 1 ) 2. 5 5. 0 7. 5 10. 0 12. 5 15. 0 20 25 fig. 4. 17 ( e ) : calculating acceleration from a velocity - time graph time ( s ) c a u t1 t2 v b y x velocity ( m s – 1 ) 4. 18 ( a ) : velocity - time graph of an object moving with constant velocity time ( s ) a b c o y x describing motion around us this is the displacement of the car from the origin in 6 seconds. you have found that the area enclosed by the velocity - time graph and the time axis for a desired time interval is equal to the displacement in that time interval. how can you determine the displacement from the graph given in fig. 4. 18b? suppose you want to find the displacement between 10 s to 20 s, corresponding to the graph points a and b. we calculate the area between ab and the time axis to obtain the displacement of the object which is moving with a constant acceleration. thus, displacement between 10 s to 20 s = area of abde = area of the rectangle acde + area of the triangle abc ( ) = × + × × cd de ca bc substituting the values, we obtain ( ) displacement 5 m s 10 s 10 s 5 m s − − = × + × × = 50 m + 25 m = 75 m this is the displacement of the car between 10 s and 20 s. we learnt that by finding the slope and area from velocity - time graph for motion with constant acceleration, we can determine acceleration and displacement, respectively. you learnt how to represent motion by graphs. let us now learn about the equations which describe the motion of an object. 4. 3 kinematic equations for motion in a straight line with constant acceleration let us consider the special case of motion with constant acceleration and try to",
+    "token_count": 512,
+    "start_token": 8284,
+    "end_token": 8796,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "77aa553d312ba7016006a04908993904"
+  },
+  {
+    "text": "[NCERT Science]\nand area from velocity - time graph for motion with constant acceleration, we can determine acceleration and displacement, respectively. you learnt how to represent motion by graphs. let us now learn about the equations which describe the motion of an object. 4. 3 kinematic equations for motion in a straight line with constant acceleration let us consider the special case of motion with constant acceleration and try to derive some equations for analysing such motions. since the acceleration is constant, acceleration at each instant will be equal to the average acceleration over any time interval. using the definition of average acceleration given by eq. ( 4. 3c ), − = v u a t where u is initial velocity at t = 0 s, v is final velocity at time t, time interval is t – 0 = t, over which the change in velocity occurs and a is the acceleration, we can write at = v – u v = u + at ( 4. 4a ) this equation allows us to calculate velocity ( v ) at all times if initial velocity ( u ) and acceleration ( a ) are known. the velocity - time graph of eq. ( 4. 4a ) is as shown in fig. 4. 19. this is similar to the graph shown in fig. 4. 18 but now the initial velocity of the object is not zero. the initial velocity ( represented by ao ) is u and the final velocity at time t ( represented by eo ) is v. the graph is a straight line indicating that the velocity changes with constant acceleration. the slope of the graph gives the acceleration. grade 8 ganita prakash ganita prakash part ii velocity fig. 4. 19 : velocity - time graph where the initial velocity of object is not zero time a c b e d o u v t y x velocity ( m s – 1 ) 2. 5 5. 0 7. 5 10. 0 12. 5 15. 0 20 25 fig. 4. 18 ( b ) : velocity - time graph of an object moving with changing velocity with constant acceleration time ( s ) a e b c d y x exploration | grade 9 as learnt in the earlier section, the displacement s of the object during the time interval t is given by the area enclosed within oabd. thus, s = area of oabd = area of the rectangle oacd + area of the triangle abc ( ) × × × = ao do + ca bc substituting ao = u, do = ca = t and bc = bd – cd = eo – ao =",
+    "token_count": 512,
+    "start_token": 8720,
+    "end_token": 9232,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "89f2f308abd6a04cec482fb9251b5d53"
+  },
+  {
+    "text": "[NCERT Science]\nobject during the time interval t is given by the area enclosed within oabd. thus, s = area of oabd = area of the rectangle oacd + area of the triangle abc ( ) × × × = ao do + ca bc substituting ao = u, do = ca = t and bc = bd – cd = eo – ao = ( v – u ), we obtain ( ) s u t t v u = × + × × − substituting the value of ( v – u ) from eq. ( 4. 4a ), s ut t at = + × × s ut at = + × ( 4. 4b ) these two equations ( eq. 4. 4a and eq. 4. 4b ) are the primary equations. combining these equations in different ways, we can obtain three more equations. let us derive one of those by eliminating t in eq. ( 4. 4b ) ( the remaining two equations are given as an exercise in ‘ the journey beyond ’ at the end of the chapter ). from eq. ( 4. 4a ), we get − = v u t a substituting this in eq. ( 4. 4b ), we obtain v u v u s u a a a − − = + × ⇒ uv u u v uv s a a − + − = + ⇒ uv u u v uv s a − + + − = ⇒ u v s a − + = ⇒ 2as u v = − + ⇒ v u as = + ( 4. 4c ) for the motion of an object in a straight line with constant acceleration, the five physical quantities - displacement ( s ), time interval ( t ), initial velocity ( u ), final velocity ( v ) and acceleration ( a ), can be related by the following set of equations, v = u + at ( 4. 4a ) s ut at = + ( 4. 4b ) v 2 = u 2 + 2as ( 4. 4c ) these are known as kinematic equations. these equations provide a mathematical description of how the motion of an object changes with time. describing motion around us using these equations, it is possible to predict position or velocity of the object at a future time. note these kinematic equations are valid only when the acceleration is constant. while using kinematic equations for motion in a straight line in one direction, remember that distance travelled and magnitude of displacement are equal, and speed and magnitude of velocity",
+    "token_count": 512,
+    "start_token": 9156,
+    "end_token": 9668,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "9763e6f952a7579bfe63181774b1b4ce"
+  },
+  {
+    "text": "[NCERT Science]\nchanges with time. describing motion around us using these equations, it is possible to predict position or velocity of the object at a future time. note these kinematic equations are valid only when the acceleration is constant. while using kinematic equations for motion in a straight line in one direction, remember that distance travelled and magnitude of displacement are equal, and speed and magnitude of velocity are also equal. in motion in a straight line in both directions, the sign of u, v, a, and s in these equations tells us about the direction of that particular quantity. example 4. 8 : suppose a car is moving on a highway and brakes are applied, which cause an acceleration of – 4 m s – 2. how much will be the distance travelled by the car before coming to a stop, if the car was moving with a velocity of ( i ) 54 km h – 1, and ( ii ) 108 km h – 1 when the brakes were applied? answer : given : a = – 4 m s – 2, v = 0 m s – 1 suppose the initial velocity is u and the distance travelled is s. ( i ) u = 54 km h – 1 = 15 m s – 1 ( ii ) u = 108 km h – 1 = 30 m s – 1 using eq. ( 4. 4c ) v 2 = u 2 + 2as ( 0 m s – 1 ) 2 = u 2 + 2 × ( – 4 m s – 2 ) × s 0 = u 2 – 8 × s ⇒ u s = substituting the value of u, we obtain ( i ) 28. 1 m, and ( ii ) 112. 5 m. bridging science and society when brakes are applied to a moving vehicle, it moves some distance before coming to a stop. the distance travelled depends upon the velocity of the vehicle when the brakes are applied, the road surface ( wet, dry, etc. ), the braking capacity of the vehicle ( the negative acceleration caused by the brakes ) as well as the driver ’ s reaction time. can you now understand why it is important to maintain a safe distance from the vehicle moving ahead of your vehicle ( fig. 4. 20 ) and how this distance needs to be adjusted given your initial velocity? fig. 4. 20 : safe distance between two moving vehicles there is a vehicle - to - vehicle ( v2v ) communication technology, now being developed in many countries including india, which allows vehicles to exchange signals and warns drivers of possible collisions. till now, in this",
+    "token_count": 512,
+    "start_token": 9592,
+    "end_token": 10104,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "6899c47eae76cdee23dacf33dbaeb97a"
+  },
+  {
+    "text": "[NCERT Science]\nvehicle ( fig. 4. 20 ) and how this distance needs to be adjusted given your initial velocity? fig. 4. 20 : safe distance between two moving vehicles there is a vehicle - to - vehicle ( v2v ) communication technology, now being developed in many countries including india, which allows vehicles to exchange signals and warns drivers of possible collisions. till now, in this chapter, we have been discussing about motion in a straight line which is also called motion in one dimension. let us now explore motion in a plane. exploration | grade 9 4. 4 motion in a plane motion in a plane, such as a vehicle overtaking another, the path of a kicked ball or a satellite moving in a circular path, is called motion in two dimensions ( fig. 4. 21 ). fig. 4. 21 : motion in a plane 4. 4. 1 uniform circular motion do you remember learning about circular motion in an earlier grade? when an object moves in a circular path, its motion is called circular motion. suppose a child is sitting on a moving merry - go - around. the child, moving on a circular path, moves from a to b to c as shown in fig. 4. 22. what is the distance travelled by the child? what is their displacement from their original position? the distance travelled by the child is the curve abc and displacement is the straight - line ac. as you can see both are not equal. what is the distance travelled by the child in making one revolution ( going round the circle once )? it is equal to the circumference of the circle. so, if the radius of the circular path is r, the distance travelled by the child in making one revolution is 2 r. on the other hand, the displacement is zero, since the child comes back to its original position after making one revolution. if an object takes time t to make one revolution, its average speed vav will be ( using eq. 4. 1 ) av r v t π = ( 4. 5 ) while the average velocity during the time interval t will be 0, since the displacement is 0. let us now consider a particular case of circular motion where the speed of the object is constant. when an object moves in a circular path with constant ( uniform ) speed, its motion is called uniform circular motion. in case of uniform circular motion, the speed is constant but what about the direction of velocity at an instant? is it changing? fig. 4. 23 : an athlete running along ( a ) a",
+    "token_count": 512,
+    "start_token": 10028,
+    "end_token": 10540,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "f714f7a1a2b0f9a096055f384b6e339e"
+  },
+  {
+    "text": "[NCERT Science]\ncase of circular motion where the speed of the object is constant. when an object moves in a circular path with constant ( uniform ) speed, its motion is called uniform circular motion. in case of uniform circular motion, the speed is constant but what about the direction of velocity at an instant? is it changing? fig. 4. 23 : an athlete running along ( a ) a rectangular track, ( b ) a hexagonal track, and ( c ) a circular track v v v v ( a ) v v v v v v ( b ) v v v v v v v v ( c ) a b c fig. 4. 22 : top view of merry - go - round in circular motion grade 6 curiosity note we calculated the average speed ( eq. 4. 5 ) for one revolution but for uniform circular motion since the speed is constant, its value is the same at every point on the circle. describing motion around us ready to go beyond motion in space, such as a car climbing up a mountain road ( fig. 4. 26 ), bird flying in the sky or an aircraft moving through air, is called motion in three dimensions. you will learn about it in higher grades. next level up fig. 4. 26 : a mountain road imagine an athlete running along a closed path. in fig. 4. 23a, the athlete follows a rectangular track ( abcd ), running at a uniform speed on the straight sections ( ab, bc, cd and da ). the athlete changes direction four times to complete one round. in fig. 4. 23b, the athlete is running along a hexagonal path. in this case, the athlete changes direction six times to complete one round. what happens if we keep increasing the number of sides indefinitely? as the number of sides increases, the athlete has to take turns more and more frequently. finally, the track approaches a circle, with each side decreasing to a point and the direction of athlete ’ s velocity changes continuously. activity 4. 5 : let us investigate 1. take a ring, such as an adhesive tape ring and one marble. 2. place the ring flat on a smooth surface and throw the marble inside the ring in a way that it rotates along the inner boundary of the ring ( fig. 4. 24 ). 3. predict what will happen if you lift the ring while the marble is moving. 4. now, after one or two complete revolutions of the marble, pick up the ring without disturbing the motion of the marble. what do you",
+    "token_count": 512,
+    "start_token": 10464,
+    "end_token": 10976,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "8cb9581f3e0036d20f6fc4f4c20105db"
+  },
+  {
+    "text": "[NCERT Science]\nsurface and throw the marble inside the ring in a way that it rotates along the inner boundary of the ring ( fig. 4. 24 ). 3. predict what will happen if you lift the ring while the marble is moving. 4. now, after one or two complete revolutions of the marble, pick up the ring without disturbing the motion of the marble. what do you observe? does the marble continue moving in a circular motion? or does it move in some other manner? 5. repeat the activity multiple times to confirm the result. when the marble is released by lifting the ring, it moves in a straight line. this happened because once the marble is released, it continues to move in the direction it has been moving at the instant the ring was removed. you will learn the reason for this in a later chapter. the velocity at a point is along the tangent to the circle at that point, in the direction of motion. a straight line that meets the circle at one and only point is called a tangent to the circle at that point ( fig. 4. 25 ). you will learn more about it in mathematics. ready to go beyond a b c fig. 4. 25 : tangent to a circle at point b you know that acceleration is non - zero if the velocity of an object changes. the velocity changes if either its magnitude or direction, or both changes. in uniform circular motion, the motion of the object is accelerated because the direction of its velocity continuously changes. fig. 4. 24 : a marble moving inside a ring note in uniform circular motion, the speed is constant at every point on the circle, it is only the direction of velocity that changes. note in everyday life, we say that a vehicle is accelerating when the magnitude of its velocity is changing but we often fail to recognise that there can be acceleration when there is only a change in the direction of velocity. exploration | grade 9 in real world, the conditions for uniform circular motion — constant speed and a circular path — are often not met. so, uniform circular motion is an idealised model of the real - world situations. still, it is a useful model as it serves as the foundation for more complex real - world situations, such as motion of planets revolving around the sun or a vehicle making a circular turn. y the distance and direction of an object with respect to the reference point, at any instant of time, describes the position of the object at that instant of time. y if the position of the object with respect to a reference point changes with time,",
+    "token_count": 512,
+    "start_token": 10900,
+    "end_token": 11412,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "f7039a1c2f9c64cbb511bc02947955c2"
+  },
+  {
+    "text": "[NCERT Science]\nfoundation for more complex real - world situations, such as motion of planets revolving around the sun or a vehicle making a circular turn. y the distance and direction of an object with respect to the reference point, at any instant of time, describes the position of the object at that instant of time. y if the position of the object with respect to a reference point changes with time, the object is said to be in motion. y displacement is the net change in the position of the object between two given instants of time. y the average speed of an object is the total distance travelled divided by the time interval during which this distance is covered. y the average velocity of an object in a time interval is the change in position ( also known as displacement ) divided by the time interval in which the change in position ( or displacement ) occurs. y the average acceleration of an object over a time interval is the change in its velocity divided by the time interval. y for the motion of an object in a straight line with constant acceleration, the five physical quantities — displacement ( s ), time interval ( t ), initial velocity ( u ), final velocity ( v ) and acceleration ( a ), can be related by the following set of kinematic equations, v = u + at s ut at = + v 2 = u 2 + 2as y when an object moves in a circular path with constant ( uniform ) speed, its motion is called the uniform circular motion. at a glance revise, reflect, refine 1. my father went to a shop from home which is located at a distance of 250 m on a straight road. on reaching there, he discovered that he forgot to carry a cloth bag. he came home to take it, went to the shop again, bought provisions and came back home. how much was the total distance travelled by him? what was his displacement from home? 2. a student runs from the ground floor to the fourth floor of a school building to collect a book and then comes down to their classroom on the second floor. if the height of each floor is 3 m, find : ( i ) the total vertical distance travelled, and ( ii ) their displacement from the starting point. describing motion around us 3. a girl is riding her scooter and finds that its speedometer reading is constant. is it possible for her scooter to be accelerating and if so, how? 4. a car starts from rest and its velocity reaches 24 m s – 1 in 6 s. find the average acceleration and",
+    "token_count": 512,
+    "start_token": 11336,
+    "end_token": 11848,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "479124d8c79567777c5150ff77ea234d"
+  },
+  {
+    "text": "[NCERT Science]\n( ii ) their displacement from the starting point. describing motion around us 3. a girl is riding her scooter and finds that its speedometer reading is constant. is it possible for her scooter to be accelerating and if so, how? 4. a car starts from rest and its velocity reaches 24 m s – 1 in 6 s. find the average acceleration and the distance travelled in these 6 s. 5. a motorbike moving with initial velocity 28 m s – 1 and constant acceleration stops after travelling 98 m. find the acceleration of the motorbike and the time taken to come to a stop. 6. fig. 4. 27 shows a position - time graph of two objects a and b that are moving along the parallel tracks in the same direction. do objects a and b ever have equal velocity? justify your answer. position ( m ) fig. 4. 28 time ( s ) a b position ( m ) fig. 4. 27 time ( s ) a b y y x x 7. a graph in fig. 4. 28 shows the change in position with time for two objects a and b moving in a straight line from 0 to 10 seconds. choose the correct option ( s ). ( i ) the average velocity of both over the 10 s time interval is equal since they have the same initial and final positions. ( ii ) the average speeds of both over the 10 s time interval are equal since both cover equal distance in equal time. ( iii ) the average speed of a over the 10 s time interval is lower than that of b since it covers a shorter distance than b in 10 seconds. ( iv ) the average speed of a over the 10 s time interval is greater than that of b since b ’ s speed is lower than a ’ s in some segments. 8. a truck driver driving at the speed of 54 km h – 1 notices a road sign with a speed limit of 40 km h – 1 ( fig. 4. 29 ) for trucks. he slows down to 36 km h – 1 in 36 s. what was the distance travelled by him during this time? assume the acceleration to be constant while slowing down. 9. a car starts from rest and accelerates uniformly to 20 m s – 1 in 5 seconds. it then travels at 20 m s – 1 for 10 seconds and finally applies the brake ( with uniform acceleration ) to stop in 6 seconds. find the total distance travelled. 10. a bus is travelling at 36 km h – 1 when the driver sees an obstacle",
+    "token_count": 512,
+    "start_token": 11772,
+    "end_token": 12284,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "a0a30c5b18b584ee2cb734c44eadb412"
+  },
+  {
+    "text": "[NCERT Science]\nslowing down. 9. a car starts from rest and accelerates uniformly to 20 m s – 1 in 5 seconds. it then travels at 20 m s – 1 for 10 seconds and finally applies the brake ( with uniform acceleration ) to stop in 6 seconds. find the total distance travelled. 10. a bus is travelling at 36 km h – 1 when the driver sees an obstacle 30 m ahead. the driver takes 0. 5 seconds to react before pressing the brake. once the brake is applied, the velocity of the bus reduces with constant acceleration of 2. 5 m s – 2. will the bus be able to stop before reaching the obstacle? fig. 4. 29 speed limit गति सीमा exploration | grade 9 11. a student said, “ the earth moves around the sun ”. in this context, discuss whether an object kept on the earth can be considered to be at rest. 12. the velocity - time graph from 0 s to 120 s for a cyclist is shown in fig. 4. 30. shade the areas ( in different colours ) representing the displacement of the cyclist ( i ) while cyclist is moving with constant velocity. ( ii ) when the velocity of cyclist is decreasing. also, calculate the displacement and average acceleration in the 120 s time interval. velocity ( m s – 1 ) 60 80 100 120 fig. 4. 30 time ( s ) velocity ( km h – 1 ) 2. 5 5. 0 7. 5 fig. 4. 31 time ( h ) y y x x 13. a girl is preparing for her first marathon by running on a straight road. she uses a smartwatch to calculate her running speed at different intervals. the graph ( fig. 4. 31 ) depicts her velocity versus time. estimate the running distance based on the graph. 14. on entering a state highway, a car continues to move with a constant velocity of 6 m s – 1 for 2 minutes and then accelerates with a constant acceleration 1 m s – 2 for 6 seconds. find the displacement of the car on the state highway in the 2 min 6 s time interval by drawing a velocity - time graph for its motion. 15. two cars a and b start moving with a constant acceleration from rest in a straight line. car a attains a velocity of 5 m s – 1 in 5 s. car b attains a velocity of 3 m s – 1 in 10 s. plot the velocity - time graphs for both the cars in the same graph. using the graph, calculate the displacement mentioned in the",
+    "token_count": 512,
+    "start_token": 12208,
+    "end_token": 12720,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "d9c34a84ea6099b425d7b3ecab4128ca"
+  },
+  {
+    "text": "[NCERT Science]\n. two cars a and b start moving with a constant acceleration from rest in a straight line. car a attains a velocity of 5 m s – 1 in 5 s. car b attains a velocity of 3 m s – 1 in 10 s. plot the velocity - time graphs for both the cars in the same graph. using the graph, calculate the displacement mentioned in the two time intervals ( hint : calculate the acceleration in both cases. then calculate their velocities at five instants of time to plot the graph ). 16. rohan studies science from 6 pm to 7 : 30 pm at home. consider the tip of the minute ’ s hand of the wall clock. during the given time interval, what is its : ( i ) distance travelled, ( ii ) displacement, ( iii ) speed, and ( iv ) velocity. the length of the minute ’ s hand is 7 cm ( fig. 4. 32 ). fig. 4. 32 describing motion around us y take a cardboard disc ( radius ~ 8 cm ) ( fig. 4. 33 ). write numbers 1 to 12 on the outer part ( 7 cm from the centre ) and the letters ‘ abcdef ’ on the inner part ( 4 cm from the centre ), using the same font size. spin the disc slowly, then faster and observe how the numbers and letters appear. why do the numbers fade or disappear while the letters remain visible? are the speeds of the numbers and letters the same or different? justify your answer. y many smartphones have an inbuilt accelerometer that can detect very small accelerations. install an app, such as phyphox ( phyphox. org ) and open ‘ accelerometer ’ ( without g ). note the readings when ( i ) the phone is on an outstretched palm, and ( ii ) the phone is kept on the floor. what differences do you observe? what does this tell you about motion and acceleration in real situations? ( such tiny, involuntary movements are also studied in medical research, for example, in movement disorders ) this activity is recommended to be performed as a classroom group activity facilitated by teacher. y for motion in a straight line with constant acceleration, we derived two primary equations given by eq. ( 4. 4a ) and ( 4. 4b ). using these two equations, three more equations can be derived, out of which we derived one given in eq. ( 4. 4c ). derive the remaining two equations given below =",
+    "token_count": 512,
+    "start_token": 12644,
+    "end_token": 13156,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "13692d339472a04ac1f5cc3f50f737ae"
+  },
+  {
+    "text": "[NCERT Science]\nfacilitated by teacher. y for motion in a straight line with constant acceleration, we derived two primary equations given by eq. ( 4. 4a ) and ( 4. 4b ). using these two equations, three more equations can be derived, out of which we derived one given in eq. ( 4. 4c ). derive the remaining two equations given below = − s vt at ( ) s u v t = + in mathematics, you have learnt the formula for calculating the area of a trapezium. using that formula, derive the second equation given above. y plot graphs for data given in table 4. 4, using different x and y scales, on different graph papers. compare the graphs to find how the appearance of graph is affected by the choice of scales and decide which scale is better and why. now repeat this with any graph plotting app. such apps generally automatically adjust the axes to fit the data well on the screen. y talk to a motor mechanic about how a vehicle ’ s braking or stopping distance is affected by : ( i ) wet roads, ( ii ) worn - out tyres, ( iii ) higher vehicle mass, ( iv ) driving at night, ( v ) fog, ( vi ) severe weather ( rain, snow, storm ), and ( vii ) driver reaction time. using this information, design safety posters for your school and prepare a short skit to present it in the assembly. the journey beyond b c e f a d fig. 4. 33 grade 8 ganita prakash ganita prakash part ii",
+    "token_count": 313,
+    "start_token": 13080,
+    "end_token": 13393,
+    "metadata": {
+      "overlap_with_previous": 76,
+      "chapter_key": null,
+      "source_file": null,
+      "strategy": "fixed_token",
+      "chunk_size_config": 512
+    },
+    "chunk_id": "489dbc4c676a627d3f1bb38be6bb8769"
+  }
+]

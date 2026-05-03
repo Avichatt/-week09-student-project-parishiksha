@@ -43,7 +43,7 @@ class BenchmarkEngine:
         self.bge_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
         
         # DBs
-        self.chroma_client = chromadb.PersistentClient(path="./chroma_stretch")
+        self.chroma_client = chromadb.PersistentClient(path="./storage/chroma_stretch")
         self.qdrant_client = QdrantClient(":memory:")  # Local in-memory for benchmark
         
         # Gemini config
